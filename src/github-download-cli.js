@@ -35,8 +35,8 @@ const argv = yargs
         }
     })
     .option('data', {
-        describe: 'Github repository data resource types',
-        choices: ['commits', 'issues', 'pulls'],
+        describe: 'Github (API v3) repository data resource types to fetch',
+        choices: ['commits', 'issues', 'pulls', 'forks', 'stargazers', 'subscribers'],
         type: 'array',
         demandOption: 'Choose Github (API v3) repository data resources to fetch',
         global: true
@@ -60,4 +60,4 @@ const { owner, repos, data, token, limit, org } = argv;
 
 githubDownload.repoResources((owner || org), repos, data, token, limit, (!!org))
     .then(() => console.log("Done downloading Github repo resources: see /docs/data/"))
-    .catch(err => console.log(`Error downloading Github repo resources: ${err}`));
+    .catch(err => console.log(`Exception downloading Github repo resources: \n${err}`));

@@ -1,12 +1,14 @@
 "use strict";
 
 const fetch = require('node-fetch');
+const queries = require('./github-graphql-queries');
 
 module.exports = {
     fetchOnePage,
-    fetchRepoSummary,
-    fetchAllRepoNames,
-    fetchAllReposSummaries,
+    fetchOrgAllReposTotalCounts,
+    fetchRepoTotalCounts,
+    _flattenedRepoTotalCounts,
+    fetchOrgAllReposNames,
     fetchAllPulls
 };
 
@@ -22,139 +24,85 @@ async function fetchOnePage(queryString, variablesString, apiToken) {
         body: JSON.stringify({ query: queryString, variables: variablesString })
     })
         .then(response => response.json())
-        .then(data => data)
-        .catch(err => console.log(`Github GraphQL API fetch error: ${err}
-            ${{queryString, variablesString, apiToken}}`));
+        .then(({ data, errors }) => {
+            if (errors) {
+                throw new Error('Github GraphQL API fetch errors:\n' +
+                    JSON.stringify(errors, null, 2));
+            }
+            return data;
+        });
 }
-
 
 // TODO: works for organizations, not individual owners
-async function fetchAllReposSummaries(owner, apiToken) {
-    const queryString = `
-    query ($owner: String!, $endCursor: String) {
-      organization(login: $owner) {
-        repositories(first: 100, after: $endCursor) {
-          pageInfo {
-            hasNextPage
-            endCursor
-          }
-          totalCount
-          edges {
-            node {
-              name
-              issues(first:0) {
-                totalCount
-              }
-              pullRequests(first:0) {
-                totalCount
-              }
-              # forks (first:0) {
-              #   totalCount
-              # }
-              # stargazers(first:0) {
-              #   totalCount
-              # }
-              # watchers(first:0) {
-              #   totalCount
-              # }
-              ... RepoFragment
-            }
-          }
-        }
-      }
-    }
-    
-    fragment RepoFragment on Repository {
-      name
-      defaultBranchRef {
-        name
-        target {
-          ... on Commit {
-            id
-            history(first: 0) {
-              totalCount
-            }
-          }
-        }
-      }
-    }`;
+async function fetchOrgAllReposTotalCounts(owner, apiToken, flattenRepoTotalCounts) {
+    const queryString = queries.orgAllReposTotalCountsQuery;
 
-    const variablesString = JSON.stringify({ owner });
-
-    let numPages = 0;
-    let allReposSummary = [];
-
+    const allRepositoryEdges = [];
     let hasNextPage = null;
     let endCursor = null;
+    let numPages = 0;
     do {
-        let variablesObject = { owner: owner, endCursor: endCursor };
-        let variablesString = JSON.stringify(variablesObject);
-        let { data } = await fetchOnePage(queryString, variablesString, apiToken);
-
+        const variablesString = JSON.stringify({ owner: owner, endCursor: endCursor });
+        const data = await fetchOnePage(queryString, variablesString, apiToken);
+        const { organization } = data;
+        const { repositories } = organization;
+        const { edges : repositoryEdges, pageInfo } = repositories;
+        allRepositoryEdges.push(...repositoryEdges);
+        ({ hasNextPage, endCursor } = pageInfo);
         numPages += 1;
-        allReposSummary.push(...data.organization.repositories.edges);
-        let pageInfo = data.organization.repositories.pageInfo;
-        hasNextPage = pageInfo.hasNextPage;
-        endCursor = pageInfo.endCursor;
     } while (hasNextPage);
 
-    allReposSummary = allReposSummary.map(function(repo) {
-        return {
-            name: repo.node.name,
-            issues: repo.node.issues.totalCount,
-            pulls: repo.node.pullRequests.totalCount,
-            commits: repo["node"]["defaultBranchRef"]["target"]["history"]["totalCount"]
-        };
-    });
-
-    return allReposSummary;
-}
-
-async function fetchRepoSummary(owner, repo, apiToken) {
-    const queryString = `
-    query ($owner:String!, $repo:String!) {
-      repository(owner: $owner, name: $repo) {
-        nameWithOwner
-        name    
-        issues {
-          totalCount
-        }
-        pullRequests {
-          totalCount
-        }
-          ...RepoFragment
-      }
+    if (flattenRepoTotalCounts) {
+        return allRepositoryEdges.map(({ node } = repositoryEdge) => _flattenedRepoTotalCounts(node));
     }
-    
-    fragment RepoFragment on Repository {
-      name
-      defaultBranchRef {
-        name
-        target {
-          ... on Commit {
-            id
-            history(first: 0) {
-              totalCount
-            }
-          }
-        }
-      }
-    }`;
-
-    const variablesString = JSON.stringify({owner: owner, repo: repo});
-    let { data } = await fetchOnePage(queryString, variablesString, apiToken);
-    let repoObject = data.repository;
-    let repoSummary = {
-        nameWithOwner: repoObject.nameWithOwner,
-        name: repoObject.name,
-        issues: repoObject.issues.totalCount,
-        pulls: repoObject.pullRequests.totalCount,
-        commits: repoObject.defaultBranchRef.target.history.totalCount
-    };
-    return repoSummary;
+    return allRepositoryEdges;
 }
 
-async function fetchAllRepoNames(owner, apiToken) {
+async function fetchRepoTotalCounts(owner, repoName, apiToken, flattenRepoTotalCounts) {
+    const queryString = queries.repoTotalCountsQuery;
+    const variablesString = JSON.stringify({owner: owner, repo: repoName});
+    const data = await fetchOnePage(queryString, variablesString, apiToken);
+    const { repository } = data;
+    if (flattenRepoTotalCounts) {
+        return _flattenedRepoTotalCounts(repository);
+    }
+    return repository;
+}
+
+function _flattenedRepoTotalCounts(repositoryObject) {
+    const flatRepo = {};
+    for (const [key, value] of Object.entries(repositoryObject)) {
+        switch (typeof value) {
+            case 'object':
+                if (value !== null) {
+                    if (key === 'defaultBranchRef') { // only dealing with number of commits in default branch
+                        flatRepo['commits'] = value['target']['history']['totalCount'];
+                    } else if (value['totalCount'] !== undefined) {
+                        flatRepo[key] = value['totalCount'];
+                    } else {
+                        console.warn(`No totalCount value to flatten for key ${key}: ${JSON.stringify(value)}`);
+                    }
+                }
+                break;
+            case 'string':
+                flatRepo[key] = value;
+                break;
+            case 'number':
+                if (key === 'forkCount') { // workaround for inaccuracy of forks.totalCount
+                    flatRepo['forks'] = value;
+                } else {
+                    flatRepo[key] = value;
+                }
+                break;
+            default:
+                console.warn(`Undefined behavior to flatten repo value for key ${key}: ${JSON.stringify(value)}`);
+                break;
+        }
+    }
+    return flatRepo;
+}
+
+async function fetchOrgAllReposNames(owner, apiToken) {
     const queryString = `
     query o1($owner: String!, $endCursor: String) {
       organization(login: $owner) {

@@ -9,9 +9,12 @@ module.exports = {
     _trimmedRepoResource
 };
 
-async function fetchRepoResourceList(owner, repo, resourceType, apiToken, resourceLimit, trimmed) {
+async function fetchRepoResourceList(owner, repo, resourceType, apiToken, resourceLimit, trimRepoResource) {
     const GITHUB_API_URL = 'https://api.github.com';
     const headers = {'Authorization': `token ${apiToken}`};
+    if (resourceType === 'stargazers') {
+        headers['Accept'] = 'application/vnd.github.v3.star+json';
+    }
 
     const perPage = 100;
     const params = { 'per_page': perPage };
@@ -33,11 +36,11 @@ async function fetchRepoResourceList(owner, repo, resourceType, apiToken, resour
 
         if (response.status === 200) {
             let resourceSublist = await response.json();
-            if (resourceSublist && resourceSublist.length > 0) {
+            if (resourceSublist && resourceSublist.length) {
                 if (resourceType === 'issues') {
                     resourceSublist = resourceSublist.filter((issue) => !issue.pull_request)
                 }
-                if (trimmed) {
+                if (trimRepoResource) {
                     resourceSublist = resourceSublist.map((resource) => _trimmedRepoResource(resourceType, resource))
                 }
                 resourceList.push(...resourceSublist);
@@ -65,41 +68,44 @@ async function fetchRepoResourceList(owner, repo, resourceType, apiToken, resour
 }
 
 function _trimmedRepoResource(resourceType, resource) {
-    let t = null; // trimmed object
-    const o = resource; // original object
+    let trimmed = null; // trimmed object
+    const original = resource; // original object
 
     if (resourceType === 'commits') {
-        const {sha, commit: {author, message}, html_url} = o;
+        const { sha, commit: { author, message }, html_url } = original;
         const title = message.split(/\n+/)[0];
-        t = {
-                sha,
-                commit: { author, title },
-                html_url
-        };
+        trimmed = { sha, commit: { author, title }, html_url };
 
-        if (o.author) {
-            t.author = {
-                login: o.author.login,
-                html_url: o.author.html_url
-            };
+        if (original.author) {
+            const { author: login, html_url } = original;
+            trimmed.author = { login, html_url };
         }
     }
-
     if (resourceType === 'issues' || resourceType === 'pulls') {
-        const { html_url, number, title, state, created_at, updated_at, closed_at } = o;
-        t = { html_url, number, title, state, created_at, updated_at, closed_at };
+        const { html_url, number, title, state, created_at, updated_at, closed_at,
+            user: { login, html_url : user_html_url } } = original;
+        trimmed = { html_url, number, title, state, created_at, updated_at, closed_at,
+            user: { login, html_url: user_html_url } };
 
         if (resourceType === 'issues') {
-            t.comments = o.comments;
+            trimmed.comments = original.comments;
         }
         if (resourceType === 'pulls') {
-            t.merged_at = o.merged_at;
-        }
-
-        if (o.user) {
-            t.user = { login: o.user.login, html_url: o.user.html_url };
+            trimmed.merged_at = original.merged_at;
         }
     }
+    if (resourceType === 'forks') {
+        const { full_name, created_at, updated_at, pushed_at, open_issues, forks, stargazers, watchers } = original;
+        trimmed = { full_name, created_at, updated_at, pushed_at, open_issues, forks, stargazers, watchers };
+    }
+    if (resourceType === 'stargazers') {
+        const { starred_at, user: { login, id } } = original;
+        trimmed = { starred_at, user: { login, id } };
+    }
+    if (resourceType === 'subscribers') {
+        const { login, id } = original;
+        trimmed = { login, id };
+    }
 
-    return t ? t : o; // if didn't trim, return original
+    return trimmed ? trimmed : original; // if didn't trim, return original
 }

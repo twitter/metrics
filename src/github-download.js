@@ -12,66 +12,85 @@ module.exports = {
     repoResources: downloadRepoResources
 };
 
-async function downloadRepoResources(owner, repoNames, resourceTypes, apiToken, resourceLimit, orgAll) {
-    const trimmed = true;
+async function downloadRepoResources(owner, repoNames, restRepoResourceTypes, apiToken, resourceLimit, orgAll) {
+    const trimRepoResource = false; // TODO: if REST resource, choose fields to trim and make additional API calls on
+    const flattenRepoTotalCounts = true;
 
-    let repoSummaries = [];
+    // for error logging
+    const erroredRepoNames = [];
+    const successRepoNames = [];
+
+    let allReposTotalCounts;
     const ownerDirPath = path.join(__dirname, '..', 'docs', 'data', owner);
-    try {
-        if (orgAll) {
-            repoSummaries = await githubGraphqlApi.fetchAllReposSummaries(owner, apiToken);
-        }
-        else {
-            for (const repoName of repoNames) {
-                try {
-                    // await to avoid triggering API abuse detection
-                    const repoSummary = await githubGraphqlApi.fetchRepoSummary(owner, repoName, apiToken);
-                    repoSummaries.push(repoSummary);
-                } catch (err) {
-                    console.log(`Github GraphQL error fetching repo summary for ${owner}/${repoName}: \n${err}\n`);
-                }
+    if (orgAll) {
+        allReposTotalCounts = await githubGraphqlApi.fetchOrgAllReposTotalCounts(owner, apiToken, flattenRepoTotalCounts);
+    } else {
+        allReposTotalCounts = [];
+        for (const repoName of repoNames) {
+            try {
+                // await to avoid triggering API abuse detection
+                const repoTotalCounts = await githubGraphqlApi.fetchRepoTotalCounts(owner, repoName, apiToken, flattenRepoTotalCounts);
+                allReposTotalCounts.push(repoTotalCounts);
+            } catch (err) {
+                console.log(`Github GraphQL error fetching repo total counts for ${owner}/${repoName}: \n${err}\n`);
+                erroredRepoNames.push(repoName);
             }
         }
+    }
+    if (allReposTotalCounts && allReposTotalCounts.length) {
         if (!fs.existsSync(ownerDirPath)) {
             fs.mkdirSync(ownerDirPath);
         }
-    } catch (err) {
-        console.log(`Github GraphQL error fetching repos' summaries for ${owner} org: \n${err}\n`);
+    } else {
+        throw new Error(`No repositories ${orgAll ? '' : `named ${JSON.stringify(repoNames)} `}found for ${orgAll ? 'org' : 'owner' } "${owner}".`);
     }
 
-    for (const repoSummary of repoSummaries) {
+    const restToGraphqlRepoResourceType = {
+        'commits': 'commits',
+        'issues': 'issues',
+        'pulls': 'pullRequests',
+        'forks': 'forks',
+        'stargazers': 'stargazers',
+        'subscribers': 'watchers'
+    };
+
+    for (const repoTotalCounts of allReposTotalCounts) {
+        const repoName = repoTotalCounts.name;
+        console.log(`Downloading ${owner}/${repoName} ${restRepoResourceTypes}...`);
         try {
-            const repoName = repoSummary.name;
-            console.log(`Downloading ${owner}/${repoName} ${resourceTypes}...`);
-            for (const resourceType of resourceTypes) {
-                const resourceCount = repoSummary[resourceType];
+            for (const restRepoResourceType of restRepoResourceTypes) {
+                const graphqlRepoResourceType = restToGraphqlRepoResourceType[restRepoResourceType];
+                const resourceCount = repoTotalCounts[graphqlRepoResourceType];
                 const limitResource = resourceCount > resourceLimit;
 
-                const preFetchInfo = `Downloading ${limitResource ?
-                    `last ${resourceLimit} of ` : ''}all ${resourceCount} ${owner}/${repoName} ${resourceType}..`;
-                console.info(preFetchInfo);
+                const preFetchResourceInfo = `Downloading ${limitResource ?
+                    `last ${resourceLimit} of ` : ''}all ${resourceCount} ${owner}/${repoName} ${restRepoResourceType}..`;
+                console.info(preFetchResourceInfo);
 
-                try {
-                    const repoDirPath = path.join(ownerDirPath, repoName);
-                    if (!fs.existsSync(repoDirPath)) {
-                        fs.mkdirSync(repoDirPath);
-                    }
-                    const resourceFilePath = path.join(repoDirPath, resourceType + '.json');
-                    // await to avoid triggering API abuse detection
-                    const resourceList = await githubRestApi.fetchRepoResourceList(owner, repoName, resourceType, apiToken, resourceLimit, trimmed);
-                    await writeFileAsync(resourceFilePath, JSON.stringify(resourceList), {encoding: 'utf8'});
-
-                    const postFetchInfo = `Downloaded: ${limitResource ?
-                        `last ${resourceList.length} of ` : ''}all ${resourceCount} ${owner}/${repoName} ${resourceType}.`;
-                    console.info(postFetchInfo);
-
-                } catch (err) {
-                    console.log(err);
+                const repoDirPath = path.join(ownerDirPath, repoName);
+                if (!fs.existsSync(repoDirPath)) {
+                    fs.mkdirSync(repoDirPath);
                 }
+                const resourceFilePath = path.join(repoDirPath, restRepoResourceType + '.json');
+                // await to avoid triggering API abuse detection
+                const resourceList = await githubRestApi.fetchRepoResourceList(owner, repoName, restRepoResourceType, apiToken, resourceLimit, trimRepoResource);
+                await writeFileAsync(resourceFilePath, JSON.stringify(resourceList), {encoding: 'utf8'});
+
+                const postFetchResourceInfo = `Downloaded: ${limitResource ?
+                    `last ${resourceList.length} of ` : ''}all ${resourceCount} ${owner}/${repoName} ${restRepoResourceType}.`;
+                console.info(postFetchResourceInfo);
             }
-            console.log(`Downloaded ${owner}/${repoName} ${resourceTypes}.\n`);
+            console.info(`Downloaded ${owner}/${repoName} ${restRepoResourceTypes}.\n`);
+            successRepoNames.push(repoName);
         } catch (err) {
             console.log(err);
+            erroredRepoNames.push(repoName);
         }
+    }
+    if (erroredRepoNames.length) {
+        console.info(`Error while downloading '${owner}' repos: ${JSON.stringify(erroredRepoNames)}`);
+    }
+    if (successRepoNames.length) {
+        console.info(`Successfully downloaded '${owner}' repos: ${JSON.stringify(successRepoNames)}`);
     }
 }
