@@ -56,7 +56,9 @@ async function fetchRepoResourceList(owner, repo, resourceType, apiToken, resour
     } while (links.next && resourceList.length < resourceLimit);
     // } while (links.next && (pageNum < maxPages));
 
-    resourceList.length = resourceLimit; // cutoff at limit: desired?
+    if (resourceList.length > resourceLimit) {
+        resourceList.length = resourceLimit;
+    } // cutoff at limit: desired?
 
     // if (lastPage > maxPages) {
     //     console.info(`Fetched ${resourceList.length} of all ${lastPage * 100}+ ${owner}/${repo} ${resourceType}`)
