@@ -1,7 +1,7 @@
 'use strict';
 
 const yargs = require('yargs');
-const githubDownload = require('./github-download');
+const download = require('./download');
 
 const argv = yargs
     .command({
@@ -58,6 +58,6 @@ const argv = yargs
 
 const { owner, repos, data, token, limit, org } = argv;
 
-githubDownload.repoResources((owner || org), repos, data, token, limit, (!!org))
+download.repoResources((owner || org), repos, data, token, limit, (!!org))
     .then(() => console.log("Done downloading Github repo resources: see /docs/data/"))
     .catch(err => console.log(`Exception downloading Github repo resources: \n${err}`));

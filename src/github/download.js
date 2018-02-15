@@ -4,16 +4,15 @@ const fs = require('fs');
 const path = require('path');
 const { promisify } = require('util');
 const writeFileAsync = promisify(fs.writeFile);
-
-const githubRestApi = require('./github-rest-api');
-const githubGraphqlApi = require('./github-graphql-api');
+const githubRestApi = require('./rest-api');
+const githubGraphqlApi = require('./graphql-api');
 
 module.exports = {
     repoResources: downloadRepoResources
 };
 
 async function downloadRepoResources(owner, repoNames, restRepoResourceTypes, apiToken, resourceLimit, orgAll) {
-    const trimRepoResource = false; // TODO: if REST resource, choose fields to trim and make additional API calls on
+    const trimRepoResource = true; // TODO: if REST resource, choose fields to trim and make additional API calls on
     const flattenRepoTotalCounts = true;
 
     // for error logging
@@ -21,7 +20,7 @@ async function downloadRepoResources(owner, repoNames, restRepoResourceTypes, ap
     const successRepoNames = [];
 
     let allReposTotalCounts;
-    const ownerDirPath = path.join(__dirname, '..', 'docs', 'data', owner);
+    const ownerDirPath = path.join(__dirname, '..', '..', 'docs', 'data', owner);
     if (orgAll) {
         allReposTotalCounts = await githubGraphqlApi.fetchOrgAllReposTotalCounts(owner, apiToken, flattenRepoTotalCounts);
     } else {

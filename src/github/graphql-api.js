@@ -1,7 +1,7 @@
 "use strict";
 
 const fetch = require('node-fetch');
-const queries = require('./github-graphql-queries');
+const queries = require('./graphql-queries');
 
 module.exports = {
     fetchOnePage,
