@@ -4,8 +4,9 @@ const fs = require("fs");
 const writeFileAsync = promisify(fs.writeFile);
 const yargs = require("yargs");
 
-const { owners, token } = yargs
-	.option('owners', {
+const argv = yargs
+	.option('orgs', {
+		type: 'array',
 		default: [
 			"twitter",
 			"twitter-forks",
@@ -23,23 +24,51 @@ const { owners, token } = yargs
 			"mopub",
 			"snappytv"
 		],
-		type: 'array',
+		describe: "Set of Github organizations to configure projects.json for GrimoireLab"
 	})
 	.option('token', {
+		type: 'string',
 		demandOption: true,
-		type: 'string'
+		describe: "Github API Token to find all repositories for each Github organization"
+	})
+	.option('repo-project', {
+		type: 'boolean',
+		default: true,
+		describe: "Treat each Github repository as a 'project' for GrimoireLab"
+	})
+	.option('org-project', {
+		type: 'boolean',
+		default: false,
+		describe: "Treat each Github organization as a 'project' for GrimoireLab"
 	})
 	.help()
 	.argv;
 
+const { orgs, token, repoProject, orgProject } = argv;
 const flattenReposTotalCounts = true;
-owners.reduce(async (projectsDictPromise, owner) => {
-	const promises = [fetchOrgAllReposTotalCounts(owner, token, flattenReposTotalCounts), projectsDictPromise];
+
+orgs.reduce(async (projectsDictPromise, org) => {
+	const promises = [fetchOrgAllReposTotalCounts(org, token, flattenReposTotalCounts), projectsDictPromise];
 	const [reposTotalCounts, projectsDict] = await Promise.all(promises);
-	const reposGitLinks = reposTotalCounts.map(repoTotalCount => `https://github.com/${repoTotalCount.nameWithOwner}.git`);
-	projectsDict[owner] = { git: reposGitLinks, github: reposGitLinks };
+	const repoNamesWithOwner = reposTotalCounts.map(repoTotalCount => repoTotalCount.nameWithOwner);
+
+	if (orgProject) { // each Github org as a 'project'
+		const reposGitLinks = repoNamesWithOwner.map(gitLinkFromRepo);
+		projectsDict[org] = { git: reposGitLinks, github: reposGitLinks };
+	}
+
+	if (repoProject) { // each Github repo as a 'project'
+		repoNamesWithOwner.forEach(repoNameWithOwner => {
+			const repoGitLink = gitLinkFromRepo(repoNameWithOwner);
+			projectsDict[repoNameWithOwner] = { git: [repoGitLink], github: [repoGitLink] };
+		});
+	}
 	return projectsDict;
 }, Promise.resolve({}))
 	.then(projectsDict => writeFileAsync('projects.json', JSON.stringify(projectsDict, null, 4), 'utf8'))
 	.then(() => console.log('Wrote ./projects.json'))
 	.catch(err => console.log(err));
+
+function gitLinkFromRepo(nameWithOwner) {
+	return `https://github.com/${nameWithOwner}.git`
+}

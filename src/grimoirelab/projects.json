@@ -299,6 +299,1182 @@
             "https://github.com/twitter/go-bindata.git"
         ]
     },
+    "twitter/hadoop-lzo": {
+        "git": [
+            "https://github.com/twitter/hadoop-lzo.git"
+        ],
+        "github": [
+            "https://github.com/twitter/hadoop-lzo.git"
+        ]
+    },
+    "twitter/scribe": {
+        "git": [
+            "https://github.com/twitter/scribe.git"
+        ],
+        "github": [
+            "https://github.com/twitter/scribe.git"
+        ]
+    },
+    "twitter/thrift_client": {
+        "git": [
+            "https://github.com/twitter/thrift_client.git"
+        ],
+        "github": [
+            "https://github.com/twitter/thrift_client.git"
+        ]
+    },
+    "twitter/twurl": {
+        "git": [
+            "https://github.com/twitter/twurl.git"
+        ],
+        "github": [
+            "https://github.com/twitter/twurl.git"
+        ]
+    },
+    "twitter/elephant-bird": {
+        "git": [
+            "https://github.com/twitter/elephant-bird.git"
+        ],
+        "github": [
+            "https://github.com/twitter/elephant-bird.git"
+        ]
+    },
+    "twitter/standard-project": {
+        "git": [
+            "https://github.com/twitter/standard-project.git"
+        ],
+        "github": [
+            "https://github.com/twitter/standard-project.git"
+        ]
+    },
+    "twitter/snowflake": {
+        "git": [
+            "https://github.com/twitter/snowflake.git"
+        ],
+        "github": [
+            "https://github.com/twitter/snowflake.git"
+        ]
+    },
+    "twitter/spitball": {
+        "git": [
+            "https://github.com/twitter/spitball.git"
+        ],
+        "github": [
+            "https://github.com/twitter/spitball.git"
+        ]
+    },
+    "twitter/ostrich": {
+        "git": [
+            "https://github.com/twitter/ostrich.git"
+        ],
+        "github": [
+            "https://github.com/twitter/ostrich.git"
+        ]
+    },
+    "twitter/scala_school": {
+        "git": [
+            "https://github.com/twitter/scala_school.git"
+        ],
+        "github": [
+            "https://github.com/twitter/scala_school.git"
+        ]
+    },
+    "twitter/finagle": {
+        "git": [
+            "https://github.com/twitter/finagle.git"
+        ],
+        "github": [
+            "https://github.com/twitter/finagle.git"
+        ]
+    },
+    "twitter/naggati2": {
+        "git": [
+            "https://github.com/twitter/naggati2.git"
+        ],
+        "github": [
+            "https://github.com/twitter/naggati2.git"
+        ]
+    },
+    "twitter/twitter-text-conformance": {
+        "git": [
+            "https://github.com/twitter/twitter-text-conformance.git"
+        ],
+        "github": [
+            "https://github.com/twitter/twitter-text-conformance.git"
+        ]
+    },
+    "twitter/twitter-text-rb": {
+        "git": [
+            "https://github.com/twitter/twitter-text-rb.git"
+        ],
+        "github": [
+            "https://github.com/twitter/twitter-text-rb.git"
+        ]
+    },
+    "twitter/twitter-text-java": {
+        "git": [
+            "https://github.com/twitter/twitter-text-java.git"
+        ],
+        "github": [
+            "https://github.com/twitter/twitter-text-java.git"
+        ]
+    },
+    "twitter/joauth": {
+        "git": [
+            "https://github.com/twitter/joauth.git"
+        ],
+        "github": [
+            "https://github.com/twitter/joauth.git"
+        ]
+    },
+    "twitter/streamyj": {
+        "git": [
+            "https://github.com/twitter/streamyj.git"
+        ],
+        "github": [
+            "https://github.com/twitter/streamyj.git"
+        ]
+    },
+    "twitter/twitter.github.com": {
+        "git": [
+            "https://github.com/twitter/twitter.github.com.git"
+        ],
+        "github": [
+            "https://github.com/twitter/twitter.github.com.git"
+        ]
+    },
+    "twitter/time_constants": {
+        "git": [
+            "https://github.com/twitter/time_constants.git"
+        ],
+        "github": [
+            "https://github.com/twitter/time_constants.git"
+        ]
+    },
+    "twitter/commons": {
+        "git": [
+            "https://github.com/twitter/commons.git"
+        ],
+        "github": [
+            "https://github.com/twitter/commons.git"
+        ]
+    },
+    "twitter/cloudhopper-smpp": {
+        "git": [
+            "https://github.com/twitter/cloudhopper-smpp.git"
+        ],
+        "github": [
+            "https://github.com/twitter/cloudhopper-smpp.git"
+        ]
+    },
+    "twitter/util": {
+        "git": [
+            "https://github.com/twitter/util.git"
+        ],
+        "github": [
+            "https://github.com/twitter/util.git"
+        ]
+    },
+    "twitter/twui": {
+        "git": [
+            "https://github.com/twitter/twui.git"
+        ],
+        "github": [
+            "https://github.com/twitter/twui.git"
+        ]
+    },
+    "twitter/scrooge": {
+        "git": [
+            "https://github.com/twitter/scrooge.git"
+        ],
+        "github": [
+            "https://github.com/twitter/scrooge.git"
+        ]
+    },
+    "twitter/twemperf": {
+        "git": [
+            "https://github.com/twitter/twemperf.git"
+        ],
+        "github": [
+            "https://github.com/twitter/twemperf.git"
+        ]
+    },
+    "twitter/pycascading": {
+        "git": [
+            "https://github.com/twitter/pycascading.git"
+        ],
+        "github": [
+            "https://github.com/twitter/pycascading.git"
+        ]
+    },
+    "twitter/hogan.js": {
+        "git": [
+            "https://github.com/twitter/hogan.js.git"
+        ],
+        "github": [
+            "https://github.com/twitter/hogan.js.git"
+        ]
+    },
+    "twitter/mysql": {
+        "git": [
+            "https://github.com/twitter/mysql.git"
+        ],
+        "github": [
+            "https://github.com/twitter/mysql.git"
+        ]
+    },
+    "twitter/scalding": {
+        "git": [
+            "https://github.com/twitter/scalding.git"
+        ],
+        "github": [
+            "https://github.com/twitter/scalding.git"
+        ]
+    },
+    "twitter/cassie": {
+        "git": [
+            "https://github.com/twitter/cassie.git"
+        ],
+        "github": [
+            "https://github.com/twitter/cassie.git"
+        ]
+    },
+    "twitter/effectivescala": {
+        "git": [
+            "https://github.com/twitter/effectivescala.git"
+        ],
+        "github": [
+            "https://github.com/twitter/effectivescala.git"
+        ]
+    },
+    "twitter/finatra": {
+        "git": [
+            "https://github.com/twitter/finatra.git"
+        ],
+        "github": [
+            "https://github.com/twitter/finatra.git"
+        ]
+    },
+    "twitter/mahout": {
+        "git": [
+            "https://github.com/twitter/mahout.git"
+        ],
+        "github": [
+            "https://github.com/twitter/mahout.git"
+        ]
+    },
+    "twitter/cassovary": {
+        "git": [
+            "https://github.com/twitter/cassovary.git"
+        ],
+        "github": [
+            "https://github.com/twitter/cassovary.git"
+        ]
+    },
+    "twitter/twemproxy": {
+        "git": [
+            "https://github.com/twitter/twemproxy.git"
+        ],
+        "github": [
+            "https://github.com/twitter/twemproxy.git"
+        ]
+    },
+    "twitter/jvmgcprof": {
+        "git": [
+            "https://github.com/twitter/jvmgcprof.git"
+        ],
+        "github": [
+            "https://github.com/twitter/jvmgcprof.git"
+        ]
+    },
+    "twitter/twitter-cldr-rb": {
+        "git": [
+            "https://github.com/twitter/twitter-cldr-rb.git"
+        ],
+        "github": [
+            "https://github.com/twitter/twitter-cldr-rb.git"
+        ]
+    },
+    "twitter/sbt-package-dist": {
+        "git": [
+            "https://github.com/twitter/sbt-package-dist.git"
+        ],
+        "github": [
+            "https://github.com/twitter/sbt-package-dist.git"
+        ]
+    },
+    "twitter/ospriet": {
+        "git": [
+            "https://github.com/twitter/ospriet.git"
+        ],
+        "github": [
+            "https://github.com/twitter/ospriet.git"
+        ]
+    },
+    "twitter/innovators-patent-agreement": {
+        "git": [
+            "https://github.com/twitter/innovators-patent-agreement.git"
+        ],
+        "github": [
+            "https://github.com/twitter/innovators-patent-agreement.git"
+        ]
+    },
+    "twitter/recess": {
+        "git": [
+            "https://github.com/twitter/recess.git"
+        ],
+        "github": [
+            "https://github.com/twitter/recess.git"
+        ]
+    },
+    "twitter/ambrose": {
+        "git": [
+            "https://github.com/twitter/ambrose.git"
+        ],
+        "github": [
+            "https://github.com/twitter/ambrose.git"
+        ]
+    },
+    "twitter/twitter-text-objc": {
+        "git": [
+            "https://github.com/twitter/twitter-text-objc.git"
+        ],
+        "github": [
+            "https://github.com/twitter/twitter-text-objc.git"
+        ]
+    },
+    "twitter/activerecord-reputation-system": {
+        "git": [
+            "https://github.com/twitter/activerecord-reputation-system.git"
+        ],
+        "github": [
+            "https://github.com/twitter/activerecord-reputation-system.git"
+        ]
+    },
+    "twitter/twitter4j": {
+        "git": [
+            "https://github.com/twitter/twitter4j.git"
+        ],
+        "github": [
+            "https://github.com/twitter/twitter4j.git"
+        ]
+    },
+    "twitter/elephant-twin": {
+        "git": [
+            "https://github.com/twitter/elephant-twin.git"
+        ],
+        "github": [
+            "https://github.com/twitter/elephant-twin.git"
+        ]
+    },
+    "twitter/elephant-twin-lzo": {
+        "git": [
+            "https://github.com/twitter/elephant-twin-lzo.git"
+        ],
+        "github": [
+            "https://github.com/twitter/elephant-twin-lzo.git"
+        ]
+    },
+    "twitter/iago": {
+        "git": [
+            "https://github.com/twitter/iago.git"
+        ],
+        "github": [
+            "https://github.com/twitter/iago.git"
+        ]
+    },
+    "twitter/twemcache": {
+        "git": [
+            "https://github.com/twitter/twemcache.git"
+        ],
+        "github": [
+            "https://github.com/twitter/twemcache.git"
+        ]
+    },
+    "twitter/twitter-cldr-js": {
+        "git": [
+            "https://github.com/twitter/twitter-cldr-js.git"
+        ],
+        "github": [
+            "https://github.com/twitter/twitter-cldr-js.git"
+        ]
+    },
+    "twitter/algebird": {
+        "git": [
+            "https://github.com/twitter/algebird.git"
+        ],
+        "github": [
+            "https://github.com/twitter/algebird.git"
+        ]
+    },
+    "twitter/hdfs-du": {
+        "git": [
+            "https://github.com/twitter/hdfs-du.git"
+        ],
+        "github": [
+            "https://github.com/twitter/hdfs-du.git"
+        ]
+    },
+    "twitter/clockworkraven": {
+        "git": [
+            "https://github.com/twitter/clockworkraven.git"
+        ],
+        "github": [
+            "https://github.com/twitter/clockworkraven.git"
+        ]
+    },
+    "twitter/twitter-cldr-npm": {
+        "git": [
+            "https://github.com/twitter/twitter-cldr-npm.git"
+        ],
+        "github": [
+            "https://github.com/twitter/twitter-cldr-npm.git"
+        ]
+    },
+    "twitter/tormenta": {
+        "git": [
+            "https://github.com/twitter/tormenta.git"
+        ],
+        "github": [
+            "https://github.com/twitter/tormenta.git"
+        ]
+    },
+    "twitter/sprockets-commonjs-twitter": {
+        "git": [
+            "https://github.com/twitter/sprockets-commonjs-twitter.git"
+        ],
+        "github": [
+            "https://github.com/twitter/sprockets-commonjs-twitter.git"
+        ]
+    },
+    "twitter/summingbird": {
+        "git": [
+            "https://github.com/twitter/summingbird.git"
+        ],
+        "github": [
+            "https://github.com/twitter/summingbird.git"
+        ]
+    },
+    "twitter/chill": {
+        "git": [
+            "https://github.com/twitter/chill.git"
+        ],
+        "github": [
+            "https://github.com/twitter/chill.git"
+        ]
+    },
+    "twitter/bookkeeper": {
+        "git": [
+            "https://github.com/twitter/bookkeeper.git"
+        ],
+        "github": [
+            "https://github.com/twitter/bookkeeper.git"
+        ]
+    },
+    "twitter/secureheaders": {
+        "git": [
+            "https://github.com/twitter/secureheaders.git"
+        ],
+        "github": [
+            "https://github.com/twitter/secureheaders.git"
+        ]
+    },
+    "twitter/RTLtextarea": {
+        "git": [
+            "https://github.com/twitter/RTLtextarea.git"
+        ],
+        "github": [
+            "https://github.com/twitter/RTLtextarea.git"
+        ]
+    },
+    "twitter/bijection": {
+        "git": [
+            "https://github.com/twitter/bijection.git"
+        ],
+        "github": [
+            "https://github.com/twitter/bijection.git"
+        ]
+    },
+    "twitter/fatcache": {
+        "git": [
+            "https://github.com/twitter/fatcache.git"
+        ],
+        "github": [
+            "https://github.com/twitter/fatcache.git"
+        ]
+    },
+    "twitter/storehaus": {
+        "git": [
+            "https://github.com/twitter/storehaus.git"
+        ],
+        "github": [
+            "https://github.com/twitter/storehaus.git"
+        ]
+    },
+    "twitter/hbc": {
+        "git": [
+            "https://github.com/twitter/hbc.git"
+        ],
+        "github": [
+            "https://github.com/twitter/hbc.git"
+        ]
+    },
+    "twitter/typeahead.js": {
+        "git": [
+            "https://github.com/twitter/typeahead.js.git"
+        ],
+        "github": [
+            "https://github.com/twitter/typeahead.js.git"
+        ]
+    },
+    "twitter/twisitor": {
+        "git": [
+            "https://github.com/twitter/twisitor.git"
+        ],
+        "github": [
+            "https://github.com/twitter/twisitor.git"
+        ]
+    },
+    "twitter/cascading": {
+        "git": [
+            "https://github.com/twitter/cascading.git"
+        ],
+        "github": [
+            "https://github.com/twitter/cascading.git"
+        ]
+    },
+    "twitter/jsr166e": {
+        "git": [
+            "https://github.com/twitter/jsr166e.git"
+        ],
+        "github": [
+            "https://github.com/twitter/jsr166e.git"
+        ]
+    },
+    "twitter/twitter-server": {
+        "git": [
+            "https://github.com/twitter/twitter-server.git"
+        ],
+        "github": [
+            "https://github.com/twitter/twitter-server.git"
+        ]
+    },
+    "twitter/netty-http2": {
+        "git": [
+            "https://github.com/twitter/netty-http2.git"
+        ],
+        "github": [
+            "https://github.com/twitter/netty-http2.git"
+        ]
+    },
+    "twitter/interactive": {
+        "git": [
+            "https://github.com/twitter/interactive.git"
+        ],
+        "github": [
+            "https://github.com/twitter/interactive.git"
+        ]
+    },
+    "twitter/scala_school2": {
+        "git": [
+            "https://github.com/twitter/scala_school2.git"
+        ],
+        "github": [
+            "https://github.com/twitter/scala_school2.git"
+        ]
+    },
+    "twitter/hraven": {
+        "git": [
+            "https://github.com/twitter/hraven.git"
+        ],
+        "github": [
+            "https://github.com/twitter/hraven.git"
+        ]
+    },
+    "twitter/pig": {
+        "git": [
+            "https://github.com/twitter/pig.git"
+        ],
+        "github": [
+            "https://github.com/twitter/pig.git"
+        ]
+    },
+    "twitter/raggiana": {
+        "git": [
+            "https://github.com/twitter/raggiana.git"
+        ],
+        "github": [
+            "https://github.com/twitter/raggiana.git"
+        ]
+    },
+    "twitter/cdk": {
+        "git": [
+            "https://github.com/twitter/cdk.git"
+        ],
+        "github": [
+            "https://github.com/twitter/cdk.git"
+        ]
+    },
+    "twitter/scalacheck": {
+        "git": [
+            "https://github.com/twitter/scalacheck.git"
+        ],
+        "github": [
+            "https://github.com/twitter/scalacheck.git"
+        ]
+    },
+    "twitter/code-of-conduct": {
+        "git": [
+            "https://github.com/twitter/code-of-conduct.git"
+        ],
+        "github": [
+            "https://github.com/twitter/code-of-conduct.git"
+        ]
+    },
+    "twitter/cloudhopper-commons": {
+        "git": [
+            "https://github.com/twitter/cloudhopper-commons.git"
+        ],
+        "github": [
+            "https://github.com/twitter/cloudhopper-commons.git"
+        ]
+    },
+    "twitter/CocoaSPDY": {
+        "git": [
+            "https://github.com/twitter/CocoaSPDY.git"
+        ],
+        "github": [
+            "https://github.com/twitter/CocoaSPDY.git"
+        ]
+    },
+    "twitter/hpack": {
+        "git": [
+            "https://github.com/twitter/hpack.git"
+        ],
+        "github": [
+            "https://github.com/twitter/hpack.git"
+        ]
+    },
+    "twitter/css-flip": {
+        "git": [
+            "https://github.com/twitter/css-flip.git"
+        ],
+        "github": [
+            "https://github.com/twitter/css-flip.git"
+        ]
+    },
+    "twitter/spark": {
+        "git": [
+            "https://github.com/twitter/spark.git"
+        ],
+        "github": [
+            "https://github.com/twitter/spark.git"
+        ]
+    },
+    "twitter/libwatchman": {
+        "git": [
+            "https://github.com/twitter/libwatchman.git"
+        ],
+        "github": [
+            "https://github.com/twitter/libwatchman.git"
+        ]
+    },
+    "twitter/plumage.js": {
+        "git": [
+            "https://github.com/twitter/plumage.js.git"
+        ],
+        "github": [
+            "https://github.com/twitter/plumage.js.git"
+        ]
+    },
+    "twitter/scala": {
+        "git": [
+            "https://github.com/twitter/scala.git"
+        ],
+        "github": [
+            "https://github.com/twitter/scala.git"
+        ]
+    },
+    "twitter/oscon-puzzles": {
+        "git": [
+            "https://github.com/twitter/oscon-puzzles.git"
+        ],
+        "github": [
+            "https://github.com/twitter/oscon-puzzles.git"
+        ]
+    },
+    "twitter/jaqen": {
+        "git": [
+            "https://github.com/twitter/jaqen.git"
+        ],
+        "github": [
+            "https://github.com/twitter/jaqen.git"
+        ]
+    },
+    "twitter/gozer": {
+        "git": [
+            "https://github.com/twitter/gozer.git"
+        ],
+        "github": [
+            "https://github.com/twitter/gozer.git"
+        ]
+    },
+    "twitter/zktraffic": {
+        "git": [
+            "https://github.com/twitter/zktraffic.git"
+        ],
+        "github": [
+            "https://github.com/twitter/zktraffic.git"
+        ]
+    },
+    "twitter/SentenTree": {
+        "git": [
+            "https://github.com/twitter/SentenTree.git"
+        ],
+        "github": [
+            "https://github.com/twitter/SentenTree.git"
+        ]
+    },
+    "twitter/wordpress": {
+        "git": [
+            "https://github.com/twitter/wordpress.git"
+        ],
+        "github": [
+            "https://github.com/twitter/wordpress.git"
+        ]
+    },
+    "twitter/BreakoutDetection": {
+        "git": [
+            "https://github.com/twitter/BreakoutDetection.git"
+        ],
+        "github": [
+            "https://github.com/twitter/BreakoutDetection.git"
+        ]
+    },
+    "twitter/twitter-korean-text": {
+        "git": [
+            "https://github.com/twitter/twitter-korean-text.git"
+        ],
+        "github": [
+            "https://github.com/twitter/twitter-korean-text.git"
+        ]
+    },
+    "twitter/PerfTracepoint": {
+        "git": [
+            "https://github.com/twitter/PerfTracepoint.git"
+        ],
+        "github": [
+            "https://github.com/twitter/PerfTracepoint.git"
+        ]
+    },
+    "twitter/twemoji": {
+        "git": [
+            "https://github.com/twitter/twemoji.git"
+        ],
+        "github": [
+            "https://github.com/twitter/twemoji.git"
+        ]
+    },
+    "twitter/twitter-text": {
+        "git": [
+            "https://github.com/twitter/twitter-text.git"
+        ],
+        "github": [
+            "https://github.com/twitter/twitter-text.git"
+        ]
+    },
+    "twitter/AnomalyDetection": {
+        "git": [
+            "https://github.com/twitter/AnomalyDetection.git"
+        ],
+        "github": [
+            "https://github.com/twitter/AnomalyDetection.git"
+        ]
+    },
+    "twitter/scala-json": {
+        "git": [
+            "https://github.com/twitter/scala-json.git"
+        ],
+        "github": [
+            "https://github.com/twitter/scala-json.git"
+        ]
+    },
+    "twitter/d3kit": {
+        "git": [
+            "https://github.com/twitter/d3kit.git"
+        ],
+        "github": [
+            "https://github.com/twitter/d3kit.git"
+        ]
+    },
+    "twitter/pants": {
+        "git": [
+            "https://github.com/twitter/pants.git"
+        ],
+        "github": [
+            "https://github.com/twitter/pants.git"
+        ]
+    },
+    "twitter/bittern": {
+        "git": [
+            "https://github.com/twitter/bittern.git"
+        ],
+        "github": [
+            "https://github.com/twitter/bittern.git"
+        ]
+    },
+    "twitter/sslconfig": {
+        "git": [
+            "https://github.com/twitter/sslconfig.git"
+        ],
+        "github": [
+            "https://github.com/twitter/sslconfig.git"
+        ]
+    },
+    "twitter/unishark": {
+        "git": [
+            "https://github.com/twitter/unishark.git"
+        ],
+        "github": [
+            "https://github.com/twitter/unishark.git"
+        ]
+    },
+    "twitter/mysos": {
+        "git": [
+            "https://github.com/twitter/mysos.git"
+        ],
+        "github": [
+            "https://github.com/twitter/mysos.git"
+        ]
+    },
+    "twitter/twitter-kit-android": {
+        "git": [
+            "https://github.com/twitter/twitter-kit-android.git"
+        ],
+        "github": [
+            "https://github.com/twitter/twitter-kit-android.git"
+        ]
+    },
+    "twitter/whiskey": {
+        "git": [
+            "https://github.com/twitter/whiskey.git"
+        ],
+        "github": [
+            "https://github.com/twitter/whiskey.git"
+        ]
+    },
+    "twitter/cli-guide.js": {
+        "git": [
+            "https://github.com/twitter/cli-guide.js.git"
+        ],
+        "github": [
+            "https://github.com/twitter/cli-guide.js.git"
+        ]
+    },
+    "twitter/labella.js": {
+        "git": [
+            "https://github.com/twitter/labella.js.git"
+        ],
+        "github": [
+            "https://github.com/twitter/labella.js.git"
+        ]
+    },
+    "twitter/finatra-activator-http-seed": {
+        "git": [
+            "https://github.com/twitter/finatra-activator-http-seed.git"
+        ],
+        "github": [
+            "https://github.com/twitter/finatra-activator-http-seed.git"
+        ]
+    },
+    "twitter/scala-csp-config": {
+        "git": [
+            "https://github.com/twitter/scala-csp-config.git"
+        ],
+        "github": [
+            "https://github.com/twitter/scala-csp-config.git"
+        ]
+    },
+    "twitter/diffy": {
+        "git": [
+            "https://github.com/twitter/diffy.git"
+        ],
+        "github": [
+            "https://github.com/twitter/diffy.git"
+        ]
+    },
+    "twitter/watchman": {
+        "git": [
+            "https://github.com/twitter/watchman.git"
+        ],
+        "github": [
+            "https://github.com/twitter/watchman.git"
+        ]
+    },
+    "twitter/finatra-misc": {
+        "git": [
+            "https://github.com/twitter/finatra-misc.git"
+        ],
+        "github": [
+            "https://github.com/twitter/finatra-misc.git"
+        ]
+    },
+    "twitter/pelikan": {
+        "git": [
+            "https://github.com/twitter/pelikan.git"
+        ],
+        "github": [
+            "https://github.com/twitter/pelikan.git"
+        ]
+    },
+    "twitter/ccommon": {
+        "git": [
+            "https://github.com/twitter/ccommon.git"
+        ],
+        "github": [
+            "https://github.com/twitter/ccommon.git"
+        ]
+    },
+    "twitter/heron": {
+        "git": [
+            "https://github.com/twitter/heron.git"
+        ],
+        "github": [
+            "https://github.com/twitter/heron.git"
+        ]
+    },
+    "twitter/torch-autograd": {
+        "git": [
+            "https://github.com/twitter/torch-autograd.git"
+        ],
+        "github": [
+            "https://github.com/twitter/torch-autograd.git"
+        ]
+    },
+    "twitter/rpc-perf": {
+        "git": [
+            "https://github.com/twitter/rpc-perf.git"
+        ],
+        "github": [
+            "https://github.com/twitter/rpc-perf.git"
+        ]
+    },
+    "twitter/scoot": {
+        "git": [
+            "https://github.com/twitter/scoot.git"
+        ],
+        "github": [
+            "https://github.com/twitter/scoot.git"
+        ]
+    },
+    "twitter/second-control-probability-distributions": {
+        "git": [
+            "https://github.com/twitter/second-control-probability-distributions.git"
+        ],
+        "github": [
+            "https://github.com/twitter/second-control-probability-distributions.git"
+        ]
+    },
+    "twitter/torch-dataset": {
+        "git": [
+            "https://github.com/twitter/torch-dataset.git"
+        ],
+        "github": [
+            "https://github.com/twitter/torch-dataset.git"
+        ]
+    },
+    "twitter/torch-ipc": {
+        "git": [
+            "https://github.com/twitter/torch-ipc.git"
+        ],
+        "github": [
+            "https://github.com/twitter/torch-ipc.git"
+        ]
+    },
+    "twitter/torch-distlearn": {
+        "git": [
+            "https://github.com/twitter/torch-distlearn.git"
+        ],
+        "github": [
+            "https://github.com/twitter/torch-distlearn.git"
+        ]
+    },
+    "twitter/torch-thrift": {
+        "git": [
+            "https://github.com/twitter/torch-thrift.git"
+        ],
+        "github": [
+            "https://github.com/twitter/torch-thrift.git"
+        ]
+    },
+    "twitter/distributedlog": {
+        "git": [
+            "https://github.com/twitter/distributedlog.git"
+        ],
+        "github": [
+            "https://github.com/twitter/distributedlog.git"
+        ]
+    },
+    "twitter/GraphJet": {
+        "git": [
+            "https://github.com/twitter/GraphJet.git"
+        ],
+        "github": [
+            "https://github.com/twitter/GraphJet.git"
+        ]
+    },
+    "twitter/finatra-activator-thrift-seed": {
+        "git": [
+            "https://github.com/twitter/finatra-activator-thrift-seed.git"
+        ],
+        "github": [
+            "https://github.com/twitter/finatra-activator-thrift-seed.git"
+        ]
+    },
+    "twitter/fuse": {
+        "git": [
+            "https://github.com/twitter/fuse.git"
+        ],
+        "github": [
+            "https://github.com/twitter/fuse.git"
+        ]
+    },
+    "twitter/vireo": {
+        "git": [
+            "https://github.com/twitter/vireo.git"
+        ],
+        "github": [
+            "https://github.com/twitter/vireo.git"
+        ]
+    },
+    "twitter/ios-twitter-logging-service": {
+        "git": [
+            "https://github.com/twitter/ios-twitter-logging-service.git"
+        ],
+        "github": [
+            "https://github.com/twitter/ios-twitter-logging-service.git"
+        ]
+    },
+    "twitter/dodo": {
+        "git": [
+            "https://github.com/twitter/dodo.git"
+        ],
+        "github": [
+            "https://github.com/twitter/dodo.git"
+        ]
+    },
+    "twitter/analytics-infra-governance": {
+        "git": [
+            "https://github.com/twitter/analytics-infra-governance.git"
+        ],
+        "github": [
+            "https://github.com/twitter/analytics-infra-governance.git"
+        ]
+    },
+    "twitter/nodes": {
+        "git": [
+            "https://github.com/twitter/nodes.git"
+        ],
+        "github": [
+            "https://github.com/twitter/nodes.git"
+        ]
+    },
+    "twitter/torch-twrl": {
+        "git": [
+            "https://github.com/twitter/torch-twrl.git"
+        ],
+        "github": [
+            "https://github.com/twitter/torch-twrl.git"
+        ]
+    },
+    "twitter/meta-learning-lstm": {
+        "git": [
+            "https://github.com/twitter/meta-learning-lstm.git"
+        ],
+        "github": [
+            "https://github.com/twitter/meta-learning-lstm.git"
+        ]
+    },
+    "twitter/ios-twitter-image-pipeline": {
+        "git": [
+            "https://github.com/twitter/ios-twitter-image-pipeline.git"
+        ],
+        "github": [
+            "https://github.com/twitter/ios-twitter-image-pipeline.git"
+        ]
+    },
+    "twitter/groupcache": {
+        "git": [
+            "https://github.com/twitter/groupcache.git"
+        ],
+        "github": [
+            "https://github.com/twitter/groupcache.git"
+        ]
+    },
+    "twitter/torch-decisiontree": {
+        "git": [
+            "https://github.com/twitter/torch-decisiontree.git"
+        ],
+        "github": [
+            "https://github.com/twitter/torch-decisiontree.git"
+        ]
+    },
+    "twitter/twitter-kit-unity": {
+        "git": [
+            "https://github.com/twitter/twitter-kit-unity.git"
+        ],
+        "github": [
+            "https://github.com/twitter/twitter-kit-unity.git"
+        ]
+    },
+    "twitter/Serial": {
+        "git": [
+            "https://github.com/twitter/Serial.git"
+        ],
+        "github": [
+            "https://github.com/twitter/Serial.git"
+        ]
+    },
+    "twitter/reasonable-scala": {
+        "git": [
+            "https://github.com/twitter/reasonable-scala.git"
+        ],
+        "github": [
+            "https://github.com/twitter/reasonable-scala.git"
+        ]
+    },
+    "twitter/twitter-kit-ios": {
+        "git": [
+            "https://github.com/twitter/twitter-kit-ios.git"
+        ],
+        "github": [
+            "https://github.com/twitter/twitter-kit-ios.git"
+        ]
+    },
+    "twitter/ossdecks": {
+        "git": [
+            "https://github.com/twitter/ossdecks.git"
+        ],
+        "github": [
+            "https://github.com/twitter/ossdecks.git"
+        ]
+    },
+    "twitter/periscope-live-engagement-unity-sdk": {
+        "git": [
+            "https://github.com/twitter/periscope-live-engagement-unity-sdk.git"
+        ],
+        "github": [
+            "https://github.com/twitter/periscope-live-engagement-unity-sdk.git"
+        ]
+    },
+    "twitter/go-bindata": {
+        "git": [
+            "https://github.com/twitter/go-bindata.git"
+        ],
+        "github": [
+            "https://github.com/twitter/go-bindata.git"
+        ]
+    },
     "twitter-forks": {
         "git": [
             "https://github.com/twitter-forks/thrift.git",
@@ -379,6 +1555,302 @@
             "https://github.com/twitter-forks/draft-js.git"
         ]
     },
+    "twitter-forks/thrift": {
+        "git": [
+            "https://github.com/twitter-forks/thrift.git"
+        ],
+        "github": [
+            "https://github.com/twitter-forks/thrift.git"
+        ]
+    },
+    "twitter-forks/rubyenterpriseedition187-248": {
+        "git": [
+            "https://github.com/twitter-forks/rubyenterpriseedition187-248.git"
+        ],
+        "github": [
+            "https://github.com/twitter-forks/rubyenterpriseedition187-248.git"
+        ]
+    },
+    "twitter-forks/webrat": {
+        "git": [
+            "https://github.com/twitter-forks/webrat.git"
+        ],
+        "github": [
+            "https://github.com/twitter-forks/webrat.git"
+        ]
+    },
+    "twitter-forks/rails": {
+        "git": [
+            "https://github.com/twitter-forks/rails.git"
+        ],
+        "github": [
+            "https://github.com/twitter-forks/rails.git"
+        ]
+    },
+    "twitter-forks/ant-ivy": {
+        "git": [
+            "https://github.com/twitter-forks/ant-ivy.git"
+        ],
+        "github": [
+            "https://github.com/twitter-forks/ant-ivy.git"
+        ]
+    },
+    "twitter-forks/l-smash": {
+        "git": [
+            "https://github.com/twitter-forks/l-smash.git"
+        ],
+        "github": [
+            "https://github.com/twitter-forks/l-smash.git"
+        ]
+    },
+    "twitter-forks/zinc": {
+        "git": [
+            "https://github.com/twitter-forks/zinc.git"
+        ],
+        "github": [
+            "https://github.com/twitter-forks/zinc.git"
+        ]
+    },
+    "twitter-forks/sbt": {
+        "git": [
+            "https://github.com/twitter-forks/sbt.git"
+        ],
+        "github": [
+            "https://github.com/twitter-forks/sbt.git"
+        ]
+    },
+    "twitter-forks/statsite": {
+        "git": [
+            "https://github.com/twitter-forks/statsite.git"
+        ],
+        "github": [
+            "https://github.com/twitter-forks/statsite.git"
+        ]
+    },
+    "twitter-forks/fluent-plugin-s3": {
+        "git": [
+            "https://github.com/twitter-forks/fluent-plugin-s3.git"
+        ],
+        "github": [
+            "https://github.com/twitter-forks/fluent-plugin-s3.git"
+        ]
+    },
+    "twitter-forks/jmake": {
+        "git": [
+            "https://github.com/twitter-forks/jmake.git"
+        ],
+        "github": [
+            "https://github.com/twitter-forks/jmake.git"
+        ]
+    },
+    "twitter-forks/config": {
+        "git": [
+            "https://github.com/twitter-forks/config.git"
+        ],
+        "github": [
+            "https://github.com/twitter-forks/config.git"
+        ]
+    },
+    "twitter-forks/presto": {
+        "git": [
+            "https://github.com/twitter-forks/presto.git"
+        ],
+        "github": [
+            "https://github.com/twitter-forks/presto.git"
+        ]
+    },
+    "twitter-forks/bazel": {
+        "git": [
+            "https://github.com/twitter-forks/bazel.git"
+        ],
+        "github": [
+            "https://github.com/twitter-forks/bazel.git"
+        ]
+    },
+    "twitter-forks/hive": {
+        "git": [
+            "https://github.com/twitter-forks/hive.git"
+        ],
+        "github": [
+            "https://github.com/twitter-forks/hive.git"
+        ]
+    },
+    "twitter-forks/incrementalcompiler": {
+        "git": [
+            "https://github.com/twitter-forks/incrementalcompiler.git"
+        ],
+        "github": [
+            "https://github.com/twitter-forks/incrementalcompiler.git"
+        ]
+    },
+    "twitter-forks/io": {
+        "git": [
+            "https://github.com/twitter-forks/io.git"
+        ],
+        "github": [
+            "https://github.com/twitter-forks/io.git"
+        ]
+    },
+    "twitter-forks/parquet-mr": {
+        "git": [
+            "https://github.com/twitter-forks/parquet-mr.git"
+        ],
+        "github": [
+            "https://github.com/twitter-forks/parquet-mr.git"
+        ]
+    },
+    "twitter-forks/cascading": {
+        "git": [
+            "https://github.com/twitter-forks/cascading.git"
+        ],
+        "github": [
+            "https://github.com/twitter-forks/cascading.git"
+        ]
+    },
+    "twitter-forks/okhttp": {
+        "git": [
+            "https://github.com/twitter-forks/okhttp.git"
+        ],
+        "github": [
+            "https://github.com/twitter-forks/okhttp.git"
+        ]
+    },
+    "twitter-forks/torch7": {
+        "git": [
+            "https://github.com/twitter-forks/torch7.git"
+        ],
+        "github": [
+            "https://github.com/twitter-forks/torch7.git"
+        ]
+    },
+    "twitter-forks/nn": {
+        "git": [
+            "https://github.com/twitter-forks/nn.git"
+        ],
+        "github": [
+            "https://github.com/twitter-forks/nn.git"
+        ]
+    },
+    "twitter-forks/cunn": {
+        "git": [
+            "https://github.com/twitter-forks/cunn.git"
+        ],
+        "github": [
+            "https://github.com/twitter-forks/cunn.git"
+        ]
+    },
+    "twitter-forks/cutorch": {
+        "git": [
+            "https://github.com/twitter-forks/cutorch.git"
+        ],
+        "github": [
+            "https://github.com/twitter-forks/cutorch.git"
+        ]
+    },
+    "twitter-forks/cudnn.torch": {
+        "git": [
+            "https://github.com/twitter-forks/cudnn.torch.git"
+        ],
+        "github": [
+            "https://github.com/twitter-forks/cudnn.torch.git"
+        ]
+    },
+    "twitter-forks/nngraph": {
+        "git": [
+            "https://github.com/twitter-forks/nngraph.git"
+        ],
+        "github": [
+            "https://github.com/twitter-forks/nngraph.git"
+        ]
+    },
+    "twitter-forks/rnn": {
+        "git": [
+            "https://github.com/twitter-forks/rnn.git"
+        ],
+        "github": [
+            "https://github.com/twitter-forks/rnn.git"
+        ]
+    },
+    "twitter-forks/dpnn": {
+        "git": [
+            "https://github.com/twitter-forks/dpnn.git"
+        ],
+        "github": [
+            "https://github.com/twitter-forks/dpnn.git"
+        ]
+    },
+    "twitter-forks/lua---nnx": {
+        "git": [
+            "https://github.com/twitter-forks/lua---nnx.git"
+        ],
+        "github": [
+            "https://github.com/twitter-forks/lua---nnx.git"
+        ]
+    },
+    "twitter-forks/torchx": {
+        "git": [
+            "https://github.com/twitter-forks/torchx.git"
+        ],
+        "github": [
+            "https://github.com/twitter-forks/torchx.git"
+        ]
+    },
+    "twitter-forks/spark": {
+        "git": [
+            "https://github.com/twitter-forks/spark.git"
+        ],
+        "github": [
+            "https://github.com/twitter-forks/spark.git"
+        ]
+    },
+    "twitter-forks/lyaml": {
+        "git": [
+            "https://github.com/twitter-forks/lyaml.git"
+        ],
+        "github": [
+            "https://github.com/twitter-forks/lyaml.git"
+        ]
+    },
+    "twitter-forks/zeppelin": {
+        "git": [
+            "https://github.com/twitter-forks/zeppelin.git"
+        ],
+        "github": [
+            "https://github.com/twitter-forks/zeppelin.git"
+        ]
+    },
+    "twitter-forks/reactive-audit": {
+        "git": [
+            "https://github.com/twitter-forks/reactive-audit.git"
+        ],
+        "github": [
+            "https://github.com/twitter-forks/reactive-audit.git"
+        ]
+    },
+    "twitter-forks/graphql-language-service": {
+        "git": [
+            "https://github.com/twitter-forks/graphql-language-service.git"
+        ],
+        "github": [
+            "https://github.com/twitter-forks/graphql-language-service.git"
+        ]
+    },
+    "twitter-forks/vscode-graphql": {
+        "git": [
+            "https://github.com/twitter-forks/vscode-graphql.git"
+        ],
+        "github": [
+            "https://github.com/twitter-forks/vscode-graphql.git"
+        ]
+    },
+    "twitter-forks/draft-js": {
+        "git": [
+            "https://github.com/twitter-forks/draft-js.git"
+        ],
+        "github": [
+            "https://github.com/twitter-forks/draft-js.git"
+        ]
+    },
     "twitter-archive": {
         "git": [
             "https://github.com/twitter-archive/kestrel.git",
@@ -426,6 +1898,182 @@
             "https://github.com/twitter-archive/sbt-scrooge.git",
             "https://github.com/twitter-archive/libkestrel.git",
             "https://github.com/twitter-archive/libcrunch.git",
+            "https://github.com/twitter-archive/git.git"
+        ]
+    },
+    "twitter-archive/kestrel": {
+        "git": [
+            "https://github.com/twitter-archive/kestrel.git"
+        ],
+        "github": [
+            "https://github.com/twitter-archive/kestrel.git"
+        ]
+    },
+    "twitter-archive/grabby-hands": {
+        "git": [
+            "https://github.com/twitter-archive/grabby-hands.git"
+        ],
+        "github": [
+            "https://github.com/twitter-archive/grabby-hands.git"
+        ]
+    },
+    "twitter-archive/gizzard": {
+        "git": [
+            "https://github.com/twitter-archive/gizzard.git"
+        ],
+        "github": [
+            "https://github.com/twitter-archive/gizzard.git"
+        ]
+    },
+    "twitter-archive/flockdb": {
+        "git": [
+            "https://github.com/twitter-archive/flockdb.git"
+        ],
+        "github": [
+            "https://github.com/twitter-archive/flockdb.git"
+        ]
+    },
+    "twitter-archive/flockdb-client": {
+        "git": [
+            "https://github.com/twitter-archive/flockdb-client.git"
+        ],
+        "github": [
+            "https://github.com/twitter-archive/flockdb-client.git"
+        ]
+    },
+    "twitter-archive/haplocheirus": {
+        "git": [
+            "https://github.com/twitter-archive/haplocheirus.git"
+        ],
+        "github": [
+            "https://github.com/twitter-archive/haplocheirus.git"
+        ]
+    },
+    "twitter-archive/gizzmo": {
+        "git": [
+            "https://github.com/twitter-archive/gizzmo.git"
+        ],
+        "github": [
+            "https://github.com/twitter-archive/gizzmo.git"
+        ]
+    },
+    "twitter-archive/twitterActors": {
+        "git": [
+            "https://github.com/twitter-archive/twitterActors.git"
+        ],
+        "github": [
+            "https://github.com/twitter-archive/twitterActors.git"
+        ]
+    },
+    "twitter-archive/scala-zookeeper-client": {
+        "git": [
+            "https://github.com/twitter-archive/scala-zookeeper-client.git"
+        ],
+        "github": [
+            "https://github.com/twitter-archive/scala-zookeeper-client.git"
+        ]
+    },
+    "twitter-archive/twitcher": {
+        "git": [
+            "https://github.com/twitter-archive/twitcher.git"
+        ],
+        "github": [
+            "https://github.com/twitter-archive/twitcher.git"
+        ]
+    },
+    "twitter-archive/killdeer": {
+        "git": [
+            "https://github.com/twitter-archive/killdeer.git"
+        ],
+        "github": [
+            "https://github.com/twitter-archive/killdeer.git"
+        ]
+    },
+    "twitter-archive/querulous": {
+        "git": [
+            "https://github.com/twitter-archive/querulous.git"
+        ],
+        "github": [
+            "https://github.com/twitter-archive/querulous.git"
+        ]
+    },
+    "twitter-archive/kestrel-client": {
+        "git": [
+            "https://github.com/twitter-archive/kestrel-client.git"
+        ],
+        "github": [
+            "https://github.com/twitter-archive/kestrel-client.git"
+        ]
+    },
+    "twitter-archive/twitter-text-js": {
+        "git": [
+            "https://github.com/twitter-archive/twitter-text-js.git"
+        ],
+        "github": [
+            "https://github.com/twitter-archive/twitter-text-js.git"
+        ]
+    },
+    "twitter-archive/chainsaw": {
+        "git": [
+            "https://github.com/twitter-archive/chainsaw.git"
+        ],
+        "github": [
+            "https://github.com/twitter-archive/chainsaw.git"
+        ]
+    },
+    "twitter-archive/scala-bootstrapper": {
+        "git": [
+            "https://github.com/twitter-archive/scala-bootstrapper.git"
+        ],
+        "github": [
+            "https://github.com/twitter-archive/scala-bootstrapper.git"
+        ]
+    },
+    "twitter-archive/sbt-thrift": {
+        "git": [
+            "https://github.com/twitter-archive/sbt-thrift.git"
+        ],
+        "github": [
+            "https://github.com/twitter-archive/sbt-thrift.git"
+        ]
+    },
+    "twitter-archive/Rowz": {
+        "git": [
+            "https://github.com/twitter-archive/Rowz.git"
+        ],
+        "github": [
+            "https://github.com/twitter-archive/Rowz.git"
+        ]
+    },
+    "twitter-archive/sbt-scrooge": {
+        "git": [
+            "https://github.com/twitter-archive/sbt-scrooge.git"
+        ],
+        "github": [
+            "https://github.com/twitter-archive/sbt-scrooge.git"
+        ]
+    },
+    "twitter-archive/libkestrel": {
+        "git": [
+            "https://github.com/twitter-archive/libkestrel.git"
+        ],
+        "github": [
+            "https://github.com/twitter-archive/libkestrel.git"
+        ]
+    },
+    "twitter-archive/libcrunch": {
+        "git": [
+            "https://github.com/twitter-archive/libcrunch.git"
+        ],
+        "github": [
+            "https://github.com/twitter-archive/libcrunch.git"
+        ]
+    },
+    "twitter-archive/git": {
+        "git": [
+            "https://github.com/twitter-archive/git.git"
+        ],
+        "github": [
             "https://github.com/twitter-archive/git.git"
         ]
     },
@@ -534,6 +2182,414 @@
             "https://github.com/twitterdev/search-tweets-ruby.git",
             "https://github.com/twitterdev/SnowBotDev.git",
             "https://github.com/twitterdev/do_more_with_twitter_data.git",
+            "https://github.com/twitterdev/account-activity-dashboard.git"
+        ]
+    },
+    "twitterdev/twttr-kinesis": {
+        "git": [
+            "https://github.com/twitterdev/twttr-kinesis.git"
+        ],
+        "github": [
+            "https://github.com/twitterdev/twttr-kinesis.git"
+        ]
+    },
+    "twitterdev/twitter-realtime-voting": {
+        "git": [
+            "https://github.com/twitterdev/twitter-realtime-voting.git"
+        ],
+        "github": [
+            "https://github.com/twitterdev/twitter-realtime-voting.git"
+        ]
+    },
+    "twitterdev/cards-player-samples": {
+        "git": [
+            "https://github.com/twitterdev/cards-player-samples.git"
+        ],
+        "github": [
+            "https://github.com/twitterdev/cards-player-samples.git"
+        ]
+    },
+    "twitterdev/django-rest-apis": {
+        "git": [
+            "https://github.com/twitterdev/django-rest-apis.git"
+        ],
+        "github": [
+            "https://github.com/twitterdev/django-rest-apis.git"
+        ]
+    },
+    "twitterdev/android-samples": {
+        "git": [
+            "https://github.com/twitterdev/android-samples.git"
+        ],
+        "github": [
+            "https://github.com/twitterdev/android-samples.git"
+        ]
+    },
+    "twitterdev/ruby-app-tweetmap": {
+        "git": [
+            "https://github.com/twitterdev/ruby-app-tweetmap.git"
+        ],
+        "github": [
+            "https://github.com/twitterdev/ruby-app-tweetmap.git"
+        ]
+    },
+    "twitterdev/user-matching-campaign": {
+        "git": [
+            "https://github.com/twitterdev/user-matching-campaign.git"
+        ],
+        "github": [
+            "https://github.com/twitterdev/user-matching-campaign.git"
+        ]
+    },
+    "twitterdev/historator": {
+        "git": [
+            "https://github.com/twitterdev/historator.git"
+        ],
+        "github": [
+            "https://github.com/twitterdev/historator.git"
+        ]
+    },
+    "twitterdev/sample-angular-node": {
+        "git": [
+            "https://github.com/twitterdev/sample-angular-node.git"
+        ],
+        "github": [
+            "https://github.com/twitterdev/sample-angular-node.git"
+        ]
+    },
+    "twitterdev/node-timeline-visualizations": {
+        "git": [
+            "https://github.com/twitterdev/node-timeline-visualizations.git"
+        ],
+        "github": [
+            "https://github.com/twitterdev/node-timeline-visualizations.git"
+        ]
+    },
+    "twitterdev/rails-historical-api-demo": {
+        "git": [
+            "https://github.com/twitterdev/rails-historical-api-demo.git"
+        ],
+        "github": [
+            "https://github.com/twitterdev/rails-historical-api-demo.git"
+        ]
+    },
+    "twitterdev/ton-upload": {
+        "git": [
+            "https://github.com/twitterdev/ton-upload.git"
+        ],
+        "github": [
+            "https://github.com/twitterdev/ton-upload.git"
+        ]
+    },
+    "twitterdev/sinatra-cf-twitter": {
+        "git": [
+            "https://github.com/twitterdev/sinatra-cf-twitter.git"
+        ],
+        "github": [
+            "https://github.com/twitterdev/sinatra-cf-twitter.git"
+        ]
+    },
+    "twitterdev/spotatweet": {
+        "git": [
+            "https://github.com/twitterdev/spotatweet.git"
+        ],
+        "github": [
+            "https://github.com/twitterdev/spotatweet.git"
+        ]
+    },
+    "twitterdev/twitter-stream-globe": {
+        "git": [
+            "https://github.com/twitterdev/twitter-stream-globe.git"
+        ],
+        "github": [
+            "https://github.com/twitterdev/twitter-stream-globe.git"
+        ]
+    },
+    "twitterdev/api-rosetta-code": {
+        "git": [
+            "https://github.com/twitterdev/api-rosetta-code.git"
+        ],
+        "github": [
+            "https://github.com/twitterdev/api-rosetta-code.git"
+        ]
+    },
+    "twitterdev/ads-platform-tools": {
+        "git": [
+            "https://github.com/twitterdev/ads-platform-tools.git"
+        ],
+        "github": [
+            "https://github.com/twitterdev/ads-platform-tools.git"
+        ]
+    },
+    "twitterdev/tweather": {
+        "git": [
+            "https://github.com/twitterdev/tweather.git"
+        ],
+        "github": [
+            "https://github.com/twitterdev/tweather.git"
+        ]
+    },
+    "twitterdev/chrome-extension-collections": {
+        "git": [
+            "https://github.com/twitterdev/chrome-extension-collections.git"
+        ],
+        "github": [
+            "https://github.com/twitterdev/chrome-extension-collections.git"
+        ]
+    },
+    "twitterdev/TwitterKitSample": {
+        "git": [
+            "https://github.com/twitterdev/TwitterKitSample.git"
+        ],
+        "github": [
+            "https://github.com/twitterdev/TwitterKitSample.git"
+        ]
+    },
+    "twitterdev/web-recipes": {
+        "git": [
+            "https://github.com/twitterdev/web-recipes.git"
+        ],
+        "github": [
+            "https://github.com/twitterdev/web-recipes.git"
+        ]
+    },
+    "twitterdev/twitter-for-bigquery": {
+        "git": [
+            "https://github.com/twitterdev/twitter-for-bigquery.git"
+        ],
+        "github": [
+            "https://github.com/twitterdev/twitter-for-bigquery.git"
+        ]
+    },
+    "twitterdev/tweet-search": {
+        "git": [
+            "https://github.com/twitterdev/tweet-search.git"
+        ],
+        "github": [
+            "https://github.com/twitterdev/tweet-search.git"
+        ]
+    },
+    "twitterdev/streaming-demos-node": {
+        "git": [
+            "https://github.com/twitterdev/streaming-demos-node.git"
+        ],
+        "github": [
+            "https://github.com/twitterdev/streaming-demos-node.git"
+        ]
+    },
+    "twitterdev/collections-webserver": {
+        "git": [
+            "https://github.com/twitterdev/collections-webserver.git"
+        ],
+        "github": [
+            "https://github.com/twitterdev/collections-webserver.git"
+        ]
+    },
+    "twitterdev/live-event-android": {
+        "git": [
+            "https://github.com/twitterdev/live-event-android.git"
+        ],
+        "github": [
+            "https://github.com/twitterdev/live-event-android.git"
+        ]
+    },
+    "twitterdev/Photobooth": {
+        "git": [
+            "https://github.com/twitterdev/Photobooth.git"
+        ],
+        "github": [
+            "https://github.com/twitterdev/Photobooth.git"
+        ]
+    },
+    "twitterdev/twitterkit-timelines-ios": {
+        "git": [
+            "https://github.com/twitterdev/twitterkit-timelines-ios.git"
+        ],
+        "github": [
+            "https://github.com/twitterdev/twitterkit-timelines-ios.git"
+        ]
+    },
+    "twitterdev/twitter-streaming-blink1": {
+        "git": [
+            "https://github.com/twitterdev/twitter-streaming-blink1.git"
+        ],
+        "github": [
+            "https://github.com/twitterdev/twitter-streaming-blink1.git"
+        ]
+    },
+    "twitterdev/chrome-extension-tweetbar": {
+        "git": [
+            "https://github.com/twitterdev/chrome-extension-tweetbar.git"
+        ],
+        "github": [
+            "https://github.com/twitterdev/chrome-extension-tweetbar.git"
+        ]
+    },
+    "twitterdev/twitter-ruby-ads-sdk": {
+        "git": [
+            "https://github.com/twitterdev/twitter-ruby-ads-sdk.git"
+        ],
+        "github": [
+            "https://github.com/twitterdev/twitter-ruby-ads-sdk.git"
+        ]
+    },
+    "twitterdev/twitter-python-ads-sdk": {
+        "git": [
+            "https://github.com/twitterdev/twitter-python-ads-sdk.git"
+        ],
+        "github": [
+            "https://github.com/twitterdev/twitter-python-ads-sdk.git"
+        ]
+    },
+    "twitterdev/twitter-leaderboard": {
+        "git": [
+            "https://github.com/twitterdev/twitter-leaderboard.git"
+        ],
+        "github": [
+            "https://github.com/twitterdev/twitter-leaderboard.git"
+        ]
+    },
+    "twitterdev/analytics-tag-check": {
+        "git": [
+            "https://github.com/twitterdev/analytics-tag-check.git"
+        ],
+        "github": [
+            "https://github.com/twitterdev/analytics-tag-check.git"
+        ]
+    },
+    "twitterdev/Gnip-Search-API-Utilities": {
+        "git": [
+            "https://github.com/twitterdev/Gnip-Search-API-Utilities.git"
+        ],
+        "github": [
+            "https://github.com/twitterdev/Gnip-Search-API-Utilities.git"
+        ]
+    },
+    "twitterdev/leadgencard-endpoint": {
+        "git": [
+            "https://github.com/twitterdev/leadgencard-endpoint.git"
+        ],
+        "github": [
+            "https://github.com/twitterdev/leadgencard-endpoint.git"
+        ]
+    },
+    "twitterdev/audience-api-client-ruby": {
+        "git": [
+            "https://github.com/twitterdev/audience-api-client-ruby.git"
+        ],
+        "github": [
+            "https://github.com/twitterdev/audience-api-client-ruby.git"
+        ]
+    },
+    "twitterdev/engagement-api-client-ruby": {
+        "git": [
+            "https://github.com/twitterdev/engagement-api-client-ruby.git"
+        ],
+        "github": [
+            "https://github.com/twitterdev/engagement-api-client-ruby.git"
+        ]
+    },
+    "twitterdev/data-ads-sample": {
+        "git": [
+            "https://github.com/twitterdev/data-ads-sample.git"
+        ],
+        "github": [
+            "https://github.com/twitterdev/data-ads-sample.git"
+        ]
+    },
+    "twitterdev/gnip-python-sdk": {
+        "git": [
+            "https://github.com/twitterdev/gnip-python-sdk.git"
+        ],
+        "github": [
+            "https://github.com/twitterdev/gnip-python-sdk.git"
+        ]
+    },
+    "twitterdev/feedback-api-backfill": {
+        "git": [
+            "https://github.com/twitterdev/feedback-api-backfill.git"
+        ],
+        "github": [
+            "https://github.com/twitterdev/feedback-api-backfill.git"
+        ]
+    },
+    "twitterdev/preview-docs_feedback-api": {
+        "git": [
+            "https://github.com/twitterdev/preview-docs_feedback-api.git"
+        ],
+        "github": [
+            "https://github.com/twitterdev/preview-docs_feedback-api.git"
+        ]
+    },
+    "twitterdev/large-video-upload-python": {
+        "git": [
+            "https://github.com/twitterdev/large-video-upload-python.git"
+        ],
+        "github": [
+            "https://github.com/twitterdev/large-video-upload-python.git"
+        ]
+    },
+    "twitterdev/tweet-updates": {
+        "git": [
+            "https://github.com/twitterdev/tweet-updates.git"
+        ],
+        "github": [
+            "https://github.com/twitterdev/tweet-updates.git"
+        ]
+    },
+    "twitterdev/twitter-webhook-boilerplate-node": {
+        "git": [
+            "https://github.com/twitterdev/twitter-webhook-boilerplate-node.git"
+        ],
+        "github": [
+            "https://github.com/twitterdev/twitter-webhook-boilerplate-node.git"
+        ]
+    },
+    "twitterdev/tweet_parser": {
+        "git": [
+            "https://github.com/twitterdev/tweet_parser.git"
+        ],
+        "github": [
+            "https://github.com/twitterdev/tweet_parser.git"
+        ]
+    },
+    "twitterdev/search-tweets-python": {
+        "git": [
+            "https://github.com/twitterdev/search-tweets-python.git"
+        ],
+        "github": [
+            "https://github.com/twitterdev/search-tweets-python.git"
+        ]
+    },
+    "twitterdev/search-tweets-ruby": {
+        "git": [
+            "https://github.com/twitterdev/search-tweets-ruby.git"
+        ],
+        "github": [
+            "https://github.com/twitterdev/search-tweets-ruby.git"
+        ]
+    },
+    "twitterdev/SnowBotDev": {
+        "git": [
+            "https://github.com/twitterdev/SnowBotDev.git"
+        ],
+        "github": [
+            "https://github.com/twitterdev/SnowBotDev.git"
+        ]
+    },
+    "twitterdev/do_more_with_twitter_data": {
+        "git": [
+            "https://github.com/twitterdev/do_more_with_twitter_data.git"
+        ],
+        "github": [
+            "https://github.com/twitterdev/do_more_with_twitter_data.git"
+        ]
+    },
+    "twitterdev/account-activity-dashboard": {
+        "git": [
+            "https://github.com/twitterdev/account-activity-dashboard.git"
+        ],
+        "github": [
             "https://github.com/twitterdev/account-activity-dashboard.git"
         ]
     },
@@ -757,6 +2813,862 @@
             "https://github.com/twitter-university/android-essentials-2015-04-13.git"
         ]
     },
+    "twitter-university/LearningAndroidYamba": {
+        "git": [
+            "https://github.com/twitter-university/LearningAndroidYamba.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/LearningAndroidYamba.git"
+        ]
+    },
+    "twitter-university/android-code": {
+        "git": [
+            "https://github.com/twitter-university/android-code.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/android-code.git"
+        ]
+    },
+    "twitter-university/yamba": {
+        "git": [
+            "https://github.com/twitter-university/yamba.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/yamba.git"
+        ]
+    },
+    "twitter-university/yamba-doc": {
+        "git": [
+            "https://github.com/twitter-university/yamba-doc.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/yamba-doc.git"
+        ]
+    },
+    "twitter-university/tools": {
+        "git": [
+            "https://github.com/twitter-university/tools.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/tools.git"
+        ]
+    },
+    "twitter-university/external": {
+        "git": [
+            "https://github.com/twitter-university/external.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/external.git"
+        ]
+    },
+    "twitter-university/AddressBook": {
+        "git": [
+            "https://github.com/twitter-university/AddressBook.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/AddressBook.git"
+        ]
+    },
+    "twitter-university/yamba-misc": {
+        "git": [
+            "https://github.com/twitter-university/yamba-misc.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/yamba-misc.git"
+        ]
+    },
+    "twitter-university/sforums": {
+        "git": [
+            "https://github.com/twitter-university/sforums.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/sforums.git"
+        ]
+    },
+    "twitter-university/FibonacciNative": {
+        "git": [
+            "https://github.com/twitter-university/FibonacciNative.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/FibonacciNative.git"
+        ]
+    },
+    "twitter-university/AudioPlayerDemo": {
+        "git": [
+            "https://github.com/twitter-university/AudioPlayerDemo.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/AudioPlayerDemo.git"
+        ]
+    },
+    "twitter-university/AudioRecorderDemo": {
+        "git": [
+            "https://github.com/twitter-university/AudioRecorderDemo.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/AudioRecorderDemo.git"
+        ]
+    },
+    "twitter-university/PhotoCaptureDemo": {
+        "git": [
+            "https://github.com/twitter-university/PhotoCaptureDemo.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/PhotoCaptureDemo.git"
+        ]
+    },
+    "twitter-university/VideoCaptureDemo": {
+        "git": [
+            "https://github.com/twitter-university/VideoCaptureDemo.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/VideoCaptureDemo.git"
+        ]
+    },
+    "twitter-university/SensorDemo": {
+        "git": [
+            "https://github.com/twitter-university/SensorDemo.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/SensorDemo.git"
+        ]
+    },
+    "twitter-university/RssDemo": {
+        "git": [
+            "https://github.com/twitter-university/RssDemo.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/RssDemo.git"
+        ]
+    },
+    "twitter-university/DevicePolicyDemo": {
+        "git": [
+            "https://github.com/twitter-university/DevicePolicyDemo.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/DevicePolicyDemo.git"
+        ]
+    },
+    "twitter-university/SecureNote": {
+        "git": [
+            "https://github.com/twitter-university/SecureNote.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/SecureNote.git"
+        ]
+    },
+    "twitter-university/FibonacciBinderDemo": {
+        "git": [
+            "https://github.com/twitter-university/FibonacciBinderDemo.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/FibonacciBinderDemo.git"
+        ]
+    },
+    "twitter-university/FibonacciAsyncBinderDemo": {
+        "git": [
+            "https://github.com/twitter-university/FibonacciAsyncBinderDemo.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/FibonacciAsyncBinderDemo.git"
+        ]
+    },
+    "twitter-university/AntiMalware": {
+        "git": [
+            "https://github.com/twitter-university/AntiMalware.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/AntiMalware.git"
+        ]
+    },
+    "twitter-university/alpha": {
+        "git": [
+            "https://github.com/twitter-university/alpha.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/alpha.git"
+        ]
+    },
+    "twitter-university/alpha_sdk_addon": {
+        "git": [
+            "https://github.com/twitter-university/alpha_sdk_addon.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/alpha_sdk_addon.git"
+        ]
+    },
+    "twitter-university/AndroidRecoveryDemo": {
+        "git": [
+            "https://github.com/twitter-university/AndroidRecoveryDemo.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/AndroidRecoveryDemo.git"
+        ]
+    },
+    "twitter-university/LifecycleDemo": {
+        "git": [
+            "https://github.com/twitter-university/LifecycleDemo.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/LifecycleDemo.git"
+        ]
+    },
+    "twitter-university/ParserLib": {
+        "git": [
+            "https://github.com/twitter-university/ParserLib.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/ParserLib.git"
+        ]
+    },
+    "twitter-university/LogNative": {
+        "git": [
+            "https://github.com/twitter-university/LogNative.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/LogNative.git"
+        ]
+    },
+    "twitter-university/LogBinderDemo": {
+        "git": [
+            "https://github.com/twitter-university/LogBinderDemo.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/LogBinderDemo.git"
+        ]
+    },
+    "twitter-university/stream-webapp": {
+        "git": [
+            "https://github.com/twitter-university/stream-webapp.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/stream-webapp.git"
+        ]
+    },
+    "twitter-university/AudioTrackPlayerDemo": {
+        "git": [
+            "https://github.com/twitter-university/AudioTrackPlayerDemo.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/AudioTrackPlayerDemo.git"
+        ]
+    },
+    "twitter-university/plato": {
+        "git": [
+            "https://github.com/twitter-university/plato.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/plato.git"
+        ]
+    },
+    "twitter-university/Camera": {
+        "git": [
+            "https://github.com/twitter-university/Camera.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/Camera.git"
+        ]
+    },
+    "twitter-university/JniExamples": {
+        "git": [
+            "https://github.com/twitter-university/JniExamples.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/JniExamples.git"
+        ]
+    },
+    "twitter-university/YambaClientLib": {
+        "git": [
+            "https://github.com/twitter-university/YambaClientLib.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/YambaClientLib.git"
+        ]
+    },
+    "twitter-university/HelloAndroid": {
+        "git": [
+            "https://github.com/twitter-university/HelloAndroid.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/HelloAndroid.git"
+        ]
+    },
+    "twitter-university/cdk-old": {
+        "git": [
+            "https://github.com/twitter-university/cdk-old.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/cdk-old.git"
+        ]
+    },
+    "twitter-university/StreamerWeb": {
+        "git": [
+            "https://github.com/twitter-university/StreamerWeb.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/StreamerWeb.git"
+        ]
+    },
+    "twitter-university/filez": {
+        "git": [
+            "https://github.com/twitter-university/filez.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/filez.git"
+        ]
+    },
+    "twitter-university/BluetoothScanner": {
+        "git": [
+            "https://github.com/twitter-university/BluetoothScanner.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/BluetoothScanner.git"
+        ]
+    },
+    "twitter-university/LoginWatcher": {
+        "git": [
+            "https://github.com/twitter-university/LoginWatcher.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/LoginWatcher.git"
+        ]
+    },
+    "twitter-university/WifiInfo": {
+        "git": [
+            "https://github.com/twitter-university/WifiInfo.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/WifiInfo.git"
+        ]
+    },
+    "twitter-university/AndroidProjectTemplate": {
+        "git": [
+            "https://github.com/twitter-university/AndroidProjectTemplate.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/AndroidProjectTemplate.git"
+        ]
+    },
+    "twitter-university/WifiAnalyzer": {
+        "git": [
+            "https://github.com/twitter-university/WifiAnalyzer.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/WifiAnalyzer.git"
+        ]
+    },
+    "twitter-university/UnitConverter": {
+        "git": [
+            "https://github.com/twitter-university/UnitConverter.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/UnitConverter.git"
+        ]
+    },
+    "twitter-university/UnitConverterTest": {
+        "git": [
+            "https://github.com/twitter-university/UnitConverterTest.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/UnitConverterTest.git"
+        ]
+    },
+    "twitter-university/CurrencyConverter": {
+        "git": [
+            "https://github.com/twitter-university/CurrencyConverter.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/CurrencyConverter.git"
+        ]
+    },
+    "twitter-university/CurrencyConverterTest": {
+        "git": [
+            "https://github.com/twitter-university/CurrencyConverterTest.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/CurrencyConverterTest.git"
+        ]
+    },
+    "twitter-university/Compass": {
+        "git": [
+            "https://github.com/twitter-university/Compass.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/Compass.git"
+        ]
+    },
+    "twitter-university/Stream": {
+        "git": [
+            "https://github.com/twitter-university/Stream.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/Stream.git"
+        ]
+    },
+    "twitter-university/WifiLab": {
+        "git": [
+            "https://github.com/twitter-university/WifiLab.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/WifiLab.git"
+        ]
+    },
+    "twitter-university/EnterpriseAndroidDemo": {
+        "git": [
+            "https://github.com/twitter-university/EnterpriseAndroidDemo.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/EnterpriseAndroidDemo.git"
+        ]
+    },
+    "twitter-university/AuldLangSyne": {
+        "git": [
+            "https://github.com/twitter-university/AuldLangSyne.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/AuldLangSyne.git"
+        ]
+    },
+    "twitter-university/KitchenSink": {
+        "git": [
+            "https://github.com/twitter-university/KitchenSink.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/KitchenSink.git"
+        ]
+    },
+    "twitter-university/AndroidConcurrency": {
+        "git": [
+            "https://github.com/twitter-university/AndroidConcurrency.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/AndroidConcurrency.git"
+        ]
+    },
+    "twitter-university/cdk-quiz": {
+        "git": [
+            "https://github.com/twitter-university/cdk-quiz.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/cdk-quiz.git"
+        ]
+    },
+    "twitter-university/webfilez": {
+        "git": [
+            "https://github.com/twitter-university/webfilez.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/webfilez.git"
+        ]
+    },
+    "twitter-university/webauthz": {
+        "git": [
+            "https://github.com/twitter-university/webauthz.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/webauthz.git"
+        ]
+    },
+    "twitter-university/yamba-federation": {
+        "git": [
+            "https://github.com/twitter-university/yamba-federation.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/yamba-federation.git"
+        ]
+    },
+    "twitter-university/Clock": {
+        "git": [
+            "https://github.com/twitter-university/Clock.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/Clock.git"
+        ]
+    },
+    "twitter-university/HelloHoney": {
+        "git": [
+            "https://github.com/twitter-university/HelloHoney.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/HelloHoney.git"
+        ]
+    },
+    "twitter-university/FragDemo": {
+        "git": [
+            "https://github.com/twitter-university/FragDemo.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/FragDemo.git"
+        ]
+    },
+    "twitter-university/TechTV": {
+        "git": [
+            "https://github.com/twitter-university/TechTV.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/TechTV.git"
+        ]
+    },
+    "twitter-university/TemplateProject": {
+        "git": [
+            "https://github.com/twitter-university/TemplateProject.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/TemplateProject.git"
+        ]
+    },
+    "twitter-university/restful-java": {
+        "git": [
+            "https://github.com/twitter-university/restful-java.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/restful-java.git"
+        ]
+    },
+    "twitter-university/coursedex-ui": {
+        "git": [
+            "https://github.com/twitter-university/coursedex-ui.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/coursedex-ui.git"
+        ]
+    },
+    "twitter-university/Tricoder": {
+        "git": [
+            "https://github.com/twitter-university/Tricoder.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/Tricoder.git"
+        ]
+    },
+    "twitter-university/ContactDialer": {
+        "git": [
+            "https://github.com/twitter-university/ContactDialer.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/ContactDialer.git"
+        ]
+    },
+    "twitter-university/LogContentProviderDemo": {
+        "git": [
+            "https://github.com/twitter-university/LogContentProviderDemo.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/LogContentProviderDemo.git"
+        ]
+    },
+    "twitter-university/MyDex": {
+        "git": [
+            "https://github.com/twitter-university/MyDex.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/MyDex.git"
+        ]
+    },
+    "twitter-university/oscon": {
+        "git": [
+            "https://github.com/twitter-university/oscon.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/oscon.git"
+        ]
+    },
+    "twitter-university/android-bootcamp-2013-09-09": {
+        "git": [
+            "https://github.com/twitter-university/android-bootcamp-2013-09-09.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/android-bootcamp-2013-09-09.git"
+        ]
+    },
+    "twitter-university/FibonacciNativeProject": {
+        "git": [
+            "https://github.com/twitter-university/FibonacciNativeProject.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/FibonacciNativeProject.git"
+        ]
+    },
+    "twitter-university/yamba-client": {
+        "git": [
+            "https://github.com/twitter-university/yamba-client.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/yamba-client.git"
+        ]
+    },
+    "twitter-university/yamba-service": {
+        "git": [
+            "https://github.com/twitter-university/yamba-service.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/yamba-service.git"
+        ]
+    },
+    "twitter-university/raffle-winner": {
+        "git": [
+            "https://github.com/twitter-university/raffle-winner.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/raffle-winner.git"
+        ]
+    },
+    "twitter-university/android-bootcamp-20130930": {
+        "git": [
+            "https://github.com/twitter-university/android-bootcamp-20130930.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/android-bootcamp-20130930.git"
+        ]
+    },
+    "twitter-university/SimpleIntent": {
+        "git": [
+            "https://github.com/twitter-university/SimpleIntent.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/SimpleIntent.git"
+        ]
+    },
+    "twitter-university/LaunchWeb": {
+        "git": [
+            "https://github.com/twitter-university/LaunchWeb.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/LaunchWeb.git"
+        ]
+    },
+    "twitter-university/ActivityForResult": {
+        "git": [
+            "https://github.com/twitter-university/ActivityForResult.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/ActivityForResult.git"
+        ]
+    },
+    "twitter-university/BarCodeExample": {
+        "git": [
+            "https://github.com/twitter-university/BarCodeExample.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/BarCodeExample.git"
+        ]
+    },
+    "twitter-university/android-essentials-2013-09-30": {
+        "git": [
+            "https://github.com/twitter-university/android-essentials-2013-09-30.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/android-essentials-2013-09-30.git"
+        ]
+    },
+    "twitter-university/sioux": {
+        "git": [
+            "https://github.com/twitter-university/sioux.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/sioux.git"
+        ]
+    },
+    "twitter-university/Exify": {
+        "git": [
+            "https://github.com/twitter-university/Exify.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/Exify.git"
+        ]
+    },
+    "twitter-university/android-essentials-2013-10-29": {
+        "git": [
+            "https://github.com/twitter-university/android-essentials-2013-10-29.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/android-essentials-2013-10-29.git"
+        ]
+    },
+    "twitter-university/android-essentials-2013-11-14": {
+        "git": [
+            "https://github.com/twitter-university/android-essentials-2013-11-14.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/android-essentials-2013-11-14.git"
+        ]
+    },
+    "twitter-university/android-essentials-2013-11-26": {
+        "git": [
+            "https://github.com/twitter-university/android-essentials-2013-11-26.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/android-essentials-2013-11-26.git"
+        ]
+    },
+    "twitter-university/TwitterNFCHandler": {
+        "git": [
+            "https://github.com/twitter-university/TwitterNFCHandler.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/TwitterNFCHandler.git"
+        ]
+    },
+    "twitter-university/AndroidUI-Widgets": {
+        "git": [
+            "https://github.com/twitter-university/AndroidUI-Widgets.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/AndroidUI-Widgets.git"
+        ]
+    },
+    "twitter-university/AndroidUI-Themes": {
+        "git": [
+            "https://github.com/twitter-university/AndroidUI-Themes.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/AndroidUI-Themes.git"
+        ]
+    },
+    "twitter-university/android-essentials-2014-01-06": {
+        "git": [
+            "https://github.com/twitter-university/android-essentials-2014-01-06.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/android-essentials-2014-01-06.git"
+        ]
+    },
+    "twitter-university/TagView": {
+        "git": [
+            "https://github.com/twitter-university/TagView.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/TagView.git"
+        ]
+    },
+    "twitter-university/BluetoothSMART-Talk": {
+        "git": [
+            "https://github.com/twitter-university/BluetoothSMART-Talk.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/BluetoothSMART-Talk.git"
+        ]
+    },
+    "twitter-university/yamba-boundservice": {
+        "git": [
+            "https://github.com/twitter-university/yamba-boundservice.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/yamba-boundservice.git"
+        ]
+    },
+    "twitter-university/android-essentials-2014-03-21": {
+        "git": [
+            "https://github.com/twitter-university/android-essentials-2014-03-21.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/android-essentials-2014-03-21.git"
+        ]
+    },
+    "twitter-university/android-essentials-2014-03-24": {
+        "git": [
+            "https://github.com/twitter-university/android-essentials-2014-03-24.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/android-essentials-2014-03-24.git"
+        ]
+    },
+    "twitter-university/android-essentials-03-31-2014-AM": {
+        "git": [
+            "https://github.com/twitter-university/android-essentials-03-31-2014-AM.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/android-essentials-03-31-2014-AM.git"
+        ]
+    },
+    "twitter-university/android-essentials-03-31-2014-PM": {
+        "git": [
+            "https://github.com/twitter-university/android-essentials-03-31-2014-PM.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/android-essentials-03-31-2014-PM.git"
+        ]
+    },
+    "twitter-university/android-essentials-2014-04-14": {
+        "git": [
+            "https://github.com/twitter-university/android-essentials-2014-04-14.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/android-essentials-2014-04-14.git"
+        ]
+    },
+    "twitter-university/android-essentials-2014-04-21": {
+        "git": [
+            "https://github.com/twitter-university/android-essentials-2014-04-21.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/android-essentials-2014-04-21.git"
+        ]
+    },
+    "twitter-university/android-essentials-2014-06-30": {
+        "git": [
+            "https://github.com/twitter-university/android-essentials-2014-06-30.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/android-essentials-2014-06-30.git"
+        ]
+    },
+    "twitter-university/SyncAdapterYamba": {
+        "git": [
+            "https://github.com/twitter-university/SyncAdapterYamba.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/SyncAdapterYamba.git"
+        ]
+    },
+    "twitter-university/android-essentials-2014-08-18": {
+        "git": [
+            "https://github.com/twitter-university/android-essentials-2014-08-18.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/android-essentials-2014-08-18.git"
+        ]
+    },
+    "twitter-university/twitter-test": {
+        "git": [
+            "https://github.com/twitter-university/twitter-test.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/twitter-test.git"
+        ]
+    },
+    "twitter-university/android-essentials-2014-09-17": {
+        "git": [
+            "https://github.com/twitter-university/android-essentials-2014-09-17.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/android-essentials-2014-09-17.git"
+        ]
+    },
+    "twitter-university/android-essentials-2014-12-15": {
+        "git": [
+            "https://github.com/twitter-university/android-essentials-2014-12-15.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/android-essentials-2014-12-15.git"
+        ]
+    },
+    "twitter-university/SimpleNDK": {
+        "git": [
+            "https://github.com/twitter-university/SimpleNDK.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/SimpleNDK.git"
+        ]
+    },
+    "twitter-university/android-essentials-2015-04-13": {
+        "git": [
+            "https://github.com/twitter-university/android-essentials-2015-04-13.git"
+        ],
+        "github": [
+            "https://github.com/twitter-university/android-essentials-2015-04-13.git"
+        ]
+    },
     "finagle": {
         "git": [
             "https://github.com/finagle/finch.git",
@@ -802,6 +3714,174 @@
             "https://github.com/finagle/roc.git",
             "https://github.com/finagle/featherbed.git",
             "https://github.com/finagle/finagle-stream.git",
+            "https://github.com/finagle/finagle-http-auth.git"
+        ]
+    },
+    "finagle/finch": {
+        "git": [
+            "https://github.com/finagle/finch.git"
+        ],
+        "github": [
+            "https://github.com/finagle/finch.git"
+        ]
+    },
+    "finagle/finagle-zookeeper": {
+        "git": [
+            "https://github.com/finagle/finagle-zookeeper.git"
+        ],
+        "github": [
+            "https://github.com/finagle/finagle-zookeeper.git"
+        ]
+    },
+    "finagle/finagle-oauth2": {
+        "git": [
+            "https://github.com/finagle/finagle-oauth2.git"
+        ],
+        "github": [
+            "https://github.com/finagle/finagle-oauth2.git"
+        ]
+    },
+    "finagle/finagle.github.io": {
+        "git": [
+            "https://github.com/finagle/finagle.github.io.git"
+        ],
+        "github": [
+            "https://github.com/finagle/finagle.github.io.git"
+        ]
+    },
+    "finagle/finagle-clojure": {
+        "git": [
+            "https://github.com/finagle/finagle-clojure.git"
+        ],
+        "github": [
+            "https://github.com/finagle/finagle-clojure.git"
+        ]
+    },
+    "finagle/finagle-example-name-finder": {
+        "git": [
+            "https://github.com/finagle/finagle-example-name-finder.git"
+        ],
+        "github": [
+            "https://github.com/finagle/finagle-example-name-finder.git"
+        ]
+    },
+    "finagle/finagle-irc": {
+        "git": [
+            "https://github.com/finagle/finagle-irc.git"
+        ],
+        "github": [
+            "https://github.com/finagle/finagle-irc.git"
+        ]
+    },
+    "finagle/finagle-websocket": {
+        "git": [
+            "https://github.com/finagle/finagle-websocket.git"
+        ],
+        "github": [
+            "https://github.com/finagle/finagle-websocket.git"
+        ]
+    },
+    "finagle/finagle-serial": {
+        "git": [
+            "https://github.com/finagle/finagle-serial.git"
+        ],
+        "github": [
+            "https://github.com/finagle/finagle-serial.git"
+        ]
+    },
+    "finagle/webbing": {
+        "git": [
+            "https://github.com/finagle/webbing.git"
+        ],
+        "github": [
+            "https://github.com/finagle/webbing.git"
+        ]
+    },
+    "finagle/finagle-smtp": {
+        "git": [
+            "https://github.com/finagle/finagle-smtp.git"
+        ],
+        "github": [
+            "https://github.com/finagle/finagle-smtp.git"
+        ]
+    },
+    "finagle/finagle-postgres": {
+        "git": [
+            "https://github.com/finagle/finagle-postgres.git"
+        ],
+        "github": [
+            "https://github.com/finagle/finagle-postgres.git"
+        ]
+    },
+    "finagle/finagle-protobuf": {
+        "git": [
+            "https://github.com/finagle/finagle-protobuf.git"
+        ],
+        "github": [
+            "https://github.com/finagle/finagle-protobuf.git"
+        ]
+    },
+    "finagle/finaglecon": {
+        "git": [
+            "https://github.com/finagle/finaglecon.git"
+        ],
+        "github": [
+            "https://github.com/finagle/finaglecon.git"
+        ]
+    },
+    "finagle/finatra-petstore": {
+        "git": [
+            "https://github.com/finagle/finatra-petstore.git"
+        ],
+        "github": [
+            "https://github.com/finagle/finatra-petstore.git"
+        ]
+    },
+    "finagle/finagle-swift": {
+        "git": [
+            "https://github.com/finagle/finagle-swift.git"
+        ],
+        "github": [
+            "https://github.com/finagle/finagle-swift.git"
+        ]
+    },
+    "finagle/finch-petstore": {
+        "git": [
+            "https://github.com/finagle/finch-petstore.git"
+        ],
+        "github": [
+            "https://github.com/finagle/finch-petstore.git"
+        ]
+    },
+    "finagle/roc": {
+        "git": [
+            "https://github.com/finagle/roc.git"
+        ],
+        "github": [
+            "https://github.com/finagle/roc.git"
+        ]
+    },
+    "finagle/featherbed": {
+        "git": [
+            "https://github.com/finagle/featherbed.git"
+        ],
+        "github": [
+            "https://github.com/finagle/featherbed.git"
+        ]
+    },
+    "finagle/finagle-stream": {
+        "git": [
+            "https://github.com/finagle/finagle-stream.git"
+        ],
+        "github": [
+            "https://github.com/finagle/finagle-stream.git"
+        ]
+    },
+    "finagle/finagle-http-auth": {
+        "git": [
+            "https://github.com/finagle/finagle-http-auth.git"
+        ],
+        "github": [
             "https://github.com/finagle/finagle-http-auth.git"
         ]
     },
@@ -867,6 +3947,230 @@
             "https://github.com/vine/tini.git"
         ]
     },
+    "vine/GPUImage": {
+        "git": [
+            "https://github.com/vine/GPUImage.git"
+        ],
+        "github": [
+            "https://github.com/vine/GPUImage.git"
+        ]
+    },
+    "vine/multi-mechanize": {
+        "git": [
+            "https://github.com/vine/multi-mechanize.git"
+        ],
+        "github": [
+            "https://github.com/vine/multi-mechanize.git"
+        ]
+    },
+    "vine/pysnowflake": {
+        "git": [
+            "https://github.com/vine/pysnowflake.git"
+        ],
+        "github": [
+            "https://github.com/vine/pysnowflake.git"
+        ]
+    },
+    "vine/sentry": {
+        "git": [
+            "https://github.com/vine/sentry.git"
+        ],
+        "github": [
+            "https://github.com/vine/sentry.git"
+        ]
+    },
+    "vine/FFmpeg-Android": {
+        "git": [
+            "https://github.com/vine/FFmpeg-Android.git"
+        ],
+        "github": [
+            "https://github.com/vine/FFmpeg-Android.git"
+        ]
+    },
+    "vine/facebook-android-sdk": {
+        "git": [
+            "https://github.com/vine/facebook-android-sdk.git"
+        ],
+        "github": [
+            "https://github.com/vine/facebook-android-sdk.git"
+        ]
+    },
+    "vine/pylibmc": {
+        "git": [
+            "https://github.com/vine/pylibmc.git"
+        ],
+        "github": [
+            "https://github.com/vine/pylibmc.git"
+        ]
+    },
+    "vine/SDAVAssetExportSession": {
+        "git": [
+            "https://github.com/vine/SDAVAssetExportSession.git"
+        ],
+        "github": [
+            "https://github.com/vine/SDAVAssetExportSession.git"
+        ]
+    },
+    "vine/mysql-prefetcher": {
+        "git": [
+            "https://github.com/vine/mysql-prefetcher.git"
+        ],
+        "github": [
+            "https://github.com/vine/mysql-prefetcher.git"
+        ]
+    },
+    "vine/elasticsearch-river-rabbitmq": {
+        "git": [
+            "https://github.com/vine/elasticsearch-river-rabbitmq.git"
+        ],
+        "github": [
+            "https://github.com/vine/elasticsearch-river-rabbitmq.git"
+        ]
+    },
+    "vine/uwsgi": {
+        "git": [
+            "https://github.com/vine/uwsgi.git"
+        ],
+        "github": [
+            "https://github.com/vine/uwsgi.git"
+        ]
+    },
+    "vine/flight": {
+        "git": [
+            "https://github.com/vine/flight.git"
+        ],
+        "github": [
+            "https://github.com/vine/flight.git"
+        ]
+    },
+    "vine/apns-client": {
+        "git": [
+            "https://github.com/vine/apns-client.git"
+        ],
+        "github": [
+            "https://github.com/vine/apns-client.git"
+        ]
+    },
+    "vine/buck": {
+        "git": [
+            "https://github.com/vine/buck.git"
+        ],
+        "github": [
+            "https://github.com/vine/buck.git"
+        ]
+    },
+    "vine/haproxy": {
+        "git": [
+            "https://github.com/vine/haproxy.git"
+        ],
+        "github": [
+            "https://github.com/vine/haproxy.git"
+        ]
+    },
+    "vine/wordpress": {
+        "git": [
+            "https://github.com/vine/wordpress.git"
+        ],
+        "github": [
+            "https://github.com/vine/wordpress.git"
+        ]
+    },
+    "vine/uwsgi-dogstatsd": {
+        "git": [
+            "https://github.com/vine/uwsgi-dogstatsd.git"
+        ],
+        "github": [
+            "https://github.com/vine/uwsgi-dogstatsd.git"
+        ]
+    },
+    "vine/nose_xunit_gevent": {
+        "git": [
+            "https://github.com/vine/nose_xunit_gevent.git"
+        ],
+        "github": [
+            "https://github.com/vine/nose_xunit_gevent.git"
+        ]
+    },
+    "vine/fluent-plugin-gstore": {
+        "git": [
+            "https://github.com/vine/fluent-plugin-gstore.git"
+        ],
+        "github": [
+            "https://github.com/vine/fluent-plugin-gstore.git"
+        ]
+    },
+    "vine/fluent-plugin-elasticsearch": {
+        "git": [
+            "https://github.com/vine/fluent-plugin-elasticsearch.git"
+        ],
+        "github": [
+            "https://github.com/vine/fluent-plugin-elasticsearch.git"
+        ]
+    },
+    "vine/fluentd": {
+        "git": [
+            "https://github.com/vine/fluentd.git"
+        ],
+        "github": [
+            "https://github.com/vine/fluentd.git"
+        ]
+    },
+    "vine/fluent-plugin-s3": {
+        "git": [
+            "https://github.com/vine/fluent-plugin-s3.git"
+        ],
+        "github": [
+            "https://github.com/vine/fluent-plugin-s3.git"
+        ]
+    },
+    "vine/fluent-plugin-dogstatsd": {
+        "git": [
+            "https://github.com/vine/fluent-plugin-dogstatsd.git"
+        ],
+        "github": [
+            "https://github.com/vine/fluent-plugin-dogstatsd.git"
+        ]
+    },
+    "vine/fluent-plugin-scribe": {
+        "git": [
+            "https://github.com/vine/fluent-plugin-scribe.git"
+        ],
+        "github": [
+            "https://github.com/vine/fluent-plugin-scribe.git"
+        ]
+    },
+    "vine/luigi": {
+        "git": [
+            "https://github.com/vine/luigi.git"
+        ],
+        "github": [
+            "https://github.com/vine/luigi.git"
+        ]
+    },
+    "vine/tweepy": {
+        "git": [
+            "https://github.com/vine/tweepy.git"
+        ],
+        "github": [
+            "https://github.com/vine/tweepy.git"
+        ]
+    },
+    "vine/python-gcm": {
+        "git": [
+            "https://github.com/vine/python-gcm.git"
+        ],
+        "github": [
+            "https://github.com/vine/python-gcm.git"
+        ]
+    },
+    "vine/tini": {
+        "git": [
+            "https://github.com/vine/tini.git"
+        ],
+        "github": [
+            "https://github.com/vine/tini.git"
+        ]
+    },
     "pantsbuild": {
         "git": [
             "https://github.com/pantsbuild/pants.git",
@@ -916,6 +4220,190 @@
             "https://github.com/pantsbuild/node-preinstalled-modules.git",
             "https://github.com/pantsbuild/issues-3174.git",
             "https://github.com/pantsbuild/issues-3417.git",
+            "https://github.com/pantsbuild/rust-www.git"
+        ]
+    },
+    "pantsbuild/pants": {
+        "git": [
+            "https://github.com/pantsbuild/pants.git"
+        ],
+        "github": [
+            "https://github.com/pantsbuild/pants.git"
+        ]
+    },
+    "pantsbuild/vim-pants": {
+        "git": [
+            "https://github.com/pantsbuild/vim-pants.git"
+        ],
+        "github": [
+            "https://github.com/pantsbuild/vim-pants.git"
+        ]
+    },
+    "pantsbuild/pantsbuild.github.io": {
+        "git": [
+            "https://github.com/pantsbuild/pantsbuild.github.io.git"
+        ],
+        "github": [
+            "https://github.com/pantsbuild/pantsbuild.github.io.git"
+        ]
+    },
+    "pantsbuild/ivy": {
+        "git": [
+            "https://github.com/pantsbuild/ivy.git"
+        ],
+        "github": [
+            "https://github.com/pantsbuild/ivy.git"
+        ]
+    },
+    "pantsbuild/jmake": {
+        "git": [
+            "https://github.com/pantsbuild/jmake.git"
+        ],
+        "github": [
+            "https://github.com/pantsbuild/jmake.git"
+        ]
+    },
+    "pantsbuild/binaries": {
+        "git": [
+            "https://github.com/pantsbuild/binaries.git"
+        ],
+        "github": [
+            "https://github.com/pantsbuild/binaries.git"
+        ]
+    },
+    "pantsbuild/pex": {
+        "git": [
+            "https://github.com/pantsbuild/pex.git"
+        ],
+        "github": [
+            "https://github.com/pantsbuild/pex.git"
+        ]
+    },
+    "pantsbuild/pants-utils": {
+        "git": [
+            "https://github.com/pantsbuild/pants-utils.git"
+        ],
+        "github": [
+            "https://github.com/pantsbuild/pants-utils.git"
+        ]
+    },
+    "pantsbuild/intellij-pants-plugin": {
+        "git": [
+            "https://github.com/pantsbuild/intellij-pants-plugin.git"
+        ],
+        "github": [
+            "https://github.com/pantsbuild/intellij-pants-plugin.git"
+        ]
+    },
+    "pantsbuild/setup": {
+        "git": [
+            "https://github.com/pantsbuild/setup.git"
+        ],
+        "github": [
+            "https://github.com/pantsbuild/setup.git"
+        ]
+    },
+    "pantsbuild/thrift-0.5.0-finagle": {
+        "git": [
+            "https://github.com/pantsbuild/thrift-0.5.0-finagle.git"
+        ],
+        "github": [
+            "https://github.com/pantsbuild/thrift-0.5.0-finagle.git"
+        ]
+    },
+    "pantsbuild/maven-repo": {
+        "git": [
+            "https://github.com/pantsbuild/maven-repo.git"
+        ],
+        "github": [
+            "https://github.com/pantsbuild/maven-repo.git"
+        ]
+    },
+    "pantsbuild/zincutils": {
+        "git": [
+            "https://github.com/pantsbuild/zincutils.git"
+        ],
+        "github": [
+            "https://github.com/pantsbuild/zincutils.git"
+        ]
+    },
+    "pantsbuild/jarjar": {
+        "git": [
+            "https://github.com/pantsbuild/jarjar.git"
+        ],
+        "github": [
+            "https://github.com/pantsbuild/jarjar.git"
+        ]
+    },
+    "pantsbuild/indexed-classloader": {
+        "git": [
+            "https://github.com/pantsbuild/indexed-classloader.git"
+        ],
+        "github": [
+            "https://github.com/pantsbuild/indexed-classloader.git"
+        ]
+    },
+    "pantsbuild/cookbook": {
+        "git": [
+            "https://github.com/pantsbuild/cookbook.git"
+        ],
+        "github": [
+            "https://github.com/pantsbuild/cookbook.git"
+        ]
+    },
+    "pantsbuild/issues-1751": {
+        "git": [
+            "https://github.com/pantsbuild/issues-1751.git"
+        ],
+        "github": [
+            "https://github.com/pantsbuild/issues-1751.git"
+        ]
+    },
+    "pantsbuild/issues-1779": {
+        "git": [
+            "https://github.com/pantsbuild/issues-1779.git"
+        ],
+        "github": [
+            "https://github.com/pantsbuild/issues-1779.git"
+        ]
+    },
+    "pantsbuild/issues-2566": {
+        "git": [
+            "https://github.com/pantsbuild/issues-2566.git"
+        ],
+        "github": [
+            "https://github.com/pantsbuild/issues-2566.git"
+        ]
+    },
+    "pantsbuild/node-preinstalled-modules": {
+        "git": [
+            "https://github.com/pantsbuild/node-preinstalled-modules.git"
+        ],
+        "github": [
+            "https://github.com/pantsbuild/node-preinstalled-modules.git"
+        ]
+    },
+    "pantsbuild/issues-3174": {
+        "git": [
+            "https://github.com/pantsbuild/issues-3174.git"
+        ],
+        "github": [
+            "https://github.com/pantsbuild/issues-3174.git"
+        ]
+    },
+    "pantsbuild/issues-3417": {
+        "git": [
+            "https://github.com/pantsbuild/issues-3417.git"
+        ],
+        "github": [
+            "https://github.com/pantsbuild/issues-3417.git"
+        ]
+    },
+    "pantsbuild/rust-www": {
+        "git": [
+            "https://github.com/pantsbuild/rust-www.git"
+        ],
+        "github": [
             "https://github.com/pantsbuild/rust-www.git"
         ]
     },
@@ -972,6 +4460,206 @@
             "https://github.com/gnip/thinconnector-java.git",
             "https://github.com/gnip/sample-kinesis-connector.git",
             "https://github.com/gnip/sample-python-connector.git",
+            "https://github.com/gnip/gnip-fas-ruby.git"
+        ]
+    },
+    "gnip/sinatra": {
+        "git": [
+            "https://github.com/gnip/sinatra.git"
+        ],
+        "github": [
+            "https://github.com/gnip/sinatra.git"
+        ]
+    },
+    "gnip/em-http-request": {
+        "git": [
+            "https://github.com/gnip/em-http-request.git"
+        ],
+        "github": [
+            "https://github.com/gnip/em-http-request.git"
+        ]
+    },
+    "gnip/ey-cloud-recipes": {
+        "git": [
+            "https://github.com/gnip/ey-cloud-recipes.git"
+        ],
+        "github": [
+            "https://github.com/gnip/ey-cloud-recipes.git"
+        ]
+    },
+    "gnip/rubber": {
+        "git": [
+            "https://github.com/gnip/rubber.git"
+        ],
+        "github": [
+            "https://github.com/gnip/rubber.git"
+        ]
+    },
+    "gnip/tweetstream": {
+        "git": [
+            "https://github.com/gnip/tweetstream.git"
+        ],
+        "github": [
+            "https://github.com/gnip/tweetstream.git"
+        ]
+    },
+    "gnip/yajl": {
+        "git": [
+            "https://github.com/gnip/yajl.git"
+        ],
+        "github": [
+            "https://github.com/gnip/yajl.git"
+        ]
+    },
+    "gnip/yajl-ruby": {
+        "git": [
+            "https://github.com/gnip/yajl-ruby.git"
+        ],
+        "github": [
+            "https://github.com/gnip/yajl-ruby.git"
+        ]
+    },
+    "gnip/hash_extension": {
+        "git": [
+            "https://github.com/gnip/hash_extension.git"
+        ],
+        "github": [
+            "https://github.com/gnip/hash_extension.git"
+        ]
+    },
+    "gnip/juggernaut_plugin": {
+        "git": [
+            "https://github.com/gnip/juggernaut_plugin.git"
+        ],
+        "github": [
+            "https://github.com/gnip/juggernaut_plugin.git"
+        ]
+    },
+    "gnip/dotfiles": {
+        "git": [
+            "https://github.com/gnip/dotfiles.git"
+        ],
+        "github": [
+            "https://github.com/gnip/dotfiles.git"
+        ]
+    },
+    "gnip/clearance": {
+        "git": [
+            "https://github.com/gnip/clearance.git"
+        ],
+        "github": [
+            "https://github.com/gnip/clearance.git"
+        ]
+    },
+    "gnip/textmate-bundles": {
+        "git": [
+            "https://github.com/gnip/textmate-bundles.git"
+        ],
+        "github": [
+            "https://github.com/gnip/textmate-bundles.git"
+        ]
+    },
+    "gnip/gnip-expander": {
+        "git": [
+            "https://github.com/gnip/gnip-expander.git"
+        ],
+        "github": [
+            "https://github.com/gnip/gnip-expander.git"
+        ]
+    },
+    "gnip/nanite": {
+        "git": [
+            "https://github.com/gnip/nanite.git"
+        ],
+        "github": [
+            "https://github.com/gnip/nanite.git"
+        ]
+    },
+    "gnip/pusher": {
+        "git": [
+            "https://github.com/gnip/pusher.git"
+        ],
+        "github": [
+            "https://github.com/gnip/pusher.git"
+        ]
+    },
+    "gnip/resque-metrics": {
+        "git": [
+            "https://github.com/gnip/resque-metrics.git"
+        ],
+        "github": [
+            "https://github.com/gnip/resque-metrics.git"
+        ]
+    },
+    "gnip/ruby-style-guide": {
+        "git": [
+            "https://github.com/gnip/ruby-style-guide.git"
+        ],
+        "github": [
+            "https://github.com/gnip/ruby-style-guide.git"
+        ]
+    },
+    "gnip/null-island": {
+        "git": [
+            "https://github.com/gnip/null-island.git"
+        ],
+        "github": [
+            "https://github.com/gnip/null-island.git"
+        ]
+    },
+    "gnip/search-api-rails-demo": {
+        "git": [
+            "https://github.com/gnip/search-api-rails-demo.git"
+        ],
+        "github": [
+            "https://github.com/gnip/search-api-rails-demo.git"
+        ]
+    },
+    "gnip/support": {
+        "git": [
+            "https://github.com/gnip/support.git"
+        ],
+        "github": [
+            "https://github.com/gnip/support.git"
+        ]
+    },
+    "gnip/nv-i18n": {
+        "git": [
+            "https://github.com/gnip/nv-i18n.git"
+        ],
+        "github": [
+            "https://github.com/gnip/nv-i18n.git"
+        ]
+    },
+    "gnip/thinconnector-java": {
+        "git": [
+            "https://github.com/gnip/thinconnector-java.git"
+        ],
+        "github": [
+            "https://github.com/gnip/thinconnector-java.git"
+        ]
+    },
+    "gnip/sample-kinesis-connector": {
+        "git": [
+            "https://github.com/gnip/sample-kinesis-connector.git"
+        ],
+        "github": [
+            "https://github.com/gnip/sample-kinesis-connector.git"
+        ]
+    },
+    "gnip/sample-python-connector": {
+        "git": [
+            "https://github.com/gnip/sample-python-connector.git"
+        ],
+        "github": [
+            "https://github.com/gnip/sample-python-connector.git"
+        ]
+    },
+    "gnip/gnip-fas-ruby": {
+        "git": [
+            "https://github.com/gnip/gnip-fas-ruby.git"
+        ],
+        "github": [
             "https://github.com/gnip/gnip-fas-ruby.git"
         ]
     },
@@ -1053,6 +4741,294 @@
             "https://github.com/bountylabs/twitter-kit-ios.git"
         ]
     },
+    "bountylabs/pool": {
+        "git": [
+            "https://github.com/bountylabs/pool.git"
+        ],
+        "github": [
+            "https://github.com/bountylabs/pool.git"
+        ]
+    },
+    "bountylabs/algoliautils": {
+        "git": [
+            "https://github.com/bountylabs/algoliautils.git"
+        ],
+        "github": [
+            "https://github.com/bountylabs/algoliautils.git"
+        ]
+    },
+    "bountylabs/log": {
+        "git": [
+            "https://github.com/bountylabs/log.git"
+        ],
+        "github": [
+            "https://github.com/bountylabs/log.git"
+        ]
+    },
+    "bountylabs/goamz": {
+        "git": [
+            "https://github.com/bountylabs/goamz.git"
+        ],
+        "github": [
+            "https://github.com/bountylabs/goamz.git"
+        ]
+    },
+    "bountylabs/gitversion": {
+        "git": [
+            "https://github.com/bountylabs/gitversion.git"
+        ],
+        "github": [
+            "https://github.com/bountylabs/gitversion.git"
+        ]
+    },
+    "bountylabs/wercker-step-slack-notify": {
+        "git": [
+            "https://github.com/bountylabs/wercker-step-slack-notify.git"
+        ],
+        "github": [
+            "https://github.com/bountylabs/wercker-step-slack-notify.git"
+        ]
+    },
+    "bountylabs/aws-datacenters": {
+        "git": [
+            "https://github.com/bountylabs/aws-datacenters.git"
+        ],
+        "github": [
+            "https://github.com/bountylabs/aws-datacenters.git"
+        ]
+    },
+    "bountylabs/logspout": {
+        "git": [
+            "https://github.com/bountylabs/logspout.git"
+        ],
+        "github": [
+            "https://github.com/bountylabs/logspout.git"
+        ]
+    },
+    "bountylabs/authcookie": {
+        "git": [
+            "https://github.com/bountylabs/authcookie.git"
+        ],
+        "github": [
+            "https://github.com/bountylabs/authcookie.git"
+        ]
+    },
+    "bountylabs/lockfile": {
+        "git": [
+            "https://github.com/bountylabs/lockfile.git"
+        ],
+        "github": [
+            "https://github.com/bountylabs/lockfile.git"
+        ]
+    },
+    "bountylabs/pool2": {
+        "git": [
+            "https://github.com/bountylabs/pool2.git"
+        ],
+        "github": [
+            "https://github.com/bountylabs/pool2.git"
+        ]
+    },
+    "bountylabs/golang-lru": {
+        "git": [
+            "https://github.com/bountylabs/golang-lru.git"
+        ],
+        "github": [
+            "https://github.com/bountylabs/golang-lru.git"
+        ]
+    },
+    "bountylabs/http-digest-auth-client": {
+        "git": [
+            "https://github.com/bountylabs/http-digest-auth-client.git"
+        ],
+        "github": [
+            "https://github.com/bountylabs/http-digest-auth-client.git"
+        ]
+    },
+    "bountylabs/pubnubclient": {
+        "git": [
+            "https://github.com/bountylabs/pubnubclient.git"
+        ],
+        "github": [
+            "https://github.com/bountylabs/pubnubclient.git"
+        ]
+    },
+    "bountylabs/go-pprof": {
+        "git": [
+            "https://github.com/bountylabs/go-pprof.git"
+        ],
+        "github": [
+            "https://github.com/bountylabs/go-pprof.git"
+        ]
+    },
+    "bountylabs/http_proxy": {
+        "git": [
+            "https://github.com/bountylabs/http_proxy.git"
+        ],
+        "github": [
+            "https://github.com/bountylabs/http_proxy.git"
+        ]
+    },
+    "bountylabs/ssdatakit": {
+        "git": [
+            "https://github.com/bountylabs/ssdatakit.git"
+        ],
+        "github": [
+            "https://github.com/bountylabs/ssdatakit.git"
+        ]
+    },
+    "bountylabs/oauth": {
+        "git": [
+            "https://github.com/bountylabs/oauth.git"
+        ],
+        "github": [
+            "https://github.com/bountylabs/oauth.git"
+        ]
+    },
+    "bountylabs/guesslanguage": {
+        "git": [
+            "https://github.com/bountylabs/guesslanguage.git"
+        ],
+        "github": [
+            "https://github.com/bountylabs/guesslanguage.git"
+        ]
+    },
+    "bountylabs/etcd_groupcache": {
+        "git": [
+            "https://github.com/bountylabs/etcd_groupcache.git"
+        ],
+        "github": [
+            "https://github.com/bountylabs/etcd_groupcache.git"
+        ]
+    },
+    "bountylabs/algoliasearch-client-go": {
+        "git": [
+            "https://github.com/bountylabs/algoliasearch-client-go.git"
+        ],
+        "github": [
+            "https://github.com/bountylabs/algoliasearch-client-go.git"
+        ]
+    },
+    "bountylabs/net": {
+        "git": [
+            "https://github.com/bountylabs/net.git"
+        ],
+        "github": [
+            "https://github.com/bountylabs/net.git"
+        ]
+    },
+    "bountylabs/Reachability": {
+        "git": [
+            "https://github.com/bountylabs/Reachability.git"
+        ],
+        "github": [
+            "https://github.com/bountylabs/Reachability.git"
+        ]
+    },
+    "bountylabs/goprocinfo": {
+        "git": [
+            "https://github.com/bountylabs/goprocinfo.git"
+        ],
+        "github": [
+            "https://github.com/bountylabs/goprocinfo.git"
+        ]
+    },
+    "bountylabs/FastImageCache": {
+        "git": [
+            "https://github.com/bountylabs/FastImageCache.git"
+        ],
+        "github": [
+            "https://github.com/bountylabs/FastImageCache.git"
+        ]
+    },
+    "bountylabs/react-blur": {
+        "git": [
+            "https://github.com/bountylabs/react-blur.git"
+        ],
+        "github": [
+            "https://github.com/bountylabs/react-blur.git"
+        ]
+    },
+    "bountylabs/go-logging": {
+        "git": [
+            "https://github.com/bountylabs/go-logging.git"
+        ],
+        "github": [
+            "https://github.com/bountylabs/go-logging.git"
+        ]
+    },
+    "bountylabs/PeriscopeReplayKit": {
+        "git": [
+            "https://github.com/bountylabs/PeriscopeReplayKit.git"
+        ],
+        "github": [
+            "https://github.com/bountylabs/PeriscopeReplayKit.git"
+        ]
+    },
+    "bountylabs/react-helmet": {
+        "git": [
+            "https://github.com/bountylabs/react-helmet.git"
+        ],
+        "github": [
+            "https://github.com/bountylabs/react-helmet.git"
+        ]
+    },
+    "bountylabs/ewma": {
+        "git": [
+            "https://github.com/bountylabs/ewma.git"
+        ],
+        "github": [
+            "https://github.com/bountylabs/ewma.git"
+        ]
+    },
+    "bountylabs/react-image-cropper": {
+        "git": [
+            "https://github.com/bountylabs/react-image-cropper.git"
+        ],
+        "github": [
+            "https://github.com/bountylabs/react-image-cropper.git"
+        ]
+    },
+    "bountylabs/go-metrics": {
+        "git": [
+            "https://github.com/bountylabs/go-metrics.git"
+        ],
+        "github": [
+            "https://github.com/bountylabs/go-metrics.git"
+        ]
+    },
+    "bountylabs/redux-logger": {
+        "git": [
+            "https://github.com/bountylabs/redux-logger.git"
+        ],
+        "github": [
+            "https://github.com/bountylabs/redux-logger.git"
+        ]
+    },
+    "bountylabs/react-scrollable-list-view": {
+        "git": [
+            "https://github.com/bountylabs/react-scrollable-list-view.git"
+        ],
+        "github": [
+            "https://github.com/bountylabs/react-scrollable-list-view.git"
+        ]
+    },
+    "bountylabs/structs": {
+        "git": [
+            "https://github.com/bountylabs/structs.git"
+        ],
+        "github": [
+            "https://github.com/bountylabs/structs.git"
+        ]
+    },
+    "bountylabs/twitter-kit-ios": {
+        "git": [
+            "https://github.com/bountylabs/twitter-kit-ios.git"
+        ],
+        "github": [
+            "https://github.com/bountylabs/twitter-kit-ios.git"
+        ]
+    },
     "flightjs": {
         "git": [
             "https://github.com/flightjs/flight.git",
@@ -1095,6 +5071,150 @@
             "https://github.com/flightjs/flight-with-observe.git"
         ]
     },
+    "flightjs/flight": {
+        "git": [
+            "https://github.com/flightjs/flight.git"
+        ],
+        "github": [
+            "https://github.com/flightjs/flight.git"
+        ]
+    },
+    "flightjs/jasmine-flight": {
+        "git": [
+            "https://github.com/flightjs/jasmine-flight.git"
+        ],
+        "github": [
+            "https://github.com/flightjs/jasmine-flight.git"
+        ]
+    },
+    "flightjs/generator-flight": {
+        "git": [
+            "https://github.com/flightjs/generator-flight.git"
+        ],
+        "github": [
+            "https://github.com/flightjs/generator-flight.git"
+        ]
+    },
+    "flightjs/flightjs.github.io": {
+        "git": [
+            "https://github.com/flightjs/flightjs.github.io.git"
+        ],
+        "github": [
+            "https://github.com/flightjs/flightjs.github.io.git"
+        ]
+    },
+    "flightjs/example-app": {
+        "git": [
+            "https://github.com/flightjs/example-app.git"
+        ],
+        "github": [
+            "https://github.com/flightjs/example-app.git"
+        ]
+    },
+    "flightjs/mocha-flight": {
+        "git": [
+            "https://github.com/flightjs/mocha-flight.git"
+        ],
+        "github": [
+            "https://github.com/flightjs/mocha-flight.git"
+        ]
+    },
+    "flightjs/flight-components": {
+        "git": [
+            "https://github.com/flightjs/flight-components.git"
+        ],
+        "github": [
+            "https://github.com/flightjs/flight-components.git"
+        ]
+    },
+    "flightjs/generator-flight-package": {
+        "git": [
+            "https://github.com/flightjs/generator-flight-package.git"
+        ],
+        "github": [
+            "https://github.com/flightjs/generator-flight-package.git"
+        ]
+    },
+    "flightjs/flight-with-child-components": {
+        "git": [
+            "https://github.com/flightjs/flight-with-child-components.git"
+        ],
+        "github": [
+            "https://github.com/flightjs/flight-with-child-components.git"
+        ]
+    },
+    "flightjs/flight-inspector": {
+        "git": [
+            "https://github.com/flightjs/flight-inspector.git"
+        ],
+        "github": [
+            "https://github.com/flightjs/flight-inspector.git"
+        ]
+    },
+    "flightjs/flight-umd": {
+        "git": [
+            "https://github.com/flightjs/flight-umd.git"
+        ],
+        "github": [
+            "https://github.com/flightjs/flight-umd.git"
+        ]
+    },
+    "flightjs/flight-with-state": {
+        "git": [
+            "https://github.com/flightjs/flight-with-state.git"
+        ],
+        "github": [
+            "https://github.com/flightjs/flight-with-state.git"
+        ]
+    },
+    "flightjs/flight-with-batch": {
+        "git": [
+            "https://github.com/flightjs/flight-with-batch.git"
+        ],
+        "github": [
+            "https://github.com/flightjs/flight-with-batch.git"
+        ]
+    },
+    "flightjs/flight-with-observable-state": {
+        "git": [
+            "https://github.com/flightjs/flight-with-observable-state.git"
+        ],
+        "github": [
+            "https://github.com/flightjs/flight-with-observable-state.git"
+        ]
+    },
+    "flightjs/flight-toolbox": {
+        "git": [
+            "https://github.com/flightjs/flight-toolbox.git"
+        ],
+        "github": [
+            "https://github.com/flightjs/flight-toolbox.git"
+        ]
+    },
+    "flightjs/flight-with-resources": {
+        "git": [
+            "https://github.com/flightjs/flight-with-resources.git"
+        ],
+        "github": [
+            "https://github.com/flightjs/flight-with-resources.git"
+        ]
+    },
+    "flightjs/flight-with-event-proxy": {
+        "git": [
+            "https://github.com/flightjs/flight-with-event-proxy.git"
+        ],
+        "github": [
+            "https://github.com/flightjs/flight-with-event-proxy.git"
+        ]
+    },
+    "flightjs/flight-with-observe": {
+        "git": [
+            "https://github.com/flightjs/flight-with-observe.git"
+        ],
+        "github": [
+            "https://github.com/flightjs/flight-with-observe.git"
+        ]
+    },
     "tweetdeck": {
         "git": [
             "https://github.com/tweetdeck/twitter-search-query-parser.git",
@@ -1102,6 +5222,22 @@
         ],
         "github": [
             "https://github.com/tweetdeck/twitter-search-query-parser.git",
+            "https://github.com/tweetdeck/valiant.git"
+        ]
+    },
+    "tweetdeck/twitter-search-query-parser": {
+        "git": [
+            "https://github.com/tweetdeck/twitter-search-query-parser.git"
+        ],
+        "github": [
+            "https://github.com/tweetdeck/twitter-search-query-parser.git"
+        ]
+    },
+    "tweetdeck/valiant": {
+        "git": [
+            "https://github.com/tweetdeck/valiant.git"
+        ],
+        "github": [
             "https://github.com/tweetdeck/valiant.git"
         ]
     },
@@ -1187,6 +5323,310 @@
             "https://github.com/mopub/mopub-unity-mediation.git"
         ]
     },
+    "mopub/mopub-client": {
+        "git": [
+            "https://github.com/mopub/mopub-client.git"
+        ],
+        "github": [
+            "https://github.com/mopub/mopub-client.git"
+        ]
+    },
+    "mopub/mopub-bidder": {
+        "git": [
+            "https://github.com/mopub/mopub-bidder.git"
+        ],
+        "github": [
+            "https://github.com/mopub/mopub-bidder.git"
+        ]
+    },
+    "mopub/greenlet-tornado": {
+        "git": [
+            "https://github.com/mopub/greenlet-tornado.git"
+        ],
+        "github": [
+            "https://github.com/mopub/greenlet-tornado.git"
+        ]
+    },
+    "mopub/SublimeLinter": {
+        "git": [
+            "https://github.com/mopub/SublimeLinter.git"
+        ],
+        "github": [
+            "https://github.com/mopub/SublimeLinter.git"
+        ]
+    },
+    "mopub/pychef": {
+        "git": [
+            "https://github.com/mopub/pychef.git"
+        ],
+        "github": [
+            "https://github.com/mopub/pychef.git"
+        ]
+    },
+    "mopub/statsd": {
+        "git": [
+            "https://github.com/mopub/statsd.git"
+        ],
+        "github": [
+            "https://github.com/mopub/statsd.git"
+        ]
+    },
+    "mopub/gunicorn": {
+        "git": [
+            "https://github.com/mopub/gunicorn.git"
+        ],
+        "github": [
+            "https://github.com/mopub/gunicorn.git"
+        ]
+    },
+    "mopub/tornado": {
+        "git": [
+            "https://github.com/mopub/tornado.git"
+        ],
+        "github": [
+            "https://github.com/mopub/tornado.git"
+        ]
+    },
+    "mopub/evhttpclient": {
+        "git": [
+            "https://github.com/mopub/evhttpclient.git"
+        ],
+        "github": [
+            "https://github.com/mopub/evhttpclient.git"
+        ]
+    },
+    "mopub/hummingbird": {
+        "git": [
+            "https://github.com/mopub/hummingbird.git"
+        ],
+        "github": [
+            "https://github.com/mopub/hummingbird.git"
+        ]
+    },
+    "mopub/Libevent": {
+        "git": [
+            "https://github.com/mopub/Libevent.git"
+        ],
+        "github": [
+            "https://github.com/mopub/Libevent.git"
+        ]
+    },
+    "mopub/momonitor": {
+        "git": [
+            "https://github.com/mopub/momonitor.git"
+        ],
+        "github": [
+            "https://github.com/mopub/momonitor.git"
+        ]
+    },
+    "mopub/django-jasmine": {
+        "git": [
+            "https://github.com/mopub/django-jasmine.git"
+        ],
+        "github": [
+            "https://github.com/mopub/django-jasmine.git"
+        ]
+    },
+    "mopub/PivotalCoreKit": {
+        "git": [
+            "https://github.com/mopub/PivotalCoreKit.git"
+        ],
+        "github": [
+            "https://github.com/mopub/PivotalCoreKit.git"
+        ]
+    },
+    "mopub/nose-of-yeti": {
+        "git": [
+            "https://github.com/mopub/nose-of-yeti.git"
+        ],
+        "github": [
+            "https://github.com/mopub/nose-of-yeti.git"
+        ]
+    },
+    "mopub/yeti": {
+        "git": [
+            "https://github.com/mopub/yeti.git"
+        ],
+        "github": [
+            "https://github.com/mopub/yeti.git"
+        ]
+    },
+    "mopub/PyTracker": {
+        "git": [
+            "https://github.com/mopub/PyTracker.git"
+        ],
+        "github": [
+            "https://github.com/mopub/PyTracker.git"
+        ]
+    },
+    "mopub/statsite": {
+        "git": [
+            "https://github.com/mopub/statsite.git"
+        ],
+        "github": [
+            "https://github.com/mopub/statsite.git"
+        ]
+    },
+    "mopub/mopub-ios-sdk": {
+        "git": [
+            "https://github.com/mopub/mopub-ios-sdk.git"
+        ],
+        "github": [
+            "https://github.com/mopub/mopub-ios-sdk.git"
+        ]
+    },
+    "mopub/knife-voxel": {
+        "git": [
+            "https://github.com/mopub/knife-voxel.git"
+        ],
+        "github": [
+            "https://github.com/mopub/knife-voxel.git"
+        ]
+    },
+    "mopub/chef_stock": {
+        "git": [
+            "https://github.com/mopub/chef_stock.git"
+        ],
+        "github": [
+            "https://github.com/mopub/chef_stock.git"
+        ]
+    },
+    "mopub/Diamond": {
+        "git": [
+            "https://github.com/mopub/Diamond.git"
+        ],
+        "github": [
+            "https://github.com/mopub/Diamond.git"
+        ]
+    },
+    "mopub/mopub-android-sdk": {
+        "git": [
+            "https://github.com/mopub/mopub-android-sdk.git"
+        ],
+        "github": [
+            "https://github.com/mopub/mopub-android-sdk.git"
+        ]
+    },
+    "mopub/omnibus-scribe": {
+        "git": [
+            "https://github.com/mopub/omnibus-scribe.git"
+        ],
+        "github": [
+            "https://github.com/mopub/omnibus-scribe.git"
+        ]
+    },
+    "mopub/omnibus-software": {
+        "git": [
+            "https://github.com/mopub/omnibus-software.git"
+        ],
+        "github": [
+            "https://github.com/mopub/omnibus-software.git"
+        ]
+    },
+    "mopub/dotfiles": {
+        "git": [
+            "https://github.com/mopub/dotfiles.git"
+        ],
+        "github": [
+            "https://github.com/mopub/dotfiles.git"
+        ]
+    },
+    "mopub/sprout": {
+        "git": [
+            "https://github.com/mopub/sprout.git"
+        ],
+        "github": [
+            "https://github.com/mopub/sprout.git"
+        ]
+    },
+    "mopub/django-axes": {
+        "git": [
+            "https://github.com/mopub/django-axes.git"
+        ],
+        "github": [
+            "https://github.com/mopub/django-axes.git"
+        ]
+    },
+    "mopub/django-reversion-compare": {
+        "git": [
+            "https://github.com/mopub/django-reversion-compare.git"
+        ],
+        "github": [
+            "https://github.com/mopub/django-reversion-compare.git"
+        ]
+    },
+    "mopub/gargoyle": {
+        "git": [
+            "https://github.com/mopub/gargoyle.git"
+        ],
+        "github": [
+            "https://github.com/mopub/gargoyle.git"
+        ]
+    },
+    "mopub/toolz": {
+        "git": [
+            "https://github.com/mopub/toolz.git"
+        ],
+        "github": [
+            "https://github.com/mopub/toolz.git"
+        ]
+    },
+    "mopub/django-oauth2-provider": {
+        "git": [
+            "https://github.com/mopub/django-oauth2-provider.git"
+        ],
+        "github": [
+            "https://github.com/mopub/django-oauth2-provider.git"
+        ]
+    },
+    "mopub/python-social-auth": {
+        "git": [
+            "https://github.com/mopub/python-social-auth.git"
+        ],
+        "github": [
+            "https://github.com/mopub/python-social-auth.git"
+        ]
+    },
+    "mopub/mopub-volley": {
+        "git": [
+            "https://github.com/mopub/mopub-volley.git"
+        ],
+        "github": [
+            "https://github.com/mopub/mopub-volley.git"
+        ]
+    },
+    "mopub/mopub-unity-sdk": {
+        "git": [
+            "https://github.com/mopub/mopub-unity-sdk.git"
+        ],
+        "github": [
+            "https://github.com/mopub/mopub-unity-sdk.git"
+        ]
+    },
+    "mopub/mopub-android-mediation": {
+        "git": [
+            "https://github.com/mopub/mopub-android-mediation.git"
+        ],
+        "github": [
+            "https://github.com/mopub/mopub-android-mediation.git"
+        ]
+    },
+    "mopub/mopub-ios-mediation": {
+        "git": [
+            "https://github.com/mopub/mopub-ios-mediation.git"
+        ],
+        "github": [
+            "https://github.com/mopub/mopub-ios-mediation.git"
+        ]
+    },
+    "mopub/mopub-unity-mediation": {
+        "git": [
+            "https://github.com/mopub/mopub-unity-mediation.git"
+        ],
+        "github": [
+            "https://github.com/mopub/mopub-unity-mediation.git"
+        ]
+    },
     "snappytv": {
         "git": [
             "https://github.com/snappytv/mpipe.git",
@@ -1210,6 +5650,86 @@
             "https://github.com/snappytv/puppetlabs-lvm.git",
             "https://github.com/snappytv/flvedit.git",
             "https://github.com/snappytv/hls.js.git",
+            "https://github.com/snappytv/mod_reproxy-1.git"
+        ]
+    },
+    "snappytv/mpipe": {
+        "git": [
+            "https://github.com/snappytv/mpipe.git"
+        ],
+        "github": [
+            "https://github.com/snappytv/mpipe.git"
+        ]
+    },
+    "snappytv/freight": {
+        "git": [
+            "https://github.com/snappytv/freight.git"
+        ],
+        "github": [
+            "https://github.com/snappytv/freight.git"
+        ]
+    },
+    "snappytv/octopus": {
+        "git": [
+            "https://github.com/snappytv/octopus.git"
+        ],
+        "github": [
+            "https://github.com/snappytv/octopus.git"
+        ]
+    },
+    "snappytv/s3backer": {
+        "git": [
+            "https://github.com/snappytv/s3backer.git"
+        ],
+        "github": [
+            "https://github.com/snappytv/s3backer.git"
+        ]
+    },
+    "snappytv/s3fs": {
+        "git": [
+            "https://github.com/snappytv/s3fs.git"
+        ],
+        "github": [
+            "https://github.com/snappytv/s3fs.git"
+        ]
+    },
+    "snappytv/collectd": {
+        "git": [
+            "https://github.com/snappytv/collectd.git"
+        ],
+        "github": [
+            "https://github.com/snappytv/collectd.git"
+        ]
+    },
+    "snappytv/puppetlabs-lvm": {
+        "git": [
+            "https://github.com/snappytv/puppetlabs-lvm.git"
+        ],
+        "github": [
+            "https://github.com/snappytv/puppetlabs-lvm.git"
+        ]
+    },
+    "snappytv/flvedit": {
+        "git": [
+            "https://github.com/snappytv/flvedit.git"
+        ],
+        "github": [
+            "https://github.com/snappytv/flvedit.git"
+        ]
+    },
+    "snappytv/hls.js": {
+        "git": [
+            "https://github.com/snappytv/hls.js.git"
+        ],
+        "github": [
+            "https://github.com/snappytv/hls.js.git"
+        ]
+    },
+    "snappytv/mod_reproxy-1": {
+        "git": [
+            "https://github.com/snappytv/mod_reproxy-1.git"
+        ],
+        "github": [
             "https://github.com/snappytv/mod_reproxy-1.git"
         ]
     }
