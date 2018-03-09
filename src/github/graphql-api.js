@@ -1,6 +1,6 @@
 "use strict";
 
-const fetch = require('node-fetch');
+const fetch = require('cross-fetch');
 const queries = require('./graphql-queries');
 
 module.exports = {

@@ -1,6 +1,6 @@
 'use strict';
 
-const fetch = require('node-fetch');
+const fetch = require('cross-fetch');
 const queryString = require('querystring');
 const parseLinkHeader = require('parse-link-header');
 
@@ -45,7 +45,8 @@ async function fetchRepoResourceList(owner, repo, resourceType, apiToken, resour
                 }
                 resourceList.push(...resourceSublist);
             }
-            links = response.headers._headers.link ? parseLinkHeader(response.headers._headers.link[0]) : {};
+            const linkHeader = response.headers.get('link');
+            links = linkHeader ? parseLinkHeader(linkHeader) : {};
             // pageNum += 1;
             // if (pageNum === 1) {
             //     lastPage = links.last ? +links.last.page : pageNum;
