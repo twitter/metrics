@@ -5,10 +5,10 @@ const queries = require('./graphql-queries');
 
 module.exports = {
     fetchOnePage,
+	fetchOrgAllReposNamesWithOwner,
     fetchOrgAllReposTotalCounts,
     fetchRepoTotalCounts,
     _flattenedRepoTotalCounts,
-    fetchOrgAllReposNames,
     fetchAllPulls
 };
 
@@ -102,45 +102,28 @@ function _flattenedRepoTotalCounts(repositoryObject) {
     return flatRepo;
 }
 
-async function fetchOrgAllReposNames(owner, apiToken) {
-    const queryString = `
-    query o1($owner: String!, $endCursor: String) {
-      organization(login: $owner) {
-        repositories(first: 100, after: $endCursor) {
-          pageInfo {
-            hasNextPage
-            endCursor
-          }
-          totalCount
-          edges {
-            node {
-              name
-            }
-          }
-        }
-      }
-    }`;
+// TODO: much repeated code with fetchOrgAllReposTotalCounts
+// TODO: refactor GraphQL API paging of organization as a first step
+async function fetchOrgAllReposNamesWithOwner(owner, apiToken) {
+	const queryString = queries.orgAllReposNamesWithOwnerQuery;
+	const allRepositoryEdges = [];
+	let hasNextPage = null;
+	let endCursor = null;
+	let numPages = 0;
 
-    let numPages = 0;
-    let allRepoNames = [];
+	do {
+		const variablesString = JSON.stringify({ owner: owner, endCursor: endCursor });
+		const data = await fetchOnePage(queryString, variablesString, apiToken);
+		const { organization } = data;
+		const { repositories } = organization;
+		const { edges : repositoryEdges, pageInfo } = repositories;
+		allRepositoryEdges.push(...repositoryEdges);
+		({ hasNextPage, endCursor } = pageInfo);
+		numPages += 1;
+	} while (hasNextPage);
 
-    let hasNextPage = null;
-    let endCursor = null;
-    do {
-        let variablesObject = { owner: owner, endCursor: endCursor };
-        let variablesString = JSON.stringify(variablesObject);
-        let { data } = await fetchOnePage(queryString, variablesString, apiToken);
-
-        numPages += 1;
-        allRepoNames.push(...data.organization.repositories.edges);
-        let pageInfo = data.organization.repositories.pageInfo;
-        hasNextPage = pageInfo.hasNextPage;
-        endCursor = pageInfo.endCursor;
-    } while (hasNextPage);
-
-    allRepoNames = allRepoNames.map((element) => element.node.name);
-
-    return allRepoNames;
+	const allRepoNames = allRepositoryEdges.map(({ node } = repositoryEdge) => node.nameWithOwner);
+	return allRepoNames;
 }
 
 

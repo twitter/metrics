@@ -63,6 +63,26 @@ fragment RepoDefaultBranch on Repository {
 }
 `;
 
+const orgAllReposNamesWithOwnerQuery = `
+query ($owner: String!, $endCursor: String) {
+  organization(login: $owner) {
+    repositories(first: 100, after: $endCursor) {
+      pageInfo {
+        hasNextPage
+        endCursor
+      }
+      totalCount
+      edges {
+        node {
+          nameWithOwner
+          name
+        }
+      }
+    }
+  }
+}
+`;
+
 const orgAllReposTotalCountsQuery = `
 query ($owner: String!, $endCursor: String) {
   organization(login: $owner) {
@@ -101,6 +121,7 @@ ${repoDefaultBranchFragment}
 `;
 
 module.exports = {
+	orgAllReposNamesWithOwnerQuery,
     orgAllReposTotalCountsQuery,
     repoTotalCountsQuery,
 };
