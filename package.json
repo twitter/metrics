@@ -8,6 +8,7 @@
   "license": "ISC",
   "dependencies": {
     "cross-fetch": "^2.0.0",
+    "d3-dsv": "^1.0.8",
     "parse-link-header": "^1.0.1",
     "yargs": "^10.0.3"
   },
