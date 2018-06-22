@@ -1,15 +1,19 @@
 import datetime
 import json
 import os
+
 import requests
 
 import graphql_queries
 
 
-PATH_TO_METRICS_REPO = "/Users/hmishra/workspace/twitter/metrics"
-PATH_TO_METRICS_DATA = PATH_TO_METRICS_REPO + "/_data"
-GITHUB_USERNAME = "OrkoHunter"
-GITHUB_OAUTH_TOKEN = "c673b1e8af4a56a7ccee71badfbd06b264ec190b"
+# PATH_TO_METRICS_REPO = "/Users/hmishra/workspace/twitter/metrics"
+# PATH_TO_METRICS_DATA = PATH_TO_METRICS_REPO + "/_data"
+PATH_TO_METRICS_DATA = "_data"
+GITHUB_USERNAME = os.environ["GH_USERNAME"]
+# GITHUB_USERNAME = "OrkoHunter"
+GITHUB_OAUTH_TOKEN = os.environ["OAUTH_TOKEN"]
+# GITHUB_OAUTH_TOKEN = "c673b1e8af4a56a7ccee71badfbd06b264ec190b"
 GITHUB_API_ENDPOINT = "https://api.github.com/graphql"
 DATESTAMP = datetime.datetime.now().date().isoformat()
 
