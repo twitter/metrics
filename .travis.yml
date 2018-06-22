@@ -25,3 +25,8 @@ deploy:
   verbose: true
   on:
     branch: gh-pages
+
+notifications:
+  slack:
+    rooms:
+      - "$SLACK_TOKEN"#twitteross-metrics
