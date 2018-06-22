@@ -17,6 +17,4 @@ deploy:
   skip-cleanup: true
   github-token: $OAUTH_TOKEN
   keep-history: true
-  on:
-    branch: master
   verbose: true
