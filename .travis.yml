@@ -1,3 +1,7 @@
+branches:
+  only:
+    - gh-pages
+
 language: python
 
 python:
@@ -18,3 +22,5 @@ deploy:
   github-token: $OAUTH_TOKEN
   keep-history: true
   verbose: true
+  on:
+    branch: gh-pages
