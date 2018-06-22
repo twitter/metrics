@@ -11,7 +11,7 @@ PATH_TO_METRICS_DATA = PATH_TO_METRICS_REPO + "/_data"
 GITHUB_USERNAME = "OrkoHunter"
 GITHUB_OAUTH_TOKEN = "c673b1e8af4a56a7ccee71badfbd06b264ec190b"
 GITHUB_API_ENDPOINT = "https://api.github.com/graphql"
-
+DATESTAMP = datetime.datetime.now().date().isoformat()
 
 def fetch_one_page(query_string, variables):
     """
@@ -33,7 +33,7 @@ has_next_page = False
 end_cursor = None
 num_of_pages = 0
 while True:
-    print("Num of pages ", num_of_pages)
+    print("Num of pages", num_of_pages)
     variables = json.dumps({"owner": "twitter", "endCursor": end_cursor})
 
     print("Sending request")
@@ -45,14 +45,14 @@ while True:
 
     pageInfo = response["data"]["organization"]["repositories"]["pageInfo"]
     has_next_page = pageInfo["hasNextPage"]
-    print("has_next_page ", has_next_page)
+    print("has_next_page", has_next_page)
     end_cursor = pageInfo["endCursor"]
-    print("end_cursor ", end_cursor)
+    print("end_cursor", end_cursor)
     num_of_pages += 1
     if not has_next_page:
         break
 
-print("LOG: Fetched all the repositories. Count: ", len(all_repository_edges))
+print("LOG: Fetched all the repositories. Count:", len(all_repository_edges))
 
 ## TODO: Repos to exclude and include from files in the metrics repo
 repos_to_exclude = []
@@ -74,6 +74,7 @@ for repo in repos_to_exclude:
     except Exception as e:
         pass
 
+
 # Save the respective JSON files
 for repo in DATA_JSON:
     owner, project = repo.split("/")
@@ -85,9 +86,11 @@ for repo in DATA_JSON:
     if not os.path.isdir(repo_dir_path):
         os.mkdir(repo_dir_path)
 
+    # Add datestamp inside the JSON
+    DATA_JSON[repo]["datestamp"] = DATESTAMP
+
     # Save the json file with a timestamp
-    timestamp = datetime.datetime.now().date().isoformat()
-    file_name = timestamp + ".json"
-    with open(repo_dir_path + "/" + file_name, "w") as f:
+    file_name = "METRICS-" + DATESTAMP + ".json"
+    with open(repo_dir_path + "/" + file_name, "w+") as f:
         json.dump(DATA_JSON[repo], f)
-    print("LOG: Saving ", file_name, " for ", repo)
+    print("LOG: Saving", file_name, "for", repo)

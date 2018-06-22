@@ -1,9 +1,13 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
-
+<h2><a target="_blank" href="https://github.com/{{ page.owner}}/{{ page.repo }}">{{ page.owner}}/{{ page.repo }}</a></h2>
+<p class="meta">{{ page.datestampThisWeek | date_to_string }}</p>
 <div class="post">
 {{ content }}
 </div>
+<hr>
+<i>
+<p>Report permalink: <a href="https://twitter.github.io/metrics/{{ page.owner }}/{{ page.repo }}/{{ page.reportID }}.html">https://twitter.github.io/metrics/{{ page.owner }}/{{ page.repo }}/{{ page.reportID }}.html</a></p>
+<p>Date of Last Week : {{ page.datestampLastWeek | date_to_string }}</p>
+</i>
