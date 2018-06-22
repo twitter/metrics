@@ -11,9 +11,11 @@ import os
 import re
 import textwrap
 
-PATH_TO_METRICS_REPO = "/Users/hmishra/workspace/twitter/metrics"
-PATH_TO_METRICS_DATA = PATH_TO_METRICS_REPO + "/_data"
-PATH_TO_METRICS_POSTS = PATH_TO_METRICS_REPO + "/_posts"
+# PATH_TO_METRICS_REPO = "/Users/hmishra/workspace/twitter/metrics"
+# PATH_TO_METRICS_DATA = PATH_TO_METRICS_REPO + "/_data"
+PATH_TO_METRICS_DATA = "_data"
+# PATH_TO_METRICS_POSTS = PATH_TO_METRICS_REPO + "/_posts"
+PATH_TO_METRICS_POSTS = "_posts"
 MIN_DIFFERENCE = 0 # In Days
 METRICS_VERSION = "0.1"
 
@@ -23,17 +25,11 @@ for project in ALL_PROJECTS:
     print("LOG: Starting with", project)
     files_for_project = os.listdir(project)
 
-    # Get the next report number for WEEKLY-{N}
-    new_report_number = 1
-    re_weekly_report = re.compile(r"WEEKLY-[0-9]+.json")
-
     # Get the latest two metrics for this week project which are MIN_DIFFERENCE days apart
     re_metrics = re.compile(r"METRICS-\d{4}-\d{2}-\d{2}.json")
     all_metrics = []
 
     for filename in files_for_project:
-        if re_weekly_report.match(filename):
-            new_report_number += 1
         if re_metrics.match(filename):
             all_metrics.append(filename)
 
@@ -73,7 +69,7 @@ for project in ALL_PROJECTS:
         last_week_json = json.load(f)
 
     REPORT_JSON["nameWithOwner"] = this_week_json["nameWithOwner"]
-    REPORT_JSON["reportID"] = "WEEKLY-{}".format(new_report_number)
+    REPORT_JSON["reportID"] = "WEEKLY-{}".format(this_week_json["datestamp"])
     REPORT_JSON["datestamp"] = {
         "this_week": this_week_json["datestamp"],
         "last_week": last_week_json["datestamp"]
