@@ -6,31 +6,19 @@
         <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width">
 
-        {% if site.url contains 'localhost' %}
-
         <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
+        <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/syntax.css">
 
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
-
-        {% else %}
-
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/metrics/css/syntax.css">
-
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/metrics/css/main.css">
-
-        {% endif %}
+        <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/main.css">
 
     </head>
     <body>
 
         <div class="site">
           <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
+            <h1 class="title"><a href="{{ site.url }}{{ site.baseurl }}/">{{ site.name }}</a></h1>
+            <a class="extra" href="{{ site.url }}{{ site.baseurl }}/">home</a>
           </div>
 
           {{ content }}
