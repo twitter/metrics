@@ -15,6 +15,7 @@ install:
 
 script:
   - python scripts/fetch_all_repos.py
+  - python scripts/gen_weekly_report.py
 
 deploy:
   provider: pages
