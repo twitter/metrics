@@ -7,15 +7,28 @@ import requests
 import graphql_queries
 
 
-# PATH_TO_METRICS_REPO = "/Users/hmishra/workspace/twitter/metrics"
-# PATH_TO_METRICS_DATA = PATH_TO_METRICS_REPO + "/_data"
+print("LOG: Assuming the current path to be the root of the metrics repository.")
 PATH_TO_METRICS_DATA = "_data"
 GITHUB_USERNAME = os.environ["GH_USERNAME"]
-# GITHUB_USERNAME = "OrkoHunter"
 GITHUB_OAUTH_TOKEN = os.environ["OAUTH_TOKEN"]
-# GITHUB_OAUTH_TOKEN = "c673b1e8af4a56a7ccee71badfbd06b264ec190b"
 GITHUB_API_ENDPOINT = "https://api.github.com/graphql"
 DATESTAMP = datetime.datetime.now().date().isoformat()
+
+# Read repos-to-include.md
+all_orgs = []  # Track orgs and all its repos e.g. twitter, twitter
+all_repos = []  # Track specific repositories e.g. ('pantsbuild', 'pants')
+
+with open("repos-to-include.md", "r") as f:
+    for line in f:
+        owner, repo = line.split("/")
+        repo = repo.rstrip("\n")
+        if repo == "*":
+            all_orgs.append(owner)
+        else:
+            all_repos.append((owner, repo))
+
+print("LOG: Orgs to track", all_orgs)
+print("Repos to track", all_repos)
 
 def fetch_one_page(query_string, variables):
     """
@@ -30,46 +43,65 @@ def fetch_one_page(query_string, variables):
     else:
         raise Exception("Error in GitHub API query. Status Code : {}, Response: {}".format(r.status_code, r.json()))
 
-all_repository_edges = []  # All the repos in the org with their stats
+all_org_edges = []  # All the repos in the org with their stats
 
-# Combine the paginated responses from the API
-has_next_page = False
-end_cursor = None
-num_of_pages = 0
-while True:
-    print("Num of pages", num_of_pages)
-    variables = json.dumps({"owner": "twitter", "endCursor": end_cursor})
+for org in all_orgs:
+    # Combine the paginated responses from the API
+    has_next_page = False
+    end_cursor = None
+    num_of_pages = 0
+    while True:
+        print("Num of pages", num_of_pages)
+        variables = json.dumps({"owner": org, "endCursor": end_cursor})
 
-    print("Sending request")
-    response = fetch_one_page(graphql_queries.org_all_repos, variables)
-    print("Received request")
+        print("Sending request")
+        response = fetch_one_page(graphql_queries.org_all_repos, variables)
+        print("Received request")
 
-    repository_edges = response["data"]["organization"]["repositories"]["edges"]
-    all_repository_edges.extend(repository_edges)
+        repository_edges = response["data"]["organization"]["repositories"]["edges"]
+        all_org_edges.extend(repository_edges)
 
-    pageInfo = response["data"]["organization"]["repositories"]["pageInfo"]
-    has_next_page = pageInfo["hasNextPage"]
-    print("has_next_page", has_next_page)
-    end_cursor = pageInfo["endCursor"]
-    print("end_cursor", end_cursor)
-    num_of_pages += 1
-    if not has_next_page:
-        break
+        pageInfo = response["data"]["organization"]["repositories"]["pageInfo"]
+        has_next_page = pageInfo["hasNextPage"]
+        print("has_next_page", has_next_page)
+        end_cursor = pageInfo["endCursor"]
+        print("end_cursor", end_cursor)
+        num_of_pages += 1
+        if not has_next_page:
+            break
 
-print("LOG: Fetched all the repositories. Count:", len(all_repository_edges))
+print("LOG: Fetched all the org repositories. Count:", len(all_org_edges))
+
+# Fetch individual repositories' data
+
+all_repo_edges = []  # All individual repos
+
+for repo in all_repos:
+    variables = json.dumps({"owner": repo[0], "repo": repo[1], "endCursor": None})
+
+    response = fetch_one_page(graphql_queries.repo_wise, variables)
+    print("response for", repo, response)
+    all_repo_edges.append(response["data"])
+    print("TYPE", type(response["data"]))
+
+print("LOG: Fetched all the individual repos as well. Count:", len(all_org_edges))
 
 ## TODO: Repos to exclude and include from files in the metrics repo
 repos_to_exclude = []
-# repos_to_include = []
 
-# Convert all_repository_edges to DATA_JSON with the following format -
+# Convert all_org_edges to DATA_JSON with the following format -
 # key: value :: repo_full_name: repo_data
 
 DATA_JSON = {}
 
-for edge in all_repository_edges:
+for edge in all_org_edges:
     repo_full_name = edge["node"]["nameWithOwner"]
     repo_data = edge["node"]
+    DATA_JSON[repo_full_name] = repo_data
+
+for edge in all_repo_edges:
+    repo_full_name = edge["repository"]["nameWithOwner"]
+    repo_data = edge["repository"]
     DATA_JSON[repo_full_name] = repo_data
 
 for repo in repos_to_exclude:
