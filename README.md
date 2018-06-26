@@ -8,7 +8,7 @@ Generating periodic reports based on the Twitter Open Source metrics.
 
 Go to twitter.github.io/metrics and choose a project/org.
 
-# [WIP] How to add new repositories and orgs?
+# How to add new repositories and orgs?
 
 If you want to track an org and all its repositories which are hosted `github.com/<org_name>`,
 add `<org_name>/*` as a new line in `repos_to_include.md`.
