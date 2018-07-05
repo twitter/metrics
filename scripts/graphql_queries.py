@@ -86,7 +86,8 @@ repo_wise = """
 query ($owner:String!, $repo:String!) {
   repository(owner: $owner, name: $repo) {
     nameWithOwner
-    name    
+    name
+    isPrivate
     ... RepoTotalCounts
     ... RepoDefaultBranch
   }

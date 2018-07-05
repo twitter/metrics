@@ -80,11 +80,11 @@ for repo in all_repos:
     variables = json.dumps({"owner": repo[0], "repo": repo[1], "endCursor": None})
 
     response = fetch_one_page(graphql_queries.repo_wise, variables)
-    print("response for", repo, response)
+    # print("response for", repo, response)
     all_repo_edges.append(response["data"])
-    print("TYPE", type(response["data"]))
+    # print("TYPE", type(response["data"]))
 
-print("LOG: Fetched all the individual repos as well. Count:", len(all_org_edges))
+print("LOG: Fetched all the individual repos as well. Count:", len(all_repo_edges))
 
 ## TODO: Repos to exclude and include from files in the metrics repo
 repos_to_exclude = []
@@ -95,11 +95,16 @@ repos_to_exclude = []
 DATA_JSON = {}
 
 for edge in all_org_edges:
+    if edge["node"]["isPrivate"]:
+        print("Skipping the private repository", edge["node"]["nameWithOwner"])
+        continue
     repo_full_name = edge["node"]["nameWithOwner"]
     repo_data = edge["node"]
     DATA_JSON[repo_full_name] = repo_data
 
 for edge in all_repo_edges:
+    if edge["repository"]["isPrivate"]:
+        print("Skipping the private repository", edge["node"]["nameWithOwner"])
     repo_full_name = edge["repository"]["nameWithOwner"]
     repo_data = edge["repository"]
     DATA_JSON[repo_full_name] = repo_data
