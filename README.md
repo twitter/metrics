@@ -47,6 +47,7 @@ This repository is integrated with Travis. A [Travis Cron Job](https://docs.trav
 - Use Python 3.
 - `_data` contains all the data files
 - Files in `_posts` leverage `_layouts` and `_data` and generate HTML files
+- Don't change html files inside layouts. Create new layouts with new version.
 - Maintain versions of metrics layouts (See `METRICS_VERSION` inside the script to generate reports. Also create a new `_layout` for each metrics version). If you add more data, the new posts should be on a new version (which wouldn't break previous pages)
 - Use `repos-to-include.md` and `repos-to-exlude.md` files to add org/repository for respective purposes.
 - Prepend `{{ site.url }}{{ site.baseurl }}` and use relative URLs

@@ -11,10 +11,7 @@ import os
 import re
 import textwrap
 
-# PATH_TO_METRICS_REPO = "/Users/hmishra/workspace/twitter/metrics"
-# PATH_TO_METRICS_DATA = PATH_TO_METRICS_REPO + "/_data"
 PATH_TO_METRICS_DATA = "_data"
-# PATH_TO_METRICS_POSTS = PATH_TO_METRICS_REPO + "/_posts"
 PATH_TO_METRICS_POSTS = "_posts"
 MIN_DIFFERENCE = 6 # In Days
 METRICS_VERSION = "0.1"
