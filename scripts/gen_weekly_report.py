@@ -39,6 +39,15 @@ for project in ALL_PROJECTS:
     this_week_json_file = all_metrics.pop()
     print("LOG: This week json file", this_week_json_file)
 
+    # If the latest Metrics is older than MIN_DIFFERENCE, then don't generate report
+    # This is possible in cases of repo turning private or moving out
+    today_datestamp = datetime.datetime.now()
+    latest_datestamp = datetime.datetime.strptime(this_week_json_file, "METRICS-%Y-%m-%d.json")
+    datetime_delta = today_datestamp - latest_datestamp
+    if datetime_delta.days > MIN_DIFFERENCE:
+        print("Skipping report for", project, "Latest metrics file is older than MIN_DIFFERENCE")
+        continue
+
     last_week_json_file = None
     last_week_index = len(all_metrics) - 1
     while(last_week_index >= 0):
