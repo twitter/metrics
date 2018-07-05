@@ -11,6 +11,7 @@ query ($owner: String!, $endCursor: String) {
         node {
           nameWithOwner
           name
+          isPrivate
           ... RepoTotalCounts
           ... RepoDefaultBranch
         }
