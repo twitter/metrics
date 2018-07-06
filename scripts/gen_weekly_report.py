@@ -140,7 +140,7 @@ for project in ALL_PROJECTS:
     ---
     layout: metrics-v{version}
     title: TwiterOSS Metrics Report for {owner}/{repo} | {reportID} | {datestampThisWeek}
-    permalink: /{owner}/{repo}/{reportID}.html
+    permalink: /{owner}/{repo}/{link}.html
 
     owner: {owner}
     repo: {repo}
@@ -166,23 +166,41 @@ for project in ALL_PROJECTS:
         {{% endfor %}}
     </table>
 
-    """.format(version=METRICS_VERSION,
-               owner=REPORT_JSON["nameWithOwner"].split("/")[0],
-               repo=REPORT_JSON["nameWithOwner"].split("/")[1],
-               reportID=REPORT_JSON["reportID"],
-               datestampThisWeek=REPORT_JSON["datestamp"]["this_week"],
-               datestampLastWeek=REPORT_JSON["datestamp"]["last_week"])
+    """
+
+    normal_post_text = post_text.format(
+        version=METRICS_VERSION,
+        owner=REPORT_JSON["nameWithOwner"].split("/")[0],
+        repo=REPORT_JSON["nameWithOwner"].split("/")[1],
+        reportID=REPORT_JSON["reportID"],
+        datestampThisWeek=REPORT_JSON["datestamp"]["this_week"],
+        datestampLastWeek=REPORT_JSON["datestamp"]["last_week"],
+        link=REPORT_JSON["reportID"])
+
+    latest_post_text = post_text.format(
+        version=METRICS_VERSION,
+        owner=REPORT_JSON["nameWithOwner"].split("/")[0],
+        repo=REPORT_JSON["nameWithOwner"].split("/")[1],
+        reportID=REPORT_JSON["reportID"],
+        datestampThisWeek=REPORT_JSON["datestamp"]["this_week"],
+        datestampLastWeek=REPORT_JSON["datestamp"]["last_week"],
+        link="WEEKLY")
+
 
     # Create directory for the post, if it does not exist
     path_to_post = PATH_TO_METRICS_POSTS + "/" + REPORT_JSON["nameWithOwner"]
     os.makedirs(path_to_post, exist_ok=True)
 
-    post_file = "{}/{}-{}.md".format(path_to_post, REPORT_JSON["datestamp"]["this_week"], REPORT_JSON["reportID"])
-    with open(post_file, "w+") as f:
-        f.write(textwrap.dedent(post_text))
-    print("LOG: Created a POST", post_file)
+    # This is a weird filename for sure. But I think I have an explanation for it -
+    # posts need to start with %Y-%m-%d and the later is sent to page.title variable
+    # Without the later date, title did not make much sense.
+    normal_post_file = "{}/{}-{}.md".format(path_to_post, REPORT_JSON["datestamp"]["this_week"], REPORT_JSON["reportID"])
+    with open(normal_post_file, "w+") as f:
+        f.write(textwrap.dedent(normal_post_text))
+    print("LOG: Created a POST", normal_post_file)
 
-    #TODO: Create latest.md file in _posts as well
-
-
-
+    # Create latest report file in _posts as well
+    latest_post_file = "{}/{}-WEEKLY-LATEST.md".format(path_to_post, REPORT_JSON["datestamp"]["this_week"])
+    with open(latest_post_file, "w+") as f:
+        f.write(textwrap.dedent(latest_post_text))
+    print("LOG: Created the latest POST", latest_post_file)
