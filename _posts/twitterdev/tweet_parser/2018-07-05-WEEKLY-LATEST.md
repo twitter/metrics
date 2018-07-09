@@ -1,5 +1,5 @@
 ---
-layout: metrics-v0.1
+layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitterdev/tweet_parser | WEEKLY-2018-07-05 | 2018-07-05
 permalink: /twitterdev/tweet_parser/WEEKLY.html
 
