@@ -20,7 +20,7 @@ If you want to track some and not all repositories of an org, add `<org_name>/<r
 
 This repository is integrated with Travis. A [Travis Cron Job](https://docs.travis-ci.com/user/cron-jobs/) is scheduled to run every week.
 
-- `python scripts/fetch_all_repos.py`
+- `python scripts/fetch_all_metrics.py`
    
   - Reads all the repositories and orgs listed in `repos-to-include.md`
   - Requests GitHub GraphQL API
@@ -52,4 +52,4 @@ This repository is integrated with Travis. A [Travis Cron Job](https://docs.trav
 - Use `repos-to-include.md` and `repos-to-exlude.md` files to add org/repository for respective purposes.
 - Prepend `{{ site.url }}{{ site.baseurl }}` and use relative URLs
   - e.g. `{{ site.url }}{{ site.baseurl }}/css/main.css`
-- Execute all the scripts from the home of the directory. e.g. `python3 scripts/fetch_all_repos.py`
+- Execute all the scripts from the home of the directory. e.g. `python3 scripts/fetch_all_metrics.py`

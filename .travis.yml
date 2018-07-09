@@ -14,7 +14,7 @@ install:
   - pip install -r requirements.txt
 
 script:
-  - python scripts/fetch_all_repos.py
+  - python scripts/fetch_all_metrics.py
   - python scripts/gen_weekly_report.py
 
 deploy:
