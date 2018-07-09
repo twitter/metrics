@@ -1,5 +1,5 @@
 ---
-layout: metrics-v0.1
+layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/innovators-patent-agreement | WEEKLY-2018-07-06 | 2018-07-06
 permalink: /twitter/innovators-patent-agreement/WEEKLY.html
 

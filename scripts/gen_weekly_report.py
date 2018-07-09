@@ -14,7 +14,7 @@ import textwrap
 PATH_TO_METRICS_DATA = "_data"
 PATH_TO_METRICS_POSTS = "_posts"
 MIN_DIFFERENCE = 6 # In Days
-METRICS_VERSION = "0.1"
+WEEKLY_METRICS_VERSION = "0.1"
 
 ALL_PROJECTS = glob(PATH_TO_METRICS_DATA + "/*/*")
 
@@ -22,7 +22,7 @@ for project in ALL_PROJECTS:
     print("LOG: Starting with", project)
     files_for_project = os.listdir(project)
 
-    # Get the latest two metrics for this week project which are MIN_DIFFERENCE days apart
+    # Get the latest two metrics for this project which are MIN_DIFFERENCE days apart
     re_metrics = re.compile(r"METRICS-\d{4}-\d{2}-\d{2}.json")
     all_metrics = []
 
@@ -138,7 +138,7 @@ for project in ALL_PROJECTS:
     # Create .md file in _posts with datestamp
     post_text = """\
     ---
-    layout: metrics-v{version}
+    layout: weekly-metrics-v{version}
     title: TwiterOSS Metrics Report for {owner}/{repo} | {reportID} | {datestampThisWeek}
     permalink: /{owner}/{repo}/{link}.html
 
@@ -169,7 +169,7 @@ for project in ALL_PROJECTS:
     """
 
     normal_post_text = post_text.format(
-        version=METRICS_VERSION,
+        version=WEEKLY_METRICS_VERSION,
         owner=REPORT_JSON["nameWithOwner"].split("/")[0],
         repo=REPORT_JSON["nameWithOwner"].split("/")[1],
         reportID=REPORT_JSON["reportID"],
@@ -178,7 +178,7 @@ for project in ALL_PROJECTS:
         link=REPORT_JSON["reportID"])
 
     latest_post_text = post_text.format(
-        version=METRICS_VERSION,
+        version=WEEKLY_METRICS_VERSION,
         owner=REPORT_JSON["nameWithOwner"].split("/")[0],
         repo=REPORT_JSON["nameWithOwner"].split("/")[1],
         reportID=REPORT_JSON["reportID"],

@@ -1,5 +1,5 @@
 ---
-layout: metrics-v0.1
+layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/cloudhopper-chimpq | WEEKLY-2018-06-29 | 2018-06-29
 permalink: /twitter/cloudhopper-chimpq/WEEKLY.html
 
