@@ -86,8 +86,12 @@ for repo in all_repos:
 
 print("LOG: Fetched all the individual repos as well. Count:", len(all_repo_edges))
 
-## TODO: Repos to exclude and include from files in the metrics repo
-repos_to_exclude = []
+# Repos to exclude from the project
+repos_to_exclude = set()
+with open("repos-to-exclude.txt", "r") as f:
+    for line in f:
+        repo = line.rstrip("\n")
+        repos_to_exclude.add(repo)
 
 # Convert all_org_edges to DATA_JSON with the following format -
 # key: value :: repo_full_name: repo_data
@@ -97,6 +101,9 @@ DATA_JSON = {}
 for edge in all_org_edges:
     if edge["node"]["isPrivate"]:
         print("Skipping the private repository", edge["node"]["nameWithOwner"])
+        continue
+    if edge["node"]["nameWithOwner"] in repos_to_exclude:
+        print("Skipping", edge["node"]["nameWithOwner"], "from repos-to-exclude.txt")
         continue
     repo_full_name = edge["node"]["nameWithOwner"]
     repo_data = edge["node"]
