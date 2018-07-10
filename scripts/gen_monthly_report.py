@@ -36,8 +36,15 @@ PATH_TO_METRICS_DATA = "_data"
 PATH_TO_METRICS_POSTS = "_posts"
 MIN_DIFFERENCE = 27 # In Days
 MONTHLY_METRICS_VERSION = "0.1"
+ORG_MONTHLY_METRICS_VERSION = "0.1"
 
-ALL_PROJECTS = glob(PATH_TO_METRICS_DATA + "/*/*")
+ORG_REPORT_JSON = {}  # Summed up data for the entire github org
+
+
+ALL_PROJECTS = filter(os.path.isdir, glob(PATH_TO_METRICS_DATA + "/*/*"))
+"""
+Generate report for each project
+"""
 for project in ALL_PROJECTS:
     print("LOG: Starting with", project)
     files_for_project = os.listdir(project)
@@ -101,51 +108,63 @@ for project in ALL_PROJECTS:
         "last_month": last_month_json["datestamp"]
     }
 
+    org, repo = REPORT_JSON["nameWithOwner"].split("/")
+
+    if org not in ORG_REPORT_JSON:
+        ORG_REPORT_JSON[org] = {}
+        ORG_REPORT_JSON[org]["name"] = org
+        ORG_REPORT_JSON[org]["reportID"] = "MONTHLY-{}".format(this_month_json["datestamp"])
+        ORG_REPORT_JSON[org]["datestamp"] = {
+            "this_month": this_month_json["datestamp"],
+            "last_month": last_month_json["datestamp"]
+        }
+        ORG_REPORT_JSON[org]["data"] = {}
+
+    try:
+        ORG_REPORT_JSON[org]["no_of_repos"] += 1
+    except KeyError:
+        ORG_REPORT_JSON[org]["no_of_repos"] = 1
+
     REPORT_JSON["data"] = {}
     REPORT_JSON["data"]["commits"] = {
         "this_month": this_month_json["defaultBranchRef"]["target"]["history"]["totalCount"],
         "last_month": last_month_json["defaultBranchRef"]["target"]["history"]["totalCount"],
     }
-    REPORT_JSON["data"]["issues"] = {
-        "this_month": this_month_json["issues"]["totalCount"],
-        "last_month": last_month_json["issues"]["totalCount"],
-    }
-    REPORT_JSON["data"]["openIssues"] = {
-        "this_month": this_month_json["openIssues"]["totalCount"],
-        "last_month": last_month_json["openIssues"]["totalCount"],
-    }
-    REPORT_JSON["data"]["closedIssues"] = {
-        "this_month": this_month_json["closedIssues"]["totalCount"],
-        "last_month": last_month_json["closedIssues"]["totalCount"],
-    }
-    REPORT_JSON["data"]["pullRequests"] = {
-        "this_month": this_month_json["pullRequests"]["totalCount"],
-        "last_month": last_month_json["pullRequests"]["totalCount"],
-    }
-    REPORT_JSON["data"]["openPullRequests"] = {
-        "this_month": this_month_json["openPullRequests"]["totalCount"],
-        "last_month": last_month_json["openPullRequests"]["totalCount"],
-    }
-    REPORT_JSON["data"]["mergedPullRequests"] = {
-        "this_month": this_month_json["mergedPullRequests"]["totalCount"],
-        "last_month": last_month_json["mergedPullRequests"]["totalCount"],
-    }
-    REPORT_JSON["data"]["closedPullRequests"] = {
-        "this_month": this_month_json["closedPullRequests"]["totalCount"],
-        "last_month": last_month_json["closedPullRequests"]["totalCount"],
-    }
     REPORT_JSON["data"]["forkCount"] = {
         "this_month": this_month_json["forkCount"],
         "last_month": last_month_json["forkCount"],
     }
-    REPORT_JSON["data"]["stargazers"] = {
-        "this_month": this_month_json["stargazers"]["totalCount"],
-        "last_month": last_month_json["stargazers"]["totalCount"],
-    }
-    REPORT_JSON["data"]["watchers"] = {
-        "this_month": this_month_json["watchers"]["totalCount"],
-        "last_month": last_month_json["watchers"]["totalCount"],
-    }
+
+    try:
+        ORG_REPORT_JSON[org]["data"]["commits"]["this_month"] += this_month_json["defaultBranchRef"]["target"]["history"]["totalCount"]
+        ORG_REPORT_JSON[org]["data"]["commits"]["last_month"] += last_month_json["defaultBranchRef"]["target"]["history"]["totalCount"]
+        ORG_REPORT_JSON[org]["data"]["forkCount"]["this_month"] += this_month_json["forkCount"]
+        ORG_REPORT_JSON[org]["data"]["forkCount"]["last_month"] += last_month_json["forkCount"]
+    except KeyError:
+        ORG_REPORT_JSON[org]["data"]["commits"] = {
+            "this_month": this_month_json["defaultBranchRef"]["target"]["history"]["totalCount"],
+            "last_month": last_month_json["defaultBranchRef"]["target"]["history"]["totalCount"]
+        }
+        ORG_REPORT_JSON[org]["data"]["forkCount"] = {
+            "this_month": this_month_json["forkCount"],
+            "last_month": last_month_json["forkCount"]
+        }
+
+    # Grouping similar metrics
+    for metric in ["issues", "openIssues", "closedIssues", "pullRequests", "openPullRequests", "mergedPullRequests",
+                   "closedPullRequests", "stargazers", "watchers"]:
+        REPORT_JSON["data"][metric] = {
+            "this_month": this_month_json[metric]["totalCount"],
+            "last_month": last_month_json[metric]["totalCount"],
+        }
+        try:
+            ORG_REPORT_JSON[org]["data"][metric]["this_month"] += this_month_json[metric]["totalCount"]
+            ORG_REPORT_JSON[org]["data"][metric]["last_month"] += last_month_json[metric]["totalCount"]
+        except KeyError:
+            ORG_REPORT_JSON[org]["data"][metric] = {
+                "this_month": this_month_json[metric]["totalCount"],
+                "last_month": last_month_json[metric]["totalCount"]
+            }
 
     for metric in REPORT_JSON["data"]:
         REPORT_JSON["data"][metric]["diff"] = REPORT_JSON["data"][metric]["this_month"] - REPORT_JSON["data"][metric]["last_month"]
@@ -220,7 +239,87 @@ for project in ALL_PROJECTS:
     print("LOG: Created a POST", normal_post_file)
 
     # Create latest report file in _posts as well
-    latest_post_file = "{}/{}-WEEKLY-LATEST.md".format(path_to_post, REPORT_JSON["datestamp"]["this_month"])
+    latest_post_file = "{}/{}-MONTHLY-LATEST.md".format(path_to_post, REPORT_JSON["datestamp"]["this_month"])
+    with open(latest_post_file, "w+") as f:
+        f.write(textwrap.dedent(latest_post_text))
+    print("LOG: Created the latest POST", latest_post_file)
+
+
+"""
+Generate report for each org
+"""
+for org in ORG_REPORT_JSON:
+    for metric in ORG_REPORT_JSON[org]["data"]:
+        ORG_REPORT_JSON[org]["data"][metric]["diff"] = ORG_REPORT_JSON[org]["data"][metric]["this_month"] - ORG_REPORT_JSON[org]["data"][metric]["last_month"]
+
+for org in ORG_REPORT_JSON:
+    path_to_org = PATH_TO_METRICS_DATA + "/" + org
+    with open("{}/{}.json".format(path_to_org, ORG_REPORT_JSON[org]["reportID"]), "w+") as f:
+        json.dump(ORG_REPORT_JSON[org], f)
+
+    # Create post for the org
+    post_text = """\
+    ---
+    layout: org-monthly-metrics-v{version}
+    title: TwiterOSS Metrics Report for {org} | {reportID}
+    permalink: /{org}/{link}.html
+
+    org: {org}
+    reportID: {reportID}
+    datestampThisMonth: {datestampThisMonth}
+    datestampLastMonth: {datestampLastMonth}
+    ---
+
+    <table style="width: 100%">
+        <tr>
+            <th>Metric</th>
+            <th>This Month</th>
+            <th>Last Month</th>
+            <th>+/-</th>
+        </tr>
+        {{% for item in site.data["{org}"]["{reportID}"]["data"] %}}
+        <tr>
+            <th>{{{{ item[0] }}}}</th>
+            <th>{{{{ item[1]["this_month"] }}}}</th>
+            <th>{{{{ item[1]["last_month"] }}}}</th>
+            <th>{{{{ item[1]["diff"] }}}}</th>
+        </tr>
+        {{% endfor %}}
+    </table>
+
+    """
+
+    normal_post_text = post_text.format(
+        version=ORG_MONTHLY_METRICS_VERSION,
+        org=org,
+        reportID=REPORT_JSON["reportID"],
+        datestampThisMonth=REPORT_JSON["datestamp"]["this_month"],
+        datestampLastMonth=REPORT_JSON["datestamp"]["last_month"],
+        link=REPORT_JSON["reportID"])
+
+    latest_post_text = post_text.format(
+        version=ORG_MONTHLY_METRICS_VERSION,
+        org=org,
+        reportID=REPORT_JSON["reportID"],
+        datestampThisMonth=REPORT_JSON["datestamp"]["this_month"],
+        datestampLastMonth=REPORT_JSON["datestamp"]["last_month"],
+        link="MONTHLY")
+
+
+    # Create directory for the post, if it does not exist
+    path_to_post = PATH_TO_METRICS_POSTS + "/" + org
+    os.makedirs(path_to_post, exist_ok=True)
+
+    # This is a weird filename for sure. But I think I have an explanation for it -
+    # posts need to start with %Y-%m-%d and the later is sent to page.title variable
+    # Without the later date, title did not make much sense.
+    normal_post_file = "{}/{}-{}.md".format(path_to_post, ORG_REPORT_JSON[org]["datestamp"]["this_month"], ORG_REPORT_JSON[org]["reportID"])
+    with open(normal_post_file, "w+") as f:
+        f.write(textwrap.dedent(normal_post_text))
+    print("LOG: Created a POST", normal_post_file)
+
+    # Create latest report file in _posts as well
+    latest_post_file = "{}/{}-MONTHLY-LATEST.md".format(path_to_post, ORG_REPORT_JSON[org]["datestamp"]["this_month"])
     with open(latest_post_file, "w+") as f:
         f.write(textwrap.dedent(latest_post_text))
     print("LOG: Created the latest POST", latest_post_file)
