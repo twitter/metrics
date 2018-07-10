@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/twemproxy | WEEKLY-2018-07-10
-permalink: /twitter/twemproxy/WEEKLY.html
+permalink: /twitter/twemproxy/WEEKLY
 
 owner: twitter
 repo: twemproxy

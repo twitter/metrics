@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/SentenTree | WEEKLY-2018-07-10
-permalink: /twitter/SentenTree/WEEKLY.html
+permalink: /twitter/SentenTree/WEEKLY
 
 owner: twitter
 repo: SentenTree

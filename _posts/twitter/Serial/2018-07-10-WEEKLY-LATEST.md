@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/Serial | WEEKLY-2018-07-10
-permalink: /twitter/Serial/WEEKLY.html
+permalink: /twitter/Serial/WEEKLY
 
 owner: twitter
 repo: Serial

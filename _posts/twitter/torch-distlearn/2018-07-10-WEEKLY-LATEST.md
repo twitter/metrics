@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/torch-distlearn | WEEKLY-2018-07-10
-permalink: /twitter/torch-distlearn/WEEKLY.html
+permalink: /twitter/torch-distlearn/WEEKLY
 
 owner: twitter
 repo: torch-distlearn

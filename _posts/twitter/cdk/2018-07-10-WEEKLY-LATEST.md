@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/cdk | WEEKLY-2018-07-10
-permalink: /twitter/cdk/WEEKLY.html
+permalink: /twitter/cdk/WEEKLY
 
 owner: twitter
 repo: cdk

@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/CocoaSPDY | WEEKLY-2018-07-10
-permalink: /twitter/CocoaSPDY/WEEKLY.html
+permalink: /twitter/CocoaSPDY/WEEKLY
 
 owner: twitter
 repo: CocoaSPDY

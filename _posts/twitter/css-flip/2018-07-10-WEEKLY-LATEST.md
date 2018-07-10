@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/css-flip | WEEKLY-2018-07-10
-permalink: /twitter/css-flip/WEEKLY.html
+permalink: /twitter/css-flip/WEEKLY
 
 owner: twitter
 repo: css-flip

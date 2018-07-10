@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/sslconfig | WEEKLY-2018-07-10
-permalink: /twitter/sslconfig/WEEKLY.html
+permalink: /twitter/sslconfig/WEEKLY
 
 owner: twitter
 repo: sslconfig

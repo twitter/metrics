@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/storehaus | WEEKLY-2018-07-10
-permalink: /twitter/storehaus/WEEKLY.html
+permalink: /twitter/storehaus/WEEKLY
 
 owner: twitter
 repo: storehaus

@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitterdev/ruby-app-tweetmap | WEEKLY-2018-07-10
-permalink: /twitterdev/ruby-app-tweetmap/WEEKLY.html
+permalink: /twitterdev/ruby-app-tweetmap/WEEKLY
 
 owner: twitterdev
 repo: ruby-app-tweetmap

@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/pants | WEEKLY-2018-07-10
-permalink: /twitter/pants/WEEKLY.html
+permalink: /twitter/pants/WEEKLY
 
 owner: twitter
 repo: pants

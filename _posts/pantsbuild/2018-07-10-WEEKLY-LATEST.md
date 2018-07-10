@@ -1,7 +1,7 @@
 ---
 layout: org-weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for pantsbuild | WEEKLY-2018-07-10
-permalink: /pantsbuild/WEEKLY.html
+permalink: /pantsbuild/WEEKLY
 
 org: pantsbuild
 reportID: WEEKLY-2018-07-10

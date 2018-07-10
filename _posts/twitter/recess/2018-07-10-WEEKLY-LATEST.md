@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/recess | WEEKLY-2018-07-10
-permalink: /twitter/recess/WEEKLY.html
+permalink: /twitter/recess/WEEKLY
 
 owner: twitter
 repo: recess

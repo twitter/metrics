@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitterdev/search-tweets-ruby | WEEKLY-2018-07-10
-permalink: /twitterdev/search-tweets-ruby/WEEKLY.html
+permalink: /twitterdev/search-tweets-ruby/WEEKLY
 
 owner: twitterdev
 repo: search-tweets-ruby

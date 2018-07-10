@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitterdev/engagement-api-client-ruby | WEEKLY-2018-07-10
-permalink: /twitterdev/engagement-api-client-ruby/WEEKLY.html
+permalink: /twitterdev/engagement-api-client-ruby/WEEKLY
 
 owner: twitterdev
 repo: engagement-api-client-ruby

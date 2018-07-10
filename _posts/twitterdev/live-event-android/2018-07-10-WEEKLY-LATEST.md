@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitterdev/live-event-android | WEEKLY-2018-07-10
-permalink: /twitterdev/live-event-android/WEEKLY.html
+permalink: /twitterdev/live-event-android/WEEKLY
 
 owner: twitterdev
 repo: live-event-android

@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/torch-autograd | WEEKLY-2018-07-10
-permalink: /twitter/torch-autograd/WEEKLY.html
+permalink: /twitter/torch-autograd/WEEKLY
 
 owner: twitter
 repo: torch-autograd

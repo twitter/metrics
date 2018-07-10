@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitterdev/Photobooth | WEEKLY-2018-07-10
-permalink: /twitterdev/Photobooth/WEEKLY.html
+permalink: /twitterdev/Photobooth/WEEKLY
 
 owner: twitterdev
 repo: Photobooth

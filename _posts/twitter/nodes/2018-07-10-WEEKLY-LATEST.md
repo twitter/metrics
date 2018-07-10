@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/nodes | WEEKLY-2018-07-10
-permalink: /twitter/nodes/WEEKLY.html
+permalink: /twitter/nodes/WEEKLY
 
 owner: twitter
 repo: nodes

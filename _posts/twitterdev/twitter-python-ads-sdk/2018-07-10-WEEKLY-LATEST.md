@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitterdev/twitter-python-ads-sdk | WEEKLY-2018-07-10
-permalink: /twitterdev/twitter-python-ads-sdk/WEEKLY.html
+permalink: /twitterdev/twitter-python-ads-sdk/WEEKLY
 
 owner: twitterdev
 repo: twitter-python-ads-sdk

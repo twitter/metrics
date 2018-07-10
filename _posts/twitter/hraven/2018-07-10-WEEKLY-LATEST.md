@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/hraven | WEEKLY-2018-07-10
-permalink: /twitter/hraven/WEEKLY.html
+permalink: /twitter/hraven/WEEKLY
 
 owner: twitter
 repo: hraven

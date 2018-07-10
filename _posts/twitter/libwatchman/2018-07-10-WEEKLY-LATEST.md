@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/libwatchman | WEEKLY-2018-07-10
-permalink: /twitter/libwatchman/WEEKLY.html
+permalink: /twitter/libwatchman/WEEKLY
 
 owner: twitter
 repo: libwatchman

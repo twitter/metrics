@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitterdev/historator | WEEKLY-2018-07-10
-permalink: /twitterdev/historator/WEEKLY.html
+permalink: /twitterdev/historator/WEEKLY
 
 owner: twitterdev
 repo: historator

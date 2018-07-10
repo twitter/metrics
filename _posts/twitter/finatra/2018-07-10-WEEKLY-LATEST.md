@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/finatra | WEEKLY-2018-07-10
-permalink: /twitter/finatra/WEEKLY.html
+permalink: /twitter/finatra/WEEKLY
 
 owner: twitter
 repo: finatra

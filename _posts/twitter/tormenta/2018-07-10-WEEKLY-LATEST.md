@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/tormenta | WEEKLY-2018-07-10
-permalink: /twitter/tormenta/WEEKLY.html
+permalink: /twitter/tormenta/WEEKLY
 
 owner: twitter
 repo: tormenta

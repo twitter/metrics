@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/bijection | WEEKLY-2018-07-10
-permalink: /twitter/bijection/WEEKLY.html
+permalink: /twitter/bijection/WEEKLY
 
 owner: twitter
 repo: bijection

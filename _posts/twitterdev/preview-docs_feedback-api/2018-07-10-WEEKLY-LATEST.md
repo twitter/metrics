@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitterdev/preview-docs_feedback-api | WEEKLY-2018-07-10
-permalink: /twitterdev/preview-docs_feedback-api/WEEKLY.html
+permalink: /twitterdev/preview-docs_feedback-api/WEEKLY
 
 owner: twitterdev
 repo: preview-docs_feedback-api

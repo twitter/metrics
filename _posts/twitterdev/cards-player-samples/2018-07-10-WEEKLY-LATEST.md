@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitterdev/cards-player-samples | WEEKLY-2018-07-10
-permalink: /twitterdev/cards-player-samples/WEEKLY.html
+permalink: /twitterdev/cards-player-samples/WEEKLY
 
 owner: twitterdev
 repo: cards-player-samples

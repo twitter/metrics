@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/innovators-patent-agreement | WEEKLY-2018-07-10
-permalink: /twitter/innovators-patent-agreement/WEEKLY.html
+permalink: /twitter/innovators-patent-agreement/WEEKLY
 
 owner: twitter
 repo: innovators-patent-agreement

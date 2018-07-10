@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/finatra-activator-http-seed | WEEKLY-2018-07-10
-permalink: /twitter/finatra-activator-http-seed/WEEKLY.html
+permalink: /twitter/finatra-activator-http-seed/WEEKLY
 
 owner: twitter
 repo: finatra-activator-http-seed

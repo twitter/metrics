@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/secure_headers | WEEKLY-2018-07-10
-permalink: /twitter/secure_headers/WEEKLY.html
+permalink: /twitter/secure_headers/WEEKLY
 
 owner: twitter
 repo: secure_headers

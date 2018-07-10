@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/chill | WEEKLY-2018-07-10
-permalink: /twitter/chill/WEEKLY.html
+permalink: /twitter/chill/WEEKLY
 
 owner: twitter
 repo: chill

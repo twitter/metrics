@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/diffy | WEEKLY-2018-07-10
-permalink: /twitter/diffy/WEEKLY.html
+permalink: /twitter/diffy/WEEKLY
 
 owner: twitter
 repo: diffy

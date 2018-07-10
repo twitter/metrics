@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/snowflake | WEEKLY-2018-07-10
-permalink: /twitter/snowflake/WEEKLY.html
+permalink: /twitter/snowflake/WEEKLY
 
 owner: twitter
 repo: snowflake

@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/twemoji | WEEKLY-2018-07-10
-permalink: /twitter/twemoji/WEEKLY.html
+permalink: /twitter/twemoji/WEEKLY
 
 owner: twitter
 repo: twemoji

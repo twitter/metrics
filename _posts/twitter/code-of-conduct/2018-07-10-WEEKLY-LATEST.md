@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/code-of-conduct | WEEKLY-2018-07-10
-permalink: /twitter/code-of-conduct/WEEKLY.html
+permalink: /twitter/code-of-conduct/WEEKLY
 
 owner: twitter
 repo: code-of-conduct

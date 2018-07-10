@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitterdev/data-ads-sample | WEEKLY-2018-07-10
-permalink: /twitterdev/data-ads-sample/WEEKLY.html
+permalink: /twitterdev/data-ads-sample/WEEKLY
 
 owner: twitterdev
 repo: data-ads-sample

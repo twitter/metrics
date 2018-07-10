@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/thrift_client | WEEKLY-2018-07-10
-permalink: /twitter/thrift_client/WEEKLY.html
+permalink: /twitter/thrift_client/WEEKLY
 
 owner: twitter
 repo: thrift_client

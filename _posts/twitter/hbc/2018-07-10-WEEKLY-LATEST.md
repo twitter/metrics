@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/hbc | WEEKLY-2018-07-10
-permalink: /twitter/hbc/WEEKLY.html
+permalink: /twitter/hbc/WEEKLY
 
 owner: twitter
 repo: hbc

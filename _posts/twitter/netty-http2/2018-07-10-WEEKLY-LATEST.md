@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/netty-http2 | WEEKLY-2018-07-10
-permalink: /twitter/netty-http2/WEEKLY.html
+permalink: /twitter/netty-http2/WEEKLY
 
 owner: twitter
 repo: netty-http2

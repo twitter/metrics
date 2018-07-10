@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/ostrich | WEEKLY-2018-07-10
-permalink: /twitter/ostrich/WEEKLY.html
+permalink: /twitter/ostrich/WEEKLY
 
 owner: twitter
 repo: ostrich

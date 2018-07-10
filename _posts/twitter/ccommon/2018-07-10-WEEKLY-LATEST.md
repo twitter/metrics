@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/ccommon | WEEKLY-2018-07-10
-permalink: /twitter/ccommon/WEEKLY.html
+permalink: /twitter/ccommon/WEEKLY
 
 owner: twitter
 repo: ccommon

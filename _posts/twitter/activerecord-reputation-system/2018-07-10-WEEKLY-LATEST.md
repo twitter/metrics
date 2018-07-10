@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/activerecord-reputation-system | WEEKLY-2018-07-10
-permalink: /twitter/activerecord-reputation-system/WEEKLY.html
+permalink: /twitter/activerecord-reputation-system/WEEKLY
 
 owner: twitter
 repo: activerecord-reputation-system

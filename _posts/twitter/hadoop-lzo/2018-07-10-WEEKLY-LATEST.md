@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/hadoop-lzo | WEEKLY-2018-07-10
-permalink: /twitter/hadoop-lzo/WEEKLY.html
+permalink: /twitter/hadoop-lzo/WEEKLY
 
 owner: twitter
 repo: hadoop-lzo

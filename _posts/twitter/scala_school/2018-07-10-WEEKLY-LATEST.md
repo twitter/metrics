@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/scala_school | WEEKLY-2018-07-10
-permalink: /twitter/scala_school/WEEKLY.html
+permalink: /twitter/scala_school/WEEKLY
 
 owner: twitter
 repo: scala_school

@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/twitter-cldr-js | WEEKLY-2018-07-10
-permalink: /twitter/twitter-cldr-js/WEEKLY.html
+permalink: /twitter/twitter-cldr-js/WEEKLY
 
 owner: twitter
 repo: twitter-cldr-js

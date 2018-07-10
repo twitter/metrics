@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/distributedlog | WEEKLY-2018-07-10
-permalink: /twitter/distributedlog/WEEKLY.html
+permalink: /twitter/distributedlog/WEEKLY
 
 owner: twitter
 repo: distributedlog

@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/scala-json | WEEKLY-2018-07-10
-permalink: /twitter/scala-json/WEEKLY.html
+permalink: /twitter/scala-json/WEEKLY
 
 owner: twitter
 repo: scala-json

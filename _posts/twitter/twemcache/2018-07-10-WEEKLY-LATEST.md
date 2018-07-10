@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/twemcache | WEEKLY-2018-07-10
-permalink: /twitter/twemcache/WEEKLY.html
+permalink: /twitter/twemcache/WEEKLY
 
 owner: twitter
 repo: twemcache

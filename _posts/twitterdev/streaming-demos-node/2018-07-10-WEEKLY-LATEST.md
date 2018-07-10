@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitterdev/streaming-demos-node | WEEKLY-2018-07-10
-permalink: /twitterdev/streaming-demos-node/WEEKLY.html
+permalink: /twitterdev/streaming-demos-node/WEEKLY
 
 owner: twitterdev
 repo: streaming-demos-node

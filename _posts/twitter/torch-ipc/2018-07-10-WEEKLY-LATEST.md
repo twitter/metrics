@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/torch-ipc | WEEKLY-2018-07-10
-permalink: /twitter/torch-ipc/WEEKLY.html
+permalink: /twitter/torch-ipc/WEEKLY
 
 owner: twitter
 repo: torch-ipc
