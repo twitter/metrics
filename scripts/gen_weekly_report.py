@@ -233,9 +233,6 @@ Generate report for each org
 for org in ORG_REPORT_JSON:
     for metric in ORG_REPORT_JSON[org]["data"]:
         ORG_REPORT_JSON[org]["data"][metric]["diff"] = ORG_REPORT_JSON[org]["data"][metric]["this_week"] - ORG_REPORT_JSON[org]["data"][metric]["last_week"]
-print("\n\n\n\n\n")
-import pprint
-pprint.pprint(ORG_REPORT_JSON)
 
 for org in ORG_REPORT_JSON:
     path_to_org = PATH_TO_METRICS_DATA + "/" + org
