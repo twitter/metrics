@@ -162,7 +162,7 @@ for project in ALL_PROJECTS:
     ---
     layout: weekly-metrics-v{version}
     title: TwiterOSS Metrics Report for {owner}/{repo} | {reportID}
-    permalink: /{owner}/{repo}/{link}.html
+    permalink: /{owner}/{repo}/{link}
 
     owner: {owner}
     repo: {repo}
@@ -240,68 +240,68 @@ for org in ORG_REPORT_JSON:
         json.dump(ORG_REPORT_JSON[org], f)
 
     # Create post for the org
-        post_text = """\
-        ---
-        layout: org-weekly-metrics-v{version}
-        title: TwiterOSS Metrics Report for {org} | {reportID}
-        permalink: /{org}/{link}.html
+    post_text = """\
+    ---
+    layout: org-weekly-metrics-v{version}
+    title: TwiterOSS Metrics Report for {org} | {reportID}
+    permalink: /{org}/{link}
 
-        org: {org}
-        reportID: {reportID}
-        datestampThisWeek: {datestampThisWeek}
-        datestampLastWeek: {datestampLastWeek}
-        ---
+    org: {org}
+    reportID: {reportID}
+    datestampThisWeek: {datestampThisWeek}
+    datestampLastWeek: {datestampLastWeek}
+    ---
 
-        <table style="width: 100%">
-            <tr>
-                <th>Metric</th>
-                <th>This Week</th>
-                <th>Last Week</th>
-                <th>+/-</th>
-            </tr>
-            {{% for item in site.data["{org}"]["{reportID}"]["data"] %}}
-            <tr>
-                <th>{{{{ item[0] }}}}</th>
-                <th>{{{{ item[1]["this_week"] }}}}</th>
-                <th>{{{{ item[1]["last_week"] }}}}</th>
-                <th>{{{{ item[1]["diff"] }}}}</th>
-            </tr>
-            {{% endfor %}}
-        </table>
+    <table style="width: 100%">
+        <tr>
+            <th>Metric</th>
+            <th>This Week</th>
+            <th>Last Week</th>
+            <th>+/-</th>
+        </tr>
+        {{% for item in site.data["{org}"]["{reportID}"]["data"] %}}
+        <tr>
+            <th>{{{{ item[0] }}}}</th>
+            <th>{{{{ item[1]["this_week"] }}}}</th>
+            <th>{{{{ item[1]["last_week"] }}}}</th>
+            <th>{{{{ item[1]["diff"] }}}}</th>
+        </tr>
+        {{% endfor %}}
+    </table>
 
-        """
+    """
 
-        normal_post_text = post_text.format(
-            version=ORG_WEEKLY_METRICS_VERSION,
-            org=org,
-            reportID=REPORT_JSON["reportID"],
-            datestampThisWeek=REPORT_JSON["datestamp"]["this_week"],
-            datestampLastWeek=REPORT_JSON["datestamp"]["last_week"],
-            link=REPORT_JSON["reportID"])
+    normal_post_text = post_text.format(
+        version=ORG_WEEKLY_METRICS_VERSION,
+        org=org,
+        reportID=REPORT_JSON["reportID"],
+        datestampThisWeek=REPORT_JSON["datestamp"]["this_week"],
+        datestampLastWeek=REPORT_JSON["datestamp"]["last_week"],
+        link=REPORT_JSON["reportID"])
 
-        latest_post_text = post_text.format(
-            version=ORG_WEEKLY_METRICS_VERSION,
-            org=org,
-            reportID=REPORT_JSON["reportID"],
-            datestampThisWeek=REPORT_JSON["datestamp"]["this_week"],
-            datestampLastWeek=REPORT_JSON["datestamp"]["last_week"],
-            link="WEEKLY")
+    latest_post_text = post_text.format(
+        version=ORG_WEEKLY_METRICS_VERSION,
+        org=org,
+        reportID=REPORT_JSON["reportID"],
+        datestampThisWeek=REPORT_JSON["datestamp"]["this_week"],
+        datestampLastWeek=REPORT_JSON["datestamp"]["last_week"],
+        link="WEEKLY")
 
 
-        # Create directory for the post, if it does not exist
-        path_to_post = PATH_TO_METRICS_POSTS + "/" + org
-        os.makedirs(path_to_post, exist_ok=True)
+    # Create directory for the post, if it does not exist
+    path_to_post = PATH_TO_METRICS_POSTS + "/" + org
+    os.makedirs(path_to_post, exist_ok=True)
 
-        # This is a weird filename for sure. But I think I have an explanation for it -
-        # posts need to start with %Y-%m-%d and the later is sent to page.title variable
-        # Without the later date, title did not make much sense.
-        normal_post_file = "{}/{}-{}.md".format(path_to_post, ORG_REPORT_JSON[org]["datestamp"]["this_week"], ORG_REPORT_JSON[org]["reportID"])
-        with open(normal_post_file, "w+") as f:
-            f.write(textwrap.dedent(normal_post_text))
-        print("LOG: Created a POST", normal_post_file)
+    # This is a weird filename for sure. But I think I have an explanation for it -
+    # posts need to start with %Y-%m-%d and the later is sent to page.title variable
+    # Without the later date, title did not make much sense.
+    normal_post_file = "{}/{}-{}.md".format(path_to_post, ORG_REPORT_JSON[org]["datestamp"]["this_week"], ORG_REPORT_JSON[org]["reportID"])
+    with open(normal_post_file, "w+") as f:
+        f.write(textwrap.dedent(normal_post_text))
+    print("LOG: Created a POST", normal_post_file)
 
-        # Create latest report file in _posts as well
-        latest_post_file = "{}/{}-WEEKLY-LATEST.md".format(path_to_post, ORG_REPORT_JSON[org]["datestamp"]["this_week"])
-        with open(latest_post_file, "w+") as f:
-            f.write(textwrap.dedent(latest_post_text))
-        print("LOG: Created the latest POST", latest_post_file)
+    # Create latest report file in _posts as well
+    latest_post_file = "{}/{}-WEEKLY-LATEST.md".format(path_to_post, ORG_REPORT_JSON[org]["datestamp"]["this_week"])
+    with open(latest_post_file, "w+") as f:
+        f.write(textwrap.dedent(latest_post_text))
+    print("LOG: Created the latest POST", latest_post_file)
