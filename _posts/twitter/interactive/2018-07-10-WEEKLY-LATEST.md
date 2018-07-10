@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/interactive | WEEKLY-2018-07-10
-permalink: /twitter/interactive/WEEKLY.html
+permalink: /twitter/interactive/WEEKLY
 
 owner: twitter
 repo: interactive

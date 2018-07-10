@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/cloudhopper-commons | WEEKLY-2018-07-10
-permalink: /twitter/cloudhopper-commons/WEEKLY.html
+permalink: /twitter/cloudhopper-commons/WEEKLY
 
 owner: twitter
 repo: cloudhopper-commons

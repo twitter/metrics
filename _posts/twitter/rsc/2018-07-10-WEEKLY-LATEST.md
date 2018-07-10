@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/rsc | WEEKLY-2018-07-10
-permalink: /twitter/rsc/WEEKLY.html
+permalink: /twitter/rsc/WEEKLY
 
 owner: twitter
 repo: rsc

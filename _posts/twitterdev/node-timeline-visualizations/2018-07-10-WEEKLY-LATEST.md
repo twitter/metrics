@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitterdev/node-timeline-visualizations | WEEKLY-2018-07-10
-permalink: /twitterdev/node-timeline-visualizations/WEEKLY.html
+permalink: /twitterdev/node-timeline-visualizations/WEEKLY
 
 owner: twitterdev
 repo: node-timeline-visualizations

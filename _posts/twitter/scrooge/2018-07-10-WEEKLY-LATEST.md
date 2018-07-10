@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/scrooge | WEEKLY-2018-07-10
-permalink: /twitter/scrooge/WEEKLY.html
+permalink: /twitter/scrooge/WEEKLY
 
 owner: twitter
 repo: scrooge

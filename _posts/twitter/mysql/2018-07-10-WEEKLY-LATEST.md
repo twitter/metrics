@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/mysql | WEEKLY-2018-07-10
-permalink: /twitter/mysql/WEEKLY.html
+permalink: /twitter/mysql/WEEKLY
 
 owner: twitter
 repo: mysql

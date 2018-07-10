@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitterdev/chrome-extension-tweetbar | WEEKLY-2018-07-10
-permalink: /twitterdev/chrome-extension-tweetbar/WEEKLY.html
+permalink: /twitterdev/chrome-extension-tweetbar/WEEKLY
 
 owner: twitterdev
 repo: chrome-extension-tweetbar

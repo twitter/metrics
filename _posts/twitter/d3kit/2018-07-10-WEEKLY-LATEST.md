@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/d3kit | WEEKLY-2018-07-10
-permalink: /twitter/d3kit/WEEKLY.html
+permalink: /twitter/d3kit/WEEKLY
 
 owner: twitter
 repo: d3kit

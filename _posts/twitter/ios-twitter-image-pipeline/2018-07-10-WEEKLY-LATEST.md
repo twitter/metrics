@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/ios-twitter-image-pipeline | WEEKLY-2018-07-10
-permalink: /twitter/ios-twitter-image-pipeline/WEEKLY.html
+permalink: /twitter/ios-twitter-image-pipeline/WEEKLY
 
 owner: twitter
 repo: ios-twitter-image-pipeline

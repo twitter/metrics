@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitterdev/account-activity-dashboard | WEEKLY-2018-07-10
-permalink: /twitterdev/account-activity-dashboard/WEEKLY.html
+permalink: /twitterdev/account-activity-dashboard/WEEKLY
 
 owner: twitterdev
 repo: account-activity-dashboard

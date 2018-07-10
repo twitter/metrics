@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitterdev/api-rosetta-code | WEEKLY-2018-07-10
-permalink: /twitterdev/api-rosetta-code/WEEKLY.html
+permalink: /twitterdev/api-rosetta-code/WEEKLY
 
 owner: twitterdev
 repo: api-rosetta-code

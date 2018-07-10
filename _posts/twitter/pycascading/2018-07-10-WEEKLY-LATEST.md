@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/pycascading | WEEKLY-2018-07-10
-permalink: /twitter/pycascading/WEEKLY.html
+permalink: /twitter/pycascading/WEEKLY
 
 owner: twitter
 repo: pycascading

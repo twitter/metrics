@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitterdev/sample-angular-node | WEEKLY-2018-07-10
-permalink: /twitterdev/sample-angular-node/WEEKLY.html
+permalink: /twitterdev/sample-angular-node/WEEKLY
 
 owner: twitterdev
 repo: sample-angular-node

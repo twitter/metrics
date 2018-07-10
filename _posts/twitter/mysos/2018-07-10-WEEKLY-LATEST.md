@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/mysos | WEEKLY-2018-07-10
-permalink: /twitter/mysos/WEEKLY.html
+permalink: /twitter/mysos/WEEKLY
 
 owner: twitter
 repo: mysos

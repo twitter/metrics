@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitterdev/ton-upload | WEEKLY-2018-07-10
-permalink: /twitterdev/ton-upload/WEEKLY.html
+permalink: /twitterdev/ton-upload/WEEKLY
 
 owner: twitterdev
 repo: ton-upload

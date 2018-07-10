@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitterdev/twitterkit-timelines-ios | WEEKLY-2018-07-10
-permalink: /twitterdev/twitterkit-timelines-ios/WEEKLY.html
+permalink: /twitterdev/twitterkit-timelines-ios/WEEKLY
 
 owner: twitterdev
 repo: twitterkit-timelines-ios

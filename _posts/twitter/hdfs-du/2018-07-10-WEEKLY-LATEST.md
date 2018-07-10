@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/hdfs-du | WEEKLY-2018-07-10
-permalink: /twitter/hdfs-du/WEEKLY.html
+permalink: /twitter/hdfs-du/WEEKLY
 
 owner: twitter
 repo: hdfs-du

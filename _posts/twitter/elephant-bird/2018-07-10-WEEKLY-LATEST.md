@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/elephant-bird | WEEKLY-2018-07-10
-permalink: /twitter/elephant-bird/WEEKLY.html
+permalink: /twitter/elephant-bird/WEEKLY
 
 owner: twitter
 repo: elephant-bird

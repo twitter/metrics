@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/zktraffic | WEEKLY-2018-07-10
-permalink: /twitter/zktraffic/WEEKLY.html
+permalink: /twitter/zktraffic/WEEKLY
 
 owner: twitter
 repo: zktraffic

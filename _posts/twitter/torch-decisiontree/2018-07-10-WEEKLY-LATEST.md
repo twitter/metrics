@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/torch-decisiontree | WEEKLY-2018-07-10
-permalink: /twitter/torch-decisiontree/WEEKLY.html
+permalink: /twitter/torch-decisiontree/WEEKLY
 
 owner: twitter
 repo: torch-decisiontree

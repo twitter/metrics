@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitterdev/web-recipes | WEEKLY-2018-07-10
-permalink: /twitterdev/web-recipes/WEEKLY.html
+permalink: /twitterdev/web-recipes/WEEKLY
 
 owner: twitterdev
 repo: web-recipes

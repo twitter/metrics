@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/BreakoutDetection | WEEKLY-2018-07-10
-permalink: /twitter/BreakoutDetection/WEEKLY.html
+permalink: /twitter/BreakoutDetection/WEEKLY
 
 owner: twitter
 repo: BreakoutDetection

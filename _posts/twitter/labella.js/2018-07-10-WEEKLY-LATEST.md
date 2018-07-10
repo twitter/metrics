@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/labella.js | WEEKLY-2018-07-10
-permalink: /twitter/labella.js/WEEKLY.html
+permalink: /twitter/labella.js/WEEKLY
 
 owner: twitter
 repo: labella.js

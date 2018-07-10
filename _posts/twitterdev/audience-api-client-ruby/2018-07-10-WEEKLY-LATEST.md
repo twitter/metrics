@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitterdev/audience-api-client-ruby | WEEKLY-2018-07-10
-permalink: /twitterdev/audience-api-client-ruby/WEEKLY.html
+permalink: /twitterdev/audience-api-client-ruby/WEEKLY
 
 owner: twitterdev
 repo: audience-api-client-ruby

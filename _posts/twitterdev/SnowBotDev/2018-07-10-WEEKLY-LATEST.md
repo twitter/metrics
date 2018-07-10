@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitterdev/SnowBotDev | WEEKLY-2018-07-10
-permalink: /twitterdev/SnowBotDev/WEEKLY.html
+permalink: /twitterdev/SnowBotDev/WEEKLY
 
 owner: twitterdev
 repo: SnowBotDev

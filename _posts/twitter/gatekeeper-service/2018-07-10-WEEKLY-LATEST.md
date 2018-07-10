@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/gatekeeper-service | WEEKLY-2018-07-10
-permalink: /twitter/gatekeeper-service/WEEKLY.html
+permalink: /twitter/gatekeeper-service/WEEKLY
 
 owner: twitter
 repo: gatekeeper-service

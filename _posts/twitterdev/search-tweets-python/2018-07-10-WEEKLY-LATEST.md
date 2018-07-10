@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitterdev/search-tweets-python | WEEKLY-2018-07-10
-permalink: /twitterdev/search-tweets-python/WEEKLY.html
+permalink: /twitterdev/search-tweets-python/WEEKLY
 
 owner: twitterdev
 repo: search-tweets-python

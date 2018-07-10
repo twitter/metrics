@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitterdev/sinatra-cf-twitter | WEEKLY-2018-07-10
-permalink: /twitterdev/sinatra-cf-twitter/WEEKLY.html
+permalink: /twitterdev/sinatra-cf-twitter/WEEKLY
 
 owner: twitterdev
 repo: sinatra-cf-twitter

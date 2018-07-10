@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/twitter.github.io | WEEKLY-2018-07-10
-permalink: /twitter/twitter.github.io/WEEKLY.html
+permalink: /twitter/twitter.github.io/WEEKLY
 
 owner: twitter
 repo: twitter.github.io

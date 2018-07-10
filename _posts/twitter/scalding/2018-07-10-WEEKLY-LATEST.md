@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/scalding | WEEKLY-2018-07-10
-permalink: /twitter/scalding/WEEKLY.html
+permalink: /twitter/scalding/WEEKLY
 
 owner: twitter
 repo: scalding

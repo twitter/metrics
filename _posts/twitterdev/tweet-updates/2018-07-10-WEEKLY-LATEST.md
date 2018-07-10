@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitterdev/tweet-updates | WEEKLY-2018-07-10
-permalink: /twitterdev/tweet-updates/WEEKLY.html
+permalink: /twitterdev/tweet-updates/WEEKLY
 
 owner: twitterdev
 repo: tweet-updates

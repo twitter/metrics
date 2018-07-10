@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitterdev/leadgencard-endpoint | WEEKLY-2018-07-10
-permalink: /twitterdev/leadgencard-endpoint/WEEKLY.html
+permalink: /twitterdev/leadgencard-endpoint/WEEKLY
 
 owner: twitterdev
 repo: leadgencard-endpoint

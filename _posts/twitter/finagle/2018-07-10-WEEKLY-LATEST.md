@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/finagle | WEEKLY-2018-07-10
-permalink: /twitter/finagle/WEEKLY.html
+permalink: /twitter/finagle/WEEKLY
 
 owner: twitter
 repo: finagle

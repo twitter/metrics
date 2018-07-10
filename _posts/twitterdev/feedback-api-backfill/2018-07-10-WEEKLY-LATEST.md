@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitterdev/feedback-api-backfill | WEEKLY-2018-07-10
-permalink: /twitterdev/feedback-api-backfill/WEEKLY.html
+permalink: /twitterdev/feedback-api-backfill/WEEKLY
 
 owner: twitterdev
 repo: feedback-api-backfill

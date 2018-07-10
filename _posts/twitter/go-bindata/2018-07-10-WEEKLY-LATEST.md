@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/go-bindata | WEEKLY-2018-07-10
-permalink: /twitter/go-bindata/WEEKLY.html
+permalink: /twitter/go-bindata/WEEKLY
 
 owner: twitter
 repo: go-bindata

@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitterdev/large-video-upload-python | WEEKLY-2018-07-10
-permalink: /twitterdev/large-video-upload-python/WEEKLY.html
+permalink: /twitterdev/large-video-upload-python/WEEKLY
 
 owner: twitterdev
 repo: large-video-upload-python

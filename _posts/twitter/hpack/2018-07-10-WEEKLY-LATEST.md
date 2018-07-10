@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/hpack | WEEKLY-2018-07-10
-permalink: /twitter/hpack/WEEKLY.html
+permalink: /twitter/hpack/WEEKLY
 
 owner: twitter
 repo: hpack

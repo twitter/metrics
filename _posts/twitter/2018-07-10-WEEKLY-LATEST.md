@@ -1,7 +1,7 @@
 ---
 layout: org-weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter | WEEKLY-2018-07-10
-permalink: /twitter/WEEKLY.html
+permalink: /twitter/WEEKLY
 
 org: twitter
 reportID: WEEKLY-2018-07-10

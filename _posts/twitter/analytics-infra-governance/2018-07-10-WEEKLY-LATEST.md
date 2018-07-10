@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/analytics-infra-governance | WEEKLY-2018-07-10
-permalink: /twitter/analytics-infra-governance/WEEKLY.html
+permalink: /twitter/analytics-infra-governance/WEEKLY
 
 owner: twitter
 repo: analytics-infra-governance

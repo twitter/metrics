@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/summingbird | WEEKLY-2018-07-10
-permalink: /twitter/summingbird/WEEKLY.html
+permalink: /twitter/summingbird/WEEKLY
 
 owner: twitter
 repo: summingbird

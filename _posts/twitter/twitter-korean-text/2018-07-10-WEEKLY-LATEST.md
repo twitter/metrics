@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/twitter-korean-text | WEEKLY-2018-07-10
-permalink: /twitter/twitter-korean-text/WEEKLY.html
+permalink: /twitter/twitter-korean-text/WEEKLY
 
 owner: twitter
 repo: twitter-korean-text

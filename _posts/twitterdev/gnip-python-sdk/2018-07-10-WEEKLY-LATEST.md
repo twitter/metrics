@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitterdev/gnip-python-sdk | WEEKLY-2018-07-10
-permalink: /twitterdev/gnip-python-sdk/WEEKLY.html
+permalink: /twitterdev/gnip-python-sdk/WEEKLY
 
 owner: twitterdev
 repo: gnip-python-sdk

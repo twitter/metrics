@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitterdev/twitter-streaming-blink1 | WEEKLY-2018-07-10
-permalink: /twitterdev/twitter-streaming-blink1/WEEKLY.html
+permalink: /twitterdev/twitter-streaming-blink1/WEEKLY
 
 owner: twitterdev
 repo: twitter-streaming-blink1

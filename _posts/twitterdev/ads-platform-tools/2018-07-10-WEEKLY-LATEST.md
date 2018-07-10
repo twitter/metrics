@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitterdev/ads-platform-tools | WEEKLY-2018-07-10
-permalink: /twitterdev/ads-platform-tools/WEEKLY.html
+permalink: /twitterdev/ads-platform-tools/WEEKLY
 
 owner: twitterdev
 repo: ads-platform-tools

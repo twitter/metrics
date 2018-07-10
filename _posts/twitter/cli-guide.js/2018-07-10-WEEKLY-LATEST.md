@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/cli-guide.js | WEEKLY-2018-07-10
-permalink: /twitter/cli-guide.js/WEEKLY.html
+permalink: /twitter/cli-guide.js/WEEKLY
 
 owner: twitter
 repo: cli-guide.js

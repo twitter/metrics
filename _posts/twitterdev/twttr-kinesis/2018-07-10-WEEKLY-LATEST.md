@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitterdev/twttr-kinesis | WEEKLY-2018-07-10
-permalink: /twitterdev/twttr-kinesis/WEEKLY.html
+permalink: /twitterdev/twttr-kinesis/WEEKLY
 
 owner: twitterdev
 repo: twttr-kinesis

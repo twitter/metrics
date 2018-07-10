@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/hogan.js | WEEKLY-2018-07-10
-permalink: /twitter/hogan.js/WEEKLY.html
+permalink: /twitter/hogan.js/WEEKLY
 
 owner: twitter
 repo: hogan.js

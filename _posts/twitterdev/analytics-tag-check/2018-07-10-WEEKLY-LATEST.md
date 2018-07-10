@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitterdev/analytics-tag-check | WEEKLY-2018-07-10
-permalink: /twitterdev/analytics-tag-check/WEEKLY.html
+permalink: /twitterdev/analytics-tag-check/WEEKLY
 
 owner: twitterdev
 repo: analytics-tag-check

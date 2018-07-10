@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/cassovary | WEEKLY-2018-07-10
-permalink: /twitter/cassovary/WEEKLY.html
+permalink: /twitter/cassovary/WEEKLY
 
 owner: twitter
 repo: cassovary

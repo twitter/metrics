@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitterdev/spotatweet | WEEKLY-2018-07-10
-permalink: /twitterdev/spotatweet/WEEKLY.html
+permalink: /twitterdev/spotatweet/WEEKLY
 
 owner: twitterdev
 repo: spotatweet

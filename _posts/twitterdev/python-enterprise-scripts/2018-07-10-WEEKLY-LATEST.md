@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitterdev/python-enterprise-scripts | WEEKLY-2018-07-10
-permalink: /twitterdev/python-enterprise-scripts/WEEKLY.html
+permalink: /twitterdev/python-enterprise-scripts/WEEKLY
 
 owner: twitterdev
 repo: python-enterprise-scripts

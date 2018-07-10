@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/spitball | WEEKLY-2018-07-10
-permalink: /twitter/spitball/WEEKLY.html
+permalink: /twitter/spitball/WEEKLY
 
 owner: twitter
 repo: spitball

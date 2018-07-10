@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitterdev/rails-historical-api-demo | WEEKLY-2018-07-10
-permalink: /twitterdev/rails-historical-api-demo/WEEKLY.html
+permalink: /twitterdev/rails-historical-api-demo/WEEKLY
 
 owner: twitterdev
 repo: rails-historical-api-demo

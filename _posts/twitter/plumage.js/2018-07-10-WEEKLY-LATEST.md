@@ -1,7 +1,7 @@
 ---
 layout: weekly-metrics-v0.1
 title: TwiterOSS Metrics Report for twitter/plumage.js | WEEKLY-2018-07-10
-permalink: /twitter/plumage.js/WEEKLY.html
+permalink: /twitter/plumage.js/WEEKLY
 
 owner: twitter
 repo: plumage.js
