@@ -18,7 +18,7 @@ DATESTAMP = datetime.datetime.now().date().isoformat()
 all_orgs = []  # Track orgs and all its repos e.g. twitter, twitter
 all_repos = []  # Track specific repositories e.g. ('pantsbuild', 'pants')
 
-with open("repos-to-include.md", "r") as f:
+with open("repos-to-include.txt", "r") as f:
     for line in f:
         owner, repo = line.split("/")
         repo = repo.rstrip("\n")
