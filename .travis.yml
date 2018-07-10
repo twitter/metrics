@@ -31,3 +31,7 @@ notifications:
   slack:
     rooms:
       - "$SLACK_TOKEN"#twitteross-metrics
+  email:
+    recipients:
+      - hmishra+travis@twitter.com
+    
