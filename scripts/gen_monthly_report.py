@@ -179,7 +179,7 @@ for project in ALL_PROJECTS:
     ---
     layout: monthly-metrics-v{version}
     title: TwiterOSS Metrics Report for {owner}/{repo} | {reportID} | {datestampThisMonth}
-    permalink: /{owner}/{repo}/{link}
+    permalink: /{owner}/{repo}/{link}/
 
     owner: {owner}
     repo: {repo}
@@ -262,7 +262,7 @@ for org in ORG_REPORT_JSON:
     ---
     layout: org-monthly-metrics-v{version}
     title: TwiterOSS Metrics Report for {org} | {reportID}
-    permalink: /{org}/{link}
+    permalink: /{org}/{link}/
 
     org: {org}
     reportID: {reportID}
