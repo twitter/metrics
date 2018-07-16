@@ -221,6 +221,13 @@ for project in ALL_PROJECTS:
         f.write(textwrap.dedent(normal_post_text))
     print("LOG: Created a POST", normal_post_file)
 
+    # Delete already existing latest posts
+    re_latest_report = re.compile(r"\d{4}-\d{2}-\d{2}-WEEKLY-LATEST.md")
+    for filename in os.listdir(path_to_post):
+        if re_latest_report.match(filename):
+            print("LOG: Removing existing latest post", os.path.join(path_to_post, filename))
+            os.unlink(os.path.join(path_to_post, filename))
+
     # Create latest report file in _posts as well
     latest_post_file = "{}/{}-WEEKLY-LATEST.md".format(path_to_post, REPORT_JSON["datestamp"]["this_week"])
     with open(latest_post_file, "w+") as f:
@@ -299,6 +306,13 @@ for org in ORG_REPORT_JSON:
     with open(normal_post_file, "w+") as f:
         f.write(textwrap.dedent(normal_post_text))
     print("LOG: Created a POST", normal_post_file)
+
+    # Delete already existing latest posts
+    re_latest_report = re.compile(r"\d{4}-\d{2}-\d{2}-WEEKLY-LATEST.md")
+    for filename in os.listdir(path_to_post):
+        if re_latest_report.match(filename):
+            print("LOG: Removing existing latest post", os.path.join(path_to_post, filename))
+            os.unlink(os.path.join(path_to_post, filename))
 
     # Create latest report file in _posts as well
     latest_post_file = "{}/{}-WEEKLY-LATEST.md".format(path_to_post, ORG_REPORT_JSON[org]["datestamp"]["this_week"])
