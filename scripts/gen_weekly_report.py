@@ -2,6 +2,10 @@
 The script traverses inside _data/ directory recursively.
 For every project, it picks the latest two METRICS-<datestamp>.json files (more than 6 days apart),
 and generates the weekly report with appropriate number. It also updates the latest-weekly report.
+
+I thought a lot about abstracting as much as I can. But duplication is required here to allow free growth
+of all 4 types of reports (org/project + weekly/monthly)
+Just in time, this article was #1 on HN - https://news.ycombinator.com/item?id=17578714
 """
 
 from glob import glob
