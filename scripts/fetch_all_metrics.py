@@ -1,3 +1,8 @@
+"""
+Generate METRICS-%Y-%m-%d.json for all the repositories tracked by repos-to-include.txt
+and save them in their respective _data directory.
+"""
+
 import datetime
 import json
 import os
@@ -115,6 +120,13 @@ for edge in all_repo_edges:
     repo_full_name = edge["repository"]["nameWithOwner"]
     repo_data = edge["repository"]
     DATA_JSON[repo_full_name] = repo_data
+
+
+# Add CHAOSS specific metrics
+# The API endpoint is http://twitter.augurlabs.io/api/unstable/
+# And the API documentation is at https://osshealth.github.io/augur/api/index.html
+
+
 
 # Save the respective JSON files
 for repo in DATA_JSON:
