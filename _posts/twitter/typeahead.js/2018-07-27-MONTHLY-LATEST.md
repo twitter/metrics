@@ -17,7 +17,7 @@ datestampLastMonth: 2018-06-29
         <th>Last Month</th>
         <th>+/-</th>
     </tr>
-    {% for item in site.data["twitter"]["typeahead.js"]["MONTHLY-2018-07-27"]["data"] %}
+    {% for item in site.data["twitter"]["typeaheadjs"]["MONTHLY-2018-07-27"]["data"] %}
     <tr>
         <th>{{ item[0] }}</th>
         <th>{{ item[1]["this_month"] }}</th>

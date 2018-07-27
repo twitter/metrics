@@ -141,9 +141,9 @@ for project in ALL_PROJECTS:
         ORG_REPORT_JSON[org]["data"]["forkCount"]["this_month"] += this_month_json["forkCount"]
         ORG_REPORT_JSON[org]["data"]["forkCount"]["last_month"] += last_month_json["forkCount"]
     except KeyError as e:
-        print("\n\n\n\n\n\n\n\n")
-        print(e)
-        print("\n\n\n\n\n\n\n\n")
+        # print("\n\n\n\n\n\n\n\n")
+        # print(e)
+        # print("\n\n\n\n\n\n\n\n")
         ORG_REPORT_JSON[org]["data"]["commits"] = {
             "this_month": this_month_json["defaultBranchRef"]["target"]["history"]["totalCount"],
             "last_month": last_month_json["defaultBranchRef"]["target"]["history"]["totalCount"]
@@ -198,7 +198,7 @@ for project in ALL_PROJECTS:
             <th>Last Month</th>
             <th>+/-</th>
         </tr>
-        {{% for item in site.data["{owner}"]["{repo}"]["{reportID}"]["data"] %}}
+        {{% for item in site.data["{owner_in_data}"]["{repo_in_data}"]["{reportID}"]["data"] %}}
         <tr>
             <th>{{{{ item[0] }}}}</th>
             <th>{{{{ item[1]["this_month"] }}}}</th>
@@ -213,7 +213,9 @@ for project in ALL_PROJECTS:
     normal_post_text = post_text.format(
         version=MONTHLY_METRICS_VERSION,
         owner=REPORT_JSON["nameWithOwner"].split("/")[0],
+        owner_in_data=REPORT_JSON["nameWithOwner"].split("/")[0].replace('.', ''),  # Dots confused jekyll
         repo=REPORT_JSON["nameWithOwner"].split("/")[1],
+        repo_in_data=REPORT_JSON["nameWithOwner"].split("/")[1].replace('.', ''),
         reportID=REPORT_JSON["reportID"],
         datestampThisMonth=REPORT_JSON["datestamp"]["this_month"],
         datestampLastMonth=REPORT_JSON["datestamp"]["last_month"],
@@ -222,7 +224,9 @@ for project in ALL_PROJECTS:
     latest_post_text = post_text.format(
         version=MONTHLY_METRICS_VERSION,
         owner=REPORT_JSON["nameWithOwner"].split("/")[0],
+        owner_in_data=REPORT_JSON["nameWithOwner"].split("/")[0].replace('.', ''),
         repo=REPORT_JSON["nameWithOwner"].split("/")[1],
+        repo_in_data=REPORT_JSON["nameWithOwner"].split("/")[1].replace('.', ''),
         reportID=REPORT_JSON["reportID"],
         datestampThisMonth=REPORT_JSON["datestamp"]["this_month"],
         datestampLastMonth=REPORT_JSON["datestamp"]["last_month"],
@@ -287,7 +291,7 @@ for org in ORG_REPORT_JSON:
             <th>Last Month</th>
             <th>+/-</th>
         </tr>
-        {{% for item in site.data["{org}"]["{reportID}"]["data"] %}}
+        {{% for item in site.data["{org_in_data}"]["{reportID}"]["data"] %}}
         <tr>
             <th>{{{{ item[0] }}}}</th>
             <th>{{{{ item[1]["this_month"] }}}}</th>
@@ -302,6 +306,7 @@ for org in ORG_REPORT_JSON:
     normal_post_text = post_text.format(
         version=ORG_MONTHLY_METRICS_VERSION,
         org=org,
+        org_in_data=org.replace('.', ''),
         reportID=REPORT_JSON["reportID"],
         datestampThisMonth=REPORT_JSON["datestamp"]["this_month"],
         datestampLastMonth=REPORT_JSON["datestamp"]["last_month"],
@@ -310,6 +315,7 @@ for org in ORG_REPORT_JSON:
     latest_post_text = post_text.format(
         version=ORG_MONTHLY_METRICS_VERSION,
         org=org,
+        org_in_data=org.replace('.', ''),
         reportID=REPORT_JSON["reportID"],
         datestampThisMonth=REPORT_JSON["datestamp"]["this_month"],
         datestampLastMonth=REPORT_JSON["datestamp"]["last_month"],

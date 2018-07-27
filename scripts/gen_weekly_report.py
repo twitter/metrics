@@ -182,7 +182,7 @@ for project in ALL_PROJECTS:
             <th>Last Week</th>
             <th>+/-</th>
         </tr>
-        {{% for item in site.data["{owner}"]["{repo}"]["{reportID}"]["data"] %}}
+        {{% for item in site.data["{owner_in_data}"]["{repo_in_data}"]["{reportID}"]["data"] %}}
         <tr>
             <th>{{{{ item[0] }}}}</th>
             <th>{{{{ item[1]["this_week"] }}}}</th>
@@ -197,7 +197,9 @@ for project in ALL_PROJECTS:
     normal_post_text = post_text.format(
         version=WEEKLY_METRICS_VERSION,
         owner=org,
+        owner_in_data=org.replace('.', ''),  # Dots confused jekyll
         repo=repo,
+        repo_in_data=repo.replace('.', ''),
         reportID=REPORT_JSON["reportID"],
         datestampThisWeek=REPORT_JSON["datestamp"]["this_week"],
         datestampLastWeek=REPORT_JSON["datestamp"]["last_week"],
@@ -206,7 +208,9 @@ for project in ALL_PROJECTS:
     latest_post_text = post_text.format(
         version=WEEKLY_METRICS_VERSION,
         owner=org,
+        owner_in_data=org.replace('.', ''),
         repo=repo,
+        repo_in_data=repo.replace('.', ''),
         reportID=REPORT_JSON["reportID"],
         datestampThisWeek=REPORT_JSON["datestamp"]["this_week"],
         datestampLastWeek=REPORT_JSON["datestamp"]["last_week"],
@@ -270,7 +274,7 @@ for org in ORG_REPORT_JSON:
             <th>Last Week</th>
             <th>+/-</th>
         </tr>
-        {{% for item in site.data["{org}"]["{reportID}"]["data"] %}}
+        {{% for item in site.data["{org_in_data}"]["{reportID}"]["data"] %}}
         <tr>
             <th>{{{{ item[0] }}}}</th>
             <th>{{{{ item[1]["this_week"] }}}}</th>
@@ -285,6 +289,7 @@ for org in ORG_REPORT_JSON:
     normal_post_text = post_text.format(
         version=ORG_WEEKLY_METRICS_VERSION,
         org=org,
+        org_in_data=org.replace('.', ''),
         reportID=REPORT_JSON["reportID"],
         datestampThisWeek=REPORT_JSON["datestamp"]["this_week"],
         datestampLastWeek=REPORT_JSON["datestamp"]["last_week"],
@@ -293,6 +298,7 @@ for org in ORG_REPORT_JSON:
     latest_post_text = post_text.format(
         version=ORG_WEEKLY_METRICS_VERSION,
         org=org,
+        org_in_data=org.replace('.', ''),
         reportID=REPORT_JSON["reportID"],
         datestampThisWeek=REPORT_JSON["datestamp"]["this_week"],
         datestampLastWeek=REPORT_JSON["datestamp"]["last_week"],
