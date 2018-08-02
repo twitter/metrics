@@ -18,7 +18,7 @@ If you want to track some and not all repositories of an org, add `<org_name>/<r
 
 # How does this thing work?
 
-This repository is integrated with Travis. A [Travis Cron Job](https://docs.travis-ci.com/user/cron-jobs/) is scheduled to run every week.
+This repository is integrated with Travis. A [Travis Cron Job](https://docs.travis-ci.com/user/cron-jobs/) is scheduled to run every week. (Push and PR builds are disabled from setting to avoid feedback loop of builds)
 
 - `python scripts/fetch_all_metrics.py`
    
