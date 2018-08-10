@@ -10,6 +10,7 @@ from glob import glob
 import os
 
 PATH_TO_METRICS_POSTS = "_posts"
+PATH_TO_GRAPHS = "graphs"
 
 ALL_ORGS = filter(os.path.isdir, glob(PATH_TO_METRICS_POSTS + "/*"))
 ALL_PROJECTS = filter(os.path.isdir, glob(PATH_TO_METRICS_POSTS + "/*/*"))
@@ -36,7 +37,7 @@ for project in ALL_PROJECTS:
                                 repo=repo,
                                 weekly_metrics_link=weekly_metrics_link,
                                 monthly_metrics_link=monthly_metrics_link)
-    file_path = project + "/" + "2018-05-29-index.md"  # Don't change the date. This will prevent duplicate posts.
+    file_path = project + "/" + "2018-05-29-index.md"  # Don't change the date. This prevents duplicate posts.
     with open(file_path, "w+") as f:
         f.write(_text)
     print("LOG: Wrote to", file_path)
@@ -52,17 +53,24 @@ Latest WEEKLY Report - <a href="{weekly_metrics_link}">{weekly_metrics_link}</a>
 <br>
 Latest MONTHLY Report - <a href="{monthly_metrics_link}">{monthly_metrics_link}</a>
 <br>
+
 """
 
 for _org in ALL_ORGS:
-    print("LOG: Starting with", org)
+    print("LOG: Starting with", _org)
     _, org = _org.split("/")
     weekly_metrics_link = "https://twitter.github.io/metrics/{}/WEEKLY".format(org)
     monthly_metrics_link = "https://twitter.github.io/metrics/{}/MONTHLY".format(org)
     _text = org_text.format(org=org,
                                 weekly_metrics_link=weekly_metrics_link,
                                 monthly_metrics_link=monthly_metrics_link)
-    file_path = _org + "/" + "2018-05-29-index.md"  # Don't change the date. This will prevent duplicate posts.
+
+    # Add graphs
+    all_graphs = glob(PATH_TO_GRAPHS + "/" + org + "/*.svg")
+    for graph in all_graphs:
+        _text += '<img src="{{{{ site.url }}}}{{{{ site.baseurl }}}}/{}">\n'.format(graph)
+
+    file_path = _org + "/" + "2018-05-29-index.md"  # Don't change the date. This prevents duplicate posts.
     with open(file_path, "w+") as f:
         f.write(_text)
     print("LOG: Wrote to", file_path)
