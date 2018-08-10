@@ -67,8 +67,15 @@ for _org in ALL_ORGS:
 
     # Add graphs
     all_graphs = glob(PATH_TO_GRAPHS + "/" + org + "/*.svg")
+    # Might be helpful - https://stackoverflow.com/questions/22051573/how-to-hide-image-broken-icon-using-only-css-html-without-js
+    # To arrange the images - http://jsfiddle.net/89dtxt6s/1645/
     for graph in all_graphs:
-        _text += '<img src="{{{{ site.url }}}}{{{{ site.baseurl }}}}/{}">\n'.format(graph)
+        # _text += '<img src="{{{{ site.url }}}}{{{{ site.baseurl }}}}/{}">\n'.format(graph)
+        _text += '<object type="image/svg+xml" data="{{{{ site.url }}}}{{{{ site.baseurl }}}}/{}">\n'.format(graph)
+        _text += '\tYour browser does not support SVG\n\n'
+        _text += '</object>\n'
+        # _text += open(graph).read()
+        # _text += "\n\n"
 
     file_path = _org + "/" + "2018-05-29-index.md"  # Don't change the date. This prevents duplicate posts.
     with open(file_path, "w+") as f:
