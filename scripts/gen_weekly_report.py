@@ -129,33 +129,28 @@ for project in ALL_PROJECTS:
         # commits
         ORG_REPORT_JSON[org]["data"]["commits"]["this_week"] += commits_this_week
         ORG_REPORT_JSON[org]["data"]["commits"]["last_week"] += commits_last_week
-        if commits_this_week - commits_last_week:
-            ORG_REPORT_JSON[org]["data"]["commits"]["diff_breakdown"][repo] = commits_this_week - commits_last_week
 
         # forks
         ORG_REPORT_JSON[org]["data"]["forkCount"]["this_week"] += forks_this_week
         ORG_REPORT_JSON[org]["data"]["forkCount"]["last_week"] += forks_last_week
-        if forks_this_week - forks_last_week:
-            ORG_REPORT_JSON[org]["data"]["forkCount"]["diff_breakdown"][repo] = forks_this_week - forks_last_week
     except KeyError:
         ORG_REPORT_JSON[org]["data"]["commits"] = {
             "this_week": commits_this_week,
             "last_week": commits_last_week,
+            "diff_breakdown": {}
         }
-        if commits_this_week - commits_last_week:
-            ORG_REPORT_JSON[org]["data"]["commits"]["diff_breakdown"] = {
-                repo: commits_this_week - commits_last_week
-            }
 
         ORG_REPORT_JSON[org]["data"]["forkCount"] = {
             "this_week": forks_this_week,
             "last_week": forks_last_week,
+            "diff_breakdown": {}
         }
-        if forks_this_week - forks_last_week:
-            ORG_REPORT_JSON[org]["data"]["forkCount"]["diff_breakdown"] = {
-                repo: forks_this_week - forks_last_week
-            }
 
+    if commits_this_week - commits_last_week:
+        ORG_REPORT_JSON[org]["data"]["commits"]["diff_breakdown"][repo] = commits_this_week - commits_last_week
+
+    if forks_this_week - forks_last_week:
+        ORG_REPORT_JSON[org]["data"]["forkCount"]["diff_breakdown"][repo] = forks_this_week - forks_last_week
 
     # Grouping similar metrics
     for metric in ["issues", "openIssues", "closedIssues", "pullRequests", "openPullRequests", "mergedPullRequests",
@@ -166,20 +161,19 @@ for project in ALL_PROJECTS:
             "this_week": metric_this_week,
             "last_week": metric_last_week,
         }
+
         try:
             ORG_REPORT_JSON[org]["data"][metric]["this_week"] += metric_this_week
             ORG_REPORT_JSON[org]["data"][metric]["last_week"] += metric_last_week
-            if metric_this_week - metric_last_week:
-                ORG_REPORT_JSON[org]["data"][metric]["diff_breakdown"][repo] = metric_this_week - metric_last_week
         except KeyError:
             ORG_REPORT_JSON[org]["data"][metric] = {
                 "this_week": metric_this_week,
                 "last_week": metric_last_week,
+                "diff_breakdown": {}
             }
-            if metric_this_week - metric_last_week:
-                ORG_REPORT_JSON[org]["data"][metric]["diff_breakdown"] = {
-                    repo: metric_this_week - metric_last_week
-                }
+
+        if metric_this_week - metric_last_week:
+            ORG_REPORT_JSON[org]["data"][metric]["diff_breakdown"][repo] = metric_this_week - metric_last_week
 
 
     # Project report diff
