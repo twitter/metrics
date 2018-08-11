@@ -44,16 +44,17 @@ for project in ALL_PROJECTS:
 
 org_text = """\
 ---
-layout: default
+layout: org-homepage
 permalink: /{org}/
 ---
-Welcome to {org}'s metrics homepage!
-<br><br>
-Latest WEEKLY Report - <a href="{weekly_metrics_link}">{weekly_metrics_link}</a>
-<br>
-Latest MONTHLY Report - <a href="{monthly_metrics_link}">{monthly_metrics_link}</a>
-<br>
-
+<div class="content-without-graphs">
+    Welcome to {org}'s metrics homepage!
+    <br><br>
+    Latest WEEKLY Report - <a href="{weekly_metrics_link}">{weekly_metrics_link}</a>
+    <br>
+    Latest MONTHLY Report - <a href="{monthly_metrics_link}">{monthly_metrics_link}</a>
+    <br>
+</div>
 """
 
 for _org in ALL_ORGS:
@@ -69,13 +70,13 @@ for _org in ALL_ORGS:
     all_graphs = glob(PATH_TO_GRAPHS + "/" + org + "/*.svg")
     # Might be helpful - https://stackoverflow.com/questions/22051573/how-to-hide-image-broken-icon-using-only-css-html-without-js
     # To arrange the images - http://jsfiddle.net/89dtxt6s/1645/
+    _text += '<p><b>Timeseries graphs</b></p>\n'
+    _text += '<div class="row">\n'
     for graph in all_graphs:
-        # _text += '<img src="{{{{ site.url }}}}{{{{ site.baseurl }}}}/{}">\n'.format(graph)
-        _text += '<object type="image/svg+xml" data="{{{{ site.url }}}}{{{{ site.baseurl }}}}/{}">\n'.format(graph)
-        _text += '\tYour browser does not support SVG\n\n'
-        _text += '</object>\n'
-        # _text += open(graph).read()
-        # _text += "\n\n"
+        _text += '\t<object class="cell" type="image/svg+xml" data="{{{{ site.url }}}}{{{{ site.baseurl }}}}/{}">\n'.format(graph)
+        _text += '\t\tYour browser does not support SVG\n'
+        _text += '\t</object>\n'
+    _text += '</div>\n'
 
     file_path = _org + "/" + "2018-05-29-index.md"  # Don't change the date. This prevents duplicate posts.
     with open(file_path, "w+") as f:
