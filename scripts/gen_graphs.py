@@ -3,6 +3,7 @@ This script creates various graphs using the metrics data available.
 """
 from glob import glob
 import datetime
+import operator
 import os
 import json
 
@@ -19,7 +20,7 @@ ALL_ORGS = filter(os.path.isdir, glob(PATH_TO_METRICS_DATA + "/*"))
 
 for org in ALL_ORGS:
     all_metrics_files = glob(org + "/WEEKLY-*.json")
-    all_metrics_files.sort()
+    all_metrics_files.sort()  # Important to sort by date in increasing order
 
     orgname = org.split("/")[-1]
 
@@ -95,9 +96,31 @@ for org in ALL_ORGS:
         dateline.x_labels = x_labels
 
         dateline.add(metric, timeseries[metric])
-        file_path = "{}/{}/{}.svg".format(PATH_TO_GRAPHS, orgname, metric)
+
+        file_path = "{}/{}/timeseries_{}.svg".format(PATH_TO_GRAPHS, orgname, metric)
         os.makedirs("{}/{}".format(PATH_TO_GRAPHS, orgname), exist_ok=True)
         dateline.render_to_file(file_path)
+
+    """
+    Create Binary Tree map for breakdowns
+    """
+    latest_report = json.load(open(all_metrics_files[-1]))
+    for metric in latest_report["data"]:
+        treemap = pygal.Treemap()
+        treemap.title = metric
+
+        # Add blocks in decreasing order of their count
+        items = list(latest_report["data"][metric]["diff_breakdown"].items())
+        items.sort(key=operator.itemgetter(1), reverse=True)
+
+        if len(items):
+            for item, value in items:
+                if value > 0:
+                    treemap.add(item, [value])
+            file_path = "{}/{}/treemap_{}.svg".format(PATH_TO_GRAPHS, orgname, metric)
+            os.makedirs("{}/{}".format(PATH_TO_GRAPHS, orgname), exist_ok=True)
+            treemap.render_to_file(file_path)
+
 
 """
 Generate graphs for all Repos
