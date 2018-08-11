@@ -111,48 +111,79 @@ for project in ALL_PROJECTS:
 
     REPORT_JSON["data"] = {}
 
+    commits_this_week = this_week_json["defaultBranchRef"]["target"]["history"]["totalCount"]
+    commits_last_week = last_week_json["defaultBranchRef"]["target"]["history"]["totalCount"]
     REPORT_JSON["data"]["commits"] = {
-        "this_week": this_week_json["defaultBranchRef"]["target"]["history"]["totalCount"],
-        "last_week": last_week_json["defaultBranchRef"]["target"]["history"]["totalCount"],
+        "this_week": commits_this_week,
+        "last_week": commits_last_week,
     }
 
+    forks_this_week = this_week_json["forkCount"]
+    forks_last_week = last_week_json["forkCount"]
     REPORT_JSON["data"]["forkCount"] = {
-        "this_week": this_week_json["forkCount"],
-        "last_week": last_week_json["forkCount"],
+        "this_week": forks_this_week,
+        "last_week": forks_last_week,
     }
 
     try:
-        ORG_REPORT_JSON[org]["data"]["commits"]["this_week"] += this_week_json["defaultBranchRef"]["target"]["history"]["totalCount"]
-        ORG_REPORT_JSON[org]["data"]["commits"]["last_week"] += last_week_json["defaultBranchRef"]["target"]["history"]["totalCount"]
-        ORG_REPORT_JSON[org]["data"]["forkCount"]["this_week"] += this_week_json["forkCount"]
-        ORG_REPORT_JSON[org]["data"]["forkCount"]["last_week"] += last_week_json["forkCount"]
+        # commits
+        ORG_REPORT_JSON[org]["data"]["commits"]["this_week"] += commits_this_week
+        ORG_REPORT_JSON[org]["data"]["commits"]["last_week"] += commits_last_week
+        if commits_this_week - commits_last_week:
+            ORG_REPORT_JSON[org]["data"]["commits"]["diff_breakdown"][repo] = commits_this_week - commits_last_week
+
+        # forks
+        ORG_REPORT_JSON[org]["data"]["forkCount"]["this_week"] += forks_this_week
+        ORG_REPORT_JSON[org]["data"]["forkCount"]["last_week"] += forks_last_week
+        if forks_this_week - forks_last_week:
+            ORG_REPORT_JSON[org]["data"]["forkCount"]["diff_breakdown"][repo] = forks_this_week - forks_last_week
     except KeyError:
         ORG_REPORT_JSON[org]["data"]["commits"] = {
-            "this_week": this_week_json["defaultBranchRef"]["target"]["history"]["totalCount"],
-            "last_week": last_week_json["defaultBranchRef"]["target"]["history"]["totalCount"]
+            "this_week": commits_this_week,
+            "last_week": commits_last_week,
         }
+        if commits_this_week - commits_last_week:
+            ORG_REPORT_JSON[org]["data"]["commits"]["diff_breakdown"] = {
+                repo: commits_this_week - commits_last_week
+            }
+
         ORG_REPORT_JSON[org]["data"]["forkCount"] = {
-            "this_week": this_week_json["forkCount"],
-            "last_week": last_week_json["forkCount"]
+            "this_week": forks_this_week,
+            "last_week": forks_last_week,
         }
+        if forks_this_week - forks_last_week:
+            ORG_REPORT_JSON[org]["data"]["forkCount"]["diff_breakdown"] = {
+                repo: forks_this_week - forks_last_week
+            }
 
 
     # Grouping similar metrics
     for metric in ["issues", "openIssues", "closedIssues", "pullRequests", "openPullRequests", "mergedPullRequests",
                    "closedPullRequests", "stargazers", "watchers"]:
+        metric_this_week = this_week_json[metric]["totalCount"]
+        metric_last_week = last_week_json[metric]["totalCount"]
         REPORT_JSON["data"][metric] = {
-            "this_week": this_week_json[metric]["totalCount"],
-            "last_week": last_week_json[metric]["totalCount"],
+            "this_week": metric_this_week,
+            "last_week": metric_last_week,
         }
         try:
-            ORG_REPORT_JSON[org]["data"][metric]["this_week"] += this_week_json[metric]["totalCount"]
-            ORG_REPORT_JSON[org]["data"][metric]["last_week"] += last_week_json[metric]["totalCount"]
+            ORG_REPORT_JSON[org]["data"][metric]["this_week"] += metric_this_week
+            ORG_REPORT_JSON[org]["data"][metric]["last_week"] += metric_last_week
+            if metric_this_week - metric_last_week:
+                ORG_REPORT_JSON[org]["data"][metric]["diff_breakdown"][repo] = metric_this_week - metric_last_week
         except KeyError:
             ORG_REPORT_JSON[org]["data"][metric] = {
-                "this_week": this_week_json[metric]["totalCount"],
-                "last_week": last_week_json[metric]["totalCount"]
+                "this_week": metric_this_week,
+                "last_week": metric_last_week,
             }
+            if metric_this_week - metric_last_week:
+                ORG_REPORT_JSON[org]["data"][metric]["diff_breakdown"] = {
+                    repo: metric_this_week - metric_last_week
+                }
 
+
+    # Project report diff
+    # Org report diff done after the for loop for projects ends
     for metric in REPORT_JSON["data"]:
         REPORT_JSON["data"][metric]["diff"] = REPORT_JSON["data"][metric]["this_week"] - REPORT_JSON["data"][metric]["last_week"]
 
@@ -243,12 +274,15 @@ for project in ALL_PROJECTS:
     print("LOG: Created the latest POST", latest_post_file)
 
 """
-Generate report for each org
+Get the diff of each data metric
 """
 for org in ORG_REPORT_JSON:
     for metric in ORG_REPORT_JSON[org]["data"]:
         ORG_REPORT_JSON[org]["data"][metric]["diff"] = ORG_REPORT_JSON[org]["data"][metric]["this_week"] - ORG_REPORT_JSON[org]["data"][metric]["last_week"]
 
+"""
+Generate report for each org
+"""
 for org in ORG_REPORT_JSON:
     path_to_org = PATH_TO_METRICS_DATA + "/" + org
     with open("{}/{}.json".format(path_to_org, ORG_REPORT_JSON[org]["reportID"]), "w+") as f:

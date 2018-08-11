@@ -126,49 +126,77 @@ for project in ALL_PROJECTS:
         ORG_REPORT_JSON[org]["no_of_repos"] = 1
 
     REPORT_JSON["data"] = {}
+    commits_this_month = this_month_json["defaultBranchRef"]["target"]["history"]["totalCount"]
+    commits_last_month = last_month_json["defaultBranchRef"]["target"]["history"]["totalCount"]
     REPORT_JSON["data"]["commits"] = {
-        "this_month": this_month_json["defaultBranchRef"]["target"]["history"]["totalCount"],
-        "last_month": last_month_json["defaultBranchRef"]["target"]["history"]["totalCount"],
+        "this_month": commits_this_month,
+        "last_month": commits_last_month,
     }
+
+    forks_this_month = this_month_json["forkCount"]
+    forks_last_month = last_month_json["forkCount"]
     REPORT_JSON["data"]["forkCount"] = {
-        "this_month": this_month_json["forkCount"],
-        "last_month": last_month_json["forkCount"],
+        "this_month": forks_this_month,
+        "last_month": forks_last_month,
     }
 
     try:
-        ORG_REPORT_JSON[org]["data"]["commits"]["this_month"] += this_month_json["defaultBranchRef"]["target"]["history"]["totalCount"]
-        ORG_REPORT_JSON[org]["data"]["commits"]["last_month"] += last_month_json["defaultBranchRef"]["target"]["history"]["totalCount"]
-        ORG_REPORT_JSON[org]["data"]["forkCount"]["this_month"] += this_month_json["forkCount"]
-        ORG_REPORT_JSON[org]["data"]["forkCount"]["last_month"] += last_month_json["forkCount"]
+        # commits
+        ORG_REPORT_JSON[org]["data"]["commits"]["this_month"] += commits_this_month
+        ORG_REPORT_JSON[org]["data"]["commits"]["last_month"] += commits_last_month
+        if commits_this_month - commits_last_month:
+            ORG_REPORT_JSON[org]["data"]["commits"]["diff_breakdown"][repo] = commits_this_month - commits_last_month
+
+        # forks
+        ORG_REPORT_JSON[org]["data"]["forkCount"]["this_month"] += forks_this_month
+        ORG_REPORT_JSON[org]["data"]["forkCount"]["last_month"] += forks_last_month
+        if forks_this_month - forks_last_month:
+            ORG_REPORT_JSON[org]["data"]["forkCount"]["diff_breakdown"][repo] = forks_this_month - forks_last_month
     except KeyError as e:
-        # print("\n\n\n\n\n\n\n\n")
-        # print(e)
-        # print("\n\n\n\n\n\n\n\n")
         ORG_REPORT_JSON[org]["data"]["commits"] = {
-            "this_month": this_month_json["defaultBranchRef"]["target"]["history"]["totalCount"],
-            "last_month": last_month_json["defaultBranchRef"]["target"]["history"]["totalCount"]
+            "this_month": commits_this_month,
+            "last_month": commits_last_month,
         }
+        if commits_this_month - commits_last_month:
+            ORG_REPORT_JSON[org]["data"]["commits"]["diff_breakdown"] = {
+                repo: commits_this_month - commits_last_month
+            }
+
         ORG_REPORT_JSON[org]["data"]["forkCount"] = {
-            "this_month": this_month_json["forkCount"],
-            "last_month": last_month_json["forkCount"]
+            "this_month": forks_this_month,
+            "last_month": forks_last_month,
         }
+        if forks_this_month - forks_last_month:
+            ORG_REPORT_JSON[org]["data"]["forkCount"]["diff_breakdown"] = {
+                repo: forks_this_month - forks_last_month
+            }
 
     # Grouping similar metrics
     for metric in ["issues", "openIssues", "closedIssues", "pullRequests", "openPullRequests", "mergedPullRequests",
                    "closedPullRequests", "stargazers", "watchers"]:
+        metric_this_month = this_month_json[metric]["totalCount"]
+        metric_last_month = last_month_json[metric]["totalCount"]
         REPORT_JSON["data"][metric] = {
-            "this_month": this_month_json[metric]["totalCount"],
-            "last_month": last_month_json[metric]["totalCount"],
+            "this_month": metric_this_month,
+            "last_month": metric_last_month,
         }
         try:
-            ORG_REPORT_JSON[org]["data"][metric]["this_month"] += this_month_json[metric]["totalCount"]
-            ORG_REPORT_JSON[org]["data"][metric]["last_month"] += last_month_json[metric]["totalCount"]
+            ORG_REPORT_JSON[org]["data"][metric]["this_month"] += metric_this_month
+            ORG_REPORT_JSON[org]["data"][metric]["last_month"] += metric_last_month
+            if metric_this_month - metric_last_month:
+                ORG_REPORT_JSON[org]["data"][metric]["diff_breakdown"][repo] = metric_this_month - metric_last_month
         except KeyError:
             ORG_REPORT_JSON[org]["data"][metric] = {
-                "this_month": this_month_json[metric]["totalCount"],
-                "last_month": last_month_json[metric]["totalCount"]
+                "this_month": metric_this_month,
+                "last_month": metric_last_month,
             }
+            if metric_this_month - metric_last_month:
+                ORG_REPORT_JSON[org]["data"][metric]["diff_breakdown"] = {
+                    repo: metric_this_month - metric_last_month
+                }
 
+    # Project report diff
+    # Org report diff done after the for loop for projects ends
     for metric in REPORT_JSON["data"]:
         REPORT_JSON["data"][metric]["diff"] = REPORT_JSON["data"][metric]["this_month"] - REPORT_JSON["data"][metric]["last_month"]
 
@@ -260,12 +288,16 @@ for project in ALL_PROJECTS:
 
 
 """
-Generate report for each org
+Get the diff of each data metric
 """
 for org in ORG_REPORT_JSON:
     for metric in ORG_REPORT_JSON[org]["data"]:
         ORG_REPORT_JSON[org]["data"][metric]["diff"] = ORG_REPORT_JSON[org]["data"][metric]["this_month"] - ORG_REPORT_JSON[org]["data"][metric]["last_month"]
 
+
+"""
+Generate report for each org
+"""
 for org in ORG_REPORT_JSON:
     path_to_org = PATH_TO_METRICS_DATA + "/" + org
     with open("{}/{}.json".format(path_to_org, ORG_REPORT_JSON[org]["reportID"]), "w+") as f:
