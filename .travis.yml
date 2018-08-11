@@ -36,4 +36,5 @@ notifications:
   email:
     recipients:
       - hmishra+travis@twitter.com
+      - decause+travis@twitter.com
 
