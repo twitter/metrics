@@ -19,8 +19,8 @@ GITHUB_OAUTH_TOKEN = os.environ["OAUTH_TOKEN"]
 GITHUB_API_ENDPOINT = "https://api.github.com/graphql"
 DATESTAMP = datetime.datetime.now().date().isoformat()
 
-# Read repos-to-include.md
-all_orgs = []  # Track orgs and all its repos e.g. twitter, twitter
+# Read repos-to-include.txt
+all_orgs = []  # Track orgs and all its repos e.g. twitter, twitterdev
 all_repos = []  # Track specific repositories e.g. ('pantsbuild', 'pants')
 
 with open("repos-to-include.txt", "r") as f:
