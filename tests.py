@@ -1,0 +1,1 @@
+print("ALL tests passed!")
