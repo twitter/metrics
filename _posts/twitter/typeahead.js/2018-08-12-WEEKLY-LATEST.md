@@ -24,77 +24,77 @@ datestampLastWeek: 2018-08-03
             <td>Commits</td>
             <td>594</td>
             <td>594</td>
-            <td>0</td>
+            <td style="background-color: #ffffff" >0</td>
         </tr>
         
         <tr>
             <td>Forks</td>
             <td>3239</td>
             <td>3235</td>
-            <td>4</td>
+            <td style="background-color: #32ff00" >4</td>
         </tr>
         
         <tr>
             <td>Issues</td>
             <td>1265</td>
             <td>1265</td>
-            <td>0</td>
+            <td style="background-color: #ffffff" >0</td>
         </tr>
         
         <tr>
             <td>Open Issues</td>
             <td>372</td>
             <td>372</td>
-            <td>0</td>
+            <td style="background-color: #ffffff" >0</td>
         </tr>
         
         <tr>
             <td>Closed Issues</td>
             <td>893</td>
             <td>893</td>
-            <td>0</td>
+            <td style="background-color: #ffffff" >0</td>
         </tr>
         
         <tr>
             <td>Pull Requests</td>
             <td>462</td>
             <td>462</td>
-            <td>0</td>
+            <td style="background-color: #ffffff" >0</td>
         </tr>
         
         <tr>
             <td>Open Pull Requests</td>
             <td>104</td>
             <td>104</td>
-            <td>0</td>
+            <td style="background-color: #ffffff" >0</td>
         </tr>
         
         <tr>
             <td>Merged Pull Requests</td>
             <td>106</td>
             <td>106</td>
-            <td>0</td>
+            <td style="background-color: #ffffff" >0</td>
         </tr>
         
         <tr>
             <td>Closed Pull Requests</td>
             <td>252</td>
             <td>252</td>
-            <td>0</td>
+            <td style="background-color: #ffffff" >0</td>
         </tr>
         
         <tr>
             <td>Stars</td>
             <td>15325</td>
             <td>15307</td>
-            <td>18</td>
+            <td style="background-color: #32ff00" >18</td>
         </tr>
         
         <tr>
             <td>Watchers</td>
             <td>627</td>
             <td>627</td>
-            <td>0</td>
+            <td style="background-color: #ffffff" >0</td>
         </tr>
         
 </table>

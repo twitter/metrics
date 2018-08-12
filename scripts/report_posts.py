@@ -91,17 +91,19 @@ def add_table_of_metrics(post_text, REPORT_JSON, data_source, ID):
         </tr>
     """)
     for metric in REPORT_JSON['data']:
+        color = util.get_metrics_color(metric, REPORT_JSON['data'][metric]['diff'])
         post_text += """
         <tr>
-            <td>{}</td>
-            <td>{}</td>
-            <td>{}</td>
-            <td>{}</td>
+            <td>{0}</td>
+            <td>{1}</td>
+            <td>{2}</td>
+            <td style="background-color: {4}" >{3}</td>
         </tr>
         """.format(util.get_metrics_name(metric),
                    REPORT_JSON['data'][metric]['latest'],
                    REPORT_JSON['data'][metric]['previous'],
-                   REPORT_JSON['data'][metric]['diff'])
+                   REPORT_JSON['data'][metric]['diff'],
+                   color)
     post_text += textwrap.dedent("""
     </table>
     """)
