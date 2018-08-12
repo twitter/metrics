@@ -1,11 +1,11 @@
 ---
 layout: monthly-metrics-v0.1
-title: Metrics report for twitterdev/cards-player-samples | MONTHLY-2018-08-12 | 2018-08-12
+title: Metrics report for twitterdev/cards-player-samples | MONTHLY-REPORT-2018-08-12 | 2018-08-12
 permalink: /twitterdev/cards-player-samples/MONTHLY/
 
 owner: twitterdev
 repo: cards-player-samples
-reportID: MONTHLY-2018-08-12
+reportID: MONTHLY-REPORT-2018-08-12
 datestampThisMonth: 2018-08-12
 datestampLastMonth: 2018-07-13
 ---
@@ -17,7 +17,7 @@ datestampLastMonth: 2018-07-13
         <th>Last Month</th>
         <th>+/-</th>
     </tr>
-    {% for item in site.data["twitterdev"]["cards-player-samples"]["MONTHLY-2018-08-12"]["data"] %}
+    {% for item in site.data["twitterdev"]["cards-player-samples"]["MONTHLY-REPORT-2018-08-12"]["data"] %}
     <tr>
         <th>{{ item[0] }}</th>
         <th>{{ item[1]["latest"] }}</th>

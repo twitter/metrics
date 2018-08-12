@@ -1,11 +1,11 @@
 ---
 layout: weekly-metrics-v0.1
-title: Metrics report for twitter/twitter-cldr-js | WEEKLY-2018-08-12
+title: Metrics report for twitter/twitter-cldr-js | WEEKLY-REPORT-2018-08-12
 permalink: /twitter/twitter-cldr-js/WEEKLY/
 
 owner: twitter
 repo: twitter-cldr-js
-reportID: WEEKLY-2018-08-12
+reportID: WEEKLY-REPORT-2018-08-12
 datestampThisWeek: 2018-08-12
 datestampLastWeek: 2018-08-03
 ---
@@ -17,7 +17,7 @@ datestampLastWeek: 2018-08-03
         <th>Last Week</th>
         <th>+/-</th>
     </tr>
-    {% for item in site.data["twitter"]["twitter-cldr-js"]["WEEKLY-2018-08-12"]["data"] %}
+    {% for item in site.data["twitter"]["twitter-cldr-js"]["WEEKLY-REPORT-2018-08-12"]["data"] %}
     <tr>
         <th>{{ item[0] }}</th>
         <th>{{ item[1]["latest"] }}</th>

@@ -1,11 +1,11 @@
 ---
 layout: monthly-metrics-v0.1
-title: Metrics report for twitter/gatekeeper-service | MONTHLY-2018-07-20 | 2018-07-20
+title: Metrics report for twitter/gatekeeper-service | MONTHLY-REPORT-2018-07-20 | 2018-07-20
 permalink: /twitter/gatekeeper-service/MONTHLY/
 
 owner: twitter
 repo: gatekeeper-service
-reportID: MONTHLY-2018-07-20
+reportID: MONTHLY-REPORT-2018-07-20
 datestampThisMonth: 2018-07-20
 datestampLastMonth: 2018-06-22
 ---
@@ -17,7 +17,7 @@ datestampLastMonth: 2018-06-22
         <th>Last Month</th>
         <th>+/-</th>
     </tr>
-    {% for item in site.data["twitter"]["gatekeeper-service"]["MONTHLY-2018-07-20"]["data"] %}
+    {% for item in site.data["twitter"]["gatekeeper-service"]["MONTHLY-REPORT-2018-07-20"]["data"] %}
     <tr>
         <th>{{ item[0] }}</th>
         <th>{{ item[1]["latest"] }}</th>
