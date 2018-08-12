@@ -15,9 +15,9 @@ install:
 
 script:
   - if [ $TRAVIS_EVENT_TYPE == "cron" ];
-    then ./update.sh
-    else python tests.py
-    fi
+    then ./update.sh;
+    else python tests.py;
+    fi;
 
 deploy:
   provider: pages
