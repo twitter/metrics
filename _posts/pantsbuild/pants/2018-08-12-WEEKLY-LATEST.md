@@ -74,7 +74,7 @@ datestampLastWeek: 2018-08-03
         
         <tr data-toggle="collapse" data-target="#col-mergedPullRequests" class="accordion-toggle" style="cursor: pointer;">
             <td>Merged Pull Requests</td>
-            <td>1423</td>
+            <td>1423🌟</td>
             <td>1395</td>
             <td style="background-color: #32ff00" >28</td>
         </tr>
@@ -88,7 +88,7 @@ datestampLastWeek: 2018-08-03
         
         <tr data-toggle="collapse" data-target="#col-stargazers" class="accordion-toggle" style="cursor: pointer;">
             <td>Stars</td>
-            <td>1002</td>
+            <td>1002🌟🌟</td>
             <td>994</td>
             <td style="background-color: #32ff00" >8</td>
         </tr>

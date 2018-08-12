@@ -30,7 +30,7 @@ datestampLastMonth: 2018-07-13
         
         <tr data-toggle="collapse" data-target="#col-forkCount" class="accordion-toggle" style="cursor: pointer;">
             <td>Forks</td>
-            <td>817</td>
+            <td>817🌟</td>
             <td>772</td>
             <td style="background-color: #32ff00" >45</td>
         </tr>
@@ -104,7 +104,7 @@ datestampLastMonth: 2018-07-13
         
         <tr data-toggle="collapse" data-target="#col-stargazers" class="accordion-toggle" style="cursor: pointer;">
             <td>Stars</td>
-            <td>1408</td>
+            <td>1408🌟</td>
             <td>1385</td>
             <td style="background-color: #32ff00" >23</td>
         </tr>

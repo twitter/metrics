@@ -87,14 +87,14 @@ datestampLastMonth: 2018-07-13
         
         <tr data-toggle="collapse" data-target="#col-stargazers" class="accordion-toggle" style="cursor: pointer;">
             <td>Stars</td>
-            <td>6622</td>
+            <td>6622🌟</td>
             <td>6568</td>
             <td style="background-color: #32ff00" >54</td>
         </tr>
         
         <tr data-toggle="collapse" data-target="#col-watchers" class="accordion-toggle" style="cursor: pointer;">
             <td>Watchers</td>
-            <td>603</td>
+            <td>603🌟</td>
             <td>599</td>
             <td style="background-color: #32ff00" >4</td>
         </tr>

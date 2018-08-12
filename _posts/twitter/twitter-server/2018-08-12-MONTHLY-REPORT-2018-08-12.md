@@ -94,7 +94,7 @@ datestampLastMonth: 2018-07-13
         
         <tr data-toggle="collapse" data-target="#col-watchers" class="accordion-toggle" style="cursor: pointer;">
             <td>Watchers</td>
-            <td>200</td>
+            <td>200🌟</td>
             <td>199</td>
             <td style="background-color: #32ff00" >1</td>
         </tr>

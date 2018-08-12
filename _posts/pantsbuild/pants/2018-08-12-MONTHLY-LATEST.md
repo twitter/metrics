@@ -24,7 +24,7 @@ datestampLastMonth: 2018-07-13
 
         <tr data-toggle="collapse" data-target="#col-commits" class="accordion-toggle" style="cursor: pointer;">
             <td>Commits</td>
-            <td>5678</td>
+            <td>5678🌟</td>
             <td>5510</td>
             <td style="background-color: #32ff00" >168</td>
         </tr>
@@ -59,7 +59,7 @@ datestampLastMonth: 2018-07-13
         
         <tr data-toggle="collapse" data-target="#col-pullRequests" class="accordion-toggle" style="cursor: pointer;">
             <td>Pull Requests</td>
-            <td>4244</td>
+            <td>4244🌟</td>
             <td>4068</td>
             <td style="background-color: #32ff00" >176</td>
         </tr>
@@ -73,7 +73,7 @@ datestampLastMonth: 2018-07-13
         
         <tr data-toggle="collapse" data-target="#col-mergedPullRequests" class="accordion-toggle" style="cursor: pointer;">
             <td>Merged Pull Requests</td>
-            <td>1423</td>
+            <td>1423🌟</td>
             <td>1261</td>
             <td style="background-color: #32ff00" >162</td>
         </tr>
@@ -87,7 +87,7 @@ datestampLastMonth: 2018-07-13
         
         <tr data-toggle="collapse" data-target="#col-stargazers" class="accordion-toggle" style="cursor: pointer;">
             <td>Stars</td>
-            <td>1002</td>
+            <td>1002🌟🌟</td>
             <td>984</td>
             <td style="background-color: #32ff00" >18</td>
         </tr>

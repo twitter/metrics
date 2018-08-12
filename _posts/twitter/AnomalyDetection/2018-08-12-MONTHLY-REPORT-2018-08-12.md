@@ -87,7 +87,7 @@ datestampLastMonth: 2018-07-13
         
         <tr data-toggle="collapse" data-target="#col-stargazers" class="accordion-toggle" style="cursor: pointer;">
             <td>Stars</td>
-            <td>2615</td>
+            <td>2615🌟</td>
             <td>2578</td>
             <td style="background-color: #32ff00" >37</td>
         </tr>
