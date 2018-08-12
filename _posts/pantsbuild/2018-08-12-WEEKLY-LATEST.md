@@ -43,7 +43,7 @@ datestampLastWeek: 2018-08-03
             <a target="_blank" href="/metrics/pantsbuild/pants/WEEKLY">pants : 2</a><br></div> </td>
         <tr data-toggle="collapse" data-target="#col-issues" class="accordion-toggle" style="cursor: pointer;">
             <td>Issues</td>
-            <td>2405</td>
+            <td>2405🌟</td>
             <td>2399</td>
             <td style="background-color: #32ff00" >6</td>
         </tr>
@@ -63,7 +63,7 @@ datestampLastWeek: 2018-08-03
             <a target="_blank" href="/metrics/pantsbuild/pants/WEEKLY">pants : -1</a><br></div> </td>
         <tr data-toggle="collapse" data-target="#col-closedIssues" class="accordion-toggle" style="cursor: pointer;">
             <td>Closed Issues</td>
-            <td>1702</td>
+            <td>1702🌟</td>
             <td>1695</td>
             <td style="background-color: #32ff00" >7</td>
         </tr>

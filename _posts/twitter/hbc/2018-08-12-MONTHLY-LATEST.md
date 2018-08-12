@@ -31,7 +31,7 @@ datestampLastMonth: 2018-07-13
         
         <tr data-toggle="collapse" data-target="#col-forkCount" class="accordion-toggle" style="cursor: pointer;">
             <td>Forks</td>
-            <td>301</td>
+            <td>301🌟</td>
             <td>299</td>
             <td style="background-color: #32ff00" >2</td>
         </tr>

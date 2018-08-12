@@ -24,7 +24,7 @@ datestampLastMonth: 2018-07-13
 
         <tr data-toggle="collapse" data-target="#col-commits" class="accordion-toggle" style="cursor: pointer;">
             <td>Commits</td>
-            <td>272</td>
+            <td>272🌟</td>
             <td>117</td>
             <td style="background-color: #32ff00" >155</td>
         </tr>
@@ -38,7 +38,7 @@ datestampLastMonth: 2018-07-13
         
         <tr data-toggle="collapse" data-target="#col-issues" class="accordion-toggle" style="cursor: pointer;">
             <td>Issues</td>
-            <td>112</td>
+            <td>112🌟</td>
             <td>80</td>
             <td style="background-color: #32ff00" >32</td>
         </tr>

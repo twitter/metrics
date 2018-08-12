@@ -24,7 +24,7 @@ datestampLastMonth: 2018-07-13
 
         <tr data-toggle="collapse" data-target="#col-commits" class="accordion-toggle" style="cursor: pointer;">
             <td>Commits</td>
-            <td>4102</td>
+            <td>4102🌟</td>
             <td>4097</td>
             <td style="background-color: #32ff00" >5</td>
         </tr>

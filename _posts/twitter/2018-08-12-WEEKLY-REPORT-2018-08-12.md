@@ -23,7 +23,7 @@ datestampLastWeek: 2018-08-03
 
         <tr data-toggle="collapse" data-target="#col-commits" class="accordion-toggle" style="cursor: pointer;">
             <td>Commits</td>
-            <td>124621</td>
+            <td>124621🌟</td>
             <td>124567</td>
             <td style="background-color: #32ff00" >54</td>
         </tr>
@@ -33,7 +33,7 @@ datestampLastWeek: 2018-08-03
             <a target="_blank" href="/metrics/twitter/finagle/WEEKLY">finagle : 16</a><br><a target="_blank" href="/metrics/twitter/chill/WEEKLY">chill : 6</a><br><a target="_blank" href="/metrics/twitter/util/WEEKLY">util : 5</a><br><a target="_blank" href="/metrics/twitter/rsc/WEEKLY">rsc : 5</a><br><a target="_blank" href="/metrics/twitter/dodo/WEEKLY">dodo : 4</a><br><a target="_blank" href="/metrics/twitter/scrooge/WEEKLY">scrooge : 4</a><br><a target="_blank" href="/metrics/twitter/twitter-server/WEEKLY">twitter-server : 4</a><br><a target="_blank" href="/metrics/twitter/finatra/WEEKLY">finatra : 3</a><br><a target="_blank" href="/metrics/twitter/algebird/WEEKLY">algebird : 2</a><br><a target="_blank" href="/metrics/twitter/scoot/WEEKLY">scoot : 2</a><br><a target="_blank" href="/metrics/twitter/twemoji/WEEKLY">twemoji : 1</a><br><a target="_blank" href="/metrics/twitter/pelikan/WEEKLY">pelikan : 1</a><br><a target="_blank" href="/metrics/twitter/rpc-perf/WEEKLY">rpc-perf : 1</a><br></div> </td>
         <tr data-toggle="collapse" data-target="#col-forkCount" class="accordion-toggle" style="cursor: pointer;">
             <td>Forks</td>
-            <td>21017</td>
+            <td>21017🌟🌟</td>
             <td>20949</td>
             <td style="background-color: #32ff00" >68</td>
         </tr>
@@ -63,7 +63,7 @@ datestampLastWeek: 2018-08-03
             <a target="_blank" href="/metrics/twitter/twitter-kit-ios/WEEKLY">twitter-kit-ios : 1</a><br><a target="_blank" href="/metrics/twitter/scrooge/WEEKLY">scrooge : 1</a><br><a target="_blank" href="/metrics/twitter/finatra/WEEKLY">finatra : 1</a><br><a target="_blank" href="/metrics/twitter/hogan.js/WEEKLY">hogan.js : -1</a><br><a target="_blank" href="/metrics/twitter/chill/WEEKLY">chill : -1</a><br><a target="_blank" href="/metrics/twitter/twemoji/WEEKLY">twemoji : -5</a><br></div> </td>
         <tr data-toggle="collapse" data-target="#col-closedIssues" class="accordion-toggle" style="cursor: pointer;">
             <td>Closed Issues</td>
-            <td>5001</td>
+            <td>5001🌟🌟</td>
             <td>4992</td>
             <td style="background-color: #32ff00" >9</td>
         </tr>
@@ -113,7 +113,7 @@ datestampLastWeek: 2018-08-03
             <a target="_blank" href="/metrics/twitter/dodo/WEEKLY">dodo : 2</a><br><a target="_blank" href="/metrics/twitter/scala_school/WEEKLY">scala_school : 2</a><br><a target="_blank" href="/metrics/twitter/util/WEEKLY">util : 1</a><br></div> </td>
         <tr data-toggle="collapse" data-target="#col-stargazers" class="accordion-toggle" style="cursor: pointer;">
             <td>Stars</td>
-            <td>118496</td>
+            <td>118496🌟</td>
             <td>118275</td>
             <td style="background-color: #32ff00" >221</td>
         </tr>
