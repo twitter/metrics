@@ -27,6 +27,7 @@ deploy:
   verbose: true
   on:
     branch: gh-pages
+    condition: $TRAVIS_EVENT_TYPE = "cron"
 
 notifications:
   slack:
