@@ -1,6 +1,20 @@
 ---
 layout: default
 ---
+<style type="text/css">
+    th:not(:first-child) {
+        text-align: right;
+    }
+
+    td:not(:first-child) {
+        text-align: right;
+    }
+    td:last-child {
+        font-weight: bold;
+    }
+
+</style>
+
 <h2><a target="_blank" href="https://github.com/{{ page.org }}">{{ page.org }}</a></h2>
 <p class="meta">{{ page.datestampThisWeek | date_to_string }}</p>
 <div class="post">

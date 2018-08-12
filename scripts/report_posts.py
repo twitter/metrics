@@ -1,5 +1,8 @@
 import re
 import os
+import textwrap
+
+import util
 
 WEEKLY_METRICS_VERSION = "0.1"
 ORG_WEEKLY_METRICS_VERSION = "0.1"
@@ -21,22 +24,7 @@ datestampThisWeek: {datestampThisWeek}
 datestampLastWeek: {datestampLastWeek}
 ---
 
-<table style="width: 100%">
-    <tr>
-        <th>Metric</th>
-        <th>This Week</th>
-        <th>Last Week</th>
-        <th>+/-</th>
-    </tr>
-    {{% for item in site.data["{owner_in_data}"]["{repo_in_data}"]["{reportID}"]["data"] %}}
-    <tr>
-        <th>{{{{ item[0] }}}}</th>
-        <th>{{{{ item[1]["latest"] }}}}</th>
-        <th>{{{{ item[1]["previous"] }}}}</th>
-        <th>{{{{ item[1]["diff"] }}}}</th>
-    </tr>
-    {{% endfor %}}
-</table>
+
 """
 
 MONTHLY_PROJECT_POST = """\
@@ -52,23 +40,9 @@ datestampThisMonth: {datestampThisMonth}
 datestampLastMonth: {datestampLastMonth}
 ---
 
-<table style="width: 100%">
-    <tr>
-        <th>Metric</th>
-        <th>This Month</th>
-        <th>Last Month</th>
-        <th>+/-</th>
-    </tr>
-    {{% for item in site.data["{owner_in_data}"]["{repo_in_data}"]["{reportID}"]["data"] %}}
-    <tr>
-        <th>{{{{ item[0] }}}}</th>
-        <th>{{{{ item[1]["latest"] }}}}</th>
-        <th>{{{{ item[1]["previous"] }}}}</th>
-        <th>{{{{ item[1]["diff"] }}}}</th>
-    </tr>
-    {{% endfor %}}
-</table>
 """
+# {{% for item in site.data["{owner_in_data}"]["{repo_in_data}"]["{reportID}"]["data"] %}}
+
 
 WEEKLY_ORG_POST = """\
 ---
@@ -82,23 +56,9 @@ datestampThisWeek: {datestampThisWeek}
 datestampLastWeek: {datestampLastWeek}
 ---
 
-<table style="width: 100%">
-    <tr>
-        <th>Metric</th>
-        <th>This Week</th>
-        <th>Last Week</th>
-        <th>+/-</th>
-    </tr>
-    {{% for item in site.data["{owner_in_data}"]["{reportID}"]["data"] %}}
-    <tr>
-        <th>{{{{ item[0] }}}}</th>
-        <th>{{{{ item[1]["latest"] }}}}</th>
-        <th>{{{{ item[1]["previous"] }}}}</th>
-        <th>{{{{ item[1]["diff"] }}}}</th>
-    </tr>
-    {{% endfor %}}
-</table>
 """
+# {{% for item in site.data["{owner_in_data}"]["{reportID}"]["data"] %}}
+
 
 MONTHLY_ORG_POST = """\
 ---
@@ -112,23 +72,41 @@ datestampThisMonth: {datestampThisMonth}
 datestampLastMonth: {datestampLastMonth}
 ---
 
-<table style="width: 100%">
-    <tr>
-        <th>Metric</th>
-        <th>This Month</th>
-        <th>Last Month</th>
-        <th>+/-</th>
-    </tr>
-    {{% for item in site.data["{owner_in_data}"]["{reportID}"]["data"] %}}
-    <tr>
-        <th>{{{{ item[0] }}}}</th>
-        <th>{{{{ item[1]["latest"] }}}}</th>
-        <th>{{{{ item[1]["previous"] }}}}</th>
-        <th>{{{{ item[1]["diff"] }}}}</th>
-    </tr>
-    {{% endfor %}}
-</table>
 """
+# {{% for item in site.data["{owner_in_data}"]["{reportID}"]["data"] %}}
+
+
+def add_table_of_metrics(post_text, REPORT_JSON, data_source, ID):
+    # data_source is not used in the function
+    # It can be used to create a jekyll loop like below but is being avoided
+    # {{% for item in data_source %}}
+
+    post_text += textwrap.dedent("""
+    <table style="width: 100%;">
+        <tr>
+            <th>Metric</th>
+            <th>Latest</th>
+            <th>Previous</th>
+            <th>+/-</th>
+        </tr>
+    """)
+    for metric in REPORT_JSON['data']:
+        post_text += """
+        <tr>
+            <td>{}</td>
+            <td>{}</td>
+            <td>{}</td>
+            <td>{}</td>
+        </tr>
+        """.format(util.get_metrics_name(metric),
+                   REPORT_JSON['data'][metric]['latest'],
+                   REPORT_JSON['data'][metric]['previous'],
+                   REPORT_JSON['data'][metric]['diff'])
+    post_text += textwrap.dedent("""
+    </table>
+    """)
+
+    return post_text
 
 def _create_post(REPORT_JSON, latest=False, project=True):
     """
@@ -170,9 +148,11 @@ def _create_post(REPORT_JSON, latest=False, project=True):
 
     if ID == "WEEKLY":
         if project:
-            post_text = WEEKLY_PROJECT_POST
+            data_source = 'site.data["{owner_in_data}"]["{repo_in_data}"]["{reportID}"]["data"]'
+            post_text = add_table_of_metrics(WEEKLY_PROJECT_POST, REPORT_JSON, data_source, 'WEEKLY')
         else:
-            post_text = WEEKLY_ORG_POST
+            data_source = 'site.data["{owner_in_data}"]["{reportID}"]["data"]'
+            post_text = add_table_of_metrics(WEEKLY_ORG_POST, REPORT_JSON, data_source, 'WEEKLY')
         post_text = post_text.format(
             version=WEEKLY_METRICS_VERSION,
             owner=org,
@@ -185,9 +165,11 @@ def _create_post(REPORT_JSON, latest=False, project=True):
             link=link)
     elif ID == "MONTHLY":
         if project:
-            post_text = MONTHLY_PROJECT_POST
+            data_source = 'site.data["{owner_in_data}"]["{repo_in_data}"]["{reportID}"]["data"]'
+            post_text = add_table_of_metrics(MONTHLY_PROJECT_POST, REPORT_JSON, data_source, 'MONTHLY')
         else:
-            post_text = MONTHLY_ORG_POST
+            data_source = 'site.data["{owner_in_data}"]["{reportID}"]["data"]'
+            post_text = add_table_of_metrics(MONTHLY_ORG_POST, REPORT_JSON, data_source, 'MONTHLY')
         post_text = post_text.format(
             version=MONTHLY_METRICS_VERSION,
             owner=org,

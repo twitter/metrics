@@ -9,6 +9,8 @@ import json
 
 import pygal
 
+import util
+
 PATH_TO_METRICS_DATA = "_data"
 # PATH_TO_GRAPHS = os.path.abspath(os.curdir) + "/graphs"
 PATH_TO_GRAPHS = "graphs"
@@ -78,7 +80,9 @@ for org in ALL_ORGS:
 
         dateline.x_labels = x_labels
 
-        dateline.add(metric, timeseries[metric])
+
+
+        dateline.add(util.get_metrics_name(metric), timeseries[metric])
 
         file_path = "{}/{}/timeseries_{}.svg".format(PATH_TO_GRAPHS, orgname, metric)
         os.makedirs("{}/{}".format(PATH_TO_GRAPHS, orgname), exist_ok=True)
@@ -90,7 +94,8 @@ for org in ALL_ORGS:
     latest_report = json.load(open(all_metrics_files[-1]))
     for metric in latest_report["data"]:
         treemap = pygal.Treemap()
-        treemap.title = metric
+
+        treemap.title = util.get_metrics_name(metric)
 
         # Add blocks in decreasing order of their count
         items = list(latest_report["data"][metric]["diff_breakdown"].items())
