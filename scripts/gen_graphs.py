@@ -19,7 +19,7 @@ Generate graphs for all Orgs
 ALL_ORGS = filter(os.path.isdir, glob(PATH_TO_METRICS_DATA + "/*"))
 
 for org in ALL_ORGS:
-    all_metrics_files = glob(org + "/WEEKLY-*.json")
+    all_metrics_files = glob(org + "/WEEKLY-REPORT-*.json")
     all_metrics_files.sort()  # Important to sort by date in increasing order
 
     orgname = org.split("/")[-1]
