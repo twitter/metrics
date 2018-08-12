@@ -41,41 +41,24 @@ for org in ALL_ORGS:
 
     for file in all_metrics_files:
         data = json.load(open(file))
-        y, m, d = data['datestamp']['this_week'].split('-')
+        # try/except because the data format changed for weekly reports
+        try:
+            y, m, d = data['datestamp']['latest'].split('-')
+        except KeyError:
+            y, m, d = data['datestamp']['this_week'].split('-')
         date_obj = datetime.date(int(y), int(m), int(d))
 
         no_of_repos = data['no_of_repos']
         timeseries['no_of_repos'].append((date_obj, no_of_repos))
 
-        forkCount = data['data']['forkCount']['this_week']
-        timeseries['forkCount'].append((date_obj, forkCount))
-
-        issues = data['data']['issues']['this_week']
-        timeseries['issues'].append((date_obj, issues))
-
-        openIssues = data['data']['openIssues']['this_week']
-        timeseries['openIssues'].append((date_obj, openIssues))
-
-        closedIssues = data['data']['closedIssues']['this_week']
-        timeseries['closedIssues'].append((date_obj, closedIssues))
-
-        pullRequests = data['data']['pullRequests']['this_week']
-        timeseries['pullRequests'].append((date_obj, pullRequests))
-
-        openPullRequests = data['data']['openPullRequests']['this_week']
-        timeseries['openPullRequests'].append((date_obj, openPullRequests))
-
-        mergedPullRequests = data['data']['mergedPullRequests']['this_week']
-        timeseries['mergedPullRequests'].append((date_obj, mergedPullRequests))
-
-        closedPullRequests = data['data']['closedPullRequests']['this_week']
-        timeseries['closedPullRequests'].append((date_obj, closedPullRequests))
-
-        stargazers = data['data']['stargazers']['this_week']
-        timeseries['stargazers'].append((date_obj, stargazers))
-
-        watchers = data['data']['watchers']['this_week']
-        timeseries['watchers'].append((date_obj, watchers))
+        for metric in ['forkCount', 'issues', 'openIssues', 'closedIssues',
+                       'pullRequests', 'openPullRequests', 'mergedPullRequests',
+                       'closedPullRequests', 'stargazers', 'watchers']:
+            try:
+                count = data['data'][metric]['latest']
+            except KeyError:
+                count = data['data'][metric]['this_week']
+            timeseries[metric].append((date_obj, count))
 
     # Save the SVG images
     for metric in timeseries:
