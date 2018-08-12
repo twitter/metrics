@@ -14,10 +14,11 @@ install:
   - pip install -r requirements.txt
 
 script:
-  - python scripts/fetch_all_metrics.py
-  - python scripts/gen_reports.py
-  - python scripts/gen_graphs.py
-  - python scripts/gen_index_pages.py
+  - if [ $TRAVIS_EVENT_TYPE == "cron" ]; then
+      bash update.sh
+    else
+      python tests.py
+    fi
 
 deploy:
   provider: pages
