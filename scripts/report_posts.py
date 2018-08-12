@@ -1,4 +1,5 @@
 import re
+import operator
 import os
 import textwrap
 
@@ -76,24 +77,27 @@ datestampLastMonth: {datestampLastMonth}
 # {{% for item in site.data["{owner_in_data}"]["{reportID}"]["data"] %}}
 
 
-def add_table_of_metrics(post_text, REPORT_JSON, data_source, ID):
+def add_table_of_metrics(post_text, REPORT_JSON, data_source, ID, add_breakdown=False):
     # data_source is not used in the function
     # It can be used to create a jekyll loop like below but is being avoided
     # {{% for item in data_source %}}
 
     post_text += textwrap.dedent("""
-    <table style="width: 100%;">
+    <table class="table table-condensed" style="border-collapse:collapse;">
+        <thead>
         <tr>
             <th>Metric</th>
             <th>Latest</th>
             <th>Previous</th>
             <th>+/-</th>
         </tr>
+        </thead>
+        <tbody>
     """)
     for metric in REPORT_JSON['data']:
         color = util.get_metrics_color(metric, REPORT_JSON['data'][metric]['diff'])
         post_text += """
-        <tr>
+        <tr data-toggle="collapse" data-target="#col-{5}" class="accordion-toggle" style="cursor: pointer;">
             <td>{0}</td>
             <td>{1}</td>
             <td>{2}</td>
@@ -103,8 +107,22 @@ def add_table_of_metrics(post_text, REPORT_JSON, data_source, ID):
                    REPORT_JSON['data'][metric]['latest'],
                    REPORT_JSON['data'][metric]['previous'],
                    REPORT_JSON['data'][metric]['diff'],
-                   color)
+                   color,
+                   metric)
+        # Add diff breakdown
+        if add_breakdown and len(REPORT_JSON['data'][metric]['diff_breakdown'].items()):
+            post_text += """
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="2" style="padding: 0" ><div class="accordian-body collapse" id="col-{0}">
+            """.format(metric)
+            items = list(REPORT_JSON['data'][metric]['diff_breakdown'].items())
+            items.sort(key=operator.itemgetter(1), reverse=True)
+            for item, value in items:
+                href = "/metrics/{}/{}/{}".format(REPORT_JSON['name'], item, ID)
+                post_text += """<a target="_blank" href="{2}">{0} : {1}</a><br>""".format(item, value, href)
+            post_text += """</div> </td>"""
     post_text += textwrap.dedent("""
+        </tbody>
     </table>
     """)
 
@@ -154,7 +172,7 @@ def _create_post(REPORT_JSON, latest=False, project=True):
             post_text = add_table_of_metrics(WEEKLY_PROJECT_POST, REPORT_JSON, data_source, 'WEEKLY')
         else:
             data_source = 'site.data["{owner_in_data}"]["{reportID}"]["data"]'
-            post_text = add_table_of_metrics(WEEKLY_ORG_POST, REPORT_JSON, data_source, 'WEEKLY')
+            post_text = add_table_of_metrics(WEEKLY_ORG_POST, REPORT_JSON, data_source, 'WEEKLY', add_breakdown=True)
         post_text = post_text.format(
             version=WEEKLY_METRICS_VERSION,
             owner=org,
@@ -171,7 +189,7 @@ def _create_post(REPORT_JSON, latest=False, project=True):
             post_text = add_table_of_metrics(MONTHLY_PROJECT_POST, REPORT_JSON, data_source, 'MONTHLY')
         else:
             data_source = 'site.data["{owner_in_data}"]["{reportID}"]["data"]'
-            post_text = add_table_of_metrics(MONTHLY_ORG_POST, REPORT_JSON, data_source, 'MONTHLY')
+            post_text = add_table_of_metrics(MONTHLY_ORG_POST, REPORT_JSON, data_source, 'MONTHLY', add_breakdown=True)
         post_text = post_text.format(
             version=MONTHLY_METRICS_VERSION,
             owner=org,

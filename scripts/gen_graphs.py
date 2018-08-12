@@ -65,7 +65,7 @@ for org in ALL_ORGS:
     # Save the SVG images
     for metric in timeseries:
         dateline = pygal.DateTimeLine(x_label_rotation=25,
-                                  x_value_formatter=lambda dt: dt.strftime('%b %Y'))
+                                      x_value_formatter=lambda dt: dt.strftime('%b %Y'))
 
         # Calculate x_labels
         x_labels = []
