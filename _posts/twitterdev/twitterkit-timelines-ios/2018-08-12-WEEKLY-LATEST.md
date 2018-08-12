@@ -1,11 +1,11 @@
 ---
 layout: weekly-metrics-v0.1
-title: Metrics report for twitterdev/twitterkit-timelines-ios | WEEKLY-2018-08-12
+title: Metrics report for twitterdev/twitterkit-timelines-ios | WEEKLY-REPORT-2018-08-12
 permalink: /twitterdev/twitterkit-timelines-ios/WEEKLY/
 
 owner: twitterdev
 repo: twitterkit-timelines-ios
-reportID: WEEKLY-2018-08-12
+reportID: WEEKLY-REPORT-2018-08-12
 datestampThisWeek: 2018-08-12
 datestampLastWeek: 2018-08-03
 ---
@@ -17,7 +17,7 @@ datestampLastWeek: 2018-08-03
         <th>Last Week</th>
         <th>+/-</th>
     </tr>
-    {% for item in site.data["twitterdev"]["twitterkit-timelines-ios"]["WEEKLY-2018-08-12"]["data"] %}
+    {% for item in site.data["twitterdev"]["twitterkit-timelines-ios"]["WEEKLY-REPORT-2018-08-12"]["data"] %}
     <tr>
         <th>{{ item[0] }}</th>
         <th>{{ item[1]["latest"] }}</th>

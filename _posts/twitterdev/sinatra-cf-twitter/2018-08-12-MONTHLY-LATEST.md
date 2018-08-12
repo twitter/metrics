@@ -1,11 +1,11 @@
 ---
 layout: monthly-metrics-v0.1
-title: Metrics report for twitterdev/sinatra-cf-twitter | MONTHLY-2018-08-12 | 2018-08-12
+title: Metrics report for twitterdev/sinatra-cf-twitter | MONTHLY-REPORT-2018-08-12 | 2018-08-12
 permalink: /twitterdev/sinatra-cf-twitter/MONTHLY/
 
 owner: twitterdev
 repo: sinatra-cf-twitter
-reportID: MONTHLY-2018-08-12
+reportID: MONTHLY-REPORT-2018-08-12
 datestampThisMonth: 2018-08-12
 datestampLastMonth: 2018-07-13
 ---
@@ -17,7 +17,7 @@ datestampLastMonth: 2018-07-13
         <th>Last Month</th>
         <th>+/-</th>
     </tr>
-    {% for item in site.data["twitterdev"]["sinatra-cf-twitter"]["MONTHLY-2018-08-12"]["data"] %}
+    {% for item in site.data["twitterdev"]["sinatra-cf-twitter"]["MONTHLY-REPORT-2018-08-12"]["data"] %}
     <tr>
         <th>{{ item[0] }}</th>
         <th>{{ item[1]["latest"] }}</th>

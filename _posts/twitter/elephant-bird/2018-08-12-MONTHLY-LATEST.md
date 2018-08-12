@@ -1,11 +1,11 @@
 ---
 layout: monthly-metrics-v0.1
-title: Metrics report for twitter/elephant-bird | MONTHLY-2018-08-12 | 2018-08-12
+title: Metrics report for twitter/elephant-bird | MONTHLY-REPORT-2018-08-12 | 2018-08-12
 permalink: /twitter/elephant-bird/MONTHLY/
 
 owner: twitter
 repo: elephant-bird
-reportID: MONTHLY-2018-08-12
+reportID: MONTHLY-REPORT-2018-08-12
 datestampThisMonth: 2018-08-12
 datestampLastMonth: 2018-07-13
 ---
@@ -17,7 +17,7 @@ datestampLastMonth: 2018-07-13
         <th>Last Month</th>
         <th>+/-</th>
     </tr>
-    {% for item in site.data["twitter"]["elephant-bird"]["MONTHLY-2018-08-12"]["data"] %}
+    {% for item in site.data["twitter"]["elephant-bird"]["MONTHLY-REPORT-2018-08-12"]["data"] %}
     <tr>
         <th>{{ item[0] }}</th>
         <th>{{ item[1]["latest"] }}</th>

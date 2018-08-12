@@ -1,11 +1,11 @@
 ---
 layout: monthly-metrics-v0.1
-title: Metrics report for twitter/iago | MONTHLY-2018-08-12 | 2018-08-12
+title: Metrics report for twitter/iago | MONTHLY-REPORT-2018-08-12 | 2018-08-12
 permalink: /twitter/iago/MONTHLY/
 
 owner: twitter
 repo: iago
-reportID: MONTHLY-2018-08-12
+reportID: MONTHLY-REPORT-2018-08-12
 datestampThisMonth: 2018-08-12
 datestampLastMonth: 2018-07-13
 ---
@@ -17,7 +17,7 @@ datestampLastMonth: 2018-07-13
         <th>Last Month</th>
         <th>+/-</th>
     </tr>
-    {% for item in site.data["twitter"]["iago"]["MONTHLY-2018-08-12"]["data"] %}
+    {% for item in site.data["twitter"]["iago"]["MONTHLY-REPORT-2018-08-12"]["data"] %}
     <tr>
         <th>{{ item[0] }}</th>
         <th>{{ item[1]["latest"] }}</th>
