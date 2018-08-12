@@ -10,19 +10,91 @@ datestampThisWeek: 2018-08-12
 datestampLastWeek: 2018-08-03
 ---
 
-<table style="width: 100%">
+
+
+<table style="width: 100%;">
     <tr>
         <th>Metric</th>
-        <th>This Week</th>
-        <th>Last Week</th>
+        <th>Latest</th>
+        <th>Previous</th>
         <th>+/-</th>
     </tr>
-    {% for item in site.data["pantsbuild"]["pex"]["WEEKLY-REPORT-2018-08-12"]["data"] %}
-    <tr>
-        <th>{{ item[0] }}</th>
-        <th>{{ item[1]["latest"] }}</th>
-        <th>{{ item[1]["previous"] }}</th>
-        <th>{{ item[1]["diff"] }}</th>
-    </tr>
-    {% endfor %}
+
+        <tr>
+            <td>Commits</td>
+            <td>503</td>
+            <td>503</td>
+            <td>0</td>
+        </tr>
+        
+        <tr>
+            <td>Forks</td>
+            <td>121</td>
+            <td>121</td>
+            <td>0</td>
+        </tr>
+        
+        <tr>
+            <td>Issues</td>
+            <td>311</td>
+            <td>311</td>
+            <td>0</td>
+        </tr>
+        
+        <tr>
+            <td>Open Issues</td>
+            <td>82</td>
+            <td>82</td>
+            <td>0</td>
+        </tr>
+        
+        <tr>
+            <td>Closed Issues</td>
+            <td>229</td>
+            <td>229</td>
+            <td>0</td>
+        </tr>
+        
+        <tr>
+            <td>Pull Requests</td>
+            <td>223</td>
+            <td>223</td>
+            <td>0</td>
+        </tr>
+        
+        <tr>
+            <td>Open Pull Requests</td>
+            <td>15</td>
+            <td>15</td>
+            <td>0</td>
+        </tr>
+        
+        <tr>
+            <td>Merged Pull Requests</td>
+            <td>167</td>
+            <td>167</td>
+            <td>0</td>
+        </tr>
+        
+        <tr>
+            <td>Closed Pull Requests</td>
+            <td>41</td>
+            <td>41</td>
+            <td>0</td>
+        </tr>
+        
+        <tr>
+            <td>Stars</td>
+            <td>1072</td>
+            <td>1066</td>
+            <td>6</td>
+        </tr>
+        
+        <tr>
+            <td>Watchers</td>
+            <td>47</td>
+            <td>47</td>
+            <td>0</td>
+        </tr>
+        
 </table>

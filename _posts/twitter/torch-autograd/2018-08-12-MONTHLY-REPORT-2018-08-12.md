@@ -10,19 +10,90 @@ datestampThisMonth: 2018-08-12
 datestampLastMonth: 2018-07-13
 ---
 
-<table style="width: 100%">
+
+<table style="width: 100%;">
     <tr>
         <th>Metric</th>
-        <th>This Month</th>
-        <th>Last Month</th>
+        <th>Latest</th>
+        <th>Previous</th>
         <th>+/-</th>
     </tr>
-    {% for item in site.data["twitter"]["torch-autograd"]["MONTHLY-REPORT-2018-08-12"]["data"] %}
-    <tr>
-        <th>{{ item[0] }}</th>
-        <th>{{ item[1]["latest"] }}</th>
-        <th>{{ item[1]["previous"] }}</th>
-        <th>{{ item[1]["diff"] }}</th>
-    </tr>
-    {% endfor %}
+
+        <tr>
+            <td>Commits</td>
+            <td>596</td>
+            <td>596</td>
+            <td>0</td>
+        </tr>
+        
+        <tr>
+            <td>Forks</td>
+            <td>101</td>
+            <td>100</td>
+            <td>1</td>
+        </tr>
+        
+        <tr>
+            <td>Issues</td>
+            <td>106</td>
+            <td>106</td>
+            <td>0</td>
+        </tr>
+        
+        <tr>
+            <td>Open Issues</td>
+            <td>28</td>
+            <td>28</td>
+            <td>0</td>
+        </tr>
+        
+        <tr>
+            <td>Closed Issues</td>
+            <td>78</td>
+            <td>78</td>
+            <td>0</td>
+        </tr>
+        
+        <tr>
+            <td>Pull Requests</td>
+            <td>70</td>
+            <td>70</td>
+            <td>0</td>
+        </tr>
+        
+        <tr>
+            <td>Open Pull Requests</td>
+            <td>2</td>
+            <td>2</td>
+            <td>0</td>
+        </tr>
+        
+        <tr>
+            <td>Merged Pull Requests</td>
+            <td>62</td>
+            <td>62</td>
+            <td>0</td>
+        </tr>
+        
+        <tr>
+            <td>Closed Pull Requests</td>
+            <td>6</td>
+            <td>6</td>
+            <td>0</td>
+        </tr>
+        
+        <tr>
+            <td>Stars</td>
+            <td>535</td>
+            <td>534</td>
+            <td>1</td>
+        </tr>
+        
+        <tr>
+            <td>Watchers</td>
+            <td>52</td>
+            <td>52</td>
+            <td>0</td>
+        </tr>
+        
 </table>
