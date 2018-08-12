@@ -23,3 +23,32 @@ METRICS_CODE_TO_NAME = {
 
     'no_of_repos': 'No. of Projects',
 }
+
+
+GREEN = "#32ff00"
+RED = "#d31c08"
+WHITE = "#ffffff"
+METRICS_HEALTHY_TREND = {
+    'commits': '+',
+    'forkCount': '+',
+    'issues': '+',
+    'openIssues': '-',
+    'closedIssues': '+',
+    'pullRequests': '+',
+    'openPullRequests': '-',
+    'mergedPullRequests': '+',
+    'closedPullRequests': '+',
+    'stargazers': '+',
+    'watchers': '+',
+    'no_of_repos': '+',
+}
+
+def get_metrics_color(metric, diff):
+    if diff == 0:
+        return WHITE
+    elif METRICS_HEALTHY_TREND[metric] == '+' and diff > 0:
+        return GREEN
+    elif METRICS_HEALTHY_TREND[metric] == '-' and diff < 0:
+        return GREEN
+    else:
+        return RED
