@@ -1,6 +1,8 @@
 """
 Create WEEKLY-REPORT-<DATE>.json for all the orgs and projects,
 and save then inside _data directory.
+Similarly for MONTHLY report as well.
+Also call report_posts.py module to create _posts reflecting the reports.
 """
 
 from glob import glob
@@ -79,7 +81,7 @@ def get_metrics_files(project, MIN_DIFFERENCE):
 def create_report(latest_metrics, previous_metrics, ORG_REPORT_JSON, ID):
     REPORT_JSON = {}
     REPORT_JSON["nameWithOwner"] = latest_metrics["nameWithOwner"]
-    REPORT_JSON["reportID"] = "{}-{}".format(ID, latest_metrics["datestamp"])
+    REPORT_JSON["reportID"] = "{}-REPORT-{}".format(ID, latest_metrics["datestamp"])
     REPORT_JSON["datestamp"] = {
         "latest": latest_metrics["datestamp"],
         "previous": previous_metrics["datestamp"]
@@ -91,7 +93,7 @@ def create_report(latest_metrics, previous_metrics, ORG_REPORT_JSON, ID):
     if org not in ORG_REPORT_JSON:
         ORG_REPORT_JSON[org] = {}
         ORG_REPORT_JSON[org]["name"] = org
-        ORG_REPORT_JSON[org]["reportID"] = "{}-{}".format(ID, latest_metrics["datestamp"])
+        ORG_REPORT_JSON[org]["reportID"] = "{}-REPORT-{}".format(ID, latest_metrics["datestamp"])
         ORG_REPORT_JSON[org]["datestamp"] = {
             "latest": latest_metrics["datestamp"],
             "previous": previous_metrics["datestamp"]
@@ -220,4 +222,4 @@ if __name__ == '__main__':
         for metric in MONTHLY_ORG_REPORT_JSON[org]["data"]:
             MONTHLY_ORG_REPORT_JSON[org]["data"][metric]["diff"] = MONTHLY_ORG_REPORT_JSON[org]["data"][metric]["latest"] - MONTHLY_ORG_REPORT_JSON[org]["data"][metric]["previous"]
 
-        create_monthly_report_and_posts(org, WEEKLY_ORG_REPORT_JSON)
+        create_monthly_report_and_posts(org, MONTHLY_ORG_REPORT_JSON)
