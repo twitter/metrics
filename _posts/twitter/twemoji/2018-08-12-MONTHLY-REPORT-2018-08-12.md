@@ -10,19 +10,90 @@ datestampThisMonth: 2018-08-12
 datestampLastMonth: 2018-07-13
 ---
 
-<table style="width: 100%">
+
+<table style="width: 100%;">
     <tr>
         <th>Metric</th>
-        <th>This Month</th>
-        <th>Last Month</th>
+        <th>Latest</th>
+        <th>Previous</th>
         <th>+/-</th>
     </tr>
-    {% for item in site.data["twitter"]["twemoji"]["MONTHLY-REPORT-2018-08-12"]["data"] %}
-    <tr>
-        <th>{{ item[0] }}</th>
-        <th>{{ item[1]["latest"] }}</th>
-        <th>{{ item[1]["previous"] }}</th>
-        <th>{{ item[1]["diff"] }}</th>
-    </tr>
-    {% endfor %}
+
+        <tr>
+            <td>Commits</td>
+            <td>242</td>
+            <td>237</td>
+            <td>5</td>
+        </tr>
+        
+        <tr>
+            <td>Forks</td>
+            <td>995</td>
+            <td>976</td>
+            <td>19</td>
+        </tr>
+        
+        <tr>
+            <td>Issues</td>
+            <td>229</td>
+            <td>224</td>
+            <td>5</td>
+        </tr>
+        
+        <tr>
+            <td>Open Issues</td>
+            <td>31</td>
+            <td>34</td>
+            <td>-3</td>
+        </tr>
+        
+        <tr>
+            <td>Closed Issues</td>
+            <td>198</td>
+            <td>190</td>
+            <td>8</td>
+        </tr>
+        
+        <tr>
+            <td>Pull Requests</td>
+            <td>78</td>
+            <td>77</td>
+            <td>1</td>
+        </tr>
+        
+        <tr>
+            <td>Open Pull Requests</td>
+            <td>7</td>
+            <td>7</td>
+            <td>0</td>
+        </tr>
+        
+        <tr>
+            <td>Merged Pull Requests</td>
+            <td>48</td>
+            <td>48</td>
+            <td>0</td>
+        </tr>
+        
+        <tr>
+            <td>Closed Pull Requests</td>
+            <td>23</td>
+            <td>22</td>
+            <td>1</td>
+        </tr>
+        
+        <tr>
+            <td>Stars</td>
+            <td>8171</td>
+            <td>8084</td>
+            <td>87</td>
+        </tr>
+        
+        <tr>
+            <td>Watchers</td>
+            <td>337</td>
+            <td>338</td>
+            <td>-1</td>
+        </tr>
+        
 </table>

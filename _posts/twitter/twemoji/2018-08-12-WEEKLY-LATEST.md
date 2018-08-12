@@ -10,19 +10,91 @@ datestampThisWeek: 2018-08-12
 datestampLastWeek: 2018-08-03
 ---
 
-<table style="width: 100%">
+
+
+<table style="width: 100%;">
     <tr>
         <th>Metric</th>
-        <th>This Week</th>
-        <th>Last Week</th>
+        <th>Latest</th>
+        <th>Previous</th>
         <th>+/-</th>
     </tr>
-    {% for item in site.data["twitter"]["twemoji"]["WEEKLY-REPORT-2018-08-12"]["data"] %}
-    <tr>
-        <th>{{ item[0] }}</th>
-        <th>{{ item[1]["latest"] }}</th>
-        <th>{{ item[1]["previous"] }}</th>
-        <th>{{ item[1]["diff"] }}</th>
-    </tr>
-    {% endfor %}
+
+        <tr>
+            <td>Commits</td>
+            <td>242</td>
+            <td>241</td>
+            <td>1</td>
+        </tr>
+        
+        <tr>
+            <td>Forks</td>
+            <td>995</td>
+            <td>989</td>
+            <td>6</td>
+        </tr>
+        
+        <tr>
+            <td>Issues</td>
+            <td>229</td>
+            <td>229</td>
+            <td>0</td>
+        </tr>
+        
+        <tr>
+            <td>Open Issues</td>
+            <td>31</td>
+            <td>36</td>
+            <td>-5</td>
+        </tr>
+        
+        <tr>
+            <td>Closed Issues</td>
+            <td>198</td>
+            <td>193</td>
+            <td>5</td>
+        </tr>
+        
+        <tr>
+            <td>Pull Requests</td>
+            <td>78</td>
+            <td>78</td>
+            <td>0</td>
+        </tr>
+        
+        <tr>
+            <td>Open Pull Requests</td>
+            <td>7</td>
+            <td>7</td>
+            <td>0</td>
+        </tr>
+        
+        <tr>
+            <td>Merged Pull Requests</td>
+            <td>48</td>
+            <td>48</td>
+            <td>0</td>
+        </tr>
+        
+        <tr>
+            <td>Closed Pull Requests</td>
+            <td>23</td>
+            <td>23</td>
+            <td>0</td>
+        </tr>
+        
+        <tr>
+            <td>Stars</td>
+            <td>8171</td>
+            <td>8148</td>
+            <td>23</td>
+        </tr>
+        
+        <tr>
+            <td>Watchers</td>
+            <td>337</td>
+            <td>338</td>
+            <td>-1</td>
+        </tr>
+        
 </table>

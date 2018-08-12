@@ -10,19 +10,90 @@ datestampThisMonth: 2018-08-12
 datestampLastMonth: 2018-07-13
 ---
 
-<table style="width: 100%">
+
+<table style="width: 100%;">
     <tr>
         <th>Metric</th>
-        <th>This Month</th>
-        <th>Last Month</th>
+        <th>Latest</th>
+        <th>Previous</th>
         <th>+/-</th>
     </tr>
-    {% for item in site.data["pantsbuild"]["pants"]["MONTHLY-REPORT-2018-08-12"]["data"] %}
-    <tr>
-        <th>{{ item[0] }}</th>
-        <th>{{ item[1]["latest"] }}</th>
-        <th>{{ item[1]["previous"] }}</th>
-        <th>{{ item[1]["diff"] }}</th>
-    </tr>
-    {% endfor %}
+
+        <tr>
+            <td>Commits</td>
+            <td>5678</td>
+            <td>5510</td>
+            <td>168</td>
+        </tr>
+        
+        <tr>
+            <td>Forks</td>
+            <td>290</td>
+            <td>283</td>
+            <td>7</td>
+        </tr>
+        
+        <tr>
+            <td>Issues</td>
+            <td>2094</td>
+            <td>2053</td>
+            <td>41</td>
+        </tr>
+        
+        <tr>
+            <td>Open Issues</td>
+            <td>621</td>
+            <td>611</td>
+            <td>10</td>
+        </tr>
+        
+        <tr>
+            <td>Closed Issues</td>
+            <td>1473</td>
+            <td>1442</td>
+            <td>31</td>
+        </tr>
+        
+        <tr>
+            <td>Pull Requests</td>
+            <td>4244</td>
+            <td>4068</td>
+            <td>176</td>
+        </tr>
+        
+        <tr>
+            <td>Open Pull Requests</td>
+            <td>52</td>
+            <td>58</td>
+            <td>-6</td>
+        </tr>
+        
+        <tr>
+            <td>Merged Pull Requests</td>
+            <td>1423</td>
+            <td>1261</td>
+            <td>162</td>
+        </tr>
+        
+        <tr>
+            <td>Closed Pull Requests</td>
+            <td>2769</td>
+            <td>2749</td>
+            <td>20</td>
+        </tr>
+        
+        <tr>
+            <td>Stars</td>
+            <td>1002</td>
+            <td>984</td>
+            <td>18</td>
+        </tr>
+        
+        <tr>
+            <td>Watchers</td>
+            <td>72</td>
+            <td>74</td>
+            <td>-2</td>
+        </tr>
+        
 </table>
