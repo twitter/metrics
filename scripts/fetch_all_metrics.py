@@ -6,9 +6,7 @@ and save them in their respective _data directory.
 import datetime
 import json
 import os
-
 import requests
-
 import graphql_queries
 
 
@@ -21,18 +19,18 @@ DATESTAMP = datetime.datetime.now().date().isoformat()
 
 # Read repos-to-include.txt
 all_orgs = []  # Track orgs and all its repos e.g. twitter, twitterdev
-all_repos = []  # Track specific repositories e.g. ('pantsbuild', 'pants')
+all_repos = []  # Track specific repositories e.g. ['pantsbuild/pants', 'pantsbuild/pex']
 
-with open("repos-to-include.txt", "r") as f:
+with open("repos-to-include.txt") as f:
     for line in f:
         owner, repo = line.split("/")
         repo = repo.rstrip("\n")
         if repo == "*":
             all_orgs.append(owner)
         else:
-            all_repos.append((owner, repo))
+            all_repos.append(owner + "/" + repo)
 
-print("LOG: Orgs to track", all_orgs)
+print("Orgs to track", all_orgs)
 print("Repos to track", all_repos)
 
 def fetch_one_page(query_string, variables):
@@ -56,7 +54,7 @@ for org in all_orgs:
     end_cursor = None
     num_of_pages = 0
     while True:
-        print("Num of pages", num_of_pages)
+        # print("Num of pages", num_of_pages)
         variables = json.dumps({"owner": org, "endCursor": end_cursor})
 
         print("Sending request")
@@ -68,28 +66,28 @@ for org in all_orgs:
 
         pageInfo = response["data"]["organization"]["repositories"]["pageInfo"]
         has_next_page = pageInfo["hasNextPage"]
-        print("has_next_page", has_next_page)
+        # print("has_next_page", has_next_page)
         end_cursor = pageInfo["endCursor"]
-        print("end_cursor", end_cursor)
+        # print("end_cursor", end_cursor)
         num_of_pages += 1
         if not has_next_page:
             break
 
-print("LOG: Fetched all the org repositories. Count:", len(all_org_edges))
+# print("LOG: Fetched all the org repositories. Count:", len(all_org_edges))
 
 # Fetch individual repositories' data
-
 all_repo_edges = []  # All individual repos
 
-for repo in all_repos:
-    variables = json.dumps({"owner": repo[0], "repo": repo[1], "endCursor": None})
+for item in all_repos:
+    owner, repo = item.split("/")
+    variables = json.dumps({"owner": owner, "repo": repo, "endCursor": None})
 
     response = fetch_one_page(graphql_queries.repo_wise, variables)
     # print("response for", repo, response)
     all_repo_edges.append(response["data"])
     # print("TYPE", type(response["data"]))
 
-print("LOG: Fetched all the individual repos as well. Count:", len(all_repo_edges))
+# print("LOG: Fetched all the individual repos as well. Count:", len(all_repo_edges))
 
 # Repos to exclude from the project
 repos_to_exclude = set()
@@ -122,6 +120,27 @@ for edge in all_repo_edges:
     DATA_JSON[repo_full_name] = repo_data
 
 
+# Simplify the format of json
+for repo in DATA_JSON:
+    old_json = DATA_JSON[repo]
+    new_json = {
+        'datestamp': DATESTAMP,
+        'nameWithOwner': old_json['nameWithOwner'],
+        'name': old_json['name'],
+        'commits': old_json['defaultBranchRef']['target']['history']['totalCount'],
+        'forkCount': old_json['forkCount'],
+        'issues': old_json['issues']['totalCount'],
+        'openIssues': old_json['openIssues']['totalCount'],
+        'closedIssues': old_json['closedIssues']['totalCount'],
+        'pullRequests': old_json['pullRequests']['totalCount'],
+        'openPullRequests': old_json['openPullRequests']['totalCount'],
+        'mergedPullRequests': old_json['mergedPullRequests']['totalCount'],
+        'closedPullRequests': old_json['closedPullRequests']['totalCount'],
+        'stargazers': old_json['stargazers']['totalCount'],
+        'watchers': old_json['watchers']['totalCount'],
+    }
+    DATA_JSON[repo] = new_json
+
 # Add CHAOSS specific metrics
 # The API endpoint is http://twitter.augurlabs.io/api/unstable/
 # And the API documentation is at https://osshealth.github.io/augur/api/index.html
@@ -134,13 +153,11 @@ for repo in DATA_JSON:
     # Create directories inside twitter/metrics/_data if they don't exist
     owner_dir_path = "{}/{}".format(PATH_TO_METRICS_DATA, owner)
     repo_dir_path = "{}/{}".format(owner_dir_path, project)
-    if not os.path.isdir(owner_dir_path):
-        os.mkdir(owner_dir_path)
-    if not os.path.isdir(repo_dir_path):
-        os.mkdir(repo_dir_path)
-
-    # Add datestamp inside the JSON
-    DATA_JSON[repo]["datestamp"] = DATESTAMP
+    os.makedirs(repo_dir_path, exist_ok=True)
+    # if not os.path.isdir(owner_dir_path):
+    #     os.mkdir(owner_dir_path)
+    # if not os.path.isdir(repo_dir_path):
+    #     os.mkdir(repo_dir_path)
 
     # Save the json file with a timestamp
     file_name = "METRICS-" + DATESTAMP + ".json"
