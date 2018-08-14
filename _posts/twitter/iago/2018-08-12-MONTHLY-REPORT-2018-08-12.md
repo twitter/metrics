@@ -26,77 +26,77 @@ datestampLastMonth: 2018-07-13
             <td>Commits</td>
             <td>123</td>
             <td>123</td>
-            <td style="background-color: #ffffff" >0</td>
+            <td style="color: #45c527" >0</td>
         </tr>
         
         <tr data-toggle="collapse" data-target="#col-forkCount" class="accordion-toggle" style="cursor: pointer;">
             <td>Forks</td>
             <td>147</td>
             <td>147</td>
-            <td style="background-color: #ffffff" >0</td>
+            <td style="color: #45c527" >0</td>
         </tr>
         
         <tr data-toggle="collapse" data-target="#col-issues" class="accordion-toggle" style="cursor: pointer;">
             <td>Issues</td>
             <td>13</td>
             <td>13</td>
-            <td style="background-color: #ffffff" >0</td>
+            <td style="color: #45c527" >0</td>
         </tr>
         
         <tr data-toggle="collapse" data-target="#col-openIssues" class="accordion-toggle" style="cursor: pointer;">
             <td>Open Issues</td>
             <td>3</td>
             <td>3</td>
-            <td style="background-color: #ffffff" >0</td>
+            <td style="color: #45c527" >0</td>
         </tr>
         
         <tr data-toggle="collapse" data-target="#col-closedIssues" class="accordion-toggle" style="cursor: pointer;">
             <td>Closed Issues</td>
             <td>10</td>
             <td>10</td>
-            <td style="background-color: #ffffff" >0</td>
+            <td style="color: #45c527" >0</td>
         </tr>
         
         <tr data-toggle="collapse" data-target="#col-pullRequests" class="accordion-toggle" style="cursor: pointer;">
             <td>Pull Requests</td>
             <td>33</td>
             <td>33</td>
-            <td style="background-color: #ffffff" >0</td>
+            <td style="color: #45c527" >0</td>
         </tr>
         
         <tr data-toggle="collapse" data-target="#col-openPullRequests" class="accordion-toggle" style="cursor: pointer;">
             <td>Open Pull Requests</td>
             <td>3</td>
             <td>3</td>
-            <td style="background-color: #ffffff" >0</td>
+            <td style="color: #45c527" >0</td>
         </tr>
         
         <tr data-toggle="collapse" data-target="#col-mergedPullRequests" class="accordion-toggle" style="cursor: pointer;">
             <td>Merged Pull Requests</td>
             <td>28</td>
             <td>28</td>
-            <td style="background-color: #ffffff" >0</td>
+            <td style="color: #45c527" >0</td>
         </tr>
         
         <tr data-toggle="collapse" data-target="#col-closedPullRequests" class="accordion-toggle" style="cursor: pointer;">
             <td>Closed Pull Requests</td>
             <td>2</td>
             <td>2</td>
-            <td style="background-color: #ffffff" >0</td>
+            <td style="color: #45c527" >0</td>
         </tr>
         
         <tr data-toggle="collapse" data-target="#col-stargazers" class="accordion-toggle" style="cursor: pointer;">
             <td>Stars</td>
             <td>1302</td>
             <td>1301</td>
-            <td style="background-color: #32ff00" >1</td>
+            <td style="color: #45c527" >1</td>
         </tr>
         
         <tr data-toggle="collapse" data-target="#col-watchers" class="accordion-toggle" style="cursor: pointer;">
             <td>Watchers</td>
             <td>197</td>
             <td>197</td>
-            <td style="background-color: #ffffff" >0</td>
+            <td style="color: #45c527" >0</td>
         </tr>
         
     </tbody>

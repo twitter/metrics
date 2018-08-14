@@ -23,9 +23,9 @@ datestampLastMonth: 2018-07-13
 
         <tr data-toggle="collapse" data-target="#col-commits" class="accordion-toggle" style="cursor: pointer;">
             <td>Commits</td>
-            <td>6181🌟</td>
+            <td>6181</td>
             <td>6005</td>
-            <td style="background-color: #32ff00" >176</td>
+            <td style="color: #45c527" >176</td>
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>
@@ -35,7 +35,7 @@ datestampLastMonth: 2018-07-13
             <td>Forks</td>
             <td>411</td>
             <td>403</td>
-            <td style="background-color: #32ff00" >8</td>
+            <td style="color: #45c527" >8</td>
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>
@@ -43,9 +43,9 @@ datestampLastMonth: 2018-07-13
             <a target="_blank" href="/metrics/pantsbuild/pants/MONTHLY">pants : 7</a><br><a target="_blank" href="/metrics/pantsbuild/pex/MONTHLY">pex : 1</a><br></div> </td>
         <tr data-toggle="collapse" data-target="#col-issues" class="accordion-toggle" style="cursor: pointer;">
             <td>Issues</td>
-            <td>2405🌟</td>
+            <td>2405</td>
             <td>2359</td>
-            <td style="background-color: #32ff00" >46</td>
+            <td style="color: #45c527" >46</td>
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>
@@ -53,9 +53,9 @@ datestampLastMonth: 2018-07-13
             <a target="_blank" href="/metrics/pantsbuild/pants/MONTHLY">pants : 41</a><br><a target="_blank" href="/metrics/pantsbuild/pex/MONTHLY">pex : 5</a><br></div> </td>
         <tr data-toggle="collapse" data-target="#col-openIssues" class="accordion-toggle" style="cursor: pointer;">
             <td>Open Issues</td>
-            <td>703🌟</td>
+            <td>703</td>
             <td>694</td>
-            <td style="background-color: #d31c08" >9</td>
+            <td style="color: #d31c08" >9</td>
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>
@@ -63,9 +63,9 @@ datestampLastMonth: 2018-07-13
             <a target="_blank" href="/metrics/pantsbuild/pants/MONTHLY">pants : 10</a><br><a target="_blank" href="/metrics/pantsbuild/pex/MONTHLY">pex : -1</a><br></div> </td>
         <tr data-toggle="collapse" data-target="#col-closedIssues" class="accordion-toggle" style="cursor: pointer;">
             <td>Closed Issues</td>
-            <td>1702🌟</td>
+            <td>1702</td>
             <td>1665</td>
-            <td style="background-color: #32ff00" >37</td>
+            <td style="color: #45c527" >37</td>
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>
@@ -73,9 +73,9 @@ datestampLastMonth: 2018-07-13
             <a target="_blank" href="/metrics/pantsbuild/pants/MONTHLY">pants : 31</a><br><a target="_blank" href="/metrics/pantsbuild/pex/MONTHLY">pex : 6</a><br></div> </td>
         <tr data-toggle="collapse" data-target="#col-pullRequests" class="accordion-toggle" style="cursor: pointer;">
             <td>Pull Requests</td>
-            <td>4467🌟</td>
+            <td>4467</td>
             <td>4284</td>
-            <td style="background-color: #32ff00" >183</td>
+            <td style="color: #45c527" >183</td>
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>
@@ -85,7 +85,7 @@ datestampLastMonth: 2018-07-13
             <td>Open Pull Requests</td>
             <td>67</td>
             <td>73</td>
-            <td style="background-color: #32ff00" >-6</td>
+            <td style="color: #45c527" >-6</td>
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>
@@ -93,9 +93,9 @@ datestampLastMonth: 2018-07-13
             <a target="_blank" href="/metrics/pantsbuild/pants/MONTHLY">pants : -6</a><br></div> </td>
         <tr data-toggle="collapse" data-target="#col-mergedPullRequests" class="accordion-toggle" style="cursor: pointer;">
             <td>Merged Pull Requests</td>
-            <td>1590🌟</td>
+            <td>1590</td>
             <td>1421</td>
-            <td style="background-color: #32ff00" >169</td>
+            <td style="color: #45c527" >169</td>
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>
@@ -103,9 +103,9 @@ datestampLastMonth: 2018-07-13
             <a target="_blank" href="/metrics/pantsbuild/pants/MONTHLY">pants : 162</a><br><a target="_blank" href="/metrics/pantsbuild/pex/MONTHLY">pex : 7</a><br></div> </td>
         <tr data-toggle="collapse" data-target="#col-closedPullRequests" class="accordion-toggle" style="cursor: pointer;">
             <td>Closed Pull Requests</td>
-            <td>2810🌟</td>
+            <td>2810</td>
             <td>2790</td>
-            <td style="background-color: #32ff00" >20</td>
+            <td style="color: #45c527" >20</td>
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>
@@ -115,7 +115,7 @@ datestampLastMonth: 2018-07-13
             <td>Stars</td>
             <td>2074</td>
             <td>2033</td>
-            <td style="background-color: #32ff00" >41</td>
+            <td style="color: #45c527" >41</td>
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>
@@ -125,7 +125,7 @@ datestampLastMonth: 2018-07-13
             <td>Watchers</td>
             <td>119</td>
             <td>121</td>
-            <td style="background-color: #d31c08" >-2</td>
+            <td style="color: #d31c08" >-2</td>
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>

@@ -23,9 +23,9 @@ datestampLastMonth: 2018-07-13
 
         <tr data-toggle="collapse" data-target="#col-commits" class="accordion-toggle" style="cursor: pointer;">
             <td>Commits</td>
-            <td>124664🌟</td>
+            <td>124664</td>
             <td>124194</td>
-            <td style="background-color: #32ff00" >470</td>
+            <td style="color: #45c527" >470</td>
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>
@@ -33,9 +33,9 @@ datestampLastMonth: 2018-07-13
             <a target="_blank" href="/metrics/twitter/rsc/MONTHLY">rsc : 155</a><br><a target="_blank" href="/metrics/twitter/pants/MONTHLY">pants : 117</a><br><a target="_blank" href="/metrics/twitter/finagle/MONTHLY">finagle : 64</a><br><a target="_blank" href="/metrics/twitter/twitter-kit-ios/MONTHLY">twitter-kit-ios : 19</a><br><a target="_blank" href="/metrics/twitter/ccommon/MONTHLY">ccommon : 15</a><br><a target="_blank" href="/metrics/twitter/pelikan/MONTHLY">pelikan : 15</a><br><a target="_blank" href="/metrics/twitter/finatra/MONTHLY">finatra : 12</a><br><a target="_blank" href="/metrics/twitter/util/MONTHLY">util : 11</a><br><a target="_blank" href="/metrics/twitter/rpc-perf/MONTHLY">rpc-perf : 7</a><br><a target="_blank" href="/metrics/twitter/scrooge/MONTHLY">scrooge : 6</a><br><a target="_blank" href="/metrics/twitter/gatekeeper-service/MONTHLY">gatekeeper-service : 6</a><br><a target="_blank" href="/metrics/twitter/scoot/MONTHLY">scoot : 6</a><br><a target="_blank" href="/metrics/twitter/twitter-server/MONTHLY">twitter-server : 6</a><br><a target="_blank" href="/metrics/twitter/chill/MONTHLY">chill : 6</a><br><a target="_blank" href="/metrics/twitter/scalding/MONTHLY">scalding : 5</a><br><a target="_blank" href="/metrics/twitter/twemoji/MONTHLY">twemoji : 5</a><br><a target="_blank" href="/metrics/twitter/ios-twitter-network-layer/MONTHLY">ios-twitter-network-layer : 5</a><br><a target="_blank" href="/metrics/twitter/dodo/MONTHLY">dodo : 4</a><br><a target="_blank" href="/metrics/twitter/secure_headers/MONTHLY">secure_headers : 3</a><br><a target="_blank" href="/metrics/twitter/algebird/MONTHLY">algebird : 2</a><br><a target="_blank" href="/metrics/twitter/Serial/MONTHLY">Serial : 1</a><br></div> </td>
         <tr data-toggle="collapse" data-target="#col-forkCount" class="accordion-toggle" style="cursor: pointer;">
             <td>Forks</td>
-            <td>21018🌟🌟</td>
+            <td>21018</td>
             <td>20787</td>
-            <td style="background-color: #32ff00" >231</td>
+            <td style="color: #45c527" >231</td>
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>
@@ -43,9 +43,9 @@ datestampLastMonth: 2018-07-13
             <a target="_blank" href="/metrics/twitter/typeahead.js/MONTHLY">typeahead.js : 22</a><br><a target="_blank" href="/metrics/twitter/twemoji/MONTHLY">twemoji : 19</a><br><a target="_blank" href="/metrics/twitter/twitter-kit-ios/MONTHLY">twitter-kit-ios : 18</a><br><a target="_blank" href="/metrics/twitter/AnomalyDetection/MONTHLY">AnomalyDetection : 15</a><br><a target="_blank" href="/metrics/twitter/snowflake/MONTHLY">snowflake : 14</a><br><a target="_blank" href="/metrics/twitter/ios-twitter-network-layer/MONTHLY">ios-twitter-network-layer : 14</a><br><a target="_blank" href="/metrics/twitter/twitter-kit-android/MONTHLY">twitter-kit-android : 11</a><br><a target="_blank" href="/metrics/twitter/finagle/MONTHLY">finagle : 9</a><br><a target="_blank" href="/metrics/twitter/twemproxy/MONTHLY">twemproxy : 9</a><br><a target="_blank" href="/metrics/twitter/scala_school/MONTHLY">scala_school : 7</a><br><a target="_blank" href="/metrics/twitter/diffy/MONTHLY">diffy : 6</a><br><a target="_blank" href="/metrics/twitter/commons/MONTHLY">commons : 6</a><br><a target="_blank" href="/metrics/twitter/effectivescala/MONTHLY">effectivescala : 4</a><br><a target="_blank" href="/metrics/twitter/util/MONTHLY">util : 4</a><br><a target="_blank" href="/metrics/twitter/twurl/MONTHLY">twurl : 4</a><br><a target="_blank" href="/metrics/twitter/meta-learning-lstm/MONTHLY">meta-learning-lstm : 4</a><br><a target="_blank" href="/metrics/twitter/twitter-text/MONTHLY">twitter-text : 4</a><br><a target="_blank" href="/metrics/twitter/mysql/MONTHLY">mysql : 4</a><br><a target="_blank" href="/metrics/twitter/twitter-server/MONTHLY">twitter-server : 4</a><br><a target="_blank" href="/metrics/twitter/BreakoutDetection/MONTHLY">BreakoutDetection : 4</a><br><a target="_blank" href="/metrics/twitter/twitter-kit-unity/MONTHLY">twitter-kit-unity : 3</a><br><a target="_blank" href="/metrics/twitter/cloudhopper-smpp/MONTHLY">cloudhopper-smpp : 3</a><br><a target="_blank" href="/metrics/twitter/scalding/MONTHLY">scalding : 3</a><br><a target="_blank" href="/metrics/twitter/go-bindata/MONTHLY">go-bindata : 3</a><br><a target="_blank" href="/metrics/twitter/wordpress/MONTHLY">wordpress : 3</a><br><a target="_blank" href="/metrics/twitter/twemcache/MONTHLY">twemcache : 3</a><br><a target="_blank" href="/metrics/twitter/algebird/MONTHLY">algebird : 3</a><br><a target="_blank" href="/metrics/twitter/rpc-perf/MONTHLY">rpc-perf : 3</a><br><a target="_blank" href="/metrics/twitter/ccommon/MONTHLY">ccommon : 2</a><br><a target="_blank" href="/metrics/twitter/hogan.js/MONTHLY">hogan.js : 2</a><br><a target="_blank" href="/metrics/twitter/hbc/MONTHLY">hbc : 2</a><br><a target="_blank" href="/metrics/twitter/fatcache/MONTHLY">fatcache : 2</a><br><a target="_blank" href="/metrics/twitter/summingbird/MONTHLY">summingbird : 2</a><br><a target="_blank" href="/metrics/twitter/finatra/MONTHLY">finatra : 2</a><br><a target="_blank" href="/metrics/twitter/netty-http2/MONTHLY">netty-http2 : 2</a><br><a target="_blank" href="/metrics/twitter/CocoaSPDY/MONTHLY">CocoaSPDY : 2</a><br><a target="_blank" href="/metrics/twitter/hadoop-lzo/MONTHLY">hadoop-lzo : 1</a><br><a target="_blank" href="/metrics/twitter/dodo/MONTHLY">dodo : 1</a><br><a target="_blank" href="/metrics/twitter/vireo/MONTHLY">vireo : 1</a><br><a target="_blank" href="/metrics/twitter/hpack/MONTHLY">hpack : 1</a><br><a target="_blank" href="/metrics/twitter/recess/MONTHLY">recess : 1</a><br><a target="_blank" href="/metrics/twitter/pelikan/MONTHLY">pelikan : 1</a><br><a target="_blank" href="/metrics/twitter/scrooge/MONTHLY">scrooge : 1</a><br><a target="_blank" href="/metrics/twitter/twitter.github.io/MONTHLY">twitter.github.io : 1</a><br><a target="_blank" href="/metrics/twitter/bookkeeper/MONTHLY">bookkeeper : 1</a><br><a target="_blank" href="/metrics/twitter/torch-autograd/MONTHLY">torch-autograd : 1</a><br><a target="_blank" href="/metrics/twitter/scoot/MONTHLY">scoot : 1</a><br><a target="_blank" href="/metrics/twitter/hdfs-du/MONTHLY">hdfs-du : 1</a><br><a target="_blank" href="/metrics/twitter/interactive/MONTHLY">interactive : 1</a><br><a target="_blank" href="/metrics/twitter/elephant-bird/MONTHLY">elephant-bird : 1</a><br><a target="_blank" href="/metrics/twitter/twitter-cldr-js/MONTHLY">twitter-cldr-js : 1</a><br><a target="_blank" href="/metrics/twitter/code-of-conduct/MONTHLY">code-of-conduct : 1</a><br><a target="_blank" href="/metrics/twitter/cloudhopper-commons/MONTHLY">cloudhopper-commons : -1</a><br><a target="_blank" href="/metrics/twitter/sslconfig/MONTHLY">sslconfig : -1</a><br><a target="_blank" href="/metrics/twitter/SentenTree/MONTHLY">SentenTree : -1</a><br><a target="_blank" href="/metrics/twitter/ostrich/MONTHLY">ostrich : -1</a><br><a target="_blank" href="/metrics/twitter/Serial/MONTHLY">Serial : -1</a><br><a target="_blank" href="/metrics/twitter/ambrose/MONTHLY">ambrose : -2</a><br></div> </td>
         <tr data-toggle="collapse" data-target="#col-issues" class="accordion-toggle" style="cursor: pointer;">
             <td>Issues</td>
-            <td>7345🌟</td>
+            <td>7345</td>
             <td>7259</td>
-            <td style="background-color: #32ff00" >86</td>
+            <td style="color: #45c527" >86</td>
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>
@@ -55,7 +55,7 @@ datestampLastMonth: 2018-07-13
             <td>Open Issues</td>
             <td>2344</td>
             <td>2342</td>
-            <td style="background-color: #d31c08" >2</td>
+            <td style="color: #d31c08" >2</td>
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>
@@ -63,9 +63,9 @@ datestampLastMonth: 2018-07-13
             <a target="_blank" href="/metrics/twitter/twurl/MONTHLY">twurl : 3</a><br><a target="_blank" href="/metrics/twitter/AnomalyDetection/MONTHLY">AnomalyDetection : 2</a><br><a target="_blank" href="/metrics/twitter/cassovary/MONTHLY">cassovary : 1</a><br><a target="_blank" href="/metrics/twitter/twitter-korean-text/MONTHLY">twitter-korean-text : 1</a><br><a target="_blank" href="/metrics/twitter/typeahead.js/MONTHLY">typeahead.js : 1</a><br><a target="_blank" href="/metrics/twitter/commons/MONTHLY">commons : 1</a><br><a target="_blank" href="/metrics/twitter/scrooge/MONTHLY">scrooge : 1</a><br><a target="_blank" href="/metrics/twitter/algebird/MONTHLY">algebird : 1</a><br><a target="_blank" href="/metrics/twitter/twitter-kit-android/MONTHLY">twitter-kit-android : 1</a><br><a target="_blank" href="/metrics/twitter/meta-learning-lstm/MONTHLY">meta-learning-lstm : 1</a><br><a target="_blank" href="/metrics/twitter/finatra/MONTHLY">finatra : 1</a><br><a target="_blank" href="/metrics/twitter/d3kit/MONTHLY">d3kit : 1</a><br><a target="_blank" href="/metrics/twitter/ccommon/MONTHLY">ccommon : -2</a><br><a target="_blank" href="/metrics/twitter/secure_headers/MONTHLY">secure_headers : -2</a><br><a target="_blank" href="/metrics/twitter/twitter-kit-ios/MONTHLY">twitter-kit-ios : -3</a><br><a target="_blank" href="/metrics/twitter/twemoji/MONTHLY">twemoji : -3</a><br><a target="_blank" href="/metrics/twitter/pelikan/MONTHLY">pelikan : -3</a><br></div> </td>
         <tr data-toggle="collapse" data-target="#col-closedIssues" class="accordion-toggle" style="cursor: pointer;">
             <td>Closed Issues</td>
-            <td>5001🌟🌟</td>
+            <td>5001</td>
             <td>4917</td>
-            <td style="background-color: #32ff00" >84</td>
+            <td style="color: #45c527" >84</td>
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>
@@ -73,9 +73,9 @@ datestampLastMonth: 2018-07-13
             <a target="_blank" href="/metrics/twitter/rsc/MONTHLY">rsc : 32</a><br><a target="_blank" href="/metrics/twitter/twitter-kit-ios/MONTHLY">twitter-kit-ios : 11</a><br><a target="_blank" href="/metrics/twitter/twemoji/MONTHLY">twemoji : 8</a><br><a target="_blank" href="/metrics/twitter/ccommon/MONTHLY">ccommon : 6</a><br><a target="_blank" href="/metrics/twitter/pelikan/MONTHLY">pelikan : 5</a><br><a target="_blank" href="/metrics/twitter/secure_headers/MONTHLY">secure_headers : 4</a><br><a target="_blank" href="/metrics/twitter/rpc-perf/MONTHLY">rpc-perf : 4</a><br><a target="_blank" href="/metrics/twitter/finagle/MONTHLY">finagle : 3</a><br><a target="_blank" href="/metrics/twitter/meta-learning-lstm/MONTHLY">meta-learning-lstm : 3</a><br><a target="_blank" href="/metrics/twitter/ios-twitter-network-layer/MONTHLY">ios-twitter-network-layer : 3</a><br><a target="_blank" href="/metrics/twitter/typeahead.js/MONTHLY">typeahead.js : 1</a><br><a target="_blank" href="/metrics/twitter/hogan.js/MONTHLY">hogan.js : 1</a><br><a target="_blank" href="/metrics/twitter/diffy/MONTHLY">diffy : 1</a><br><a target="_blank" href="/metrics/twitter/hbc/MONTHLY">hbc : 1</a><br><a target="_blank" href="/metrics/twitter/chill/MONTHLY">chill : 1</a><br></div> </td>
         <tr data-toggle="collapse" data-target="#col-pullRequests" class="accordion-toggle" style="cursor: pointer;">
             <td>Pull Requests</td>
-            <td>8844🌟</td>
+            <td>8844</td>
             <td>8759</td>
-            <td style="background-color: #32ff00" >85</td>
+            <td style="color: #45c527" >85</td>
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>
@@ -85,7 +85,7 @@ datestampLastMonth: 2018-07-13
             <td>Open Pull Requests</td>
             <td>503</td>
             <td>502</td>
-            <td style="background-color: #d31c08" >1</td>
+            <td style="color: #d31c08" >1</td>
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>
@@ -93,9 +93,9 @@ datestampLastMonth: 2018-07-13
             <a target="_blank" href="/metrics/twitter/dodo/MONTHLY">dodo : 1</a><br><a target="_blank" href="/metrics/twitter/scalding/MONTHLY">scalding : 1</a><br><a target="_blank" href="/metrics/twitter/effectivescala/MONTHLY">effectivescala : 1</a><br><a target="_blank" href="/metrics/twitter/util/MONTHLY">util : 1</a><br><a target="_blank" href="/metrics/twitter/twitter-kit-ios/MONTHLY">twitter-kit-ios : 1</a><br><a target="_blank" href="/metrics/twitter/summingbird/MONTHLY">summingbird : 1</a><br><a target="_blank" href="/metrics/twitter/scala_school/MONTHLY">scala_school : 1</a><br><a target="_blank" href="/metrics/twitter/finagle/MONTHLY">finagle : -1</a><br><a target="_blank" href="/metrics/twitter/gatekeeper-service/MONTHLY">gatekeeper-service : -1</a><br><a target="_blank" href="/metrics/twitter/chill/MONTHLY">chill : -1</a><br><a target="_blank" href="/metrics/twitter/ccommon/MONTHLY">ccommon : -3</a><br></div> </td>
         <tr data-toggle="collapse" data-target="#col-mergedPullRequests" class="accordion-toggle" style="cursor: pointer;">
             <td>Merged Pull Requests</td>
-            <td>6155🌟</td>
+            <td>6155</td>
             <td>6087</td>
-            <td style="background-color: #32ff00" >68</td>
+            <td style="color: #45c527" >68</td>
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>
@@ -105,7 +105,7 @@ datestampLastMonth: 2018-07-13
             <td>Closed Pull Requests</td>
             <td>2186</td>
             <td>2170</td>
-            <td style="background-color: #32ff00" >16</td>
+            <td style="color: #45c527" >16</td>
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>
@@ -113,9 +113,9 @@ datestampLastMonth: 2018-07-13
             <a target="_blank" href="/metrics/twitter/finagle/MONTHLY">finagle : 4</a><br><a target="_blank" href="/metrics/twitter/scala_school/MONTHLY">scala_school : 3</a><br><a target="_blank" href="/metrics/twitter/dodo/MONTHLY">dodo : 2</a><br><a target="_blank" href="/metrics/twitter/util/MONTHLY">util : 2</a><br><a target="_blank" href="/metrics/twitter/typeahead.js/MONTHLY">typeahead.js : 1</a><br><a target="_blank" href="/metrics/twitter/ccommon/MONTHLY">ccommon : 1</a><br><a target="_blank" href="/metrics/twitter/twemoji/MONTHLY">twemoji : 1</a><br><a target="_blank" href="/metrics/twitter/secure_headers/MONTHLY">secure_headers : 1</a><br><a target="_blank" href="/metrics/twitter/ios-twitter-network-layer/MONTHLY">ios-twitter-network-layer : 1</a><br></div> </td>
         <tr data-toggle="collapse" data-target="#col-stargazers" class="accordion-toggle" style="cursor: pointer;">
             <td>Stars</td>
-            <td>118502🌟🌟</td>
+            <td>118502</td>
             <td>117303</td>
-            <td style="background-color: #32ff00" >1199</td>
+            <td style="color: #45c527" >1199</td>
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>
@@ -125,7 +125,7 @@ datestampLastMonth: 2018-07-13
             <td>Watchers</td>
             <td>16756</td>
             <td>16711</td>
-            <td style="background-color: #32ff00" >45</td>
+            <td style="color: #45c527" >45</td>
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>
