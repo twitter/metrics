@@ -25,9 +25,9 @@ METRICS_CODE_TO_NAME = {
 }
 
 
-GREEN = "#32ff00"
+GREEN = "#45c527"
 RED = "#d31c08"
-WHITE = "#ffffff"
+DEFAULT = ""
 METRICS_HEALTHY_TREND = {
     'commits': '+',
     'forkCount': '+',
@@ -45,7 +45,7 @@ METRICS_HEALTHY_TREND = {
 
 def get_metrics_color(metric, diff):
     if diff == 0:
-        return WHITE
+        return GREEN
     elif METRICS_HEALTHY_TREND[metric] == '+' and diff > 0:
         return GREEN
     elif METRICS_HEALTHY_TREND[metric] == '-' and diff < 0:
