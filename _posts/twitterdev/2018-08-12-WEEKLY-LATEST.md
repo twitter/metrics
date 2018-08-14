@@ -25,14 +25,14 @@ datestampLastWeek: 2018-08-03
             <td>Commits</td>
             <td>2997</td>
             <td>2997</td>
-            <td style="background-color: #ffffff" >0</td>
+            <td style="color: #45c527" >0</td>
         </tr>
         
         <tr data-toggle="collapse" data-target="#col-forkCount" class="accordion-toggle" style="cursor: pointer;">
             <td>Forks</td>
             <td>817</td>
             <td>811</td>
-            <td style="background-color: #32ff00" >6</td>
+            <td style="color: #45c527" >6</td>
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>
@@ -42,7 +42,7 @@ datestampLastWeek: 2018-08-03
             <td>Issues</td>
             <td>218</td>
             <td>216</td>
-            <td style="background-color: #32ff00" >2</td>
+            <td style="color: #45c527" >2</td>
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>
@@ -52,7 +52,7 @@ datestampLastWeek: 2018-08-03
             <td>Open Issues</td>
             <td>78</td>
             <td>78</td>
-            <td style="background-color: #ffffff" >0</td>
+            <td style="color: #45c527" >0</td>
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>
@@ -62,7 +62,7 @@ datestampLastWeek: 2018-08-03
             <td>Closed Issues</td>
             <td>140</td>
             <td>138</td>
-            <td style="background-color: #32ff00" >2</td>
+            <td style="color: #45c527" >2</td>
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>
@@ -72,35 +72,35 @@ datestampLastWeek: 2018-08-03
             <td>Pull Requests</td>
             <td>376</td>
             <td>376</td>
-            <td style="background-color: #ffffff" >0</td>
+            <td style="color: #45c527" >0</td>
         </tr>
         
         <tr data-toggle="collapse" data-target="#col-openPullRequests" class="accordion-toggle" style="cursor: pointer;">
             <td>Open Pull Requests</td>
             <td>22</td>
             <td>22</td>
-            <td style="background-color: #ffffff" >0</td>
+            <td style="color: #45c527" >0</td>
         </tr>
         
         <tr data-toggle="collapse" data-target="#col-mergedPullRequests" class="accordion-toggle" style="cursor: pointer;">
             <td>Merged Pull Requests</td>
             <td>298</td>
             <td>298</td>
-            <td style="background-color: #ffffff" >0</td>
+            <td style="color: #45c527" >0</td>
         </tr>
         
         <tr data-toggle="collapse" data-target="#col-closedPullRequests" class="accordion-toggle" style="cursor: pointer;">
             <td>Closed Pull Requests</td>
             <td>56</td>
             <td>56</td>
-            <td style="background-color: #ffffff" >0</td>
+            <td style="color: #45c527" >0</td>
         </tr>
         
         <tr data-toggle="collapse" data-target="#col-stargazers" class="accordion-toggle" style="cursor: pointer;">
             <td>Stars</td>
             <td>1408</td>
             <td>1404</td>
-            <td style="background-color: #32ff00" >4</td>
+            <td style="color: #45c527" >4</td>
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>
@@ -110,7 +110,7 @@ datestampLastWeek: 2018-08-03
             <td>Watchers</td>
             <td>881</td>
             <td>881</td>
-            <td style="background-color: #ffffff" >0</td>
+            <td style="color: #45c527" >0</td>
         </tr>
         
     </tbody>
