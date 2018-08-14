@@ -76,20 +76,6 @@ datestampLastMonth: {datestampLastMonth}
 """
 # {{% for item in site.data["{owner_in_data}"]["{reportID}"]["data"] %}}
 
-def check_modulo_100(latest, previous):
-    # If crossed a 100 mark, return 🌟
-    # If crossed a 1000 mark, return 🌟🌟
-    stars = ""
-    if latest//100 != previous//100:
-        stars += "🌟"
-    if latest//1000 != previous//1000:
-        stars += "🌟"
-    if latest//10000 != previous//10000:
-        stars += "🌟"
-    if latest//100000 != previous//100000:
-        stars += "🌟"
-    return stars
-
 def add_table_of_metrics(post_text, REPORT_JSON, data_source, ID, add_breakdown=False):
     # data_source is not used in the function
     # It can be used to create a jekyll loop like below but is being avoided
@@ -108,17 +94,16 @@ def add_table_of_metrics(post_text, REPORT_JSON, data_source, ID, add_breakdown=
         <tbody>
     """)
     for metric in REPORT_JSON['data']:
-        highlight = check_modulo_100(REPORT_JSON['data'][metric]['latest'], REPORT_JSON['data'][metric]['previous'])
         color = util.get_metrics_color(metric, REPORT_JSON['data'][metric]['diff'])
         post_text += """
         <tr data-toggle="collapse" data-target="#col-{5}" class="accordion-toggle" style="cursor: pointer;">
             <td>{0}</td>
             <td>{1}</td>
             <td>{2}</td>
-            <td style="background-color: {4}" >{3}</td>
+            <td style="color: {4}" >{3}</td>
         </tr>
         """.format(util.get_metrics_name(metric),
-                   str(REPORT_JSON['data'][metric]['latest']) + highlight,
+                   REPORT_JSON['data'][metric]['latest'],
                    REPORT_JSON['data'][metric]['previous'],
                    REPORT_JSON['data'][metric]['diff'],
                    color,
