@@ -1,7 +1,8 @@
 """
-This script creates the index.html for all the projects (and orgs).
+This script creates all the index.html etc. for all the projects, orgs etc.
 
 e.g.
+/metrics
 /metrics/twitter
 /metrics/twitter/twemoji
 """
