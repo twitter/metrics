@@ -8,13 +8,68 @@ e.g.
 """
 
 from glob import glob
+import json
 import os
 
 PATH_TO_METRICS_POSTS = "_posts"
+PATH_TO_METADATA = "_metadata"
 PATH_TO_GRAPHS = "graphs"
 
 ALL_ORGS = filter(os.path.isdir, glob(PATH_TO_METRICS_POSTS + "/*"))
 ALL_PROJECTS = filter(os.path.isdir, glob(PATH_TO_METRICS_POSTS + "/*/*"))
+
+"""
+URL: /metrics
+"""
+with open(os.path.join(PATH_TO_METADATA, "projects_tracked.json")) as f:
+    PROJECTS_TRACKED = json.load(f)
+
+orgs_tracked = PROJECTS_TRACKED['orgs']
+repos_tracked = PROJECTS_TRACKED['projects']
+
+list_of_orgs = ''
+list_of_orgs += '\t' + '<ul>' + '\n'
+for org in orgs_tracked:
+    list_of_orgs += '\t\t' + f'<li><a href="/metrics/{org}/WEEKLY">{org}</a></li>' + '\n'
+list_of_orgs += '\t' + '</ul>' + '<br>\n'
+
+# Show twitter projects first
+orgs_list = list(PROJECTS_TRACKED['projects'])
+orgs_list.remove('twitter')
+orgs_list.insert(0, 'twitter')
+
+list_of_projects = ''
+list_of_projects += '\t' + '<ul>' + '\n'
+for org in orgs_list:
+    list_of_projects += '\t\t' + '<li>' + org + '\n'
+    list_of_projects += '\t\t\t' + '<ul>' + '\n'
+    for project in sorted(PROJECTS_TRACKED['projects'][org]):
+        list_of_projects += '\t\t\t\t' + '<li>' + f'<a href="/metrics/{org}/{project}/WEEKLY">{project}</a>' + '</li>' + '\n'
+    list_of_projects += '\t\t\t' + '</ul>' + '\n'
+    list_of_projects += '\t\t' + '</li>' + '\n'
+list_of_projects += '\t' + '</ul>' + '\n'
+
+index_text = f"""\
+---
+layout: default
+title: Your New Jekyll Site
+---
+
+<div id="home">
+  <h1>Organizations</h1>
+{list_of_orgs}
+  <h1>Projects</h1>
+{list_of_projects}
+</div>
+"""
+
+with open("index.html", "w+") as f:
+    f.write(index_text)
+
+
+"""
+URL: /metrics/<org>/<repo>/
+"""
 
 project_text = """\
 ---
@@ -32,8 +87,8 @@ Latest MONTHLY Report - <a href="{monthly_metrics_link}">{monthly_metrics_link}<
 for project in ALL_PROJECTS:
     print("LOG: Starting with", project)
     _, org, repo = project.split("/")
-    weekly_metrics_link = "https://twitter.github.io/metrics/{}/{}/WEEKLY".format(org, repo)
-    monthly_metrics_link = "https://twitter.github.io/metrics/{}/{}/MONTHLY".format(org, repo)
+    weekly_metrics_link = f"https://twitter.github.io/metrics/{org}/{repo}/WEEKLY"
+    monthly_metrics_link = f"https://twitter.github.io/metrics/{org}/{repo}/MONTHLY"
     _text = project_text.format(org=org,
                                 repo=repo,
                                 weekly_metrics_link=weekly_metrics_link,
@@ -42,6 +97,10 @@ for project in ALL_PROJECTS:
     with open(file_path, "w+") as f:
         f.write(_text)
     print("LOG: Wrote to", file_path)
+
+"""
+URL: /metrics/<org>
+"""
 
 org_text = """\
 ---
@@ -61,8 +120,8 @@ permalink: /{org}/
 for _org in ALL_ORGS:
     print("LOG: Starting with", _org)
     _, org = _org.split("/")
-    weekly_metrics_link = "https://twitter.github.io/metrics/{}/WEEKLY".format(org)
-    monthly_metrics_link = "https://twitter.github.io/metrics/{}/MONTHLY".format(org)
+    weekly_metrics_link = f"https://twitter.github.io/metrics/{org}/WEEKLY"
+    monthly_metrics_link = f"https://twitter.github.io/metrics/{org}/MONTHLY"
     file_text = org_text.format(org=org,
                                 weekly_metrics_link=weekly_metrics_link,
                                 monthly_metrics_link=monthly_metrics_link)
@@ -75,7 +134,7 @@ for _org in ALL_ORGS:
     file_text += '<p><b>Timeseries graphs</b></p>\n'
     file_text += '<div class="row">\n'
     for graph in all_timeseries_graphs:
-        file_text += '\t<object class="cell" type="image/svg+xml" data="{{{{ site.url }}}}{{{{ site.baseurl }}}}/{}">\n'.format(graph)
+        file_text += f'\t<object class="cell" type="image/svg+xml" data="{{{{ site.url }}}}{{{{ site.baseurl }}}}/{graph}">\n'
         file_text += '\t\tYour browser does not support SVG\n'
         file_text += '\t</object>\n'
     file_text += '</div>\n'
