@@ -15,15 +15,23 @@ layout: default
 
 </style>
 
-<h2><a target="_blank" href="https://github.com/{{ page.owner}}/{{ page.repo }}">{{ page.owner}}/{{ page.repo }}</a></h2>
+<h4>Weekly project report for <a target="_blank" href="https://github.com/{{ page.owner}}/{{ page.repo }}">{{ page.owner}}/{{ page.repo }}</a></h4>
 <p class="meta">{{ page.datestampThisWeek | date_to_string }}</p>
 <div class="post">
 {{ content }}
 </div>
 <hr>
+<p><i>Quick Links</i></p>
+<ul>
+    <li><a href="{{ site.url }}{{ site.baseurl }}/{{ page.owner }}/{{ page.repo }}">{{ site.url }}{{ site.baseurl }}/{{ page.owner }}/{{ page.repo }}</a></li>
+    <li><a href="{{ site.url }}{{ site.baseurl }}/{{ page.owner }}/{{ page.repo }}/MONTHLY">{{ site.url }}{{ site.baseurl }}/{{ page.owner }}/{{ page.repo }}/MONTHLY</a></li>
+    <li><a href="{{ site.url }}{{ site.baseurl }}/{{ page.owner }}/WEEKLY">{{ site.url }}{{ site.baseurl }}/{{ page.owner }}/WEEKLY</a></li>
+    <li><a href="{{ site.url }}{{ site.baseurl }}/{{ page.owner }}/MONTHLY">{{ site.url }}{{ site.baseurl }}/{{ page.owner }}/MONTHLY</a></li>
+</ul>
 <i>
 <p>Report permalink: <a href="{{ site.url }}{{ site.baseurl }}/{{ page.owner }}/{{ page.repo }}/{{ page.reportID }}">{{ site.url }}{{ site.baseurl }}/{{ page.owner }}/{{ page.repo }}/{{ page.reportID }}</a></p>
-<p>Date of Last Week : {{ page.datestampLastWeek | date_to_string }}</p>
+<p class="meta">Date of "Latest" metrics data used in the report: {{ page.datestampThisWeek | date_to_string }}</p>
+<p class="meta">Date of "Previous" metrics data used in the report: {{ page.datestampLastWeek | date_to_string }}</p>
 </i>
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">

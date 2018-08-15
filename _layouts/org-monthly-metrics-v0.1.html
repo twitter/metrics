@@ -21,15 +21,21 @@ layout: default
 
 </style>
 
-<h2><a target="_blank" href="https://github.com/{{ page.org }}">{{ page.org }}</a></h2>
+<h4>Monthly org report for <a target="_blank" href="https://github.com/{{ page.org }}">{{ page.org }}</a></h4>
 <p class="meta">{{ page.datestampThisMonth | date_to_string }}</p>
 <div class="post">
 {{ content }}
 </div>
 <hr>
+<p><i>Quick Links</i></p>
+<ul>
+    <li><a href="{{ site.url }}{{ site.baseurl }}/{{ page.org }}">{{ site.url }}{{ site.baseurl }}/{{ page.org }}</a></li>
+    <li><a href="{{ site.url }}{{ site.baseurl }}/{{ page.org }}/WEEKLY">{{ site.url }}{{ site.baseurl }}/{{ page.org }}/WEEKLY</a></li>
+</ul>
 <i>
 <p>Report permalink: <a href="{{ site.url }}{{ site.baseurl }}/{{ page.org }}/{{ page.reportID }}">{{ site.url }}{{ site.baseurl }}/{{ page.org }}/{{ page.reportID }}</a></p>
-<p>Date of Last Month : {{ page.datestampLastMonth | date_to_string }}</p>
+<p class="meta">Date of "Latest" metrics data used in the report: {{ page.datestampThisMonth | date_to_string }}</p>
+<p class="meta">Date of "Previous" metrics data used in the report: {{ page.datestampLastMonth | date_to_string }}</p>
 </i>
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
