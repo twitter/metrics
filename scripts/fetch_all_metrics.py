@@ -12,6 +12,7 @@ import graphql_queries
 
 print("LOG: Assuming the current path to be the root of the metrics repository.")
 PATH_TO_METRICS_DATA = "_data"
+PATH_TO_METADATA = "_metadata"
 GITHUB_USERNAME = os.environ["GH_USERNAME"]
 GITHUB_OAUTH_TOKEN = os.environ["OAUTH_TOKEN"]
 GITHUB_API_ENDPOINT = "https://api.github.com/graphql"
@@ -36,15 +37,31 @@ print("Repos to track", all_repos)
 def fetch_one_page(query_string, variables):
     """
     Request the GitHub GraphQL API
+
+    One time, the request failed but it passed after retrying. This was the response -
+    ```
+    Error in GitHub API query. Status Code : 502, Response: {'data': 'null', 'errors': [{'message': 'Something went wrong while executing your query.
+    This may be the result of a timeout, or it could be a GitHub bug. Please include `80A9:464B:6AEAA9:78BA60:5B748709` when reporting this issue.'}]}
+    ```
+
+    This function makes 5 trials before giving up
+
     """
     headers = {
         "Content-Type": "application/json",
     }
-    r = requests.post(GITHUB_API_ENDPOINT, json={"query": query_string, "variables": variables}, auth=(GITHUB_USERNAME, GITHUB_OAUTH_TOKEN))
-    if r.status_code == 200:
-        return r.json()
-    else:
-        raise Exception("Error in GitHub API query. Status Code : {}, Response: {}".format(r.status_code, r.json()))
+    attempt = 0
+    while(attempt<=5):
+        r = requests.post(GITHUB_API_ENDPOINT, json={"query": query_string, "variables": variables}, auth=(GITHUB_USERNAME, GITHUB_OAUTH_TOKEN))
+        if r.status_code == 200:
+            return r.json()
+            break
+        else:
+            attempt += 1
+            print("\n\n\n Error in GitHub API query. Status Code : {}, Response: {}".format(r.status_code, r.json()))
+            print("\n Trying again... ({}/5)".format(attempt))
+
+    raise Exception("Error in GitHub API query. Status Code : {}, Response: {}".format(r.status_code, r.json()))
 
 all_org_edges = []  # All the repos in the org with their stats
 
@@ -140,6 +157,28 @@ for repo in DATA_JSON:
         'watchers': old_json['watchers']['totalCount'],
     }
     DATA_JSON[repo] = new_json
+
+# Update _metadata/projects_tracked.json
+PROJECTS_TRACKED = {}
+orgs_tracked = set()
+repos_tracked = set()
+for reponame in DATA_JSON:
+    orgname = reponame.split("/")[0]
+    orgs_tracked.add(orgname)
+    repos_tracked.add(reponame)
+
+PROJECTS_TRACKED['orgs'] = list(orgs_tracked)
+PROJECTS_TRACKED['projects'] = {}
+
+for reponame in repos_tracked:
+    org, repo = reponame.split("/")
+    try:
+        PROJECTS_TRACKED['projects'][org].append(repo)
+    except KeyError:
+        PROJECTS_TRACKED['projects'][org] = [repo]
+
+with open(os.path.join(PATH_TO_METADATA, "projects_tracked.json"), "w+") as f:
+    json.dump(PROJECTS_TRACKED, f)
 
 # Add CHAOSS specific metrics
 # The API endpoint is http://twitter.augurlabs.io/api/unstable/
