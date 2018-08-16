@@ -1,8 +1,4 @@
 /* Global Reset */
-* {
-  margin: 0;
-  padding: 0;
-}
 
 html, body { height: 100%; }
 
@@ -27,7 +23,7 @@ a:visited { color: #a0a; }
   font-size: 115%;
   text-align: justify;
   width: 42em;
-  margin: 3em auto 2em;
+  margin: 2em auto 2em;
   line-height: 1.5em;
 }
 
@@ -124,7 +120,13 @@ a:visited { color: #a0a; }
   background-color: #333;
 }
 
-/* Graphs flexbox */
+/*****************************************************************************/
+/*
+/* Graphs flexbox
+/*
+/*****************************************************************************/
+
+
 .row {
     display: -webkit-box;
     display: -moz-box;
@@ -165,4 +167,9 @@ a:visited { color: #a0a; }
     border: 1px solid white;
     text-align: center;
 }
+
 object {max-width:100%; min-width: 30%}
+
+.graph-container {
+    margin: auto 2em auto 2em;
+}

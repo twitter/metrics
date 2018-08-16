@@ -131,6 +131,7 @@ for _org in ALL_ORGS:
     """
     # timeseries graphs
     all_timeseries_graphs = glob(PATH_TO_GRAPHS + "/" + org + "/timeseries_*.svg")
+    file_text += '<div class="graph-container">\n\n'
     file_text += '<p><b>Timeseries graphs</b></p>\n'
     file_text += '<div class="row">\n'
     for graph in all_timeseries_graphs:
@@ -138,6 +139,7 @@ for _org in ALL_ORGS:
         file_text += '\t\tYour browser does not support SVG\n'
         file_text += '\t</object>\n'
     file_text += '</div>\n'
+    file_text += '\n</div>\n'
 
     # # Treemap graphs
     # all_treemap_graphs = glob(PATH_TO_GRAPHS + "/" + org + "/treemap_*.svg")
