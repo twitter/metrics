@@ -153,39 +153,39 @@ datestampLastWeek: 2018-08-03
 </ul>
 <div class="graph-container">
 <br>
-<h4>Binary Treemap graphs</b> (recent week)</h4>
+<h4>Binary Treemap graphs</h4>
 <div class="row">
-	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/treemap_issues.svg">
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/treemap_weekly_openPullRequests.svg">
 		Your browser does not support SVG
 	</object>
-	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/treemap_forkCount.svg">
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/treemap_weekly_forkCount.svg">
 		Your browser does not support SVG
 	</object>
-	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/treemap_openPullRequests.svg">
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/treemap_weekly_stargazers.svg">
 		Your browser does not support SVG
 	</object>
-	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/treemap_closedPullRequests.svg">
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/treemap_weekly_commits.svg">
 		Your browser does not support SVG
 	</object>
-	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/treemap_mergedPullRequests.svg">
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/treemap_weekly_closedPullRequests.svg">
 		Your browser does not support SVG
 	</object>
-	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/treemap_openIssues.svg">
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/treemap_weekly_issues.svg">
 		Your browser does not support SVG
 	</object>
-	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/treemap_pullRequests.svg">
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/treemap_weekly_mergedPullRequests.svg">
 		Your browser does not support SVG
 	</object>
-	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/treemap_closedIssues.svg">
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/treemap_weekly_pullRequests.svg">
 		Your browser does not support SVG
 	</object>
-	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/treemap_stargazers.svg">
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/treemap_weekly_closedIssues.svg">
 		Your browser does not support SVG
 	</object>
-	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/treemap_watchers.svg">
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/treemap_weekly_watchers.svg">
 		Your browser does not support SVG
 	</object>
-	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/treemap_commits.svg">
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/treemap_weekly_openIssues.svg">
 		Your browser does not support SVG
 	</object>
 </div>

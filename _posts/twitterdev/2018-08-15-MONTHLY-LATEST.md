@@ -135,3 +135,27 @@ datestampLastMonth: 2018-07-16
             <a target="_blank" href="/metrics/twitterdev/twitter-python-ads-sdk/MONTHLY">twitter-python-ads-sdk : 1</a><br><a target="_blank" href="/metrics/twitterdev/search-tweets-python/MONTHLY">search-tweets-python : 1</a><br><a target="_blank" href="/metrics/twitterdev/SnowBotDev/MONTHLY">SnowBotDev : 1</a><br><a target="_blank" href="/metrics/twitterdev/collections-webserver/MONTHLY">collections-webserver : 1</a><br><a target="_blank" href="/metrics/twitterdev/twitter-webhook-boilerplate-node/MONTHLY">twitter-webhook-boilerplate-node : 1</a><br><a target="_blank" href="/metrics/twitterdev/search-tweets-ruby/MONTHLY">search-tweets-ruby : 1</a><br><a target="_blank" href="/metrics/twitterdev/do_more_with_twitter_data/MONTHLY">do_more_with_twitter_data : -1</a><br></div> </td>
     </tbody>
 </table>
+<div class="graph-container">
+<br>
+<h4>Binary Treemap graphs</h4>
+<div class="row">
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitterdev/treemap_monthly_stargazers.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitterdev/treemap_monthly_issues.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitterdev/treemap_monthly_watchers.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitterdev/treemap_monthly_forkCount.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitterdev/treemap_monthly_openIssues.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitterdev/treemap_monthly_closedIssues.svg">
+		Your browser does not support SVG
+	</object>
+</div>
+</div>
