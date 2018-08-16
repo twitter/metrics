@@ -97,10 +97,10 @@ def add_table_of_metrics(post_text, REPORT_JSON, data_source, ID, add_breakdown=
         color = util.get_metrics_color(metric, REPORT_JSON['data'][metric]['diff'])
         post_text += """
         <tr data-toggle="collapse" data-target="#col-{5}" class="accordion-toggle" style="cursor: pointer;">
-            <td>{0}</td>
-            <td>{1}</td>
-            <td>{2}</td>
-            <td style="color: {4}" >{3}</td>
+            <td>{0:}</td>
+            <td>{1:,}</td>
+            <td>{2:,}</td>
+            <td style="color: {4}" >{3:,}</td>
         </tr>
         """.format(util.get_metrics_name(metric),
                    REPORT_JSON['data'][metric]['latest'],
@@ -139,7 +139,7 @@ def add_highlights(post_text, REPORT_JSON, ID):
         for highlight in highlights:
             repo, number, metric = highlight
             post_text += '\t' + f'<li><a href="/metrics/{org}/{repo}/{ID}">{repo} </a>'
-            post_text += f'crossed {number} {util.get_metrics_name(metric)}</li>' + '\n'
+            post_text += f'crossed {number:,} {util.get_metrics_name(metric)}</li>' + '\n'
         post_text += '</ul>' + '\n'
 
     return post_text
