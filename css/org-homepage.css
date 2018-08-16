@@ -17,7 +17,6 @@ p { margin: 1em 0; }
 
 a         { color: #00a; }
 a:hover   { color: #000; }
-a:visited { color: #a0a; }
 
 .header, .content-without-graphs, .footer {
   font-size: 115%;
@@ -172,4 +171,5 @@ object {max-width:100%; min-width: 30%}
 
 .graph-container {
     margin: auto 2em auto 2em;
+
 }

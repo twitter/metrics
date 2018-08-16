@@ -120,7 +120,7 @@ def add_table_of_metrics(post_text, REPORT_JSON, data_source, ID, add_breakdown=
         if add_breakdown and len(REPORT_JSON['data'][metric]['diff_breakdown'].items()):
             post_text += """
             <td class="hiddenRow" colspan="2"></td>
-            <td class="hiddenRow" colspan="2" style="padding: 0" ><div class="accordian-body collapse" id="col-{0}">
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-{0}">
             """.format(metric)
             items = list(REPORT_JSON['data'][metric]['diff_breakdown'].items())
             items.sort(key=operator.itemgetter(1), reverse=True)

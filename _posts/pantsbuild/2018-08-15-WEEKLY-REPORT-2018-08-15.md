@@ -30,7 +30,7 @@ datestampLastWeek: 2018-08-03
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>
-            <td class="hiddenRow" colspan="2" style="padding: 0" ><div class="accordian-body collapse" id="col-commits">
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-commits">
             <a target="_blank" href="/metrics/pantsbuild/pants/WEEKLY">pants : 40</a><br></div> </td>
         <tr data-toggle="collapse" data-target="#col-issues" class="accordion-toggle" style="cursor: pointer;">
             <td>Issues</td>
@@ -41,7 +41,7 @@ datestampLastWeek: 2018-08-03
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>
-            <td class="hiddenRow" colspan="2" style="padding: 0" ><div class="accordian-body collapse" id="col-issues">
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-issues">
             <a target="_blank" href="/metrics/pantsbuild/pants/WEEKLY">pants : 8</a><br><a target="_blank" href="/metrics/pantsbuild/pex/WEEKLY">pex : 2</a><br></div> </td>
         <tr data-toggle="collapse" data-target="#col-openIssues" class="accordion-toggle" style="cursor: pointer;">
             <td>Open Issues</td>
@@ -52,7 +52,7 @@ datestampLastWeek: 2018-08-03
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>
-            <td class="hiddenRow" colspan="2" style="padding: 0" ><div class="accordian-body collapse" id="col-openIssues">
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-openIssues">
             <a target="_blank" href="/metrics/pantsbuild/pex/WEEKLY">pex : 2</a><br><a target="_blank" href="/metrics/pantsbuild/pants/WEEKLY">pants : -1</a><br></div> </td>
         <tr data-toggle="collapse" data-target="#col-closedIssues" class="accordion-toggle" style="cursor: pointer;">
             <td>Closed Issues</td>
@@ -63,7 +63,7 @@ datestampLastWeek: 2018-08-03
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>
-            <td class="hiddenRow" colspan="2" style="padding: 0" ><div class="accordian-body collapse" id="col-closedIssues">
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-closedIssues">
             <a target="_blank" href="/metrics/pantsbuild/pants/WEEKLY">pants : 9</a><br></div> </td>
         <tr data-toggle="collapse" data-target="#col-pullRequests" class="accordion-toggle" style="cursor: pointer;">
             <td>Pull Requests</td>
@@ -74,7 +74,7 @@ datestampLastWeek: 2018-08-03
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>
-            <td class="hiddenRow" colspan="2" style="padding: 0" ><div class="accordian-body collapse" id="col-pullRequests">
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-pullRequests">
             <a target="_blank" href="/metrics/pantsbuild/pants/WEEKLY">pants : 44</a><br></div> </td>
         <tr data-toggle="collapse" data-target="#col-openPullRequests" class="accordion-toggle" style="cursor: pointer;">
             <td>Open Pull Requests</td>
@@ -85,7 +85,7 @@ datestampLastWeek: 2018-08-03
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>
-            <td class="hiddenRow" colspan="2" style="padding: 0" ><div class="accordian-body collapse" id="col-openPullRequests">
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-openPullRequests">
             <a target="_blank" href="/metrics/pantsbuild/pants/WEEKLY">pants : -1</a><br></div> </td>
         <tr data-toggle="collapse" data-target="#col-mergedPullRequests" class="accordion-toggle" style="cursor: pointer;">
             <td>Merged Pull Requests</td>
@@ -96,7 +96,7 @@ datestampLastWeek: 2018-08-03
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>
-            <td class="hiddenRow" colspan="2" style="padding: 0" ><div class="accordian-body collapse" id="col-mergedPullRequests">
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-mergedPullRequests">
             <a target="_blank" href="/metrics/pantsbuild/pants/WEEKLY">pants : 40</a><br></div> </td>
         <tr data-toggle="collapse" data-target="#col-closedPullRequests" class="accordion-toggle" style="cursor: pointer;">
             <td>Closed Pull Requests</td>
@@ -107,7 +107,7 @@ datestampLastWeek: 2018-08-03
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>
-            <td class="hiddenRow" colspan="2" style="padding: 0" ><div class="accordian-body collapse" id="col-closedPullRequests">
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-closedPullRequests">
             <a target="_blank" href="/metrics/pantsbuild/pants/WEEKLY">pants : 5</a><br></div> </td>
         <tr data-toggle="collapse" data-target="#col-forkCount" class="accordion-toggle" style="cursor: pointer;">
             <td>Forks</td>
@@ -118,7 +118,7 @@ datestampLastWeek: 2018-08-03
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>
-            <td class="hiddenRow" colspan="2" style="padding: 0" ><div class="accordian-body collapse" id="col-forkCount">
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-forkCount">
             <a target="_blank" href="/metrics/pantsbuild/pants/WEEKLY">pants : 2</a><br></div> </td>
         <tr data-toggle="collapse" data-target="#col-stargazers" class="accordion-toggle" style="cursor: pointer;">
             <td>Stars</td>
@@ -129,7 +129,7 @@ datestampLastWeek: 2018-08-03
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>
-            <td class="hiddenRow" colspan="2" style="padding: 0" ><div class="accordian-body collapse" id="col-stargazers">
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-stargazers">
             <a target="_blank" href="/metrics/pantsbuild/pants/WEEKLY">pants : 9</a><br><a target="_blank" href="/metrics/pantsbuild/pex/WEEKLY">pex : 8</a><br></div> </td>
         <tr data-toggle="collapse" data-target="#col-watchers" class="accordion-toggle" style="cursor: pointer;">
             <td>Watchers</td>
