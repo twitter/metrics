@@ -44,7 +44,8 @@ for org in ALL_ORGS:
     timeseries['watchers'] = []
 
     for file in all_weekly_metrics_files:
-        data = json.load(open(file))
+        with open(file) as f:
+            data = json.load(f)
         # try/except because the data format changed for weekly reports
         try:
             y, m, d = data['datestamp']['latest'].split('-')
