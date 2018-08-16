@@ -155,17 +155,6 @@ for _org in ALL_ORGS:
     file_text += '</div>\n'
     file_text += '\n</div>\n'
 
-    # # Treemap graphs
-    # all_treemap_graphs = glob(PATH_TO_GRAPHS + "/" + org + "/treemap_*.svg")
-    # file_text += '<p><b>Binary Treemap graphs</b> (recent week)</p>\n'
-    # file_text += '<div class="row">\n'
-    # for graph in all_treemap_graphs:
-    #     file_text += '\t<object class="cell" type="image/svg+xml" data="{{{{ site.url }}}}{{{{ site.baseurl }}}}/{}">\n'.format(graph)
-    #     file_text += '\t\tYour browser does not support SVG\n'
-    #     file_text += '\t</object>\n'
-    # file_text += '</div>\n'
-
-
     file_path = _org + "/" + "2018-05-29-index.md"  # Don't change the date. This prevents duplicate posts.
     with open(file_path, "w+") as f:
         f.write(file_text)

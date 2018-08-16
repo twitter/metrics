@@ -151,3 +151,42 @@ datestampLastWeek: 2018-08-03
 	<li><a href="/metrics/twitter/algebird/WEEKLY">algebird</a> crossed 1,700 Stars</li>
 	<li><a href="/metrics/twitter/twitter-server/WEEKLY">twitter-server</a> crossed 200 Watchers</li>
 </ul>
+<div class="graph-container">
+<br>
+<h4>Binary Treemap graphs</b> (recent week)</h4>
+<div class="row">
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/treemap_issues.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/treemap_forkCount.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/treemap_openPullRequests.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/treemap_closedPullRequests.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/treemap_mergedPullRequests.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/treemap_openIssues.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/treemap_pullRequests.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/treemap_closedIssues.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/treemap_stargazers.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/treemap_watchers.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/treemap_commits.svg">
+		Your browser does not support SVG
+	</object>
+</div>
+</div>

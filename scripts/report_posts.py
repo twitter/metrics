@@ -1,3 +1,4 @@
+from glob import glob
 import re
 import operator
 import os
@@ -11,6 +12,7 @@ MONTHLY_METRICS_VERSION = "0.1"
 ORG_MONTHLY_METRICS_VERSION = "0.1"
 
 PATH_TO_METRICS_POSTS = "_posts"
+PATH_TO_GRAPHS = "graphs"
 
 WEEKLY_PROJECT_POST = """\
 ---
@@ -153,6 +155,26 @@ def add_highlights(post_text, REPORT_JSON, ID):
     return post_text
 
 
+def add_graphs(post_text, REPORT_JSON, ID):
+    """
+    Add graphs for orgs' weekly reports
+    """
+    org = REPORT_JSON["name"]
+    # Treemap graphs
+    all_treemap_graphs = glob(PATH_TO_GRAPHS + "/" + org + "/treemap_*.svg")
+    post_text += '<div class="graph-container">\n'
+    post_text += '<br>\n<h4>Binary Treemap graphs</h4>\n'
+    post_text += '<div class="row">\n'
+    for graph in all_treemap_graphs:
+        post_text += f'\t<object class="cell" type="image/svg+xml" data="/metrics/{graph}">\n'
+        post_text += '\t\tYour browser does not support SVG\n'
+        post_text += '\t</object>\n'
+    post_text += '</div>\n'
+    post_text += '</div>\n'
+
+    return post_text
+
+
 def _create_post(REPORT_JSON, latest=False, is_project=True):
     """
     latest: If True, create a post with permalink /owner/repo/{ID}
@@ -199,6 +221,7 @@ def _create_post(REPORT_JSON, latest=False, is_project=True):
             data_source = 'site.data["{owner_in_data}"]["{reportID}"]["data"]'
             post_text = add_table_of_metrics(WEEKLY_ORG_POST, REPORT_JSON, data_source, 'WEEKLY', add_breakdown=True)
             post_text = add_highlights(post_text, REPORT_JSON, 'WEEKLY')
+            post_text = add_graphs(post_text, REPORT_JSON, 'WEEKLY')
         post_text = post_text.format(
             version=WEEKLY_METRICS_VERSION,
             owner=org,

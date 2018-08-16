@@ -129,3 +129,24 @@ datestampLastWeek: 2018-08-03
             <a target="_blank" href="/metrics/twitterdev/twitter-python-ads-sdk/WEEKLY">twitter-python-ads-sdk : 1</a><br><a target="_blank" href="/metrics/twitterdev/search-tweets-python/WEEKLY">search-tweets-python : 1</a><br><a target="_blank" href="/metrics/twitterdev/SnowBotDev/WEEKLY">SnowBotDev : 1</a><br><a target="_blank" href="/metrics/twitterdev/search-tweets-ruby/WEEKLY">search-tweets-ruby : 1</a><br></div> </td>
     </tbody>
 </table>
+<div class="graph-container">
+<br>
+<h4>Binary Treemap graphs</b> (recent week)</h4>
+<div class="row">
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitterdev/treemap_issues.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitterdev/treemap_forkCount.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitterdev/treemap_openIssues.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitterdev/treemap_closedIssues.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitterdev/treemap_stargazers.svg">
+		Your browser does not support SVG
+	</object>
+</div>
+</div>
