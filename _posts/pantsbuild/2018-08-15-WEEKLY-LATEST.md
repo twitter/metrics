@@ -147,3 +147,39 @@ datestampLastWeek: 2018-08-03
 	<li><a href="/metrics/pantsbuild/pants/WEEKLY">pants</a> crossed 1,000 Stars</li>
 	<li><a href="/metrics/pantsbuild/pants/WEEKLY">pants</a> crossed 1,400 Merged Pull Requests</li>
 </ul>
+<div class="graph-container">
+<br>
+<h4>Binary Treemap graphs</b> (recent week)</h4>
+<div class="row">
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/pantsbuild/treemap_issues.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/pantsbuild/treemap_forkCount.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/pantsbuild/treemap_openPullRequests.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/pantsbuild/treemap_closedPullRequests.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/pantsbuild/treemap_mergedPullRequests.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/pantsbuild/treemap_openIssues.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/pantsbuild/treemap_pullRequests.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/pantsbuild/treemap_closedIssues.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/pantsbuild/treemap_stargazers.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/pantsbuild/treemap_commits.svg">
+		Your browser does not support SVG
+	</object>
+</div>
+</div>

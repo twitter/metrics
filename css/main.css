@@ -158,3 +158,50 @@ a:hover   { color: #000; }
 .post pre.terminal code {
   background-color: #333;
 }
+
+.row {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    box-orient: horizontal;
+    flex-direction: row;
+
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    justify-content: center;
+
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;
+    align-items: center;
+
+    border-top: solid;
+    margin: auto 10em auto 10em;
+}
+
+.cell {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+
+    padding: 10px;
+    margin: 10px;
+
+    border: 1px solid white;
+    text-align: center;
+}
+
+object {max-width:100%; min-width: 40%}
+
+.graph-container {
+    margin: auto 2em auto 2em;
+}
