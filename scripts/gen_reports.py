@@ -78,7 +78,28 @@ def get_metrics_files(project, MIN_DIFFERENCE):
     return True, current_metrics_json_file, previous_metrics_json_file
 
 
+def get_modulo_highlights(latest, previous):
+    modulo_flag = False
+    modulo_number = 0 # The highlight number crossed by the metric
+
+    if latest//100 != previous//100:
+        modulo_flag = True
+        modulo_number = max(latest, previous) - max(latest, previous)%100
+    if latest//1000 != previous//1000:
+        modulo_flag = True
+        modulo_number = max(latest, previous) - max(latest, previous)%1000
+    if latest//10000 != previous//10000:
+        modulo_flag = True
+        modulo_number = max(latest, previous) - max(latest, previous)%1000
+
+    return modulo_flag, modulo_number
+
+
 def create_report(latest_metrics, previous_metrics, ORG_REPORT_JSON, ID):
+    """
+    Create json report for a project
+    Add up its metrics to its org
+    """
     REPORT_JSON = {}
     REPORT_JSON["nameWithOwner"] = latest_metrics["nameWithOwner"]
     REPORT_JSON["reportID"] = "{}-REPORT-{}".format(ID, latest_metrics["datestamp"])
@@ -99,6 +120,7 @@ def create_report(latest_metrics, previous_metrics, ORG_REPORT_JSON, ID):
             "previous": previous_metrics["datestamp"]
         }
         ORG_REPORT_JSON[org]["data"] = {}
+        ORG_REPORT_JSON[org]["highlights"] = []
 
     try:
         ORG_REPORT_JSON[org]["no_of_repos"] += 1
@@ -107,8 +129,19 @@ def create_report(latest_metrics, previous_metrics, ORG_REPORT_JSON, ID):
 
     REPORT_JSON["data"] = {}
 
-    for metric in ["commits", "forkCount", "issues", "openIssues", "closedIssues", "pullRequests", "openPullRequests",
-                   "mergedPullRequests", "closedPullRequests", "stargazers", "watchers"]:
+    github_metrics = ["commits",
+                      "issues",
+                      "openIssues",
+                      "closedIssues",
+                      "pullRequests",
+                      "openPullRequests",
+                      "mergedPullRequests",
+                      "closedPullRequests",
+                      "forkCount",
+                      "stargazers",
+                      "watchers"]
+
+    for metric in github_metrics:
         REPORT_JSON["data"][metric] = {
             "latest": latest_metrics[metric],
             "previous": previous_metrics[metric],
@@ -131,6 +164,12 @@ def create_report(latest_metrics, previous_metrics, ORG_REPORT_JSON, ID):
     for metric in REPORT_JSON["data"]:
         REPORT_JSON["data"][metric]["diff"] = REPORT_JSON["data"][metric]["latest"] - REPORT_JSON["data"][metric]["previous"]
 
+    # Highlight if any metric crosses %100, %1000 and %10000!
+    for metric in github_metrics:
+        modulo_flag, modulo_number = get_modulo_highlights(latest_metrics[metric], previous_metrics[metric])
+        if modulo_flag:
+            ORG_REPORT_JSON[org]["highlights"].append((REPORT_JSON["nameWithOwner"].split('/')[1], modulo_number, metric))
+
     return REPORT_JSON
 
 
@@ -149,7 +188,7 @@ def create_weekly_report_and_posts(project, latest_metrics, previous_metrics, OR
     print("LOG: Wrote REPORT to", report_file)
 
     # Create posts
-    report_posts.create_posts(REPORT_JSON, project=True)
+    report_posts.create_posts(REPORT_JSON, is_project=True)
 
 
 def create_monthly_report_and_posts(org, ORG_REPORT_JSON):
@@ -159,7 +198,7 @@ def create_monthly_report_and_posts(org, ORG_REPORT_JSON):
         json.dump(ORG_REPORT_JSON[org], f)
     print("LOG: Wrote REPORT to", report_file)
 
-    report_posts.create_posts(ORG_REPORT_JSON[org], project=False)
+    report_posts.create_posts(ORG_REPORT_JSON[org], is_project=False)
 
 
 

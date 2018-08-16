@@ -127,16 +127,34 @@ def add_table_of_metrics(post_text, REPORT_JSON, data_source, ID, add_breakdown=
 
     return post_text
 
-def _create_post(REPORT_JSON, latest=False, project=True):
+
+def add_highlights(post_text, REPORT_JSON, ID):
+    org = REPORT_JSON["name"]
+    if REPORT_JSON["highlights"]:
+        post_text += '<br>\n<h4>Highlights</h4>' + '\n'
+        post_text += '<ul>' + '\n'
+        highlights = REPORT_JSON["highlights"]
+        # Sort based on the number of zeroes!
+        highlights.sort(key=lambda item: str(item[1]).count('0'), reverse=True)
+        for highlight in highlights:
+            repo, number, metric = highlight
+            post_text += '\t' + f'<li><a href="/metrics/{org}/{repo}/{ID}">{repo} </a>'
+            post_text += f'crossed {number} {util.get_metrics_name(metric)}</li>' + '\n'
+        post_text += '</ul>' + '\n'
+
+    return post_text
+
+
+def _create_post(REPORT_JSON, latest=False, is_project=True):
     """
     latest: If True, create a post with permalink /owner/repo/{ID}
     project: If False, it means the post is for an org, else for a project
     """
     ID = REPORT_JSON['reportID'].split('-')[0]
 
-    if project:
+    if is_project:
         org, repo = REPORT_JSON['nameWithOwner'].split("/")
-    else:
+    else: # org
         org, repo = REPORT_JSON['name'], ''
 
     # Create directory for the post, if it does not exist
@@ -166,12 +184,13 @@ def _create_post(REPORT_JSON, latest=False, project=True):
         link = REPORT_JSON["reportID"]
 
     if ID == "WEEKLY":
-        if project:
+        if is_project:
             data_source = 'site.data["{owner_in_data}"]["{repo_in_data}"]["{reportID}"]["data"]'
             post_text = add_table_of_metrics(WEEKLY_PROJECT_POST, REPORT_JSON, data_source, 'WEEKLY')
-        else:
+        else: # org
             data_source = 'site.data["{owner_in_data}"]["{reportID}"]["data"]'
             post_text = add_table_of_metrics(WEEKLY_ORG_POST, REPORT_JSON, data_source, 'WEEKLY', add_breakdown=True)
+            post_text = add_highlights(post_text, REPORT_JSON, 'WEEKLY')
         post_text = post_text.format(
             version=WEEKLY_METRICS_VERSION,
             owner=org,
@@ -183,12 +202,13 @@ def _create_post(REPORT_JSON, latest=False, project=True):
             datestampLastWeek=REPORT_JSON["datestamp"]["previous"],
             link=link)
     elif ID == "MONTHLY":
-        if project:
+        if is_project:
             data_source = 'site.data["{owner_in_data}"]["{repo_in_data}"]["{reportID}"]["data"]'
             post_text = add_table_of_metrics(MONTHLY_PROJECT_POST, REPORT_JSON, data_source, 'MONTHLY')
-        else:
+        else: # org
             data_source = 'site.data["{owner_in_data}"]["{reportID}"]["data"]'
             post_text = add_table_of_metrics(MONTHLY_ORG_POST, REPORT_JSON, data_source, 'MONTHLY', add_breakdown=True)
+            post_text = add_highlights(post_text, REPORT_JSON, 'MONTHLY')
         post_text = post_text.format(
             version=MONTHLY_METRICS_VERSION,
             owner=org,
@@ -207,6 +227,6 @@ def _create_post(REPORT_JSON, latest=False, project=True):
     else:
         print("LOG: Created the POST", post_file)
 
-def create_posts(REPORT_JSON, project=True):
-    _create_post(REPORT_JSON, latest=False, project=project)
-    _create_post(REPORT_JSON, latest=True, project=project)
+def create_posts(REPORT_JSON, is_project=True):
+    _create_post(REPORT_JSON, latest=False, is_project=is_project)
+    _create_post(REPORT_JSON, latest=True, is_project=is_project)
