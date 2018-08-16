@@ -17,8 +17,7 @@ datestampLastMonth: 2018-07-16
         <th>Metric</th>
         <th>Latest</th>
         <th>Previous</th>
-        <th>+/-</th>
-        <th></th>
+        <th colspan="2" style="text-align: center;">Difference</th>
     </tr>
     </thead>
     <tbody>
