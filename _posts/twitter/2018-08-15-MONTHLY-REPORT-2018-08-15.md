@@ -17,7 +17,7 @@ datestampLastMonth: 2018-07-16
         <th>Latest</th>
         <th>Previous</th>
         <th>+/-</th>
-        <th>%</th>
+        <th></th>
     </tr>
     </thead>
     <tbody>

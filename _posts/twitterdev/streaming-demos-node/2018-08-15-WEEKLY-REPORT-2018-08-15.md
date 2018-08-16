@@ -19,7 +19,7 @@ datestampLastWeek: 2018-08-03
         <th>Latest</th>
         <th>Previous</th>
         <th>+/-</th>
-        <th>%</th>
+        <th></th>
     </tr>
     </thead>
     <tbody>
@@ -53,7 +53,7 @@ datestampLastWeek: 2018-08-03
             <td>0</td>
             <td>0</td>
             <td style="color: #45c527" >0</td>
-            <td style="color: #45c527" >%</td>
+            <td style="color: #45c527" >0.0%</td>
         </tr>
         
         <tr data-toggle="collapse" data-target="#col-pullRequests" class="accordion-toggle" style="cursor: pointer;">
@@ -61,7 +61,7 @@ datestampLastWeek: 2018-08-03
             <td>0</td>
             <td>0</td>
             <td style="color: #45c527" >0</td>
-            <td style="color: #45c527" >%</td>
+            <td style="color: #45c527" >0.0%</td>
         </tr>
         
         <tr data-toggle="collapse" data-target="#col-openPullRequests" class="accordion-toggle" style="cursor: pointer;">
@@ -69,7 +69,7 @@ datestampLastWeek: 2018-08-03
             <td>0</td>
             <td>0</td>
             <td style="color: #45c527" >0</td>
-            <td style="color: #45c527" >%</td>
+            <td style="color: #45c527" >0.0%</td>
         </tr>
         
         <tr data-toggle="collapse" data-target="#col-mergedPullRequests" class="accordion-toggle" style="cursor: pointer;">
@@ -77,7 +77,7 @@ datestampLastWeek: 2018-08-03
             <td>0</td>
             <td>0</td>
             <td style="color: #45c527" >0</td>
-            <td style="color: #45c527" >%</td>
+            <td style="color: #45c527" >0.0%</td>
         </tr>
         
         <tr data-toggle="collapse" data-target="#col-closedPullRequests" class="accordion-toggle" style="cursor: pointer;">
@@ -85,7 +85,7 @@ datestampLastWeek: 2018-08-03
             <td>0</td>
             <td>0</td>
             <td style="color: #45c527" >0</td>
-            <td style="color: #45c527" >%</td>
+            <td style="color: #45c527" >0.0%</td>
         </tr>
         
         <tr data-toggle="collapse" data-target="#col-forkCount" class="accordion-toggle" style="cursor: pointer;">
