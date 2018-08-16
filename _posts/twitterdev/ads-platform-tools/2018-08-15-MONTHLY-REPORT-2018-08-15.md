@@ -122,3 +122,8 @@ datestampLastMonth: 2018-07-16
         <td>Worst: 2</td>
     </tbody>
 </table>
+<div class="row">
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitterdev/ads-platform-tools/timeseries_new_watchers_per_month.svg">
+		Your browser does not support SVG
+	</object>
+</div>
