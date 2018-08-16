@@ -123,3 +123,8 @@ datestampLastWeek: 2018-08-03
         <td>Worst: 44</td>
     </tbody>
 </table>
+<div class="row">
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/scalding/timeseries_new_watchers_per_week.svg">
+		Your browser does not support SVG
+	</object>
+</div>

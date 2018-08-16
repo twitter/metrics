@@ -1,3 +1,4 @@
 name: TwitterOSS Metrics
 highlighter: rouge
 baseurl: '/metrics'
+exclude: [scripts, "*.py"]

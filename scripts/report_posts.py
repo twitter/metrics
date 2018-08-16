@@ -138,27 +138,52 @@ def add_table_of_metrics(post_text, REPORT_JSON, data_source, ID, add_breakdown=
     return post_text
 
 
-def add_augur_metrics(post_text, REPORT_JSON, AUGUR_METRICS):
-    nameWithOwner = REPORT_JSON["nameWithOwner"]
-    """
-    Bus Factor
-    """
-    try:
-        bus_factor = AUGUR_METRICS["bus_factor"][nameWithOwner]
-    except KeyError:
-        bus_factor = {"best": "N/A", "worst": "N/A"}
+def add_augur_metrics(post_text, REPORT_JSON, AUGUR_METRICS, ID, is_project=False):
+    if is_project:
+        nameWithOwner = REPORT_JSON["nameWithOwner"]
+        """
+        Bus Factor
+        """
+        try:
+            bus_factor = AUGUR_METRICS["bus_factor"][nameWithOwner]
+        except KeyError:
+            bus_factor = {"best": "N/A", "worst": "N/A"}
 
-    post_text += '<br>\n<h4><a target="_blank" href="https://chaoss.community/">CHAOSS</a> Metrics</h4>' + '\n'
+        post_text += '<br>\n<h4><a target="_blank" href="https://chaoss.community/">CHAOSS</a> Metrics</h4>' + '\n'
 
-    post_text += textwrap.dedent(f"""
-    <table class="table table-condensed" style="border-collapse:collapse;">
-        <tbody>
-            <td>Bus Factor</td>
-            <td>Best: {bus_factor["best"]}</td>
-            <td>Worst: {bus_factor["worst"]}</td>
-        </tbody>
-    </table>
-    """)
+        post_text += textwrap.dedent(f"""
+        <table class="table table-condensed" style="border-collapse:collapse;">
+            <tbody>
+                <td>Bus Factor</td>
+                <td>Best: {bus_factor["best"]}</td>
+                <td>Worst: {bus_factor["worst"]}</td>
+            </tbody>
+        </table>
+        """)
+
+        graph_text = ""
+        """
+        Timeseries of new watchers
+        """
+        if ID == 'WEEKLY':
+            graph_path = f"{PATH_TO_GRAPHS}/{nameWithOwner}/timeseries_new_watchers_per_week.svg"
+        elif ID == 'MONTHLY':
+            graph_path = f"{PATH_TO_GRAPHS}/{nameWithOwner}/timeseries_new_watchers_per_month.svg"
+
+        if os.path.exists(graph_path):
+            graph_text += f'\t<object class="cell" type="image/svg+xml" data="/metrics/{graph_path}">\n'
+            graph_text += '\t\tYour browser does not support SVG\n'
+            graph_text += '\t</object>\n'
+
+        # Add more chaoss graphs here
+
+        # After all the graphs
+        if graph_text:
+            post_text += '<div class="row">\n'
+            post_text += graph_text
+            post_text += '</div>\n'
+    else: # ORG
+        pass
 
     return post_text
 
@@ -180,7 +205,7 @@ def add_highlights(post_text, REPORT_JSON, ID):
     return post_text
 
 
-def add_graphs(post_text, REPORT_JSON, ID):
+def add_github_metrics_graphs(post_text, REPORT_JSON, ID):
     """
     Add graphs for orgs' weekly reports
     """
@@ -251,7 +276,7 @@ def _create_post(REPORT_JSON, AUGUR_METRICS, latest=False, is_project=True):
             """
             data_source = 'site.data["{owner_in_data}"]["{repo_in_data}"]["{reportID}"]["data"]'
             post_text = add_table_of_metrics(WEEKLY_PROJECT_POST, REPORT_JSON, data_source, 'WEEKLY')
-            post_text = add_augur_metrics(post_text, REPORT_JSON, AUGUR_METRICS)
+            post_text = add_augur_metrics(post_text, REPORT_JSON, AUGUR_METRICS, 'WEEKLY', is_project=True)
         else:
             """
             WEEKLY - ORG
@@ -259,7 +284,7 @@ def _create_post(REPORT_JSON, AUGUR_METRICS, latest=False, is_project=True):
             data_source = 'site.data["{owner_in_data}"]["{reportID}"]["data"]'
             post_text = add_table_of_metrics(WEEKLY_ORG_POST, REPORT_JSON, data_source, 'WEEKLY', add_breakdown=True)
             post_text = add_highlights(post_text, REPORT_JSON, 'WEEKLY')
-            post_text = add_graphs(post_text, REPORT_JSON, 'WEEKLY')
+            post_text = add_github_metrics_graphs(post_text, REPORT_JSON, 'WEEKLY')
         post_text = post_text.format(
             version=WEEKLY_METRICS_VERSION,
             owner=org,
@@ -277,7 +302,7 @@ def _create_post(REPORT_JSON, AUGUR_METRICS, latest=False, is_project=True):
             """
             data_source = 'site.data["{owner_in_data}"]["{repo_in_data}"]["{reportID}"]["data"]'
             post_text = add_table_of_metrics(MONTHLY_PROJECT_POST, REPORT_JSON, data_source, 'MONTHLY')
-            post_text = add_augur_metrics(post_text, REPORT_JSON, AUGUR_METRICS)
+            post_text = add_augur_metrics(post_text, REPORT_JSON, AUGUR_METRICS, 'MONTHLY', is_project=True)
         else:
             """
             MONTHLY - ORG
@@ -285,7 +310,7 @@ def _create_post(REPORT_JSON, AUGUR_METRICS, latest=False, is_project=True):
             data_source = 'site.data["{owner_in_data}"]["{reportID}"]["data"]'
             post_text = add_table_of_metrics(MONTHLY_ORG_POST, REPORT_JSON, data_source, 'MONTHLY', add_breakdown=True)
             post_text = add_highlights(post_text, REPORT_JSON, 'MONTHLY')
-            post_text = add_graphs(post_text, REPORT_JSON, 'MONTHLY')
+            post_text = add_github_metrics_graphs(post_text, REPORT_JSON, 'MONTHLY')
         post_text = post_text.format(
             version=MONTHLY_METRICS_VERSION,
             owner=org,
