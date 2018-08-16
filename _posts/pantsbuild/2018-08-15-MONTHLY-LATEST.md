@@ -30,7 +30,7 @@ datestampLastMonth: 2018-07-16
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>
-            <td class="hiddenRow" colspan="2" style="padding: 0" ><div class="accordian-body collapse" id="col-commits">
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-commits">
             <a target="_blank" href="/metrics/pantsbuild/pants/MONTHLY">pants : 164</a><br><a target="_blank" href="/metrics/pantsbuild/pex/MONTHLY">pex : 7</a><br></div> </td>
         <tr data-toggle="collapse" data-target="#col-issues" class="accordion-toggle" style="cursor: pointer;">
             <td>Issues</td>
@@ -41,7 +41,7 @@ datestampLastMonth: 2018-07-16
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>
-            <td class="hiddenRow" colspan="2" style="padding: 0" ><div class="accordian-body collapse" id="col-issues">
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-issues">
             <a target="_blank" href="/metrics/pantsbuild/pants/MONTHLY">pants : 42</a><br><a target="_blank" href="/metrics/pantsbuild/pex/MONTHLY">pex : 6</a><br></div> </td>
         <tr data-toggle="collapse" data-target="#col-openIssues" class="accordion-toggle" style="cursor: pointer;">
             <td>Open Issues</td>
@@ -52,7 +52,7 @@ datestampLastMonth: 2018-07-16
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>
-            <td class="hiddenRow" colspan="2" style="padding: 0" ><div class="accordian-body collapse" id="col-openIssues">
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-openIssues">
             <a target="_blank" href="/metrics/pantsbuild/pants/MONTHLY">pants : 12</a><br></div> </td>
         <tr data-toggle="collapse" data-target="#col-closedIssues" class="accordion-toggle" style="cursor: pointer;">
             <td>Closed Issues</td>
@@ -63,7 +63,7 @@ datestampLastMonth: 2018-07-16
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>
-            <td class="hiddenRow" colspan="2" style="padding: 0" ><div class="accordian-body collapse" id="col-closedIssues">
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-closedIssues">
             <a target="_blank" href="/metrics/pantsbuild/pants/MONTHLY">pants : 30</a><br><a target="_blank" href="/metrics/pantsbuild/pex/MONTHLY">pex : 6</a><br></div> </td>
         <tr data-toggle="collapse" data-target="#col-pullRequests" class="accordion-toggle" style="cursor: pointer;">
             <td>Pull Requests</td>
@@ -74,7 +74,7 @@ datestampLastMonth: 2018-07-16
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>
-            <td class="hiddenRow" colspan="2" style="padding: 0" ><div class="accordian-body collapse" id="col-pullRequests">
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-pullRequests">
             <a target="_blank" href="/metrics/pantsbuild/pants/MONTHLY">pants : 169</a><br><a target="_blank" href="/metrics/pantsbuild/pex/MONTHLY">pex : 5</a><br></div> </td>
         <tr data-toggle="collapse" data-target="#col-openPullRequests" class="accordion-toggle" style="cursor: pointer;">
             <td>Open Pull Requests</td>
@@ -85,7 +85,7 @@ datestampLastMonth: 2018-07-16
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>
-            <td class="hiddenRow" colspan="2" style="padding: 0" ><div class="accordian-body collapse" id="col-openPullRequests">
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-openPullRequests">
             <a target="_blank" href="/metrics/pantsbuild/pex/MONTHLY">pex : -1</a><br><a target="_blank" href="/metrics/pantsbuild/pants/MONTHLY">pants : -5</a><br></div> </td>
         <tr data-toggle="collapse" data-target="#col-mergedPullRequests" class="accordion-toggle" style="cursor: pointer;">
             <td>Merged Pull Requests</td>
@@ -96,7 +96,7 @@ datestampLastMonth: 2018-07-16
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>
-            <td class="hiddenRow" colspan="2" style="padding: 0" ><div class="accordian-body collapse" id="col-mergedPullRequests">
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-mergedPullRequests">
             <a target="_blank" href="/metrics/pantsbuild/pants/MONTHLY">pants : 158</a><br><a target="_blank" href="/metrics/pantsbuild/pex/MONTHLY">pex : 6</a><br></div> </td>
         <tr data-toggle="collapse" data-target="#col-closedPullRequests" class="accordion-toggle" style="cursor: pointer;">
             <td>Closed Pull Requests</td>
@@ -107,7 +107,7 @@ datestampLastMonth: 2018-07-16
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>
-            <td class="hiddenRow" colspan="2" style="padding: 0" ><div class="accordian-body collapse" id="col-closedPullRequests">
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-closedPullRequests">
             <a target="_blank" href="/metrics/pantsbuild/pants/MONTHLY">pants : 16</a><br></div> </td>
         <tr data-toggle="collapse" data-target="#col-forkCount" class="accordion-toggle" style="cursor: pointer;">
             <td>Forks</td>
@@ -118,7 +118,7 @@ datestampLastMonth: 2018-07-16
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>
-            <td class="hiddenRow" colspan="2" style="padding: 0" ><div class="accordian-body collapse" id="col-forkCount">
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-forkCount">
             <a target="_blank" href="/metrics/pantsbuild/pants/MONTHLY">pants : 6</a><br><a target="_blank" href="/metrics/pantsbuild/pex/MONTHLY">pex : 1</a><br></div> </td>
         <tr data-toggle="collapse" data-target="#col-stargazers" class="accordion-toggle" style="cursor: pointer;">
             <td>Stars</td>
@@ -129,7 +129,7 @@ datestampLastMonth: 2018-07-16
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>
-            <td class="hiddenRow" colspan="2" style="padding: 0" ><div class="accordian-body collapse" id="col-stargazers">
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-stargazers">
             <a target="_blank" href="/metrics/pantsbuild/pex/MONTHLY">pex : 19</a><br><a target="_blank" href="/metrics/pantsbuild/pants/MONTHLY">pants : 17</a><br></div> </td>
         <tr data-toggle="collapse" data-target="#col-watchers" class="accordion-toggle" style="cursor: pointer;">
             <td>Watchers</td>
@@ -140,7 +140,7 @@ datestampLastMonth: 2018-07-16
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>
-            <td class="hiddenRow" colspan="2" style="padding: 0" ><div class="accordian-body collapse" id="col-watchers">
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-watchers">
             <a target="_blank" href="/metrics/pantsbuild/pants/MONTHLY">pants : -2</a><br></div> </td>
     </tbody>
 </table>

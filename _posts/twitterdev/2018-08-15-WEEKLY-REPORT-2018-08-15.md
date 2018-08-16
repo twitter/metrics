@@ -38,7 +38,7 @@ datestampLastWeek: 2018-08-03
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>
-            <td class="hiddenRow" colspan="2" style="padding: 0" ><div class="accordian-body collapse" id="col-issues">
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-issues">
             <a target="_blank" href="/metrics/twitterdev/twitter-python-ads-sdk/WEEKLY">twitter-python-ads-sdk : 1</a><br><a target="_blank" href="/metrics/twitterdev/search-tweets-python/WEEKLY">search-tweets-python : 1</a><br><a target="_blank" href="/metrics/twitterdev/twitter-ruby-ads-sdk/WEEKLY">twitter-ruby-ads-sdk : 1</a><br></div> </td>
         <tr data-toggle="collapse" data-target="#col-openIssues" class="accordion-toggle" style="cursor: pointer;">
             <td>Open Issues</td>
@@ -49,7 +49,7 @@ datestampLastWeek: 2018-08-03
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>
-            <td class="hiddenRow" colspan="2" style="padding: 0" ><div class="accordian-body collapse" id="col-openIssues">
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-openIssues">
             <a target="_blank" href="/metrics/twitterdev/twitter-python-ads-sdk/WEEKLY">twitter-python-ads-sdk : 1</a><br><a target="_blank" href="/metrics/twitterdev/twitter-ruby-ads-sdk/WEEKLY">twitter-ruby-ads-sdk : 1</a><br><a target="_blank" href="/metrics/twitterdev/cards-player-samples/WEEKLY">cards-player-samples : -2</a><br></div> </td>
         <tr data-toggle="collapse" data-target="#col-closedIssues" class="accordion-toggle" style="cursor: pointer;">
             <td>Closed Issues</td>
@@ -60,7 +60,7 @@ datestampLastWeek: 2018-08-03
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>
-            <td class="hiddenRow" colspan="2" style="padding: 0" ><div class="accordian-body collapse" id="col-closedIssues">
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-closedIssues">
             <a target="_blank" href="/metrics/twitterdev/cards-player-samples/WEEKLY">cards-player-samples : 2</a><br><a target="_blank" href="/metrics/twitterdev/search-tweets-python/WEEKLY">search-tweets-python : 1</a><br></div> </td>
         <tr data-toggle="collapse" data-target="#col-pullRequests" class="accordion-toggle" style="cursor: pointer;">
             <td>Pull Requests</td>
@@ -103,7 +103,7 @@ datestampLastWeek: 2018-08-03
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>
-            <td class="hiddenRow" colspan="2" style="padding: 0" ><div class="accordian-body collapse" id="col-forkCount">
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-forkCount">
             <a target="_blank" href="/metrics/twitterdev/search-tweets-python/WEEKLY">search-tweets-python : 2</a><br><a target="_blank" href="/metrics/twitterdev/twitter-ruby-ads-sdk/WEEKLY">twitter-ruby-ads-sdk : 2</a><br><a target="_blank" href="/metrics/twitterdev/tweet_parser/WEEKLY">tweet_parser : 1</a><br><a target="_blank" href="/metrics/twitterdev/TwitterKitSample/WEEKLY">TwitterKitSample : 1</a><br><a target="_blank" href="/metrics/twitterdev/ads-platform-tools/WEEKLY">ads-platform-tools : 1</a><br><a target="_blank" href="/metrics/twitterdev/account-activity-dashboard/WEEKLY">account-activity-dashboard : 1</a><br><a target="_blank" href="/metrics/twitterdev/twitter-stream-globe/WEEKLY">twitter-stream-globe : -1</a><br></div> </td>
         <tr data-toggle="collapse" data-target="#col-stargazers" class="accordion-toggle" style="cursor: pointer;">
             <td>Stars</td>
@@ -114,7 +114,7 @@ datestampLastWeek: 2018-08-03
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>
-            <td class="hiddenRow" colspan="2" style="padding: 0" ><div class="accordian-body collapse" id="col-stargazers">
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-stargazers">
             <a target="_blank" href="/metrics/twitterdev/search-tweets-python/WEEKLY">search-tweets-python : 2</a><br><a target="_blank" href="/metrics/twitterdev/SnowBotDev/WEEKLY">SnowBotDev : 2</a><br><a target="_blank" href="/metrics/twitterdev/do_more_with_twitter_data/WEEKLY">do_more_with_twitter_data : 1</a><br><a target="_blank" href="/metrics/twitterdev/twitter-python-ads-sdk/WEEKLY">twitter-python-ads-sdk : 1</a><br><a target="_blank" href="/metrics/twitterdev/django-rest-apis/WEEKLY">django-rest-apis : 1</a><br><a target="_blank" href="/metrics/twitterdev/large-video-upload-python/WEEKLY">large-video-upload-python : 1</a><br><a target="_blank" href="/metrics/twitterdev/search-tweets-ruby/WEEKLY">search-tweets-ruby : 1</a><br><a target="_blank" href="/metrics/twitterdev/account-activity-dashboard/WEEKLY">account-activity-dashboard : 1</a><br><a target="_blank" href="/metrics/twitterdev/chrome-extension-collections/WEEKLY">chrome-extension-collections : -1</a><br></div> </td>
         <tr data-toggle="collapse" data-target="#col-watchers" class="accordion-toggle" style="cursor: pointer;">
             <td>Watchers</td>
@@ -125,7 +125,7 @@ datestampLastWeek: 2018-08-03
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>
-            <td class="hiddenRow" colspan="2" style="padding: 0" ><div class="accordian-body collapse" id="col-watchers">
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-watchers">
             <a target="_blank" href="/metrics/twitterdev/twitter-python-ads-sdk/WEEKLY">twitter-python-ads-sdk : 1</a><br><a target="_blank" href="/metrics/twitterdev/search-tweets-python/WEEKLY">search-tweets-python : 1</a><br><a target="_blank" href="/metrics/twitterdev/SnowBotDev/WEEKLY">SnowBotDev : 1</a><br><a target="_blank" href="/metrics/twitterdev/search-tweets-ruby/WEEKLY">search-tweets-ruby : 1</a><br></div> </td>
     </tbody>
 </table>
