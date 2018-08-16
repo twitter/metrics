@@ -89,25 +89,34 @@ def add_table_of_metrics(post_text, REPORT_JSON, data_source, ID, add_breakdown=
             <th>Latest</th>
             <th>Previous</th>
             <th>+/-</th>
+            <th>%</th>
         </tr>
         </thead>
         <tbody>
     """)
     for metric in REPORT_JSON['data']:
         color = util.get_metrics_color(metric, REPORT_JSON['data'][metric]['diff'])
+        if REPORT_JSON['data'][metric]['previous'] != 0:
+            percentage_change = str(round(REPORT_JSON['data'][metric]['diff']/REPORT_JSON['data'][metric]['previous']*100, 2))
+        elif REPORT_JSON['data'][metric]['latest'] != 0:
+            percentage_change = '∞'
+        else:
+            percentage_change = ''
         post_text += """
         <tr data-toggle="collapse" data-target="#col-{5}" class="accordion-toggle" style="cursor: pointer;">
             <td>{0:}</td>
             <td>{1:,}</td>
             <td>{2:,}</td>
             <td style="color: {4}" >{3:,}</td>
+            <td style="color: {4}" >{6}%</td>
         </tr>
         """.format(util.get_metrics_name(metric),
                    REPORT_JSON['data'][metric]['latest'],
                    REPORT_JSON['data'][metric]['previous'],
                    REPORT_JSON['data'][metric]['diff'],
                    color,
-                   metric)
+                   metric,
+                   percentage_change)
         # Add diff breakdown
         if add_breakdown and len(REPORT_JSON['data'][metric]['diff_breakdown'].items()):
             post_text += """
@@ -138,8 +147,8 @@ def add_highlights(post_text, REPORT_JSON, ID):
         highlights.sort(key=lambda item: str(item[1]).count('0'), reverse=True)
         for highlight in highlights:
             repo, number, metric = highlight
-            post_text += '\t' + f'<li><a href="/metrics/{org}/{repo}/{ID}">{repo} </a>'
-            post_text += f'crossed {number:,} {util.get_metrics_name(metric)}</li>' + '\n'
+            post_text += '\t' + f'<li><a href="/metrics/{org}/{repo}/{ID}">{repo}</a>'
+            post_text += f' crossed {number:,} {util.get_metrics_name(metric)}</li>' + '\n'
         post_text += '</ul>' + '\n'
 
     return post_text
