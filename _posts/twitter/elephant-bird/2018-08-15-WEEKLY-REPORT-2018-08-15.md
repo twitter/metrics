@@ -19,7 +19,7 @@ datestampLastWeek: 2018-08-03
         <th>Latest</th>
         <th>Previous</th>
         <th>+/-</th>
-        <th>%</th>
+        <th></th>
     </tr>
     </thead>
     <tbody>

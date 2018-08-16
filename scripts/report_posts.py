@@ -89,7 +89,7 @@ def add_table_of_metrics(post_text, REPORT_JSON, data_source, ID, add_breakdown=
             <th>Latest</th>
             <th>Previous</th>
             <th>+/-</th>
-            <th>%</th>
+            <th></th>
         </tr>
         </thead>
         <tbody>
@@ -101,7 +101,7 @@ def add_table_of_metrics(post_text, REPORT_JSON, data_source, ID, add_breakdown=
         elif REPORT_JSON['data'][metric]['latest'] != 0:
             percentage_change = '∞'
         else:
-            percentage_change = ''
+            percentage_change = '0.0'
         post_text += """
         <tr data-toggle="collapse" data-target="#col-{5}" class="accordion-toggle" style="cursor: pointer;">
             <td>{0:}</td>
