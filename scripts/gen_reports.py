@@ -14,6 +14,7 @@ import re
 import report_posts
 
 PATH_TO_METRICS_DATA = "_data"
+PATH_TO_METADATA = "_metadata"
 PATH_TO_METRICS_POSTS = "_posts"
 WEEKLY_MIN_DIFFERENCE = 6 # In Days
 MONTHLY_MIN_DIFFERENCE = 27 # In Days
@@ -173,13 +174,12 @@ def create_report(latest_metrics, previous_metrics, ORG_REPORT_JSON, ID):
     return REPORT_JSON
 
 
-def create_weekly_report_and_posts(project, latest_metrics, previous_metrics, ORG_REPORT_JSON, ID):
+def create_project_report_and_posts(project, latest_metrics, previous_metrics, ORG_REPORT_JSON, ID):
     with open(os.path.join(project, latest_metrics)) as f:
         latest_metrics = json.load(f)
     with open(os.path.join(project, previous_metrics)) as f:
         previous_metrics = json.load(f)
 
-    # print(eligible, latest_metrics, previous_metrics)
     REPORT_JSON = create_report(latest_metrics, previous_metrics, ORG_REPORT_JSON, ID)
 
     report_file = "{}/{}.json".format(project, REPORT_JSON["reportID"])
@@ -187,19 +187,23 @@ def create_weekly_report_and_posts(project, latest_metrics, previous_metrics, OR
         json.dump(REPORT_JSON, f)
     print("LOG: Wrote REPORT to", report_file)
 
-    # Create posts
-    report_posts.create_posts(REPORT_JSON, is_project=True)
+    AUGUR_METRICS = {}
+    with open(f"{PATH_TO_METADATA}/augur/bus_factor.json") as f:
+        AUGUR_METRICS["bus_factor"] = json.load(f)
+
+    report_posts.create_posts(REPORT_JSON, AUGUR_METRICS, is_project=True)
 
 
-def create_monthly_report_and_posts(org, ORG_REPORT_JSON):
+def create_org_report_and_posts(org, ORG_REPORT_JSON):
     path_to_org = os.path.join(PATH_TO_METRICS_DATA, org)
     report_file = "{}/{}.json".format(path_to_org, ORG_REPORT_JSON[org]["reportID"])
     with open(report_file, "w+") as f:
         json.dump(ORG_REPORT_JSON[org], f)
     print("LOG: Wrote REPORT to", report_file)
 
-    report_posts.create_posts(ORG_REPORT_JSON[org], is_project=False)
+    AUGUR_METRICS = {}
 
+    report_posts.create_posts(ORG_REPORT_JSON[org], AUGUR_METRICS, is_project=False)
 
 
 if __name__ == '__main__':
@@ -212,13 +216,12 @@ if __name__ == '__main__':
     MONTHLY_ORG_REPORT_JSON = {} # Summed up data for the entire github org
 
     for project in ALL_PROJECTS:
-        print("WEEKLY")
+        print("PROJECT - WEEKLY")
         eligible, latest_metrics, previous_metrics = get_metrics_files(project, WEEKLY_MIN_DIFFERENCE)
-        # print(eligible, latest_metrics, previous_metrics)
         if eligible:
-            create_weekly_report_and_posts(project, latest_metrics, previous_metrics, WEEKLY_ORG_REPORT_JSON, 'WEEKLY')
+            create_project_report_and_posts(project, latest_metrics, previous_metrics, WEEKLY_ORG_REPORT_JSON, 'WEEKLY')
 
-        print("MONTHLY")
+        print("PROJECT - MONTHLY")
         """
         This script is run every 7 days by Travis Cron job.
         Here is the flowchart of how it works.
@@ -245,20 +248,20 @@ if __name__ == '__main__':
         """
         eligible, latest_metrics, previous_metrics = get_metrics_files(project, MONTHLY_MIN_DIFFERENCE)
         if eligible:
-            create_weekly_report_and_posts(project, latest_metrics, previous_metrics, MONTHLY_ORG_REPORT_JSON, 'MONTHLY')
+            create_project_report_and_posts(project, latest_metrics, previous_metrics, MONTHLY_ORG_REPORT_JSON, 'MONTHLY')
 
     # ORG
-    print("WEEKLY")
+    print("ORG - WEEKLY")
     for org in WEEKLY_ORG_REPORT_JSON:
         # Get the diff of each data metric in org
         for metric in WEEKLY_ORG_REPORT_JSON[org]["data"]:
             WEEKLY_ORG_REPORT_JSON[org]["data"][metric]["diff"] = WEEKLY_ORG_REPORT_JSON[org]["data"][metric]["latest"] - WEEKLY_ORG_REPORT_JSON[org]["data"][metric]["previous"]
 
-        create_monthly_report_and_posts(org, WEEKLY_ORG_REPORT_JSON)
+        create_org_report_and_posts(org, WEEKLY_ORG_REPORT_JSON)
 
-    print("MONTHLY")
+    print("ORG - MONTHLY")
     for org in MONTHLY_ORG_REPORT_JSON:
         for metric in MONTHLY_ORG_REPORT_JSON[org]["data"]:
             MONTHLY_ORG_REPORT_JSON[org]["data"][metric]["diff"] = MONTHLY_ORG_REPORT_JSON[org]["data"][metric]["latest"] - MONTHLY_ORG_REPORT_JSON[org]["data"][metric]["previous"]
 
-        create_monthly_report_and_posts(org, MONTHLY_ORG_REPORT_JSON)
+        create_org_report_and_posts(org, MONTHLY_ORG_REPORT_JSON)

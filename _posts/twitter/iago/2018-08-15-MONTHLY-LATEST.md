@@ -112,3 +112,13 @@ datestampLastMonth: 2018-07-16
         
     </tbody>
 </table>
+<br>
+<h4><a target="_blank" href="https://chaoss.community/">CHAOSS</a> Metrics</h4>
+
+<table class="table table-condensed" style="border-collapse:collapse;">
+    <tbody>
+        <td>Bus Factor</td>
+        <td>Best: 11</td>
+        <td>Worst: 4</td>
+    </tbody>
+</table>

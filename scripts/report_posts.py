@@ -138,6 +138,31 @@ def add_table_of_metrics(post_text, REPORT_JSON, data_source, ID, add_breakdown=
     return post_text
 
 
+def add_augur_metrics(post_text, REPORT_JSON, AUGUR_METRICS):
+    nameWithOwner = REPORT_JSON["nameWithOwner"]
+    """
+    Bus Factor
+    """
+    try:
+        bus_factor = AUGUR_METRICS["bus_factor"][nameWithOwner]
+    except KeyError:
+        bus_factor = {"best": "N/A", "worst": "N/A"}
+
+    post_text += '<br>\n<h4><a target="_blank" href="https://chaoss.community/">CHAOSS</a> Metrics</h4>' + '\n'
+
+    post_text += textwrap.dedent(f"""
+    <table class="table table-condensed" style="border-collapse:collapse;">
+        <tbody>
+            <td>Bus Factor</td>
+            <td>Best: {bus_factor["best"]}</td>
+            <td>Worst: {bus_factor["worst"]}</td>
+        </tbody>
+    </table>
+    """)
+
+    return post_text
+
+
 def add_highlights(post_text, REPORT_JSON, ID):
     org = REPORT_JSON["name"]
     if REPORT_JSON["highlights"]:
@@ -175,7 +200,7 @@ def add_graphs(post_text, REPORT_JSON, ID):
     return post_text
 
 
-def _create_post(REPORT_JSON, latest=False, is_project=True):
+def _create_post(REPORT_JSON, AUGUR_METRICS, latest=False, is_project=True):
     """
     latest: If True, create a post with permalink /owner/repo/{ID}
     project: If False, it means the post is for an org, else for a project
@@ -192,6 +217,9 @@ def _create_post(REPORT_JSON, latest=False, is_project=True):
     os.makedirs(path_to_post, exist_ok=True)
 
     if latest:
+        """
+        Create file for latest report
+        """
         # Delete already existing latest posts
         re_latest_report = re.compile(r"\d{{4}}-\d{{2}}-\d{{2}}-{}-LATEST.md".format(ID))
         for filename in os.listdir(path_to_post):
@@ -203,6 +231,9 @@ def _create_post(REPORT_JSON, latest=False, is_project=True):
         # Create latest report file in _posts as well
         post_file = "{}/{}-{}-LATEST.md".format(path_to_post, REPORT_JSON["datestamp"]["latest"], ID)
     else:
+        """
+        Create file for dated report
+        """
         # This is a weird filename for sure. But I think I have an explanation for it -
         # posts need to start with %Y-%m-%d and the later is sent to page.title variable
         # Without the later date, title did not make much sense.
@@ -215,9 +246,16 @@ def _create_post(REPORT_JSON, latest=False, is_project=True):
 
     if ID == "WEEKLY":
         if is_project:
+            """
+            WEEKLY - PROJECT
+            """
             data_source = 'site.data["{owner_in_data}"]["{repo_in_data}"]["{reportID}"]["data"]'
             post_text = add_table_of_metrics(WEEKLY_PROJECT_POST, REPORT_JSON, data_source, 'WEEKLY')
-        else: # org
+            post_text = add_augur_metrics(post_text, REPORT_JSON, AUGUR_METRICS)
+        else:
+            """
+            WEEKLY - ORG
+            """
             data_source = 'site.data["{owner_in_data}"]["{reportID}"]["data"]'
             post_text = add_table_of_metrics(WEEKLY_ORG_POST, REPORT_JSON, data_source, 'WEEKLY', add_breakdown=True)
             post_text = add_highlights(post_text, REPORT_JSON, 'WEEKLY')
@@ -234,9 +272,16 @@ def _create_post(REPORT_JSON, latest=False, is_project=True):
             link=link)
     elif ID == "MONTHLY":
         if is_project:
+            """
+            MONTHLY - PROJECT
+            """
             data_source = 'site.data["{owner_in_data}"]["{repo_in_data}"]["{reportID}"]["data"]'
             post_text = add_table_of_metrics(MONTHLY_PROJECT_POST, REPORT_JSON, data_source, 'MONTHLY')
-        else: # org
+            post_text = add_augur_metrics(post_text, REPORT_JSON, AUGUR_METRICS)
+        else:
+            """
+            MONTHLY - ORG
+            """
             data_source = 'site.data["{owner_in_data}"]["{reportID}"]["data"]'
             post_text = add_table_of_metrics(MONTHLY_ORG_POST, REPORT_JSON, data_source, 'MONTHLY', add_breakdown=True)
             post_text = add_highlights(post_text, REPORT_JSON, 'MONTHLY')
@@ -259,6 +304,6 @@ def _create_post(REPORT_JSON, latest=False, is_project=True):
     else:
         print("LOG: Created the POST", post_file)
 
-def create_posts(REPORT_JSON, is_project=True):
-    _create_post(REPORT_JSON, latest=False, is_project=is_project)
-    _create_post(REPORT_JSON, latest=True, is_project=is_project)
+def create_posts(REPORT_JSON, AUGUR_METRICS, is_project=True):
+    _create_post(REPORT_JSON, AUGUR_METRICS, latest=False, is_project=is_project)
+    _create_post(REPORT_JSON, AUGUR_METRICS, latest=True, is_project=is_project)
