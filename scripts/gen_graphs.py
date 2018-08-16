@@ -21,8 +21,10 @@ Generate graphs for all Orgs
 ALL_ORGS = filter(os.path.isdir, glob(PATH_TO_METRICS_DATA + "/*"))
 
 for org in ALL_ORGS:
-    all_metrics_files = glob(org + "/WEEKLY-REPORT-*.json")
-    all_metrics_files.sort()  # Important to sort by date in increasing order
+    all_weekly_metrics_files = glob(org + "/WEEKLY-REPORT-*.json")
+    all_monthly_metrics_files = glob(org + "/WEEKLY-REPORT-*.json")
+
+    all_weekly_metrics_files.sort()  # Important to sort by date in increasing order
 
     orgname = org.split("/")[-1]
 
@@ -41,7 +43,7 @@ for org in ALL_ORGS:
     timeseries['stargazers'] = []
     timeseries['watchers'] = []
 
-    for file in all_metrics_files:
+    for file in all_weekly_metrics_files:
         data = json.load(open(file))
         # try/except because the data format changed for weekly reports
         try:
@@ -91,21 +93,39 @@ for org in ALL_ORGS:
     """
     Create Binary Tree map for breakdowns
     """
-    latest_report = json.load(open(all_metrics_files[-1]))
-    for metric in latest_report["data"]:
+    latest_weekly_report = json.load(open(all_weekly_metrics_files[-1]))
+    for metric in latest_weekly_report["data"]:
         treemap = pygal.Treemap()
 
         treemap.title = util.get_metrics_name(metric)
 
         # Add blocks in decreasing order of their count
-        items = list(latest_report["data"][metric]["diff_breakdown"].items())
+        items = list(latest_weekly_report["data"][metric]["diff_breakdown"].items())
         items.sort(key=operator.itemgetter(1), reverse=True)
 
         if len(items):
             for item, value in items:
                 if value > 0:
                     treemap.add(item, [value])
-            file_path = "{}/{}/treemap_{}.svg".format(PATH_TO_GRAPHS, orgname, metric)
+            file_path = "{}/{}/treemap_weekly_{}.svg".format(PATH_TO_GRAPHS, orgname, metric)
+            os.makedirs("{}/{}".format(PATH_TO_GRAPHS, orgname), exist_ok=True)
+            treemap.render_to_file(file_path)
+
+    latest_monthly_report = json.load(open(all_weekly_metrics_files[-1]))
+    for metric in latest_monthly_report["data"]:
+        treemap = pygal.Treemap()
+
+        treemap.title = util.get_metrics_name(metric)
+
+        # Add blocks in decreasing order of their count
+        items = list(latest_monthly_report["data"][metric]["diff_breakdown"].items())
+        items.sort(key=operator.itemgetter(1), reverse=True)
+
+        if len(items):
+            for item, value in items:
+                if value > 0:
+                    treemap.add(item, [value])
+            file_path = "{}/{}/treemap_monthly_{}.svg".format(PATH_TO_GRAPHS, orgname, metric)
             os.makedirs("{}/{}".format(PATH_TO_GRAPHS, orgname), exist_ok=True)
             treemap.render_to_file(file_path)
 

@@ -161,7 +161,7 @@ def add_graphs(post_text, REPORT_JSON, ID):
     """
     org = REPORT_JSON["name"]
     # Treemap graphs
-    all_treemap_graphs = glob(PATH_TO_GRAPHS + "/" + org + "/treemap_*.svg")
+    all_treemap_graphs = glob(PATH_TO_GRAPHS + "/" + org + f"/treemap_{ID.lower()}_*.svg")
     post_text += '<div class="graph-container">\n'
     post_text += '<br>\n<h4>Binary Treemap graphs</h4>\n'
     post_text += '<div class="row">\n'
@@ -240,6 +240,7 @@ def _create_post(REPORT_JSON, latest=False, is_project=True):
             data_source = 'site.data["{owner_in_data}"]["{reportID}"]["data"]'
             post_text = add_table_of_metrics(MONTHLY_ORG_POST, REPORT_JSON, data_source, 'MONTHLY', add_breakdown=True)
             post_text = add_highlights(post_text, REPORT_JSON, 'MONTHLY')
+            post_text = add_graphs(post_text, REPORT_JSON, 'MONTHLY')
         post_text = post_text.format(
             version=MONTHLY_METRICS_VERSION,
             owner=org,
