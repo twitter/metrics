@@ -88,8 +88,7 @@ def add_table_of_metrics(post_text, REPORT_JSON, data_source, ID, add_breakdown=
             <th>Metric</th>
             <th>Latest</th>
             <th>Previous</th>
-            <th>+/-</th>
-            <th></th>
+            <th colspan="2" style="text-align: center;">Difference</th>
         </tr>
         </thead>
         <tbody>
