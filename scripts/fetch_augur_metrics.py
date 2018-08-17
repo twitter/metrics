@@ -65,43 +65,49 @@ This API endpoint gives a timeseries of new watchers in a date range.
 Not to be confused with actual number of watchers.
 Ref https://github.com/OSSHealth/augur/issues/152
 """
-path_to_metrics_dir = f"{PATH_TO_METADATA}/augur/timeseries_new_watchers"
-for org in PROJECTS_TRACKED['projects']:
-    for repo in PROJECTS_TRACKED['projects'][org]:
-        dir_name = f"{path_to_metrics_dir}/{org}/{repo}"
-        file_name = f"{dir_name}/data.json"
-        os.makedirs(dir_name, exist_ok=True)
+"""
+Old code leaved here for later reference
 
-        print(f"Sending request to {API_ENDPOINT}/{org}/{repo}/timeseries/watchers")
-        r = requests.get(f"{API_ENDPOINT}/{org}/{repo}/timeseries/watchers")
-        try:
-            if r.ok:
-                print("OK!")
-                data = r.json()[:-1] # Last metric is not valid
+New idea: use the endpoint to get aggregate new_watchers per year or something else
+"""
 
-                # Manipulation
-                new_watchers_timeseries = []
+# path_to_metrics_dir = f"{PATH_TO_METADATA}/augur/new_watchers.json"
+# for org in PROJECTS_TRACKED['projects']:
+#     for repo in PROJECTS_TRACKED['projects'][org]:
+#         dir_name = f"{path_to_metrics_dir}/{org}/{repo}"
+#         file_name = f"{dir_name}/data.json"
+#         os.makedirs(dir_name, exist_ok=True)
 
-                for i in range(1, len(data)):
-                    old = data[i]
-                    new = data[i - 1]
-                    new_date = datetime.datetime.strptime(new["date"].split("T")[0], "%Y-%m-%d")
-                    old_date = datetime.datetime.strptime(old["date"].split("T")[0], "%Y-%m-%d")
+#         print(f"Sending request to {API_ENDPOINT}/{org}/{repo}/timeseries/watchers")
+#         r = requests.get(f"{API_ENDPOINT}/{org}/{repo}/timeseries/watchers")
+#         try:
+#             if r.ok:
+#                 print("OK!")
+#                 data = r.json()[:-1] # Last metric is not valid
 
-                    diff_days = (new_date - old_date).days
-                    number = new["watchers"]
+#                 # Manipulation
+#                 new_watchers_timeseries = []
 
-                    count_per_week = round(number/diff_days * 7, 2)
-                    count_per_month = round(number/diff_days * 30, 2)
+#                 for i in range(1, len(data)):
+#                     old = data[i]
+#                     new = data[i - 1]
+#                     new_date = datetime.datetime.strptime(new["date"].split("T")[0], "%Y-%m-%d")
+#                     old_date = datetime.datetime.strptime(old["date"].split("T")[0], "%Y-%m-%d")
 
-                    new_watchers_timeseries.append({"date": new_date.strftime("%Y-%m-%d"),
-                                                    "count_per_week": count_per_week,
-                                                    "count_per_month": count_per_month})
-                with open(file_name, "w+") as f:
-                    json.dump(new_watchers_timeseries, f)
-            else:
-                print(f"Error! Response code {r.status_code}")
-                print(r.content.decode("utf-8"))
-        except Exception as e:
-            raise(e)
-            print(f"Error: Something went wrong with /:owner/:repo/timeseries/watchers - {e}")
+#                     diff_days = (new_date - old_date).days
+#                     number = new["watchers"]
+
+#                     count_per_week = round(number/diff_days * 7, 2)
+#                     count_per_month = round(number/diff_days * 30, 2)
+
+#                     new_watchers_timeseries.append({"date": new_date.strftime("%Y-%m-%d"),
+#                                                     "count_per_week": count_per_week,
+#                                                     "count_per_month": count_per_month})
+#                 with open(file_name, "w+") as f:
+#                     json.dump(new_watchers_timeseries, f)
+#             else:
+#                 print(f"Error! Response code {r.status_code}")
+#                 print(r.content.decode("utf-8"))
+#         except Exception as e:
+#             raise(e)
+#             print(f"Error: Something went wrong with /:owner/:repo/timeseries/watchers - {e}")
