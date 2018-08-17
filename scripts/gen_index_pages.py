@@ -30,7 +30,7 @@ repos_tracked = PROJECTS_TRACKED['projects']
 list_of_orgs = ''
 list_of_orgs += '\t' + '<ul>' + '\n'
 for org in orgs_tracked:
-    list_of_orgs += '\t\t' + f'<li><a href="/metrics/{org}/WEEKLY">{org}</a></li>' + '\n'
+    list_of_orgs += '\t\t' + f'<li><a href="/metrics/{org}/MONTHLY">{org}</a></li>' + '\n'
 list_of_orgs += '\t' + '</ul>' + '<br>\n'
 
 # Show twitter projects first
@@ -44,7 +44,7 @@ for org in orgs_list:
     list_of_projects += '\t\t' + '<li>' + org + '\n'
     list_of_projects += '\t\t\t' + '<ul>' + '\n'
     for project in sorted(PROJECTS_TRACKED['projects'][org]):
-        list_of_projects += '\t\t\t\t' + '<li>' + f'<a href="/metrics/{org}/{project}/WEEKLY">{project}</a>' + '</li>' + '\n'
+        list_of_projects += '\t\t\t\t' + '<li>' + f'<a href="/metrics/{org}/{project}/MONTHLY">{project}</a>' + '</li>' + '\n'
     list_of_projects += '\t\t\t' + '</ul>' + '\n'
     list_of_projects += '\t\t' + '</li>' + '\n'
 list_of_projects += '\t' + '</ul>' + '\n'
