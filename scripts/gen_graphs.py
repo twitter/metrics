@@ -175,48 +175,48 @@ for org in ALL_ORGS:
             treemap.render_to_file(file_path)
 
 
-"""
-Timeseries of new watchers
-PROJECT - WEEKLY and PROJECT - MONTHLY
-"""
-path_to_dir = f"{PATH_TO_METADATA}/augur/timeseries_new_watchers"
-for org in PROJECTS_TRACKED["projects"]:
-    for repo in PROJECTS_TRACKED["projects"][org]:
-        data_file_path = f"{path_to_dir}/{org}/{repo}/data.json"
-        graph_dir_path = f"{PATH_TO_GRAPHS}/{org}/{repo}"
-        os.makedirs(graph_dir_path, exist_ok=True)
+# """
+# Timeseries of new watchers
+# PROJECT - WEEKLY and PROJECT - MONTHLY
+# """
+# path_to_dir = f"{PATH_TO_METADATA}/augur/timeseries_new_watchers"
+# for org in PROJECTS_TRACKED["projects"]:
+#     for repo in PROJECTS_TRACKED["projects"][org]:
+#         data_file_path = f"{path_to_dir}/{org}/{repo}/data.json"
+#         graph_dir_path = f"{PATH_TO_GRAPHS}/{org}/{repo}"
+#         os.makedirs(graph_dir_path, exist_ok=True)
 
-        graph_file_path_per_week = f"{graph_dir_path}/timeseries_new_watchers_per_week.svg"
-        graph_file_path_per_month = f"{graph_dir_path}/timeseries_new_watchers_per_month.svg"
+#         graph_file_path_per_week = f"{graph_dir_path}/timeseries_new_watchers_per_week.svg"
+#         graph_file_path_per_month = f"{graph_dir_path}/timeseries_new_watchers_per_month.svg"
 
 
-        try:
-            with open(data_file_path) as f:
-                timeseries_new_watchers = json.load(f)
-        except Exception as e:
-            print(f"Got exception while opening {data_file_path} : {e}")
-            continue
+#         try:
+#             with open(data_file_path) as f:
+#                 timeseries_new_watchers = json.load(f)
+#         except Exception as e:
+#             print(f"Got exception while opening {data_file_path} : {e}")
+#             continue
 
-        print(f"Creating timeseries of new watchers for {org}/{repo}")
+#         print(f"Creating timeseries of new watchers for {org}/{repo}")
 
-        data_dateline_per_week = []
-        data_dateline_per_month = []
-        for item in timeseries_new_watchers:
-            date_obj = datetime.datetime.strptime(item["date"], "%Y-%m-%d")
+#         data_dateline_per_week = []
+#         data_dateline_per_month = []
+#         for item in timeseries_new_watchers:
+#             date_obj = datetime.datetime.strptime(item["date"], "%Y-%m-%d")
 
-            count_per_week = item["count_per_week"]
-            data_dateline_per_week.append((date_obj, count_per_week))
+#             count_per_week = item["count_per_week"]
+#             data_dateline_per_week.append((date_obj, count_per_week))
 
-            count_per_month = item["count_per_month"]
-            data_dateline_per_month.append((date_obj, count_per_month))
+#             count_per_month = item["count_per_month"]
+#             data_dateline_per_month.append((date_obj, count_per_month))
 
-        try:
-            dateline_per_week = create_dateline(data_dateline_per_week, "Rate of new Watchers per week", as_title=True)
-            dateline_per_week.render_to_file(graph_file_path_per_week)
+#         try:
+#             dateline_per_week = create_dateline(data_dateline_per_week, "Rate of new Watchers per week", as_title=True)
+#             dateline_per_week.render_to_file(graph_file_path_per_week)
 
-            dateline_per_month = create_dateline(data_dateline_per_month, "Rate of new Watchers per month", as_title=True)
-            dateline_per_month.render_to_file(graph_file_path_per_month)
-        except Exception as e:
-            print(f"Error in {org}/{repo} - {e}")
-            print(data_dateline_per_week)
-            print(data_dateline_per_month)
+#             dateline_per_month = create_dateline(data_dateline_per_month, "Rate of new Watchers per month", as_title=True)
+#             dateline_per_month.render_to_file(graph_file_path_per_month)
+#         except Exception as e:
+#             print(f"Error in {org}/{repo} - {e}")
+#             print(data_dateline_per_week)
+#             print(data_dateline_per_month)
