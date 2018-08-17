@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Use Python 3
+echo "Use Python 3"
 python scripts/fetch_all_metrics.py
 python scripts/fetch_augur_metrics.py
 python scripts/gen_reports.py
