@@ -162,18 +162,18 @@ def add_augur_metrics(post_text, REPORT_JSON, AUGUR_METRICS, ID, is_project=Fals
         """)
 
         graph_text = ""
-        """
-        Timeseries of new watchers
-        """
-        if ID == 'WEEKLY':
-            graph_path = f"{PATH_TO_GRAPHS}/{nameWithOwner}/timeseries_new_watchers_per_week.svg"
-        elif ID == 'MONTHLY':
-            graph_path = f"{PATH_TO_GRAPHS}/{nameWithOwner}/timeseries_new_watchers_per_month.svg"
+        # """
+        # Timeseries of new watchers
+        # """
+        # if ID == 'WEEKLY':
+        #     graph_path = f"{PATH_TO_GRAPHS}/{nameWithOwner}/timeseries_new_watchers_per_week.svg"
+        # elif ID == 'MONTHLY':
+        #     graph_path = f"{PATH_TO_GRAPHS}/{nameWithOwner}/timeseries_new_watchers_per_month.svg"
 
-        if os.path.exists(graph_path):
-            graph_text += f'\t<object class="cell" type="image/svg+xml" data="/metrics/{graph_path}">\n'
-            graph_text += '\t\tYour browser does not support SVG\n'
-            graph_text += '\t</object>\n'
+        # if os.path.exists(graph_path):
+        #     graph_text += f'\t<object class="cell" type="image/svg+xml" data="/metrics/{graph_path}">\n'
+        #     graph_text += '\t\tYour browser does not support SVG\n'
+        #     graph_text += '\t</object>\n'
 
         # Add more chaoss graphs here
 
