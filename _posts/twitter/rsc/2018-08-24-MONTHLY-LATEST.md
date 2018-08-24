@@ -1,0 +1,124 @@
+---
+layout: monthly-metrics-v0.1
+title: Metrics report for twitter/rsc | MONTHLY-REPORT-2018-08-24 | 2018-08-24
+permalink: /twitter/rsc/MONTHLY/
+
+owner: twitter
+repo: rsc
+reportID: MONTHLY-REPORT-2018-08-24
+datestampThisMonth: 2018-08-24
+datestampLastMonth: 2018-07-27
+---
+
+
+<table class="table table-condensed" style="border-collapse:collapse;">
+    <thead>
+    <tr>
+        <th>Metric</th>
+        <th>Latest</th>
+        <th>Previous</th>
+        <th colspan="2" style="text-align: center;">Difference</th>
+    </tr>
+    </thead>
+    <tbody>
+
+        <tr data-toggle="collapse" data-target="#col-commits" class="accordion-toggle" style="cursor: pointer;">
+            <td>Commits</td>
+            <td>294</td>
+            <td>217</td>
+            <td style="color: #45c527" >77</td>
+            <td style="color: #45c527" >35.48%</td>
+        </tr>
+        
+        <tr data-toggle="collapse" data-target="#col-issues" class="accordion-toggle" style="cursor: pointer;">
+            <td>Issues</td>
+            <td>127</td>
+            <td>95</td>
+            <td style="color: #45c527" >32</td>
+            <td style="color: #45c527" >33.68%</td>
+        </tr>
+        
+        <tr data-toggle="collapse" data-target="#col-openIssues" class="accordion-toggle" style="cursor: pointer;">
+            <td>Open Issues</td>
+            <td>39</td>
+            <td>30</td>
+            <td style="color: #d31c08" >9</td>
+            <td style="color: #d31c08" >30.0%</td>
+        </tr>
+        
+        <tr data-toggle="collapse" data-target="#col-closedIssues" class="accordion-toggle" style="cursor: pointer;">
+            <td>Closed Issues</td>
+            <td>88</td>
+            <td>65</td>
+            <td style="color: #45c527" >23</td>
+            <td style="color: #45c527" >35.38%</td>
+        </tr>
+        
+        <tr data-toggle="collapse" data-target="#col-pullRequests" class="accordion-toggle" style="cursor: pointer;">
+            <td>Pull Requests</td>
+            <td>75</td>
+            <td>62</td>
+            <td style="color: #45c527" >13</td>
+            <td style="color: #45c527" >20.97%</td>
+        </tr>
+        
+        <tr data-toggle="collapse" data-target="#col-openPullRequests" class="accordion-toggle" style="cursor: pointer;">
+            <td>Open Pull Requests</td>
+            <td>0</td>
+            <td>0</td>
+            <td style="color: #45c527" >0</td>
+            <td style="color: #45c527" >0.0%</td>
+        </tr>
+        
+        <tr data-toggle="collapse" data-target="#col-mergedPullRequests" class="accordion-toggle" style="cursor: pointer;">
+            <td>Merged Pull Requests</td>
+            <td>68</td>
+            <td>55</td>
+            <td style="color: #45c527" >13</td>
+            <td style="color: #45c527" >23.64%</td>
+        </tr>
+        
+        <tr data-toggle="collapse" data-target="#col-closedPullRequests" class="accordion-toggle" style="cursor: pointer;">
+            <td>Closed Pull Requests</td>
+            <td>7</td>
+            <td>7</td>
+            <td style="color: #45c527" >0</td>
+            <td style="color: #45c527" >0.0%</td>
+        </tr>
+        
+        <tr data-toggle="collapse" data-target="#col-forkCount" class="accordion-toggle" style="cursor: pointer;">
+            <td>Forks</td>
+            <td>28</td>
+            <td>28</td>
+            <td style="color: #45c527" >0</td>
+            <td style="color: #45c527" >0.0%</td>
+        </tr>
+        
+        <tr data-toggle="collapse" data-target="#col-stargazers" class="accordion-toggle" style="cursor: pointer;">
+            <td>Stars</td>
+            <td>1,148</td>
+            <td>1,140</td>
+            <td style="color: #45c527" >8</td>
+            <td style="color: #45c527" >0.7%</td>
+        </tr>
+        
+        <tr data-toggle="collapse" data-target="#col-watchers" class="accordion-toggle" style="cursor: pointer;">
+            <td>Watchers</td>
+            <td>124</td>
+            <td>126</td>
+            <td style="color: #d31c08" >-2</td>
+            <td style="color: #d31c08" >-1.59%</td>
+        </tr>
+        
+    </tbody>
+</table>
+<br>
+<h4><a target="_blank" href="https://chaoss.community/">CHAOSS</a> Metrics</h4>
+
+<table class="table table-condensed" style="border-collapse:collapse;">
+    <tbody>
+        <td>Bus Factor</td>
+        <td>Best: 5</td>
+        <td>Worst: 2</td>
+    </tbody>
+</table>
