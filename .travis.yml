@@ -25,6 +25,7 @@ deploy:
   github-token: $OAUTH_TOKEN
   keep-history: true
   verbose: true
+  target-branch: gh-pages
   on:
     branch: gh-pages
     condition: $TRAVIS_EVENT_TYPE = "cron"
