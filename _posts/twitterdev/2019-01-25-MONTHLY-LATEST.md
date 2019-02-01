@@ -34,23 +34,26 @@ datestampLastMonth: 2018-12-21
             <a target="_blank" href="/metrics/twitterdev/SnowBotDev/MONTHLY">SnowBotDev : 1</a><br></div> </td>
         <tr data-toggle="collapse" data-target="#col-issues" class="accordion-toggle" style="cursor: pointer;">
             <td>Issues</td>
+            <td>257</td>
             <td>256</td>
-            <td>256</td>
+            <td style="color: #45c527" >1</td>
+            <td style="color: #45c527" >0.39%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-issues">
+            <a target="_blank" href="/metrics/twitterdev/search-tweets-python/MONTHLY">search-tweets-python : 1</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-openIssues" class="accordion-toggle" style="cursor: pointer;">
+            <td>Open Issues</td>
+            <td>95</td>
+            <td>95</td>
             <td style="color: #45c527" >0</td>
             <td style="color: #45c527" >0.0%</td>
         </tr>
         
-        <tr data-toggle="collapse" data-target="#col-openIssues" class="accordion-toggle" style="cursor: pointer;">
-            <td>Open Issues</td>
-            <td>94</td>
-            <td>95</td>
-            <td style="color: #45c527" >-1</td>
-            <td style="color: #45c527" >-1.05%</td>
-        </tr>
-        
             <td class="hiddenRow" colspan="2"></td>
             <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-openIssues">
-            <a target="_blank" href="/metrics/twitterdev/twitter-python-ads-sdk/MONTHLY">twitter-python-ads-sdk : -1</a><br></div> </td>
+            <a target="_blank" href="/metrics/twitterdev/search-tweets-python/MONTHLY">search-tweets-python : 1</a><br><a target="_blank" href="/metrics/twitterdev/twitter-python-ads-sdk/MONTHLY">twitter-python-ads-sdk : -1</a><br></div> </td>
         <tr data-toggle="collapse" data-target="#col-closedIssues" class="accordion-toggle" style="cursor: pointer;">
             <td>Closed Issues</td>
             <td>162</td>
@@ -105,26 +108,26 @@ datestampLastMonth: 2018-12-21
             <a target="_blank" href="/metrics/twitterdev/twitter-python-ads-sdk/MONTHLY">twitter-python-ads-sdk : 1</a><br></div> </td>
         <tr data-toggle="collapse" data-target="#col-forkCount" class="accordion-toggle" style="cursor: pointer;">
             <td>Forks</td>
-            <td>918</td>
-            <td>899</td>
-            <td style="color: #45c527" >19</td>
-            <td style="color: #45c527" >2.11%</td>
+            <td>920</td>
+            <td>904</td>
+            <td style="color: #45c527" >16</td>
+            <td style="color: #45c527" >1.77%</td>
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>
             <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-forkCount">
-            <a target="_blank" href="/metrics/twitterdev/search-tweets-python/MONTHLY">search-tweets-python : 5</a><br><a target="_blank" href="/metrics/twitterdev/account-activity-dashboard/MONTHLY">account-activity-dashboard : 3</a><br><a target="_blank" href="/metrics/twitterdev/twitter-ruby-ads-sdk/MONTHLY">twitter-ruby-ads-sdk : 2</a><br><a target="_blank" href="/metrics/twitterdev/Gnip-Trend-Detection/MONTHLY">Gnip-Trend-Detection : 2</a><br><a target="_blank" href="/metrics/twitterdev/web-recipes/MONTHLY">web-recipes : 1</a><br><a target="_blank" href="/metrics/twitterdev/Gnip-Analysis-Pipeline/MONTHLY">Gnip-Analysis-Pipeline : 1</a><br><a target="_blank" href="/metrics/twitterdev/SnowBotDev/MONTHLY">SnowBotDev : 1</a><br><a target="_blank" href="/metrics/twitterdev/live-event-android/MONTHLY">live-event-android : 1</a><br><a target="_blank" href="/metrics/twitterdev/TwitterKitSample/MONTHLY">TwitterKitSample : 1</a><br><a target="_blank" href="/metrics/twitterdev/Gnip-Stream-Collector-Metrics/MONTHLY">Gnip-Stream-Collector-Metrics : 1</a><br><a target="_blank" href="/metrics/twitterdev/tweet_parser/MONTHLY">tweet_parser : 1</a><br><a target="_blank" href="/metrics/twitterdev/twitter-python-ads-sdk/MONTHLY">twitter-python-ads-sdk : 1</a><br><a target="_blank" href="/metrics/twitterdev/sample-angular-node/MONTHLY">sample-angular-node : -1</a><br></div> </td>
+            <a target="_blank" href="/metrics/twitterdev/search-tweets-python/MONTHLY">search-tweets-python : 4</a><br><a target="_blank" href="/metrics/twitterdev/twitter-ruby-ads-sdk/MONTHLY">twitter-ruby-ads-sdk : 2</a><br><a target="_blank" href="/metrics/twitterdev/account-activity-dashboard/MONTHLY">account-activity-dashboard : 2</a><br><a target="_blank" href="/metrics/twitterdev/web-recipes/MONTHLY">web-recipes : 1</a><br><a target="_blank" href="/metrics/twitterdev/SnowBotDev/MONTHLY">SnowBotDev : 1</a><br><a target="_blank" href="/metrics/twitterdev/live-event-android/MONTHLY">live-event-android : 1</a><br><a target="_blank" href="/metrics/twitterdev/TwitterKitSample/MONTHLY">TwitterKitSample : 1</a><br><a target="_blank" href="/metrics/twitterdev/Gnip-Stream-Collector-Metrics/MONTHLY">Gnip-Stream-Collector-Metrics : 1</a><br><a target="_blank" href="/metrics/twitterdev/tweet_parser/MONTHLY">tweet_parser : 1</a><br><a target="_blank" href="/metrics/twitterdev/do_more_with_twitter_data/MONTHLY">do_more_with_twitter_data : 1</a><br><a target="_blank" href="/metrics/twitterdev/ads-platform-tools/MONTHLY">ads-platform-tools : 1</a><br><a target="_blank" href="/metrics/twitterdev/Gnip-Trend-Detection/MONTHLY">Gnip-Trend-Detection : 1</a><br><a target="_blank" href="/metrics/twitterdev/user-matching-campaign/MONTHLY">user-matching-campaign : 1</a><br><a target="_blank" href="/metrics/twitterdev/ruby-app-tweetmap/MONTHLY">ruby-app-tweetmap : -1</a><br><a target="_blank" href="/metrics/twitterdev/sample-angular-node/MONTHLY">sample-angular-node : -1</a><br></div> </td>
         <tr data-toggle="collapse" data-target="#col-stargazers" class="accordion-toggle" style="cursor: pointer;">
             <td>Stars</td>
-            <td>1,697</td>
-            <td>1,665</td>
-            <td style="color: #45c527" >32</td>
-            <td style="color: #45c527" >1.92%</td>
+            <td>1,704</td>
+            <td>1,669</td>
+            <td style="color: #45c527" >35</td>
+            <td style="color: #45c527" >2.1%</td>
         </tr>
         
             <td class="hiddenRow" colspan="2"></td>
             <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-stargazers">
-            <a target="_blank" href="/metrics/twitterdev/search-tweets-python/MONTHLY">search-tweets-python : 8</a><br><a target="_blank" href="/metrics/twitterdev/account-activity-dashboard/MONTHLY">account-activity-dashboard : 4</a><br><a target="_blank" href="/metrics/twitterdev/tweet_parser/MONTHLY">tweet_parser : 4</a><br><a target="_blank" href="/metrics/twitterdev/twitter-ruby-ads-sdk/MONTHLY">twitter-ruby-ads-sdk : 2</a><br><a target="_blank" href="/metrics/twitterdev/SnowBotDev/MONTHLY">SnowBotDev : 2</a><br><a target="_blank" href="/metrics/twitterdev/twitter-webhook-boilerplate-node/MONTHLY">twitter-webhook-boilerplate-node : 2</a><br><a target="_blank" href="/metrics/twitterdev/do_more_with_twitter_data/MONTHLY">do_more_with_twitter_data : 2</a><br><a target="_blank" href="/metrics/twitterdev/Gnip-Trend-Detection/MONTHLY">Gnip-Trend-Detection : 2</a><br><a target="_blank" href="/metrics/twitterdev/Gnip-Insights-Interface/MONTHLY">Gnip-Insights-Interface : 1</a><br><a target="_blank" href="/metrics/twitterdev/Data-Science-45min-Intros/MONTHLY">Data-Science-45min-Intros : 1</a><br><a target="_blank" href="/metrics/twitterdev/Gnip-Stream-Collector-Metrics/MONTHLY">Gnip-Stream-Collector-Metrics : 1</a><br><a target="_blank" href="/metrics/twitterdev/twitter-python-ads-sdk/MONTHLY">twitter-python-ads-sdk : 1</a><br><a target="_blank" href="/metrics/twitterdev/large-video-upload-python/MONTHLY">large-video-upload-python : 1</a><br><a target="_blank" href="/metrics/twitterdev/ads-platform-tools/MONTHLY">ads-platform-tools : 1</a><br><a target="_blank" href="/metrics/twitterdev/django-rest-apis/MONTHLY">django-rest-apis : 1</a><br><a target="_blank" href="/metrics/twitterdev/tweet-search/MONTHLY">tweet-search : -1</a><br></div> </td>
+            <a target="_blank" href="/metrics/twitterdev/search-tweets-python/MONTHLY">search-tweets-python : 10</a><br><a target="_blank" href="/metrics/twitterdev/account-activity-dashboard/MONTHLY">account-activity-dashboard : 5</a><br><a target="_blank" href="/metrics/twitterdev/tweet_parser/MONTHLY">tweet_parser : 4</a><br><a target="_blank" href="/metrics/twitterdev/do_more_with_twitter_data/MONTHLY">do_more_with_twitter_data : 3</a><br><a target="_blank" href="/metrics/twitterdev/twitter-ruby-ads-sdk/MONTHLY">twitter-ruby-ads-sdk : 2</a><br><a target="_blank" href="/metrics/twitterdev/SnowBotDev/MONTHLY">SnowBotDev : 2</a><br><a target="_blank" href="/metrics/twitterdev/Data-Science-45min-Intros/MONTHLY">Data-Science-45min-Intros : 2</a><br><a target="_blank" href="/metrics/twitterdev/twitter-webhook-boilerplate-node/MONTHLY">twitter-webhook-boilerplate-node : 2</a><br><a target="_blank" href="/metrics/twitterdev/large-video-upload-python/MONTHLY">large-video-upload-python : 2</a><br><a target="_blank" href="/metrics/twitterdev/Gnip-Trend-Detection/MONTHLY">Gnip-Trend-Detection : 2</a><br><a target="_blank" href="/metrics/twitterdev/Gnip-Insights-Interface/MONTHLY">Gnip-Insights-Interface : 1</a><br><a target="_blank" href="/metrics/twitterdev/Gnip-Stream-Collector-Metrics/MONTHLY">Gnip-Stream-Collector-Metrics : 1</a><br><a target="_blank" href="/metrics/twitterdev/ads-platform-tools/MONTHLY">ads-platform-tools : 1</a><br><a target="_blank" href="/metrics/twitterdev/sample-angular-node/MONTHLY">sample-angular-node : -1</a><br><a target="_blank" href="/metrics/twitterdev/tweet-search/MONTHLY">tweet-search : -1</a><br></div> </td>
         <tr data-toggle="collapse" data-target="#col-watchers" class="accordion-toggle" style="cursor: pointer;">
             <td>Watchers</td>
             <td>944</td>
