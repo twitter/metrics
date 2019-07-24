@@ -4,3 +4,4 @@ _site/
 .jekyll-metadata
 __pycache__
 .DS_Store
+.idea/
