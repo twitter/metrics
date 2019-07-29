@@ -27,6 +27,12 @@ This repository is integrated with Travis. A [Travis Cron Job](https://docs.trav
   - Creates one JSON file for each repository with format `METRICS-YYYY-MM-DD.json`
   - Saves the file inside `_data/<owner>/<repo>/`
 
+- `python scripts/fetch_year_in_review.py`
+
+  - Hits aggregate_summary endpoint (http://apidocs.newtwitter.augurlabs.io/#api-Experimental-aggregate_summary_repo_group)
+  - Creates one JSON file that includes the metrics from the endpoint (watchers, stars, counts, merged PRs, committers,           commits)
+  - Saves the file inside `_metadata/augur/`
+  
 - `python scripts/gen_weekly_report.py`
   
   - Iterates over every project listed inside `_data`
