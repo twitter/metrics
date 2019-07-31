@@ -1,722 +1,708 @@
 {
-  "twitter/finagle": [
+  "finagle": [
     {
       "repo_id": 26101,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/ios-twitter-network-layer": [
+  "ios-twitter-network-layer": [
   ],
-  "twitter/hdfs-du": [
+  "hdfs-du": [
     {
       "repo_id": 26124,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/twemcache": [
+  "twemcache": [
     {
       "repo_id": 26121,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/hadoop-lzo": [
+  "hadoop-lzo": [
     {
       "repo_id": 26132,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/GraphJet": [
+  "GraphJet": [
     {
       "repo_id": 26176,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/vireo": [
+  "vireo": [
     {
       "repo_id": 26178,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/cassovary": [
+  "cassovary": [
     {
       "repo_id": 26113,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/twemproxy": [
+  "twemproxy": [
     {
       "repo_id": 26114,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/diffy": [
+  "diffy": [
     {
       "repo_id": 26164,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/CocoaSPDY": [
+  "CocoaSPDY": [
     {
       "repo_id": 26148,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/thrift_client": [
+  "thrift_client": [
     {
       "repo_id": 26133,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/bijection": [
+  "bijection": [
     {
       "repo_id": 26135,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/repo-scaffolding": [
+  "repo-scaffolding": [
   ],
-  "twitter/gatekeeper-service": [
+  "gatekeeper-service": [
   ],
-  "twitter/torch-dataset": [
+  "torch-dataset": [
     {
       "repo_id": 26171,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/hpack": [
+  "hpack": [
     {
       "repo_id": 26149,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/pelikan": [
+  "pelikan": [
     {
       "repo_id": 26166,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/groupcache": [
+  "groupcache": [
   ],
-  "twitter/twemoji": [
+  "twemoji": [
     {
       "repo_id": 26131,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/finatra-activator-thrift-seed": [
+  "finatra-activator-thrift-seed": [
     {
       "repo_id": 26177,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/fatcache": [
+  "fatcache": [
     {
       "repo_id": 26136,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/spitball": [
+  "spitball": [
     {
       "repo_id": 26098,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/dodo": [
+  "dodo": [
     {
       "repo_id": 26180,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/Serial": [
+  "Serial": [
     {
       "repo_id": 26188,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/recess": [
+  "recess": [
     {
       "repo_id": 26117,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/sqrl": [
+  "sqrl": [
   ],
-  "twitter/iago": [
+  "iago": [
     {
       "repo_id": 26120,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/util": [
+  "util": [
     {
       "repo_id": 26106,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/d3kit": [
+  "d3kit": [
     {
       "repo_id": 26155,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/zktraffic": [
+  "zktraffic": [
     {
       "repo_id": 26153,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/scala_school2": [
+  "scala_school2": [
     {
       "repo_id": 26143,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/joauth": [
+  "joauth": [
     {
       "repo_id": 26102,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/twitter-cldr-js": [
+  "twitter-cldr-js": [
     {
       "repo_id": 26122,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/curation-style-guide": [
+  "curation-style-guide": [
   ],
-  "twitter/rsc": [
+  "rsc": [
     {
       "repo_id": 26189,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/cdk": [
+  "cdk": [
     {
       "repo_id": 26145,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/scala-json": [
+  "scala-json": [
     {
       "repo_id": 26201,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/ambrose": [
+  "ambrose": [
     {
       "repo_id": 26118,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/commons": [
+  "commons": [
     {
       "repo_id": 26104,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/sslconfig": [
+  "sslconfig": [
     {
       "repo_id": 26157,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/code-of-conduct": [
+  "code-of-conduct": [
     {
       "repo_id": 26146,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/activerecord-reputation-system": [
+  "activerecord-reputation-system": [
     {
       "repo_id": 26119,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/twitter-cldr-rb": [
+  "twitter-cldr-rb": [
     {
       "repo_id": 26115,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/torch-twrl": [
+  "torch-twrl": [
     {
       "repo_id": 26183,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/whiskey": [
+  "whiskey": [
     {
       "repo_id": 26160,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/twemoji-parser": [
+  "twemoji-parser": [
   ],
-  "twitter/storehaus": [
+  "storehaus": [
     {
       "repo_id": 26137,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/ios-twitter-image-pipeline": [
+  "ios-twitter-image-pipeline": [
     {
       "repo_id": 26185,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/plumage.js": [
+  "plumage.js": [
     {
       "repo_id": 26152,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/second-control-probability-distributions": [
+  "second-control-probability-distributions": [
     {
       "repo_id": 26134,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/twitter-server": [
+  "twitter-server": [
     {
       "repo_id": 26140,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/go-bindata": [
+  "go-bindata": [
     {
       "repo_id": 26193,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/twitter-korean-text": [
+  "twitter-korean-text": [
     {
       "repo_id": 26197,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/summingbird": [
+  "summingbird": [
     {
       "repo_id": 26127,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/wordpress": [
+  "wordpress": [
     {
       "repo_id": 26195,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/twitter-text": [
+  "twitter-text": [
     {
       "repo_id": 26199,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/cli-guide.js": [
+  "cli-guide.js": [
     {
       "repo_id": 26161,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/gpl-commitment": [
+  "gpl-commitment": [
   ],
-  "twitter/pants": [
-    {
-      "repo_id": 26156,
-      "repo_group_id": 25155,
-      "rg_name": "Twitter"
-    }
-  ],
-  "twitter/tormenta": [
+  "tormenta": [
     {
       "repo_id": 26126,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/ccommon": [
+  "ccommon": [
     {
       "repo_id": 26167,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/css-flip": [
+  "css-flip": [
     {
       "repo_id": 26150,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/twitter.github.io": [
+  "twitter.github.io": [
   ],
-  "twitter/torch-decisiontree": [
+  "torch-decisiontree": [
     {
       "repo_id": 26186,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/pycascading": [
+  "pycascading": [
     {
       "repo_id": 26108,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/ostrich": [
+  "ostrich": [
     {
       "repo_id": 26099,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/nodes": [
+  "nodes": [
     {
       "repo_id": 26182,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/sekhmet": [
+  "sekhmet": [
     {
       "repo_id": 26194,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/caladrius": [
+  "caladrius": [
   ],
-  "twitter/BreakoutDetection": [
+  "BreakoutDetection": [
     {
       "repo_id": 26196,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/ossdecks": [
+  "ossdecks": [
     {
       "repo_id": 26191,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/scala_school": [
+  "scala_school": [
     {
       "repo_id": 26100,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/chill": [
+  "chill": [
     {
       "repo_id": 26128,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/hbc": [
+  "hbc": [
     {
       "repo_id": 26138,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/analytics-infra-governance": [
+  "analytics-infra-governance": [
     {
       "repo_id": 26181,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/torch-ipc": [
+  "torch-ipc": [
     {
       "repo_id": 26172,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/finatra-misc": [
+  "finatra-misc": [
     {
       "repo_id": 26165,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/torch-thrift": [
+  "torch-thrift": [
     {
       "repo_id": 26174,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/typeahead.js": [
+  "typeahead.js": [
     {
       "repo_id": 26139,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/netty-http2": [
+  "netty-http2": [
     {
       "repo_id": 26141,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/iago2": [
+  "iago2": [
   ],
-  "twitter/torch-autograd": [
+  "torch-autograd": [
     {
       "repo_id": 26168,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/hraven": [
+  "hraven": [
     {
       "repo_id": 26144,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/elephant-bird": [
+  "elephant-bird": [
     {
       "repo_id": 26096,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/labella.js": [
+  "labella.js": [
     {
       "repo_id": 26162,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/algebird": [
+  "algebird": [
     {
       "repo_id": 26123,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/scoot": [
+  "scoot": [
     {
       "repo_id": 26170,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/effectivescala": [
+  "effectivescala": [
     {
       "repo_id": 26111,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/ios-twitter-logging-service": [
+  "ios-twitter-logging-service": [
     {
       "repo_id": 26179,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/hogan.js": [
+  "hogan.js": [
     {
       "repo_id": 26109,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/meta-learning-lstm": [
+  "meta-learning-lstm": [
     {
       "repo_id": 26184,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/torch-distlearn": [
+  "torch-distlearn": [
     {
       "repo_id": 26173,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/finatra-activator-http-seed": [
+  "finatra-activator-http-seed": [
     {
       "repo_id": 26163,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/scrooge": [
+  "scrooge": [
     {
       "repo_id": 26107,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/twitter-cldr-npm": [
+  "twitter-cldr-npm": [
     {
       "repo_id": 26125,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/scalding": [
+  "scalding": [
     {
       "repo_id": 26110,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/innovators-patent-agreement": [
+  "innovators-patent-agreement": [
     {
       "repo_id": 26116,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/secure_headers": [
+  "secure_headers": [
     {
       "repo_id": 26130,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/distributedlog": [
+  "distributedlog": [
     {
       "repo_id": 26175,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/cloudhopper-commons": [
+  "cloudhopper-commons": [
     {
       "repo_id": 26147,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/periscope-live-engagement-unity-sdk": [
+  "periscope-live-engagement-unity-sdk": [
     {
       "repo_id": 26192,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/rpc-perf": [
+  "rpc-perf": [
     {
       "repo_id": 26169,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/interactive": [
+  "interactive": [
     {
       "repo_id": 26142,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/twurl": [
+  "twurl": [
     {
       "repo_id": 26095,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/libwatchman": [
+  "libwatchman": [
     {
       "repo_id": 26151,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/SentenTree": [
+  "SentenTree": [
     {
       "repo_id": 26154,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/bookkeeper": [
+  "bookkeeper": [
     {
       "repo_id": 26129,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/AnomalyDetection": [
+  "AnomalyDetection": [
     {
       "repo_id": 26200,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
   ],
-  "twitter/finatra": [
+  "finatra": [
     {
       "repo_id": 26112,
-      "repo_group_id": 25155,
-      "rg_name": "Twitter"
-    }
-  ],
-  "pantsbuild/pants": [
-    {
-      "repo_id": 26209,
       "repo_group_id": 25155,
       "rg_name": "Twitter"
     }
