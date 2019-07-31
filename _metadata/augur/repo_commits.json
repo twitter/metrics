@@ -1,0 +1,32 @@
+{
+  "twemoji": {
+    "commit_count": 77990
+  },
+  "finagle": {
+    "commit_count": 35675
+  },
+  "twitter-cldr-rb": {
+    "commit_count": 17473
+  },
+  "finatra": {
+    "commit_count": 14018
+  },
+  "elephant-bird": {
+    "commit_count": 11986
+  },
+  "interactive": {
+    "commit_count": 10402
+  },
+  "util": {
+    "commit_count": 9246
+  },
+  "bookkeeper": {
+    "commit_count": 8660
+  },
+  "scalding": {
+    "commit_count": 8639
+  },
+  "cloudhopper-commons": {
+    "commit_count": 2637
+  }
+}
