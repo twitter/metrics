@@ -6,9 +6,11 @@ Progress: https://github.com/twitter/metrics/issues/2
 """
 
 import datetime
+import itertools
 import json
 import os
 
+import pandas as pd
 import requests
 
 
@@ -58,3 +60,56 @@ for org in PROJECTS_TRACKED['projects']:
 
 with open(bus_factor_json_file, "w+") as f:
     json.dump(BUS_FACTOR, f)
+
+"""
+Code Changes (repo)
+
+API: /repo-groups/:repo_group_id/repos/:repo_id/code-changes
+
+Update _metadata/augur/repo-commits.json
+"""
+
+# see repo_commits_ids.json for IDs for top 10
+
+# for repo commits
+with open(os.path.join(PATH_TO_METADATA, "repo_commits_ids.json")) as f:
+  REPO_COMMITS_IDS = json.load(f)
+
+
+def tmp(group_series):
+  if (group_series == group_series.iloc[0]).all():
+    return group_series.iloc[0]
+  else:
+    return group_series.sum()
+
+
+api_data_commits = []
+repo_commits_json_file = f"{PATH_TO_METADATA}/augur/repo_commits.json"
+if os.path.exists(repo_commits_json_file):
+  with open(repo_commits_json_file) as f:
+    REPO_COMMITS = json.load(f)
+
+for repo_id in REPO_COMMITS_IDS:
+  print(f"Sending request to {API_ENDPOINT}/repo-groups/25155/repos/{REPO_COMMITS_IDS[repo_id]}"
+  f"/code-changes")
+  r = requests.get(
+    f"{API_ENDPOINT}/repo-groups/25155/repos/{REPO_COMMITS_IDS[repo_id]}/code-changes")
+  try:
+    if r.ok:
+      print("OK!")
+      api_data_commits.append(json.loads(r.text))
+    else:
+      print(f"Error! Response code {r.status_code}")
+      print(r.content.decode("utf-8"))
+  except Exception as e:
+    print(f"Error: Something went wrong with repo_commits - {e}")
+
+unnested_data = list(itertools.chain.from_iterable(api_data_commits))
+df = pd.DataFrame(data=unnested_data, columns=unnested_data[0].keys())
+df = df.drop("date", axis=1)
+df = df.groupby('repo_name').agg(tmp).sort_values('commit_count', ascending=False)
+# print(df_commits.to_json())
+out = df.to_json(orient='index').replace('},{', ',')
+
+with open(repo_commits_json_file, "w") as f:
+  f.write(out)
