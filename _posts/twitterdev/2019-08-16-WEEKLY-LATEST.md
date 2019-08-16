@@ -1,0 +1,173 @@
+---
+layout: org-weekly-metrics-v0.1
+title: TwiterOSS Metrics Report for twitterdev | WEEKLY-REPORT-2019-08-16
+permalink: /twitterdev/WEEKLY/
+
+org: twitterdev
+reportID: WEEKLY-REPORT-2019-08-16
+datestampThisWeek: 2019-08-16
+datestampLastWeek: 2019-08-09
+---
+
+
+<table class="table table-condensed" style="border-collapse:collapse;">
+    <thead>
+    <tr>
+        <th>Metric</th>
+        <th>Latest</th>
+        <th>Previous</th>
+        <th colspan="2" style="text-align: center;">Difference</th>
+    </tr>
+    </thead>
+    <tbody>
+
+        <tr data-toggle="collapse" data-target="#col-commits" class="accordion-toggle" style="cursor: pointer;">
+            <td>Commits</td>
+            <td>3,991</td>
+            <td>3,979</td>
+            <td style="color: #45c527" >12</td>
+            <td style="color: #45c527" >0.3%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-commits">
+            <a target="_blank" href="/metrics/twitterdev/spotatweet/WEEKLY">spotatweet : 12</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-issues" class="accordion-toggle" style="cursor: pointer;">
+            <td>Issues</td>
+            <td>296</td>
+            <td>291</td>
+            <td style="color: #45c527" >5</td>
+            <td style="color: #45c527" >1.72%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-issues">
+            <a target="_blank" href="/metrics/twitterdev/twitter-python-ads-sdk/WEEKLY">twitter-python-ads-sdk : 4</a><br><a target="_blank" href="/metrics/twitterdev/search-tweets-python/WEEKLY">search-tweets-python : 1</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-openIssues" class="accordion-toggle" style="cursor: pointer;">
+            <td>Open Issues</td>
+            <td>92</td>
+            <td>90</td>
+            <td style="color: #d31c08" >2</td>
+            <td style="color: #d31c08" >2.22%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-openIssues">
+            <a target="_blank" href="/metrics/twitterdev/twitter-python-ads-sdk/WEEKLY">twitter-python-ads-sdk : 3</a><br><a target="_blank" href="/metrics/twitterdev/autohook/WEEKLY">autohook : -1</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-closedIssues" class="accordion-toggle" style="cursor: pointer;">
+            <td>Closed Issues</td>
+            <td>204</td>
+            <td>201</td>
+            <td style="color: #45c527" >3</td>
+            <td style="color: #45c527" >1.49%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-closedIssues">
+            <a target="_blank" href="/metrics/twitterdev/autohook/WEEKLY">autohook : 1</a><br><a target="_blank" href="/metrics/twitterdev/search-tweets-python/WEEKLY">search-tweets-python : 1</a><br><a target="_blank" href="/metrics/twitterdev/twitter-python-ads-sdk/WEEKLY">twitter-python-ads-sdk : 1</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-pullRequests" class="accordion-toggle" style="cursor: pointer;">
+            <td>Pull Requests</td>
+            <td>481</td>
+            <td>481</td>
+            <td style="color: #45c527" >0</td>
+            <td style="color: #45c527" >0.0%</td>
+        </tr>
+        
+        <tr data-toggle="collapse" data-target="#col-openPullRequests" class="accordion-toggle" style="cursor: pointer;">
+            <td>Open Pull Requests</td>
+            <td>32</td>
+            <td>32</td>
+            <td style="color: #45c527" >0</td>
+            <td style="color: #45c527" >0.0%</td>
+        </tr>
+        
+        <tr data-toggle="collapse" data-target="#col-mergedPullRequests" class="accordion-toggle" style="cursor: pointer;">
+            <td>Merged Pull Requests</td>
+            <td>379</td>
+            <td>379</td>
+            <td style="color: #45c527" >0</td>
+            <td style="color: #45c527" >0.0%</td>
+        </tr>
+        
+        <tr data-toggle="collapse" data-target="#col-closedPullRequests" class="accordion-toggle" style="cursor: pointer;">
+            <td>Closed Pull Requests</td>
+            <td>70</td>
+            <td>70</td>
+            <td style="color: #45c527" >0</td>
+            <td style="color: #45c527" >0.0%</td>
+        </tr>
+        
+        <tr data-toggle="collapse" data-target="#col-forkCount" class="accordion-toggle" style="cursor: pointer;">
+            <td>Forks</td>
+            <td>1,030</td>
+            <td>1,028</td>
+            <td style="color: #45c527" >2</td>
+            <td style="color: #45c527" >0.19%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-forkCount">
+            <a target="_blank" href="/metrics/twitterdev/cards-player-samples/WEEKLY">cards-player-samples : 1</a><br><a target="_blank" href="/metrics/twitterdev/Gnip-Trend-Detection/WEEKLY">Gnip-Trend-Detection : 1</a><br><a target="_blank" href="/metrics/twitterdev/twitter-stream-globe/WEEKLY">twitter-stream-globe : 1</a><br><a target="_blank" href="/metrics/twitterdev/ruby-app-tweetmap/WEEKLY">ruby-app-tweetmap : -1</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-stargazers" class="accordion-toggle" style="cursor: pointer;">
+            <td>Stars</td>
+            <td>1,911</td>
+            <td>1,903</td>
+            <td style="color: #45c527" >8</td>
+            <td style="color: #45c527" >0.42%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-stargazers">
+            <a target="_blank" href="/metrics/twitterdev/SnowBotDev/WEEKLY">SnowBotDev : 2</a><br><a target="_blank" href="/metrics/twitterdev/search-tweets-python/WEEKLY">search-tweets-python : 2</a><br><a target="_blank" href="/metrics/twitterdev/do_more_with_twitter_data/WEEKLY">do_more_with_twitter_data : 1</a><br><a target="_blank" href="/metrics/twitterdev/postman-twitter-ads-api/WEEKLY">postman-twitter-ads-api : 1</a><br><a target="_blank" href="/metrics/twitterdev/account-activity-dashboard/WEEKLY">account-activity-dashboard : 1</a><br><a target="_blank" href="/metrics/twitterdev/twitter-python-ads-sdk/WEEKLY">twitter-python-ads-sdk : 1</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-watchers" class="accordion-toggle" style="cursor: pointer;">
+            <td>Watchers</td>
+            <td>1,036</td>
+            <td>1,029</td>
+            <td style="color: #45c527" >7</td>
+            <td style="color: #45c527" >0.68%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-watchers">
+            <a target="_blank" href="/metrics/twitterdev/spotatweet/WEEKLY">spotatweet : 7</a><br></div> </td>
+    </tbody>
+</table>
+<div class="graph-container">
+<br>
+<h4>Binary Treemap graphs</h4>
+<div class="row">
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitterdev/treemap_weekly_openIssues.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitterdev/treemap_weekly_issues.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitterdev/treemap_weekly_watchers.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitterdev/treemap_weekly_stargazers.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitterdev/treemap_weekly_forkCount.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitterdev/treemap_weekly_closedPullRequests.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitterdev/treemap_weekly_openPullRequests.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitterdev/treemap_weekly_mergedPullRequests.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitterdev/treemap_weekly_pullRequests.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitterdev/treemap_weekly_commits.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitterdev/treemap_weekly_closedIssues.svg">
+		Your browser does not support SVG
+	</object>
+</div>
+</div>
