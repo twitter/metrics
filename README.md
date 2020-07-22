@@ -1,39 +1,62 @@
 # TwitterOSS Metrics
 
-[twitter.github.io/metrics](https://twitter.github.io/metrics)
+# General
 
-Generating periodic reports based on the Twitter Open Source metrics.
+This is the README for the TwitterOSS Metrics repo, which generates periodic reports based on the health of Twitter Open Source projects.  
 
-# Usage
+For more info, see [twitter.github.io/metrics](https://twitter.github.io/metrics)
 
-Visit twitter.github.io/metrics
+# Dependencies
+| Service            | Details                                                                                                  |
+|--------------------|----------------------------------------------------------------------------------------------------------|
+| [CHAOSS Augur](https://chaoss.community/)       | Used to retrieve metrics such as Aggregate Summary, Bus Factor, and Repo Commits.                         |
+| [TravisCI](https://docs.travis-ci.com/user/cron-jobs/)           | Runs a weekly cron job that runs scripts in order to fetch data and generate reports.                     |
+| [GraphQL](https://graphql.github.io/)           | Directly used to fetch metrics from the GitHub GraphQL API.                                               |
+| [Twitter Service](https://github.com/twitter-service)    | Indirectly used for personal access token environment variable.                                           |
+| [Metrics Dashboard](https://twitter.github.io/metrics/)  | Contains all reports for Repositories in repos-to-include.txt.                                            |
+| [Slack reports Repo](https://github.com/twitter/chatops) | Runs a cron job and posts a message to slack with daily project activity based on metrics repo.           |
+| [Year In Review](https://twitter.github.io/year-in-review)     | Weekly updating, sliding window overview of past 12 months of activity on Twitter's Open Source Projects. |
 
-# How to track new repositories and orgs?
 
-Ans: `repos-to-include.md`
+# Service Outage Impact 
+
+If the service experiences problems:
+
+* Year in Review, Metrics Dashboard, and Slack Reports Repo will be unable to update.
+
+
+# Build
+## Environment Setup
+1. Clone Repo  
+    ```bash
+    $ git clone https://github.com/twitter/metrics.git  
+    $ cd ./metrics
+    ```
+
+## Tracking new repositories and orgs
+
+Edit `repos-to-include.md`
 
 If you want to track an org and all its repositories which are hosted `github.com/<org_name>`,
 add `<org_name>/*` as a new line in `repos-to-include.md`.
 If you want to track some and not all repositories of an org, add `<org_name>/<repo_name>` as new lines for each public repo in `repos-to-include.md`.
 
-# How does this thing work?
+## Run The Scripts
 
-This repository is integrated with Travis. A [Travis Cron Job](https://docs.travis-ci.com/user/cron-jobs/) is scheduled to run every week. (Push and PR builds are disabled from setting to avoid feedback loop of builds)
-
-- `python scripts/fetch_all_metrics.py`
+`$ python scripts/fetch_all_metrics.py`
    
   - Reads all the repositories and orgs listed in `repos-to-include.md`
   - Requests GitHub GraphQL API
   - Creates one JSON file for each repository with format `METRICS-YYYY-MM-DD.json`
   - Saves the file inside `_data/<owner>/<repo>/`
 
-- `python scripts/fetch_year_in_review.py`
+`$ python scripts/fetch_year_in_review.py`
 
-  - Hits aggregate_summary endpoint (http://apidocs.newtwitter.augurlabs.io/#api-Experimental-aggregate_summary_repo_group)
+  - Hits [aggregate_summary](http://apidocs.newtwitter.augurlabs.io/#api-Experimental-aggregate_summary_repo_group) endpoint
   - Creates one JSON file that includes the metrics from the endpoint (watchers, stars, counts, merged PRs, committers,           commits)
   - Saves the file inside `_metadata/augur/`
   
-- `python scripts/gen_weekly_report.py`
+`$ python scripts/gen_weekly_report.py`
   
   - Iterates over every project listed inside `_data`
   - Picks the latest two Metrics which are atleast 6 days apart
@@ -41,15 +64,16 @@ This repository is integrated with Travis. A [Travis Cron Job](https://docs.trav
   - Saves the json inside `_data` directory corresponding to each project, format `WEEKLY-YYYY-MM-DD.json`
   - Creates a `_post` for this report with some specific variables and the layout version
 
+
+## Additional Notes
 - Travis Config
 
   - Environment variables
     
     - `OAUTH_TOKEN`: Personal Access Token with `repo` access of a GitHub account.
     - `GH_USERNAME`: Username of the GitHub account.
-    - (Optional) `SLACK_TOKEN`: Slack token to receive Travis build notification on Slack. Remove it from `.travis.yml` if you do not need it.
+    - (Optional) `SLACK_TOKEN`: Slack token to receive Travis build notification on Slack. Remove it from `.travis.yml` if you do not need it.  
 
-## Notes
 - Use Python 3.
 - `_data` contains all the data files
 - Files in `_posts` leverage `_layouts` and `_data` and generate HTML files
