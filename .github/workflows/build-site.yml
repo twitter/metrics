@@ -1,7 +1,10 @@
 name: Build site and deploy
 
 on:
-  workflow_dispatch
+  workflow_dispatch: {}
+  schedule:
+    # Run Mondays at 2:15 am
+    - cron: "15 2 * * 1"
 
 jobs:
   site:
