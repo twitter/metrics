@@ -10,7 +10,7 @@ For more info, see [twitter.github.io/metrics](https://twitter.github.io/metrics
 | Service            | Details                                                                                                  |
 |--------------------|----------------------------------------------------------------------------------------------------------|
 | [CHAOSS Augur](https://chaoss.community/)       | Used to retrieve metrics such as Aggregate Summary, Bus Factor, and Repo Commits.                         |
-| [TravisCI](https://docs.travis-ci.com/user/cron-jobs/)           | Runs a weekly cron job that runs scripts in order to fetch data and generate reports.                     |
+| [GitHub Actions](https://github.com/features/actions)           | Runs a weekly cron job that runs scripts in order to fetch data and generate reports.                     |
 | [GraphQL](https://graphql.github.io/)           | Directly used to fetch metrics from the GitHub GraphQL API.                                               |
 | [Twitter Service](https://github.com/twitter-service)    | Indirectly used for personal access token environment variable.                                           |
 | [Metrics Dashboard](https://twitter.github.io/metrics/)  | Contains all reports for Repositories in repos-to-include.txt.                                            |
@@ -66,13 +66,12 @@ If you want to track some and not all repositories of an org, add `<org_name>/<r
 
 
 ## Additional Notes
-- Travis Config
+- GitHub Actions Config
 
   - Environment variables
     
     - `OAUTH_TOKEN`: Personal Access Token with `repo` access of a GitHub account.
     - `GH_USERNAME`: Username of the GitHub account.
-    - (Optional) `SLACK_TOKEN`: Slack token to receive Travis build notification on Slack. Remove it from `.travis.yml` if you do not need it.  
 
 - Use Python 3.
 - `_data` contains all the data files
