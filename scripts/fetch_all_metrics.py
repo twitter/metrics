@@ -120,7 +120,6 @@ DATA_JSON = {}
 
 for edge in all_org_edges:
     if edge["node"]["isPrivate"]:
-        print("Skipping the private repository", edge["node"]["nameWithOwner"])
         continue
     if edge["node"]["nameWithOwner"] in repos_to_exclude:
         print("Skipping", edge["node"]["nameWithOwner"], "(from repos-to-exclude.txt)")
@@ -131,7 +130,7 @@ for edge in all_org_edges:
 
 for edge in all_repo_edges:
     if edge["repository"]["isPrivate"]:
-        print("Skipping the private repository", edge["node"]["nameWithOwner"])
+        continue
     repo_full_name = edge["repository"]["nameWithOwner"]
     repo_data = edge["repository"]
     DATA_JSON[repo_full_name] = repo_data
