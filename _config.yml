@@ -2,4 +2,11 @@ name: TwitterOSS Metrics
 url: 'https://twitter.github.io'
 highlighter: rouge
 baseurl: '/metrics'
-exclude: [scripts, "*.py"]
+exclude:
+ - scripts
+ - "*.py"
+ - update.sh
+ - repos-to-include.txt
+ - repos-to-exclude.txt
+ - requirements.txt
+ - README.md
