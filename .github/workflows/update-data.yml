@@ -1,4 +1,4 @@
-name: Build site and deploy
+name: Update data
 
 on:
   workflow_dispatch: {}
@@ -7,7 +7,7 @@ on:
     - cron: "15 2 * * 1"
 
 jobs:
-  site:
+  update:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -34,16 +34,3 @@ jobs:
           git add -A
           git commit -m "update repo metrics data"
           git push
-
-      # build site
-      - uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: 2.7.2
-          bundler-cache: true
-      - run: bundler exec jekyll build
-
-      - name: deploy
-        uses: peaceiris/actions-gh-pages@3bdd7da #3.7.0
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
