@@ -1,0 +1,193 @@
+---
+layout: org-monthly-metrics-v0.1
+title: TwiterOSS Metrics Report for twitter | MONTHLY-REPORT-2021-07-19
+permalink: /twitter/MONTHLY/
+
+org: twitter
+reportID: MONTHLY-REPORT-2021-07-19
+datestampThisMonth: 2021-07-19
+datestampLastMonth: 2021-06-21
+---
+
+
+<table class="table table-condensed" style="border-collapse:collapse;">
+    <thead>
+    <tr>
+        <th>Metric</th>
+        <th>Latest</th>
+        <th>Previous</th>
+        <th colspan="2" style="text-align: center;">Difference</th>
+    </tr>
+    </thead>
+    <tbody>
+
+        <tr data-toggle="collapse" data-target="#col-commits" class="accordion-toggle" style="cursor: pointer;">
+            <td>Commits</td>
+            <td>56,518</td>
+            <td>56,269</td>
+            <td style="color: #45c527" >249</td>
+            <td style="color: #45c527" >0.44%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-commits">
+            <a target="_blank" href="/metrics/twitter/twemproxy/MONTHLY">twemproxy : 96</a><br><a target="_blank" href="/metrics/twitter/finagle/MONTHLY">finagle : 35</a><br><a target="_blank" href="/metrics/twitter/finatra/MONTHLY">finatra : 18</a><br><a target="_blank" href="/metrics/twitter/util/MONTHLY">util : 16</a><br><a target="_blank" href="/metrics/twitter/twitter-server/MONTHLY">twitter-server : 13</a><br><a target="_blank" href="/metrics/twitter/scrooge/MONTHLY">scrooge : 10</a><br><a target="_blank" href="/metrics/twitter/twitter-cldr-rb/MONTHLY">twitter-cldr-rb : 9</a><br><a target="_blank" href="/metrics/twitter/rezolus/MONTHLY">rezolus : 8</a><br><a target="_blank" href="/metrics/twitter/bijection/MONTHLY">bijection : 7</a><br><a target="_blank" href="/metrics/twitter/dodo/MONTHLY">dodo : 6</a><br><a target="_blank" href="/metrics/twitter/scoot/MONTHLY">scoot : 5</a><br><a target="_blank" href="/metrics/twitter/twitter.github.io/MONTHLY">twitter.github.io : 4</a><br><a target="_blank" href="/metrics/twitter/metrics/MONTHLY">metrics : 4</a><br><a target="_blank" href="/metrics/twitter/algebird/MONTHLY">algebird : 3</a><br><a target="_blank" href="/metrics/twitter/birdwatch/MONTHLY">birdwatch : 3</a><br><a target="_blank" href="/metrics/twitter/chill/MONTHLY">chill : 3</a><br><a target="_blank" href="/metrics/twitter/rustcommon/MONTHLY">rustcommon : 2</a><br><a target="_blank" href="/metrics/twitter/TwitterTextEditor/MONTHLY">TwitterTextEditor : 2</a><br><a target="_blank" href="/metrics/twitter/rpc-perf/MONTHLY">rpc-perf : 2</a><br><a target="_blank" href="/metrics/twitter/gpl-commitment/MONTHLY">gpl-commitment : 1</a><br><a target="_blank" href="/metrics/twitter/twemoji/MONTHLY">twemoji : 1</a><br><a target="_blank" href="/metrics/twitter/scalding/MONTHLY">scalding : 1</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-issues" class="accordion-toggle" style="cursor: pointer;">
+            <td>Issues</td>
+            <td>7,277</td>
+            <td>7,254</td>
+            <td style="color: #45c527" >23</td>
+            <td style="color: #45c527" >0.32%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-issues">
+            <a target="_blank" href="/metrics/twitter/twemproxy/MONTHLY">twemproxy : 15</a><br><a target="_blank" href="/metrics/twitter/twemoji/MONTHLY">twemoji : 3</a><br><a target="_blank" href="/metrics/twitter/twitter-text/MONTHLY">twitter-text : 1</a><br><a target="_blank" href="/metrics/twitter/twurl/MONTHLY">twurl : 1</a><br><a target="_blank" href="/metrics/twitter/twitter-cldr-rb/MONTHLY">twitter-cldr-rb : 1</a><br><a target="_blank" href="/metrics/twitter/finagle/MONTHLY">finagle : 1</a><br><a target="_blank" href="/metrics/twitter/typeahead.js/MONTHLY">typeahead.js : 1</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-openIssues" class="accordion-toggle" style="cursor: pointer;">
+            <td>Open Issues</td>
+            <td>2,113</td>
+            <td>2,143</td>
+            <td style="color: #45c527" >-30</td>
+            <td style="color: #45c527" >-1.4%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-openIssues">
+            <a target="_blank" href="/metrics/twitter/twemoji/MONTHLY">twemoji : 3</a><br><a target="_blank" href="/metrics/twitter/twitter-text/MONTHLY">twitter-text : 1</a><br><a target="_blank" href="/metrics/twitter/twurl/MONTHLY">twurl : 1</a><br><a target="_blank" href="/metrics/twitter/finagle/MONTHLY">finagle : 1</a><br><a target="_blank" href="/metrics/twitter/typeahead.js/MONTHLY">typeahead.js : 1</a><br><a target="_blank" href="/metrics/twitter/TwitterTextEditor/MONTHLY">TwitterTextEditor : -1</a><br><a target="_blank" href="/metrics/twitter/rezolus/MONTHLY">rezolus : -2</a><br><a target="_blank" href="/metrics/twitter/twemproxy/MONTHLY">twemproxy : -34</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-closedIssues" class="accordion-toggle" style="cursor: pointer;">
+            <td>Closed Issues</td>
+            <td>5,164</td>
+            <td>5,111</td>
+            <td style="color: #45c527" >53</td>
+            <td style="color: #45c527" >1.04%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-closedIssues">
+            <a target="_blank" href="/metrics/twitter/twemproxy/MONTHLY">twemproxy : 49</a><br><a target="_blank" href="/metrics/twitter/rezolus/MONTHLY">rezolus : 2</a><br><a target="_blank" href="/metrics/twitter/TwitterTextEditor/MONTHLY">TwitterTextEditor : 1</a><br><a target="_blank" href="/metrics/twitter/twitter-cldr-rb/MONTHLY">twitter-cldr-rb : 1</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-pullRequests" class="accordion-toggle" style="cursor: pointer;">
+            <td>Pull Requests</td>
+            <td>10,775</td>
+            <td>10,704</td>
+            <td style="color: #45c527" >71</td>
+            <td style="color: #45c527" >0.66%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-pullRequests">
+            <a target="_blank" href="/metrics/twitter/twemproxy/MONTHLY">twemproxy : 25</a><br><a target="_blank" href="/metrics/twitter/rezolus/MONTHLY">rezolus : 7</a><br><a target="_blank" href="/metrics/twitter/bijection/MONTHLY">bijection : 7</a><br><a target="_blank" href="/metrics/twitter/scoot/MONTHLY">scoot : 5</a><br><a target="_blank" href="/metrics/twitter/chill/MONTHLY">chill : 4</a><br><a target="_blank" href="/metrics/twitter/finagle/MONTHLY">finagle : 4</a><br><a target="_blank" href="/metrics/twitter/algebird/MONTHLY">algebird : 3</a><br><a target="_blank" href="/metrics/twitter/rustcommon/MONTHLY">rustcommon : 2</a><br><a target="_blank" href="/metrics/twitter/finatra/MONTHLY">finatra : 2</a><br><a target="_blank" href="/metrics/twitter/TwitterTextEditor/MONTHLY">TwitterTextEditor : 1</a><br><a target="_blank" href="/metrics/twitter/cloudhopper-commons/MONTHLY">cloudhopper-commons : 1</a><br><a target="_blank" href="/metrics/twitter/rpc-perf/MONTHLY">rpc-perf : 1</a><br><a target="_blank" href="/metrics/twitter/birdwatch/MONTHLY">birdwatch : 1</a><br><a target="_blank" href="/metrics/twitter/twitter-cldr-rb/MONTHLY">twitter-cldr-rb : 1</a><br><a target="_blank" href="/metrics/twitter/scala_school/MONTHLY">scala_school : 1</a><br><a target="_blank" href="/metrics/twitter/gpl-commitment/MONTHLY">gpl-commitment : 1</a><br><a target="_blank" href="/metrics/twitter/twemoji/MONTHLY">twemoji : 1</a><br><a target="_blank" href="/metrics/twitter/scalding/MONTHLY">scalding : 1</a><br><a target="_blank" href="/metrics/twitter/hadoop-lzo/MONTHLY">hadoop-lzo : 1</a><br><a target="_blank" href="/metrics/twitter/metrics/MONTHLY">metrics : 1</a><br><a target="_blank" href="/metrics/twitter/GraphJet/MONTHLY">GraphJet : 1</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-openPullRequests" class="accordion-toggle" style="cursor: pointer;">
+            <td>Open Pull Requests</td>
+            <td>526</td>
+            <td>552</td>
+            <td style="color: #45c527" >-26</td>
+            <td style="color: #45c527" >-4.71%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-openPullRequests">
+            <a target="_blank" href="/metrics/twitter/scala_school/MONTHLY">scala_school : 1</a><br><a target="_blank" href="/metrics/twitter/twemoji/MONTHLY">twemoji : 1</a><br><a target="_blank" href="/metrics/twitter/chill/MONTHLY">chill : 1</a><br><a target="_blank" href="/metrics/twitter/hadoop-lzo/MONTHLY">hadoop-lzo : 1</a><br><a target="_blank" href="/metrics/twitter/metrics/MONTHLY">metrics : 1</a><br><a target="_blank" href="/metrics/twitter/rpc-perf/MONTHLY">rpc-perf : -1</a><br><a target="_blank" href="/metrics/twitter/scoot/MONTHLY">scoot : -1</a><br><a target="_blank" href="/metrics/twitter/typeahead.js/MONTHLY">typeahead.js : -1</a><br><a target="_blank" href="/metrics/twitter/rezolus/MONTHLY">rezolus : -2</a><br><a target="_blank" href="/metrics/twitter/util/MONTHLY">util : -2</a><br><a target="_blank" href="/metrics/twitter/bijection/MONTHLY">bijection : -3</a><br><a target="_blank" href="/metrics/twitter/twemproxy/MONTHLY">twemproxy : -21</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-mergedPullRequests" class="accordion-toggle" style="cursor: pointer;">
+            <td>Merged Pull Requests</td>
+            <td>7,549</td>
+            <td>7,484</td>
+            <td style="color: #45c527" >65</td>
+            <td style="color: #45c527" >0.87%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-mergedPullRequests">
+            <a target="_blank" href="/metrics/twitter/twemproxy/MONTHLY">twemproxy : 31</a><br><a target="_blank" href="/metrics/twitter/rezolus/MONTHLY">rezolus : 8</a><br><a target="_blank" href="/metrics/twitter/bijection/MONTHLY">bijection : 7</a><br><a target="_blank" href="/metrics/twitter/scoot/MONTHLY">scoot : 5</a><br><a target="_blank" href="/metrics/twitter/algebird/MONTHLY">algebird : 3</a><br><a target="_blank" href="/metrics/twitter/chill/MONTHLY">chill : 3</a><br><a target="_blank" href="/metrics/twitter/rustcommon/MONTHLY">rustcommon : 2</a><br><a target="_blank" href="/metrics/twitter/rpc-perf/MONTHLY">rpc-perf : 2</a><br><a target="_blank" href="/metrics/twitter/birdwatch/MONTHLY">birdwatch : 1</a><br><a target="_blank" href="/metrics/twitter/twitter-cldr-rb/MONTHLY">twitter-cldr-rb : 1</a><br><a target="_blank" href="/metrics/twitter/gpl-commitment/MONTHLY">gpl-commitment : 1</a><br><a target="_blank" href="/metrics/twitter/scalding/MONTHLY">scalding : 1</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-closedPullRequests" class="accordion-toggle" style="cursor: pointer;">
+            <td>Closed Pull Requests</td>
+            <td>2,700</td>
+            <td>2,668</td>
+            <td style="color: #45c527" >32</td>
+            <td style="color: #45c527" >1.2%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-closedPullRequests">
+            <a target="_blank" href="/metrics/twitter/twemproxy/MONTHLY">twemproxy : 15</a><br><a target="_blank" href="/metrics/twitter/finagle/MONTHLY">finagle : 4</a><br><a target="_blank" href="/metrics/twitter/bijection/MONTHLY">bijection : 3</a><br><a target="_blank" href="/metrics/twitter/finatra/MONTHLY">finatra : 2</a><br><a target="_blank" href="/metrics/twitter/util/MONTHLY">util : 2</a><br><a target="_blank" href="/metrics/twitter/rezolus/MONTHLY">rezolus : 1</a><br><a target="_blank" href="/metrics/twitter/TwitterTextEditor/MONTHLY">TwitterTextEditor : 1</a><br><a target="_blank" href="/metrics/twitter/cloudhopper-commons/MONTHLY">cloudhopper-commons : 1</a><br><a target="_blank" href="/metrics/twitter/scoot/MONTHLY">scoot : 1</a><br><a target="_blank" href="/metrics/twitter/typeahead.js/MONTHLY">typeahead.js : 1</a><br><a target="_blank" href="/metrics/twitter/GraphJet/MONTHLY">GraphJet : 1</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-forkCount" class="accordion-toggle" style="cursor: pointer;">
+            <td>Forks</td>
+            <td>20,751</td>
+            <td>20,682</td>
+            <td style="color: #45c527" >69</td>
+            <td style="color: #45c527" >0.33%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-forkCount">
+            <a target="_blank" href="/metrics/twitter/twemoji/MONTHLY">twemoji : 20</a><br><a target="_blank" href="/metrics/twitter/typeahead.js/MONTHLY">typeahead.js : 9</a><br><a target="_blank" href="/metrics/twitter/algebird/MONTHLY">algebird : 4</a><br><a target="_blank" href="/metrics/twitter/wordpress/MONTHLY">wordpress : 4</a><br><a target="_blank" href="/metrics/twitter/twemproxy/MONTHLY">twemproxy : 4</a><br><a target="_blank" href="/metrics/twitter/twitter.github.io/MONTHLY">twitter.github.io : 3</a><br><a target="_blank" href="/metrics/twitter/scala_school/MONTHLY">scala_school : 3</a><br><a target="_blank" href="/metrics/twitter/finagle/MONTHLY">finagle : 3</a><br><a target="_blank" href="/metrics/twitter/SentenTree/MONTHLY">SentenTree : 2</a><br><a target="_blank" href="/metrics/twitter/hadoop-lzo/MONTHLY">hadoop-lzo : 2</a><br><a target="_blank" href="/metrics/twitter/AnomalyDetection/MONTHLY">AnomalyDetection : 2</a><br><a target="_blank" href="/metrics/twitter/rezolus/MONTHLY">rezolus : 1</a><br><a target="_blank" href="/metrics/twitter/twitter-text/MONTHLY">twitter-text : 1</a><br><a target="_blank" href="/metrics/twitter/TwitterTextEditor/MONTHLY">TwitterTextEditor : 1</a><br><a target="_blank" href="/metrics/twitter/cloudhopper-commons/MONTHLY">cloudhopper-commons : 1</a><br><a target="_blank" href="/metrics/twitter/scala_school2/MONTHLY">scala_school2 : 1</a><br><a target="_blank" href="/metrics/twitter/rpc-perf/MONTHLY">rpc-perf : 1</a><br><a target="_blank" href="/metrics/twitter/cdk/MONTHLY">cdk : 1</a><br><a target="_blank" href="/metrics/twitter/nodes/MONTHLY">nodes : 1</a><br><a target="_blank" href="/metrics/twitter/elephant-bird/MONTHLY">elephant-bird : 1</a><br><a target="_blank" href="/metrics/twitter/twemoji-parser/MONTHLY">twemoji-parser : 1</a><br><a target="_blank" href="/metrics/twitter/summingbird/MONTHLY">summingbird : 1</a><br><a target="_blank" href="/metrics/twitter/chill/MONTHLY">chill : 1</a><br><a target="_blank" href="/metrics/twitter/netty-http2/MONTHLY">netty-http2 : 1</a><br><a target="_blank" href="/metrics/twitter/scalding/MONTHLY">scalding : 1</a><br><a target="_blank" href="/metrics/twitter/finatra/MONTHLY">finatra : 1</a><br><a target="_blank" href="/metrics/twitter/sbf/MONTHLY">sbf : 1</a><br><a target="_blank" href="/metrics/twitter/util/MONTHLY">util : 1</a><br><a target="_blank" href="/metrics/twitter/pycascading/MONTHLY">pycascading : 1</a><br><a target="_blank" href="/metrics/twitter/meta-learning-lstm/MONTHLY">meta-learning-lstm : 1</a><br><a target="_blank" href="/metrics/twitter/BreakoutDetection/MONTHLY">BreakoutDetection : 1</a><br><a target="_blank" href="/metrics/twitter/ios-twitter-image-pipeline/MONTHLY">ios-twitter-image-pipeline : 1</a><br><a target="_blank" href="/metrics/twitter/bijection/MONTHLY">bijection : -1</a><br><a target="_blank" href="/metrics/twitter/twitter-server/MONTHLY">twitter-server : -1</a><br><a target="_blank" href="/metrics/twitter/twemcache/MONTHLY">twemcache : -1</a><br><a target="_blank" href="/metrics/twitter/recess/MONTHLY">recess : -1</a><br><a target="_blank" href="/metrics/twitter/cassovary/MONTHLY">cassovary : -1</a><br><a target="_blank" href="/metrics/twitter/bazel-multiversion/MONTHLY">bazel-multiversion : -1</a><br><a target="_blank" href="/metrics/twitter/twurl/MONTHLY">twurl : -2</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-stargazers" class="accordion-toggle" style="cursor: pointer;">
+            <td>Stars</td>
+            <td>123,458</td>
+            <td>123,087</td>
+            <td style="color: #45c527" >371</td>
+            <td style="color: #45c527" >0.3%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-stargazers">
+            <a target="_blank" href="/metrics/twitter/twemoji/MONTHLY">twemoji : 123</a><br><a target="_blank" href="/metrics/twitter/twemproxy/MONTHLY">twemproxy : 56</a><br><a target="_blank" href="/metrics/twitter/TwitterTextEditor/MONTHLY">TwitterTextEditor : 21</a><br><a target="_blank" href="/metrics/twitter/finagle/MONTHLY">finagle : 17</a><br><a target="_blank" href="/metrics/twitter/twitter-server/MONTHLY">twitter-server : 14</a><br><a target="_blank" href="/metrics/twitter/twitter.github.io/MONTHLY">twitter.github.io : 14</a><br><a target="_blank" href="/metrics/twitter/typeahead.js/MONTHLY">typeahead.js : 12</a><br><a target="_blank" href="/metrics/twitter/AnomalyDetection/MONTHLY">AnomalyDetection : 12</a><br><a target="_blank" href="/metrics/twitter/twitter-text/MONTHLY">twitter-text : 9</a><br><a target="_blank" href="/metrics/twitter/algebird/MONTHLY">algebird : 8</a><br><a target="_blank" href="/metrics/twitter/birdwatch/MONTHLY">birdwatch : 7</a><br><a target="_blank" href="/metrics/twitter/scalding/MONTHLY">scalding : 7</a><br><a target="_blank" href="/metrics/twitter/rezolus/MONTHLY">rezolus : 6</a><br><a target="_blank" href="/metrics/twitter/pelikan/MONTHLY">pelikan : 6</a><br><a target="_blank" href="/metrics/twitter/summingbird/MONTHLY">summingbird : 4</a><br><a target="_blank" href="/metrics/twitter/wordpress/MONTHLY">wordpress : 4</a><br><a target="_blank" href="/metrics/twitter/finatra/MONTHLY">finatra : 4</a><br><a target="_blank" href="/metrics/twitter/util/MONTHLY">util : 4</a><br><a target="_blank" href="/metrics/twitter/effectivescala/MONTHLY">effectivescala : 3</a><br><a target="_blank" href="/metrics/twitter/twurl/MONTHLY">twurl : 3</a><br><a target="_blank" href="/metrics/twitter/nodes/MONTHLY">nodes : 3</a><br><a target="_blank" href="/metrics/twitter/twitter-cldr-rb/MONTHLY">twitter-cldr-rb : 3</a><br><a target="_blank" href="/metrics/twitter/d3kit/MONTHLY">d3kit : 3</a><br><a target="_blank" href="/metrics/twitter/scrooge/MONTHLY">scrooge : 2</a><br><a target="_blank" href="/metrics/twitter/hogan.js/MONTHLY">hogan.js : 2</a><br><a target="_blank" href="/metrics/twitter/rustcommon/MONTHLY">rustcommon : 2</a><br><a target="_blank" href="/metrics/twitter/twitter-korean-text/MONTHLY">twitter-korean-text : 2</a><br><a target="_blank" href="/metrics/twitter/rpc-perf/MONTHLY">rpc-perf : 2</a><br><a target="_blank" href="/metrics/twitter/hbc/MONTHLY">hbc : 2</a><br><a target="_blank" href="/metrics/twitter/cache-trace/MONTHLY">cache-trace : 2</a><br><a target="_blank" href="/metrics/twitter/twemcache/MONTHLY">twemcache : 2</a><br><a target="_blank" href="/metrics/twitter/meta-learning-lstm/MONTHLY">meta-learning-lstm : 2</a><br><a target="_blank" href="/metrics/twitter/BreakoutDetection/MONTHLY">BreakoutDetection : 2</a><br><a target="_blank" href="/metrics/twitter/vireo/MONTHLY">vireo : 2</a><br><a target="_blank" href="/metrics/twitter/repo-scaffolding/MONTHLY">repo-scaffolding : 2</a><br><a target="_blank" href="/metrics/twitter/code-of-conduct/MONTHLY">code-of-conduct : 1</a><br><a target="_blank" href="/metrics/twitter/iago2/MONTHLY">iago2 : 1</a><br><a target="_blank" href="/metrics/twitter/dict_minimize/MONTHLY">dict_minimize : 1</a><br><a target="_blank" href="/metrics/twitter/innovators-patent-agreement/MONTHLY">innovators-patent-agreement : 1</a><br><a target="_blank" href="/metrics/twitter/activerecord-reputation-system/MONTHLY">activerecord-reputation-system : 1</a><br><a target="_blank" href="/metrics/twitter/SentenTree/MONTHLY">SentenTree : 1</a><br><a target="_blank" href="/metrics/twitter/Serial/MONTHLY">Serial : 1</a><br><a target="_blank" href="/metrics/twitter/torch-dataset/MONTHLY">torch-dataset : 1</a><br><a target="_blank" href="/metrics/twitter/elephant-bird/MONTHLY">elephant-bird : 1</a><br><a target="_blank" href="/metrics/twitter/hpack/MONTHLY">hpack : 1</a><br><a target="_blank" href="/metrics/twitter/scala_school/MONTHLY">scala_school : 1</a><br><a target="_blank" href="/metrics/twitter/twemoji-parser/MONTHLY">twemoji-parser : 1</a><br><a target="_blank" href="/metrics/twitter/scoot/MONTHLY">scoot : 1</a><br><a target="_blank" href="/metrics/twitter/chill/MONTHLY">chill : 1</a><br><a target="_blank" href="/metrics/twitter/netty-http2/MONTHLY">netty-http2 : 1</a><br><a target="_blank" href="/metrics/twitter/ambrose/MONTHLY">ambrose : 1</a><br><a target="_blank" href="/metrics/twitter/sbf/MONTHLY">sbf : 1</a><br><a target="_blank" href="/metrics/twitter/check-my-repo/MONTHLY">check-my-repo : 1</a><br><a target="_blank" href="/metrics/twitter/pycascading/MONTHLY">pycascading : 1</a><br><a target="_blank" href="/metrics/twitter/cassovary/MONTHLY">cassovary : 1</a><br><a target="_blank" href="/metrics/twitter/GraphJet/MONTHLY">GraphJet : 1</a><br><a target="_blank" href="/metrics/twitter/thrift_client/MONTHLY">thrift_client : -1</a><br><a target="_blank" href="/metrics/twitter/bijection/MONTHLY">bijection : -1</a><br><a target="_blank" href="/metrics/twitter/torch-twrl/MONTHLY">torch-twrl : -1</a><br><a target="_blank" href="/metrics/twitter/CocoaSPDY/MONTHLY">CocoaSPDY : -1</a><br><a target="_blank" href="/metrics/twitter/whiskey/MONTHLY">whiskey : -1</a><br><a target="_blank" href="/metrics/twitter/ios-twitter-image-pipeline/MONTHLY">ios-twitter-image-pipeline : -1</a><br><a target="_blank" href="/metrics/twitter/rsc/MONTHLY">rsc : -2</a><br><a target="_blank" href="/metrics/twitter/ostrich/MONTHLY">ostrich : -2</a><br><a target="_blank" href="/metrics/twitter/recess/MONTHLY">recess : -2</a><br><a target="_blank" href="/metrics/twitter/labella.js/MONTHLY">labella.js : -5</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-watchers" class="accordion-toggle" style="cursor: pointer;">
+            <td>Watchers</td>
+            <td>13,275</td>
+            <td>13,270</td>
+            <td style="color: #45c527" >5</td>
+            <td style="color: #45c527" >0.04%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-watchers">
+            <a target="_blank" href="/metrics/twitter/TwitterTextEditor/MONTHLY">TwitterTextEditor : 3</a><br><a target="_blank" href="/metrics/twitter/sqrl/MONTHLY">sqrl : 2</a><br><a target="_blank" href="/metrics/twitter/dict_minimize/MONTHLY">dict_minimize : 2</a><br><a target="_blank" href="/metrics/twitter/cli-guide.js/MONTHLY">cli-guide.js : 2</a><br><a target="_blank" href="/metrics/twitter/torch-autograd/MONTHLY">torch-autograd : 2</a><br><a target="_blank" href="/metrics/twitter/rpc-perf/MONTHLY">rpc-perf : 2</a><br><a target="_blank" href="/metrics/twitter/pelikan/MONTHLY">pelikan : 2</a><br><a target="_blank" href="/metrics/twitter/gpl-commitment/MONTHLY">gpl-commitment : 2</a><br><a target="_blank" href="/metrics/twitter/gatekeeper-service/MONTHLY">gatekeeper-service : 2</a><br><a target="_blank" href="/metrics/twitter/twitter-text/MONTHLY">twitter-text : 1</a><br><a target="_blank" href="/metrics/twitter/go-bindata/MONTHLY">go-bindata : 1</a><br><a target="_blank" href="/metrics/twitter/torch-thrift/MONTHLY">torch-thrift : 1</a><br><a target="_blank" href="/metrics/twitter/nodes/MONTHLY">nodes : 1</a><br><a target="_blank" href="/metrics/twitter/SentenTree/MONTHLY">SentenTree : 1</a><br><a target="_blank" href="/metrics/twitter/torch-dataset/MONTHLY">torch-dataset : 1</a><br><a target="_blank" href="/metrics/twitter/torch-distlearn/MONTHLY">torch-distlearn : 1</a><br><a target="_blank" href="/metrics/twitter/twemoji/MONTHLY">twemoji : 1</a><br><a target="_blank" href="/metrics/twitter/scoot/MONTHLY">scoot : 1</a><br><a target="_blank" href="/metrics/twitter/labella.js/MONTHLY">labella.js : 1</a><br><a target="_blank" href="/metrics/twitter/meta-learning-lstm/MONTHLY">meta-learning-lstm : 1</a><br><a target="_blank" href="/metrics/twitter/torch-ipc/MONTHLY">torch-ipc : 1</a><br><a target="_blank" href="/metrics/twitter/GraphJet/MONTHLY">GraphJet : 1</a><br><a target="_blank" href="/metrics/twitter/scala-json/MONTHLY">scala-json : -1</a><br><a target="_blank" href="/metrics/twitter/effectivescala/MONTHLY">effectivescala : -1</a><br><a target="_blank" href="/metrics/twitter/bijection/MONTHLY">bijection : -1</a><br><a target="_blank" href="/metrics/twitter/cloudhopper-commons/MONTHLY">cloudhopper-commons : -1</a><br><a target="_blank" href="/metrics/twitter/twitter-server/MONTHLY">twitter-server : -1</a><br><a target="_blank" href="/metrics/twitter/twitter.github.io/MONTHLY">twitter.github.io : -1</a><br><a target="_blank" href="/metrics/twitter/birdwatch/MONTHLY">birdwatch : -1</a><br><a target="_blank" href="/metrics/twitter/chill/MONTHLY">chill : -1</a><br><a target="_blank" href="/metrics/twitter/ostrich/MONTHLY">ostrich : -1</a><br><a target="_blank" href="/metrics/twitter/recess/MONTHLY">recess : -1</a><br><a target="_blank" href="/metrics/twitter/pycascading/MONTHLY">pycascading : -1</a><br><a target="_blank" href="/metrics/twitter/scrooge/MONTHLY">scrooge : -2</a><br><a target="_blank" href="/metrics/twitter/algebird/MONTHLY">algebird : -2</a><br><a target="_blank" href="/metrics/twitter/util/MONTHLY">util : -2</a><br><a target="_blank" href="/metrics/twitter/finagle/MONTHLY">finagle : -3</a><br><a target="_blank" href="/metrics/twitter/twemproxy/MONTHLY">twemproxy : -7</a><br></div> </td>
+    </tbody>
+</table>
+<br>
+<h4>Highlights</h4>
+<ul>
+	<li><a href="/metrics/twitter/finagle/MONTHLY">finagle</a> crossed 8,000 Stars</li>
+	<li><a href="/metrics/twitter/rezolus/MONTHLY">rezolus</a> crossed 200 Pull Requests</li>
+	<li><a href="/metrics/twitter/twemoji/MONTHLY">twemoji</a> crossed 12,900 Stars</li>
+	<li><a href="/metrics/twitter/twemproxy/MONTHLY">twemproxy</a> crossed 400 Issues</li>
+</ul>
+<div class="graph-container">
+<br>
+<h4>Binary Treemap graphs</h4>
+<div class="row">
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/treemap_monthly_openPullRequests.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/treemap_monthly_forkCount.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/treemap_monthly_mergedPullRequests.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/treemap_monthly_closedIssues.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/treemap_monthly_openIssues.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/treemap_monthly_stargazers.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/treemap_monthly_closedPullRequests.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/treemap_monthly_issues.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/treemap_monthly_watchers.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/treemap_monthly_commits.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/treemap_monthly_pullRequests.svg">
+		Your browser does not support SVG
+	</object>
+</div>
+</div>
