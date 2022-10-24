@@ -1,0 +1,192 @@
+---
+layout: org-monthly-metrics-v0.1
+title: TwiterOSS Metrics Report for twitterdev | MONTHLY-REPORT-2022-10-24
+permalink: /twitterdev/MONTHLY/
+
+org: twitterdev
+reportID: MONTHLY-REPORT-2022-10-24
+datestampThisMonth: 2022-10-24
+datestampLastMonth: 2022-09-26
+---
+
+
+<table class="table table-condensed" style="border-collapse:collapse;">
+    <thead>
+    <tr>
+        <th>Metric</th>
+        <th>Latest</th>
+        <th>Previous</th>
+        <th colspan="2" style="text-align: center;">Difference</th>
+    </tr>
+    </thead>
+    <tbody>
+
+        <tr data-toggle="collapse" data-target="#col-commits" class="accordion-toggle" style="cursor: pointer;">
+            <td>Commits</td>
+            <td>18,314</td>
+            <td>18,296</td>
+            <td style="color: #45c527" >18</td>
+            <td style="color: #45c527" >0.1%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-commits">
+            <a target="_blank" href="/metrics/twitterdev/twitter-api-java-sdk/MONTHLY">twitter-api-java-sdk : 7</a><br><a target="_blank" href="/metrics/twitterdev/twitter-api-typescript-sdk/MONTHLY">twitter-api-typescript-sdk : 7</a><br><a target="_blank" href="/metrics/twitterdev/Twitter-API-v2-sample-code/MONTHLY">Twitter-API-v2-sample-code : 2</a><br><a target="_blank" href="/metrics/twitterdev/getting-started-with-dash/MONTHLY">getting-started-with-dash : 2</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-issues" class="accordion-toggle" style="cursor: pointer;">
+            <td>Issues</td>
+            <td>541</td>
+            <td>531</td>
+            <td style="color: #45c527" >10</td>
+            <td style="color: #45c527" >1.88%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-issues">
+            <a target="_blank" href="/metrics/twitterdev/twitter-api-java-sdk/MONTHLY">twitter-api-java-sdk : 4</a><br><a target="_blank" href="/metrics/twitterdev/open-evolution/MONTHLY">open-evolution : 2</a><br><a target="_blank" href="/metrics/twitterdev/postman-twitter-api/MONTHLY">postman-twitter-api : 1</a><br><a target="_blank" href="/metrics/twitterdev/twitter-python-ads-sdk/MONTHLY">twitter-python-ads-sdk : 1</a><br><a target="_blank" href="/metrics/twitterdev/search-tweets-python/MONTHLY">search-tweets-python : 1</a><br><a target="_blank" href="/metrics/twitterdev/twitter-api-typescript-sdk/MONTHLY">twitter-api-typescript-sdk : 1</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-openIssues" class="accordion-toggle" style="cursor: pointer;">
+            <td>Open Issues</td>
+            <td>172</td>
+            <td>167</td>
+            <td style="color: #d31c08" >5</td>
+            <td style="color: #d31c08" >2.99%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-openIssues">
+            <a target="_blank" href="/metrics/twitterdev/open-evolution/MONTHLY">open-evolution : 2</a><br><a target="_blank" href="/metrics/twitterdev/postman-twitter-api/MONTHLY">postman-twitter-api : 1</a><br><a target="_blank" href="/metrics/twitterdev/twitter-python-ads-sdk/MONTHLY">twitter-python-ads-sdk : 1</a><br><a target="_blank" href="/metrics/twitterdev/search-tweets-python/MONTHLY">search-tweets-python : 1</a><br><a target="_blank" href="/metrics/twitterdev/twitter-api-typescript-sdk/MONTHLY">twitter-api-typescript-sdk : 1</a><br><a target="_blank" href="/metrics/twitterdev/twitter-api-java-sdk/MONTHLY">twitter-api-java-sdk : -1</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-closedIssues" class="accordion-toggle" style="cursor: pointer;">
+            <td>Closed Issues</td>
+            <td>369</td>
+            <td>364</td>
+            <td style="color: #45c527" >5</td>
+            <td style="color: #45c527" >1.37%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-closedIssues">
+            <a target="_blank" href="/metrics/twitterdev/twitter-api-java-sdk/MONTHLY">twitter-api-java-sdk : 5</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-pullRequests" class="accordion-toggle" style="cursor: pointer;">
+            <td>Pull Requests</td>
+            <td>853</td>
+            <td>842</td>
+            <td style="color: #45c527" >11</td>
+            <td style="color: #45c527" >1.31%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-pullRequests">
+            <a target="_blank" href="/metrics/twitterdev/twitter-api-typescript-sdk/MONTHLY">twitter-api-typescript-sdk : 6</a><br><a target="_blank" href="/metrics/twitterdev/Twitter-API-v2-sample-code/MONTHLY">Twitter-API-v2-sample-code : 3</a><br><a target="_blank" href="/metrics/twitterdev/twitter-api-java-sdk/MONTHLY">twitter-api-java-sdk : 1</a><br><a target="_blank" href="/metrics/twitterdev/getting-started-with-the-twitter-api-v2-for-academic-research/MONTHLY">getting-started-with-the-twitter-api-v2-for-academic-research : 1</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-openPullRequests" class="accordion-toggle" style="cursor: pointer;">
+            <td>Open Pull Requests</td>
+            <td>138</td>
+            <td>138</td>
+            <td style="color: #45c527" >0</td>
+            <td style="color: #45c527" >0.0%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-openPullRequests">
+            <a target="_blank" href="/metrics/twitterdev/Twitter-API-v2-sample-code/MONTHLY">Twitter-API-v2-sample-code : 2</a><br><a target="_blank" href="/metrics/twitterdev/getting-started-with-the-twitter-api-v2-for-academic-research/MONTHLY">getting-started-with-the-twitter-api-v2-for-academic-research : 1</a><br><a target="_blank" href="/metrics/twitterdev/twitter-api-typescript-sdk/MONTHLY">twitter-api-typescript-sdk : -1</a><br><a target="_blank" href="/metrics/twitterdev/twitter-api-java-sdk/MONTHLY">twitter-api-java-sdk : -2</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-mergedPullRequests" class="accordion-toggle" style="cursor: pointer;">
+            <td>Merged Pull Requests</td>
+            <td>564</td>
+            <td>555</td>
+            <td style="color: #45c527" >9</td>
+            <td style="color: #45c527" >1.62%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-mergedPullRequests">
+            <a target="_blank" href="/metrics/twitterdev/twitter-api-typescript-sdk/MONTHLY">twitter-api-typescript-sdk : 5</a><br><a target="_blank" href="/metrics/twitterdev/twitter-api-java-sdk/MONTHLY">twitter-api-java-sdk : 3</a><br><a target="_blank" href="/metrics/twitterdev/Twitter-API-v2-sample-code/MONTHLY">Twitter-API-v2-sample-code : 1</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-closedPullRequests" class="accordion-toggle" style="cursor: pointer;">
+            <td>Closed Pull Requests</td>
+            <td>151</td>
+            <td>149</td>
+            <td style="color: #45c527" >2</td>
+            <td style="color: #45c527" >1.34%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-closedPullRequests">
+            <a target="_blank" href="/metrics/twitterdev/twitter-api-typescript-sdk/MONTHLY">twitter-api-typescript-sdk : 2</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-forkCount" class="accordion-toggle" style="cursor: pointer;">
+            <td>Forks</td>
+            <td>2,386</td>
+            <td>2,333</td>
+            <td style="color: #45c527" >53</td>
+            <td style="color: #45c527" >2.27%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-forkCount">
+            <a target="_blank" href="/metrics/twitterdev/Twitter-API-v2-sample-code/MONTHLY">Twitter-API-v2-sample-code : 24</a><br><a target="_blank" href="/metrics/twitterdev/twitter-api-typescript-sdk/MONTHLY">twitter-api-typescript-sdk : 8</a><br><a target="_blank" href="/metrics/twitterdev/getting-started-with-the-twitter-api-v2-for-academic-research/MONTHLY">getting-started-with-the-twitter-api-v2-for-academic-research : 5</a><br><a target="_blank" href="/metrics/twitterdev/FactualCat-Twitter-Bot/MONTHLY">FactualCat-Twitter-Bot : 3</a><br><a target="_blank" href="/metrics/twitterdev/postman-twitter-api/MONTHLY">postman-twitter-api : 2</a><br><a target="_blank" href="/metrics/twitterdev/extract-usernames-from-tweet-replies/MONTHLY">extract-usernames-from-tweet-replies : 1</a><br><a target="_blank" href="/metrics/twitterdev/postman-twitter-ads-api/MONTHLY">postman-twitter-ads-api : 1</a><br><a target="_blank" href="/metrics/twitterdev/spaces-reach/MONTHLY">spaces-reach : 1</a><br><a target="_blank" href="/metrics/twitterdev/twitter-api-java-sdk/MONTHLY">twitter-api-java-sdk : 1</a><br><a target="_blank" href="/metrics/twitterdev/account-activity-dashboard-enterprise/MONTHLY">account-activity-dashboard-enterprise : 1</a><br><a target="_blank" href="/metrics/twitterdev/search-tweets-ruby/MONTHLY">search-tweets-ruby : 1</a><br><a target="_blank" href="/metrics/twitterdev/gcloud-toolkit-recent-search/MONTHLY">gcloud-toolkit-recent-search : 1</a><br><a target="_blank" href="/metrics/twitterdev/search-tweets-python/MONTHLY">search-tweets-python : 1</a><br><a target="_blank" href="/metrics/twitterdev/remote-dev-jobs-streamer/MONTHLY">remote-dev-jobs-streamer : 1</a><br><a target="_blank" href="/metrics/twitterdev/oauth2.0-bot/MONTHLY">oauth2.0-bot : 1</a><br><a target="_blank" href="/metrics/twitterdev/real-time-tweet-streamer/MONTHLY">real-time-tweet-streamer : 1</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-stargazers" class="accordion-toggle" style="cursor: pointer;">
+            <td>Stars</td>
+            <td>6,094</td>
+            <td>5,935</td>
+            <td style="color: #45c527" >159</td>
+            <td style="color: #45c527" >2.68%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-stargazers">
+            <a target="_blank" href="/metrics/twitterdev/Twitter-API-v2-sample-code/MONTHLY">Twitter-API-v2-sample-code : 50</a><br><a target="_blank" href="/metrics/twitterdev/twitter-api-typescript-sdk/MONTHLY">twitter-api-typescript-sdk : 37</a><br><a target="_blank" href="/metrics/twitterdev/getting-started-with-the-twitter-api-v2-for-academic-research/MONTHLY">getting-started-with-the-twitter-api-v2-for-academic-research : 15</a><br><a target="_blank" href="/metrics/twitterdev/bookmarks-search/MONTHLY">bookmarks-search : 8</a><br><a target="_blank" href="/metrics/twitterdev/twitter-api-java-sdk/MONTHLY">twitter-api-java-sdk : 7</a><br><a target="_blank" href="/metrics/twitterdev/search-tweets-python/MONTHLY">search-tweets-python : 6</a><br><a target="_blank" href="/metrics/twitterdev/postman-twitter-api/MONTHLY">postman-twitter-api : 4</a><br><a target="_blank" href="/metrics/twitterdev/autohook/MONTHLY">autohook : 4</a><br><a target="_blank" href="/metrics/twitterdev/noun-verb/MONTHLY">noun-verb : 4</a><br><a target="_blank" href="/metrics/twitterdev/gcloud-toolkit-filtered-stream/MONTHLY">gcloud-toolkit-filtered-stream : 3</a><br><a target="_blank" href="/metrics/twitterdev/FactualCat-Twitter-Bot/MONTHLY">FactualCat-Twitter-Bot : 2</a><br><a target="_blank" href="/metrics/twitterdev/spaces-reach/MONTHLY">spaces-reach : 2</a><br><a target="_blank" href="/metrics/twitterdev/bookmarks-to-notion/MONTHLY">bookmarks-to-notion : 2</a><br><a target="_blank" href="/metrics/twitterdev/twitter-context-annotations/MONTHLY">twitter-context-annotations : 2</a><br><a target="_blank" href="/metrics/twitterdev/oauth2.0-bot/MONTHLY">oauth2.0-bot : 2</a><br><a target="_blank" href="/metrics/twitterdev/dog-facts/MONTHLY">dog-facts : 1</a><br><a target="_blank" href="/metrics/twitterdev/open-evolution/MONTHLY">open-evolution : 1</a><br><a target="_blank" href="/metrics/twitterdev/mytwitterjam/MONTHLY">mytwitterjam : 1</a><br><a target="_blank" href="/metrics/twitterdev/Gnip-Insights-Interface/MONTHLY">Gnip-Insights-Interface : 1</a><br><a target="_blank" href="/metrics/twitterdev/Gnip-Trend-Detection/MONTHLY">Gnip-Trend-Detection : 1</a><br><a target="_blank" href="/metrics/twitterdev/search-tweets-ruby/MONTHLY">search-tweets-ruby : 1</a><br><a target="_blank" href="/metrics/twitterdev/twauth-web/MONTHLY">twauth-web : 1</a><br><a target="_blank" href="/metrics/twitterdev/SnowBotDev/MONTHLY">SnowBotDev : 1</a><br><a target="_blank" href="/metrics/twitterdev/bot-profile-append/MONTHLY">bot-profile-append : 1</a><br><a target="_blank" href="/metrics/twitterdev/large-video-upload-python/MONTHLY">large-video-upload-python : 1</a><br><a target="_blank" href="/metrics/twitterdev/real-time-tweet-streamer/MONTHLY">real-time-tweet-streamer : 1</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-watchers" class="accordion-toggle" style="cursor: pointer;">
+            <td>Watchers</td>
+            <td>1,783</td>
+            <td>1,782</td>
+            <td style="color: #45c527" >1</td>
+            <td style="color: #45c527" >0.06%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-watchers">
+            <a target="_blank" href="/metrics/twitterdev/getting-started-with-the-twitter-api-v2-for-academic-research/MONTHLY">getting-started-with-the-twitter-api-v2-for-academic-research : 2</a><br><a target="_blank" href="/metrics/twitterdev/open-evolution/MONTHLY">open-evolution : 1</a><br><a target="_blank" href="/metrics/twitterdev/autohook/MONTHLY">autohook : 1</a><br><a target="_blank" href="/metrics/twitterdev/search-tweets-ruby/MONTHLY">search-tweets-ruby : -1</a><br><a target="_blank" href="/metrics/twitterdev/twitter-api-java-sdk/MONTHLY">twitter-api-java-sdk : -2</a><br></div> </td>
+    </tbody>
+</table>
+<br>
+<h4>Highlights</h4>
+<ul>
+	<li><a href="/metrics/twitterdev/Twitter-API-v2-sample-code/MONTHLY">Twitter-API-v2-sample-code</a> crossed 1,600 Stars</li>
+	<li><a href="/metrics/twitterdev/twitter-api-java-sdk/MONTHLY">twitter-api-java-sdk</a> crossed 100 Stars</li>
+	<li><a href="/metrics/twitterdev/twitter-api-typescript-sdk/MONTHLY">twitter-api-typescript-sdk</a> crossed 600 Stars</li>
+</ul>
+<div class="graph-container">
+<br>
+<h4>Binary Treemap graphs</h4>
+<div class="row">
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitterdev/treemap_monthly_commits.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitterdev/treemap_monthly_issues.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitterdev/treemap_monthly_openIssues.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitterdev/treemap_monthly_closedPullRequests.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitterdev/treemap_monthly_openPullRequests.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitterdev/treemap_monthly_watchers.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitterdev/treemap_monthly_closedIssues.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitterdev/treemap_monthly_forkCount.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitterdev/treemap_monthly_stargazers.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitterdev/treemap_monthly_mergedPullRequests.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitterdev/treemap_monthly_pullRequests.svg">
+		Your browser does not support SVG
+	</object>
+</div>
+</div>
