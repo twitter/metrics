@@ -1,0 +1,125 @@
+---
+layout: weekly-metrics-v0.1
+title: Metrics report for pantsbuild/pants | WEEKLY-REPORT-2023-01-02
+permalink: /pantsbuild/pants/WEEKLY/
+
+owner: pantsbuild
+repo: pants
+reportID: WEEKLY-REPORT-2023-01-02
+datestampThisWeek: 2023-01-02
+datestampLastWeek: 2022-12-26
+---
+
+
+
+<table class="table table-condensed" style="border-collapse:collapse;">
+    <thead>
+    <tr>
+        <th>Metric</th>
+        <th>Latest</th>
+        <th>Previous</th>
+        <th colspan="2" style="text-align: center;">Difference</th>
+    </tr>
+    </thead>
+    <tbody>
+
+        <tr data-toggle="collapse" data-target="#col-commits" class="accordion-toggle" style="cursor: pointer;">
+            <td>Commits</td>
+            <td>12,551</td>
+            <td>12,531</td>
+            <td style="color: #45c527" >20</td>
+            <td style="color: #45c527" >0.16%</td>
+        </tr>
+        
+        <tr data-toggle="collapse" data-target="#col-issues" class="accordion-toggle" style="cursor: pointer;">
+            <td>Issues</td>
+            <td>4,920</td>
+            <td>4,913</td>
+            <td style="color: #45c527" >7</td>
+            <td style="color: #45c527" >0.14%</td>
+        </tr>
+        
+        <tr data-toggle="collapse" data-target="#col-openIssues" class="accordion-toggle" style="cursor: pointer;">
+            <td>Open Issues</td>
+            <td>715</td>
+            <td>726</td>
+            <td style="color: #45c527" >-11</td>
+            <td style="color: #45c527" >-1.52%</td>
+        </tr>
+        
+        <tr data-toggle="collapse" data-target="#col-closedIssues" class="accordion-toggle" style="cursor: pointer;">
+            <td>Closed Issues</td>
+            <td>4,205</td>
+            <td>4,187</td>
+            <td style="color: #45c527" >18</td>
+            <td style="color: #45c527" >0.43%</td>
+        </tr>
+        
+        <tr data-toggle="collapse" data-target="#col-pullRequests" class="accordion-toggle" style="cursor: pointer;">
+            <td>Pull Requests</td>
+            <td>12,912</td>
+            <td>12,889</td>
+            <td style="color: #45c527" >23</td>
+            <td style="color: #45c527" >0.18%</td>
+        </tr>
+        
+        <tr data-toggle="collapse" data-target="#col-openPullRequests" class="accordion-toggle" style="cursor: pointer;">
+            <td>Open Pull Requests</td>
+            <td>70</td>
+            <td>70</td>
+            <td style="color: #45c527" >0</td>
+            <td style="color: #45c527" >0.0%</td>
+        </tr>
+        
+        <tr data-toggle="collapse" data-target="#col-mergedPullRequests" class="accordion-toggle" style="cursor: pointer;">
+            <td>Merged Pull Requests</td>
+            <td>9,174</td>
+            <td>9,154</td>
+            <td style="color: #45c527" >20</td>
+            <td style="color: #45c527" >0.22%</td>
+        </tr>
+        
+        <tr data-toggle="collapse" data-target="#col-closedPullRequests" class="accordion-toggle" style="cursor: pointer;">
+            <td>Closed Pull Requests</td>
+            <td>3,668</td>
+            <td>3,665</td>
+            <td style="color: #45c527" >3</td>
+            <td style="color: #45c527" >0.08%</td>
+        </tr>
+        
+        <tr data-toggle="collapse" data-target="#col-forkCount" class="accordion-toggle" style="cursor: pointer;">
+            <td>Forks</td>
+            <td>499</td>
+            <td>496</td>
+            <td style="color: #45c527" >3</td>
+            <td style="color: #45c527" >0.6%</td>
+        </tr>
+        
+        <tr data-toggle="collapse" data-target="#col-stargazers" class="accordion-toggle" style="cursor: pointer;">
+            <td>Stars</td>
+            <td>2,444</td>
+            <td>2,429</td>
+            <td style="color: #45c527" >15</td>
+            <td style="color: #45c527" >0.62%</td>
+        </tr>
+        
+        <tr data-toggle="collapse" data-target="#col-watchers" class="accordion-toggle" style="cursor: pointer;">
+            <td>Watchers</td>
+            <td>66</td>
+            <td>66</td>
+            <td style="color: #45c527" >0</td>
+            <td style="color: #45c527" >0.0%</td>
+        </tr>
+        
+    </tbody>
+</table>
+<br>
+<h4><a target="_blank" href="https://chaoss.community/">CHAOSS</a> Metrics</h4>
+
+<table class="table table-condensed" style="border-collapse:collapse;">
+    <tbody>
+        <td>Bus Factor</td>
+        <td>Best: 34</td>
+        <td>Worst: 1</td>
+    </tbody>
+</table>
