@@ -1,0 +1,196 @@
+---
+layout: org-monthly-metrics-v0.1
+title: TwiterOSS Metrics Report for pantsbuild | MONTHLY-REPORT-2023-01-16
+permalink: /pantsbuild/MONTHLY/
+
+org: pantsbuild
+reportID: MONTHLY-REPORT-2023-01-16
+datestampThisMonth: 2023-01-16
+datestampLastMonth: 2022-12-19
+---
+
+
+<table class="table table-condensed" style="border-collapse:collapse;">
+    <thead>
+    <tr>
+        <th>Metric</th>
+        <th>Latest</th>
+        <th>Previous</th>
+        <th colspan="2" style="text-align: center;">Difference</th>
+    </tr>
+    </thead>
+    <tbody>
+
+        <tr data-toggle="collapse" data-target="#col-commits" class="accordion-toggle" style="cursor: pointer;">
+            <td>Commits</td>
+            <td>13,885</td>
+            <td>13,786</td>
+            <td style="color: #45c527" >99</td>
+            <td style="color: #45c527" >0.72%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-commits">
+            <a target="_blank" href="/metrics/pantsbuild/pants/MONTHLY">pants : 90</a><br><a target="_blank" href="/metrics/pantsbuild/pex/MONTHLY">pex : 9</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-issues" class="accordion-toggle" style="cursor: pointer;">
+            <td>Issues</td>
+            <td>5,920</td>
+            <td>5,861</td>
+            <td style="color: #45c527" >59</td>
+            <td style="color: #45c527" >1.01%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-issues">
+            <a target="_blank" href="/metrics/pantsbuild/pants/MONTHLY">pants : 49</a><br><a target="_blank" href="/metrics/pantsbuild/pex/MONTHLY">pex : 10</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-openIssues" class="accordion-toggle" style="cursor: pointer;">
+            <td>Open Issues</td>
+            <td>868</td>
+            <td>852</td>
+            <td style="color: #d31c08" >16</td>
+            <td style="color: #d31c08" >1.88%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-openIssues">
+            <a target="_blank" href="/metrics/pantsbuild/pants/MONTHLY">pants : 13</a><br><a target="_blank" href="/metrics/pantsbuild/pex/MONTHLY">pex : 3</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-closedIssues" class="accordion-toggle" style="cursor: pointer;">
+            <td>Closed Issues</td>
+            <td>5,052</td>
+            <td>5,009</td>
+            <td style="color: #45c527" >43</td>
+            <td style="color: #45c527" >0.86%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-closedIssues">
+            <a target="_blank" href="/metrics/pantsbuild/pants/MONTHLY">pants : 36</a><br><a target="_blank" href="/metrics/pantsbuild/pex/MONTHLY">pex : 7</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-pullRequests" class="accordion-toggle" style="cursor: pointer;">
+            <td>Pull Requests</td>
+            <td>14,034</td>
+            <td>13,907</td>
+            <td style="color: #45c527" >127</td>
+            <td style="color: #45c527" >0.91%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-pullRequests">
+            <a target="_blank" href="/metrics/pantsbuild/pants/MONTHLY">pants : 116</a><br><a target="_blank" href="/metrics/pantsbuild/pex/MONTHLY">pex : 11</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-openPullRequests" class="accordion-toggle" style="cursor: pointer;">
+            <td>Open Pull Requests</td>
+            <td>79</td>
+            <td>76</td>
+            <td style="color: #d31c08" >3</td>
+            <td style="color: #d31c08" >3.95%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-openPullRequests">
+            <a target="_blank" href="/metrics/pantsbuild/pants/MONTHLY">pants : 3</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-mergedPullRequests" class="accordion-toggle" style="cursor: pointer;">
+            <td>Merged Pull Requests</td>
+            <td>10,171</td>
+            <td>10,061</td>
+            <td style="color: #45c527" >110</td>
+            <td style="color: #45c527" >1.09%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-mergedPullRequests">
+            <a target="_blank" href="/metrics/pantsbuild/pants/MONTHLY">pants : 101</a><br><a target="_blank" href="/metrics/pantsbuild/pex/MONTHLY">pex : 9</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-closedPullRequests" class="accordion-toggle" style="cursor: pointer;">
+            <td>Closed Pull Requests</td>
+            <td>3,784</td>
+            <td>3,770</td>
+            <td style="color: #45c527" >14</td>
+            <td style="color: #45c527" >0.37%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-closedPullRequests">
+            <a target="_blank" href="/metrics/pantsbuild/pants/MONTHLY">pants : 12</a><br><a target="_blank" href="/metrics/pantsbuild/pex/MONTHLY">pex : 2</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-forkCount" class="accordion-toggle" style="cursor: pointer;">
+            <td>Forks</td>
+            <td>735</td>
+            <td>728</td>
+            <td style="color: #45c527" >7</td>
+            <td style="color: #45c527" >0.96%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-forkCount">
+            <a target="_blank" href="/metrics/pantsbuild/pants/MONTHLY">pants : 5</a><br><a target="_blank" href="/metrics/pantsbuild/pex/MONTHLY">pex : 2</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-stargazers" class="accordion-toggle" style="cursor: pointer;">
+            <td>Stars</td>
+            <td>4,684</td>
+            <td>4,582</td>
+            <td style="color: #45c527" >102</td>
+            <td style="color: #45c527" >2.23%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-stargazers">
+            <a target="_blank" href="/metrics/pantsbuild/pants/MONTHLY">pants : 81</a><br><a target="_blank" href="/metrics/pantsbuild/pex/MONTHLY">pex : 21</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-watchers" class="accordion-toggle" style="cursor: pointer;">
+            <td>Watchers</td>
+            <td>120</td>
+            <td>121</td>
+            <td style="color: #d31c08" >-1</td>
+            <td style="color: #d31c08" >-0.83%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-watchers">
+            <a target="_blank" href="/metrics/pantsbuild/pants/MONTHLY">pants : -1</a><br></div> </td>
+    </tbody>
+</table>
+<br>
+<h4>Highlights</h4>
+<ul>
+	<li><a href="/metrics/pantsbuild/pex/MONTHLY">pex</a> crossed 2,200 Stars</li>
+	<li><a href="/metrics/pantsbuild/pants/MONTHLY">pants</a> crossed 12,600 Commits</li>
+	<li><a href="/metrics/pantsbuild/pants/MONTHLY">pants</a> crossed 4,200 Closed Issues</li>
+	<li><a href="/metrics/pantsbuild/pants/MONTHLY">pants</a> crossed 12,900 Pull Requests</li>
+	<li><a href="/metrics/pantsbuild/pants/MONTHLY">pants</a> crossed 9,200 Merged Pull Requests</li>
+	<li><a href="/metrics/pantsbuild/pants/MONTHLY">pants</a> crossed 500 Forks</li>
+	<li><a href="/metrics/pantsbuild/pants/MONTHLY">pants</a> crossed 2,400 Stars</li>
+</ul>
+<div class="graph-container">
+<br>
+<h4>Binary Treemap graphs</h4>
+<div class="row">
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/pantsbuild/treemap_monthly_watchers.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/pantsbuild/treemap_monthly_issues.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/pantsbuild/treemap_monthly_closedIssues.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/pantsbuild/treemap_monthly_openPullRequests.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/pantsbuild/treemap_monthly_forkCount.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/pantsbuild/treemap_monthly_stargazers.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/pantsbuild/treemap_monthly_mergedPullRequests.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/pantsbuild/treemap_monthly_pullRequests.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/pantsbuild/treemap_monthly_commits.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/pantsbuild/treemap_monthly_openIssues.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/pantsbuild/treemap_monthly_closedPullRequests.svg">
+		Your browser does not support SVG
+	</object>
+</div>
+</div>
