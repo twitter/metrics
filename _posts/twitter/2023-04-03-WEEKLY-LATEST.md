@@ -1,0 +1,204 @@
+---
+layout: org-weekly-metrics-v0.1
+title: TwiterOSS Metrics Report for twitter | WEEKLY-REPORT-2023-04-03
+permalink: /twitter/WEEKLY/
+
+org: twitter
+reportID: WEEKLY-REPORT-2023-04-03
+datestampThisWeek: 2023-04-03
+datestampLastWeek: 2023-02-13
+---
+
+
+<table class="table table-condensed" style="border-collapse:collapse;">
+    <thead>
+    <tr>
+        <th>Metric</th>
+        <th>Latest</th>
+        <th>Previous</th>
+        <th colspan="2" style="text-align: center;">Difference</th>
+    </tr>
+    </thead>
+    <tbody>
+
+        <tr data-toggle="collapse" data-target="#col-commits" class="accordion-toggle" style="cursor: pointer;">
+            <td>Commits</td>
+            <td>56,181</td>
+            <td>56,068</td>
+            <td style="color: #45c527" >113</td>
+            <td style="color: #45c527" >0.2%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-commits">
+            <a target="_blank" href="/metrics/twitter/communitynotes/WEEKLY">communitynotes : 55</a><br><a target="_blank" href="/metrics/twitter/finatra/WEEKLY">finatra : 8</a><br><a target="_blank" href="/metrics/twitter/birdwatch/WEEKLY">birdwatch : 8</a><br><a target="_blank" href="/metrics/twitter/metrics/WEEKLY">metrics : 7</a><br><a target="_blank" href="/metrics/twitter/opensource-website/WEEKLY">opensource-website : 7</a><br><a target="_blank" href="/metrics/twitter/algebird/WEEKLY">algebird : 6</a><br><a target="_blank" href="/metrics/twitter/chill/WEEKLY">chill : 4</a><br><a target="_blank" href="/metrics/twitter/bazel-multiversion/WEEKLY">bazel-multiversion : 4</a><br><a target="_blank" href="/metrics/twitter/finagle/WEEKLY">finagle : 3</a><br><a target="_blank" href="/metrics/twitter/bijection/WEEKLY">bijection : 3</a><br><a target="_blank" href="/metrics/twitter/twitter-cldr-npm/WEEKLY">twitter-cldr-npm : 2</a><br><a target="_blank" href="/metrics/twitter/twitter-cldr-js/WEEKLY">twitter-cldr-js : 2</a><br><a target="_blank" href="/metrics/twitter/util/WEEKLY">util : 1</a><br><a target="_blank" href="/metrics/twitter/twitter-cldr-rb/WEEKLY">twitter-cldr-rb : 1</a><br><a target="_blank" href="/metrics/twitter/scrooge/WEEKLY">scrooge : 1</a><br><a target="_blank" href="/metrics/twitter/TwitterTextEditor/WEEKLY">TwitterTextEditor : 1</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-issues" class="accordion-toggle" style="cursor: pointer;">
+            <td>Issues</td>
+            <td>7,205</td>
+            <td>7,181</td>
+            <td style="color: #45c527" >24</td>
+            <td style="color: #45c527" >0.33%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-issues">
+            <a target="_blank" href="/metrics/twitter/twemoji/WEEKLY">twemoji : 5</a><br><a target="_blank" href="/metrics/twitter/finagle/WEEKLY">finagle : 4</a><br><a target="_blank" href="/metrics/twitter/twitter-text/WEEKLY">twitter-text : 4</a><br><a target="_blank" href="/metrics/twitter/communitynotes/WEEKLY">communitynotes : 4</a><br><a target="_blank" href="/metrics/twitter/algebird/WEEKLY">algebird : 1</a><br><a target="_blank" href="/metrics/twitter/twitter-cldr-rb/WEEKLY">twitter-cldr-rb : 1</a><br><a target="_blank" href="/metrics/twitter/cache-trace/WEEKLY">cache-trace : 1</a><br><a target="_blank" href="/metrics/twitter/compose-rules/WEEKLY">compose-rules : 1</a><br><a target="_blank" href="/metrics/twitter/twemproxy/WEEKLY">twemproxy : 1</a><br><a target="_blank" href="/metrics/twitter/scrooge/WEEKLY">scrooge : 1</a><br><a target="_blank" href="/metrics/twitter/TwitterTextEditor/WEEKLY">TwitterTextEditor : 1</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-openIssues" class="accordion-toggle" style="cursor: pointer;">
+            <td>Open Issues</td>
+            <td>2,144</td>
+            <td>2,135</td>
+            <td style="color: #d31c08" >9</td>
+            <td style="color: #d31c08" >0.42%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-openIssues">
+            <a target="_blank" href="/metrics/twitter/finagle/WEEKLY">finagle : 4</a><br><a target="_blank" href="/metrics/twitter/twemoji/WEEKLY">twemoji : 4</a><br><a target="_blank" href="/metrics/twitter/twitter-text/WEEKLY">twitter-text : 3</a><br><a target="_blank" href="/metrics/twitter/communitynotes/WEEKLY">communitynotes : 2</a><br><a target="_blank" href="/metrics/twitter/algebird/WEEKLY">algebird : 1</a><br><a target="_blank" href="/metrics/twitter/cache-trace/WEEKLY">cache-trace : 1</a><br><a target="_blank" href="/metrics/twitter/twemproxy/WEEKLY">twemproxy : 1</a><br><a target="_blank" href="/metrics/twitter/scrooge/WEEKLY">scrooge : 1</a><br><a target="_blank" href="/metrics/twitter/TwitterTextEditor/WEEKLY">TwitterTextEditor : 1</a><br><a target="_blank" href="/metrics/twitter/twitter-cldr-rb/WEEKLY">twitter-cldr-rb : -1</a><br><a target="_blank" href="/metrics/twitter/SentenTree/WEEKLY">SentenTree : -1</a><br><a target="_blank" href="/metrics/twitter/twitter-cldr-js/WEEKLY">twitter-cldr-js : -1</a><br><a target="_blank" href="/metrics/twitter/effectivescala/WEEKLY">effectivescala : -1</a><br><a target="_blank" href="/metrics/twitter/twurl/WEEKLY">twurl : -5</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-closedIssues" class="accordion-toggle" style="cursor: pointer;">
+            <td>Closed Issues</td>
+            <td>5,061</td>
+            <td>5,046</td>
+            <td style="color: #45c527" >15</td>
+            <td style="color: #45c527" >0.3%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-closedIssues">
+            <a target="_blank" href="/metrics/twitter/twurl/WEEKLY">twurl : 5</a><br><a target="_blank" href="/metrics/twitter/twitter-cldr-rb/WEEKLY">twitter-cldr-rb : 2</a><br><a target="_blank" href="/metrics/twitter/communitynotes/WEEKLY">communitynotes : 2</a><br><a target="_blank" href="/metrics/twitter/twitter-text/WEEKLY">twitter-text : 1</a><br><a target="_blank" href="/metrics/twitter/twemoji/WEEKLY">twemoji : 1</a><br><a target="_blank" href="/metrics/twitter/SentenTree/WEEKLY">SentenTree : 1</a><br><a target="_blank" href="/metrics/twitter/compose-rules/WEEKLY">compose-rules : 1</a><br><a target="_blank" href="/metrics/twitter/twitter-cldr-js/WEEKLY">twitter-cldr-js : 1</a><br><a target="_blank" href="/metrics/twitter/effectivescala/WEEKLY">effectivescala : 1</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-pullRequests" class="accordion-toggle" style="cursor: pointer;">
+            <td>Pull Requests</td>
+            <td>11,567</td>
+            <td>11,487</td>
+            <td style="color: #45c527" >80</td>
+            <td style="color: #45c527" >0.7%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-pullRequests">
+            <a target="_blank" href="/metrics/twitter/communitynotes/WEEKLY">communitynotes : 24</a><br><a target="_blank" href="/metrics/twitter/chill/WEEKLY">chill : 9</a><br><a target="_blank" href="/metrics/twitter/algebird/WEEKLY">algebird : 8</a><br><a target="_blank" href="/metrics/twitter/bijection/WEEKLY">bijection : 7</a><br><a target="_blank" href="/metrics/twitter/scoot/WEEKLY">scoot : 5</a><br><a target="_blank" href="/metrics/twitter/GraphJet/WEEKLY">GraphJet : 4</a><br><a target="_blank" href="/metrics/twitter/metrics/WEEKLY">metrics : 4</a><br><a target="_blank" href="/metrics/twitter/twemoji/WEEKLY">twemoji : 3</a><br><a target="_blank" href="/metrics/twitter/bazel-multiversion/WEEKLY">bazel-multiversion : 3</a><br><a target="_blank" href="/metrics/twitter/gatekeeper-service/WEEKLY">gatekeeper-service : 2</a><br><a target="_blank" href="/metrics/twitter/rezolus/WEEKLY">rezolus : 2</a><br><a target="_blank" href="/metrics/twitter/dict_minimize/WEEKLY">dict_minimize : 2</a><br><a target="_blank" href="/metrics/twitter/cloudhopper-commons/WEEKLY">cloudhopper-commons : 1</a><br><a target="_blank" href="/metrics/twitter/util/WEEKLY">util : 1</a><br><a target="_blank" href="/metrics/twitter/pants/WEEKLY">pants : 1</a><br><a target="_blank" href="/metrics/twitter/focus/WEEKLY">focus : 1</a><br><a target="_blank" href="/metrics/twitter/birdwatch/WEEKLY">birdwatch : 1</a><br><a target="_blank" href="/metrics/twitter/TwitterTextEditor/WEEKLY">TwitterTextEditor : 1</a><br><a target="_blank" href="/metrics/twitter/go-bindata/WEEKLY">go-bindata : 1</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-openPullRequests" class="accordion-toggle" style="cursor: pointer;">
+            <td>Open Pull Requests</td>
+            <td>690</td>
+            <td>669</td>
+            <td style="color: #d31c08" >21</td>
+            <td style="color: #d31c08" >3.14%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-openPullRequests">
+            <a target="_blank" href="/metrics/twitter/communitynotes/WEEKLY">communitynotes : 4</a><br><a target="_blank" href="/metrics/twitter/chill/WEEKLY">chill : 3</a><br><a target="_blank" href="/metrics/twitter/metrics/WEEKLY">metrics : 3</a><br><a target="_blank" href="/metrics/twitter/gatekeeper-service/WEEKLY">gatekeeper-service : 2</a><br><a target="_blank" href="/metrics/twitter/rezolus/WEEKLY">rezolus : 2</a><br><a target="_blank" href="/metrics/twitter/dict_minimize/WEEKLY">dict_minimize : 2</a><br><a target="_blank" href="/metrics/twitter/cloudhopper-commons/WEEKLY">cloudhopper-commons : 1</a><br><a target="_blank" href="/metrics/twitter/scoot/WEEKLY">scoot : 1</a><br><a target="_blank" href="/metrics/twitter/util/WEEKLY">util : 1</a><br><a target="_blank" href="/metrics/twitter/pants/WEEKLY">pants : 1</a><br><a target="_blank" href="/metrics/twitter/focus/WEEKLY">focus : 1</a><br><a target="_blank" href="/metrics/twitter/GraphJet/WEEKLY">GraphJet : 1</a><br><a target="_blank" href="/metrics/twitter/birdwatch/WEEKLY">birdwatch : 1</a><br><a target="_blank" href="/metrics/twitter/go-bindata/WEEKLY">go-bindata : 1</a><br><a target="_blank" href="/metrics/twitter/finatra/WEEKLY">finatra : -1</a><br><a target="_blank" href="/metrics/twitter/twitter-cldr-js/WEEKLY">twitter-cldr-js : -1</a><br><a target="_blank" href="/metrics/twitter/opensource-website/WEEKLY">opensource-website : -1</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-mergedPullRequests" class="accordion-toggle" style="cursor: pointer;">
+            <td>Merged Pull Requests</td>
+            <td>7,979</td>
+            <td>7,943</td>
+            <td style="color: #45c527" >36</td>
+            <td style="color: #45c527" >0.45%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-mergedPullRequests">
+            <a target="_blank" href="/metrics/twitter/communitynotes/WEEKLY">communitynotes : 20</a><br><a target="_blank" href="/metrics/twitter/algebird/WEEKLY">algebird : 6</a><br><a target="_blank" href="/metrics/twitter/chill/WEEKLY">chill : 4</a><br><a target="_blank" href="/metrics/twitter/bijection/WEEKLY">bijection : 3</a><br><a target="_blank" href="/metrics/twitter/bazel-multiversion/WEEKLY">bazel-multiversion : 2</a><br><a target="_blank" href="/metrics/twitter/twitter-cldr-js/WEEKLY">twitter-cldr-js : 1</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-closedPullRequests" class="accordion-toggle" style="cursor: pointer;">
+            <td>Closed Pull Requests</td>
+            <td>2,898</td>
+            <td>2,875</td>
+            <td style="color: #45c527" >23</td>
+            <td style="color: #45c527" >0.8%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-closedPullRequests">
+            <a target="_blank" href="/metrics/twitter/bijection/WEEKLY">bijection : 4</a><br><a target="_blank" href="/metrics/twitter/scoot/WEEKLY">scoot : 4</a><br><a target="_blank" href="/metrics/twitter/twemoji/WEEKLY">twemoji : 3</a><br><a target="_blank" href="/metrics/twitter/GraphJet/WEEKLY">GraphJet : 3</a><br><a target="_blank" href="/metrics/twitter/chill/WEEKLY">chill : 2</a><br><a target="_blank" href="/metrics/twitter/algebird/WEEKLY">algebird : 2</a><br><a target="_blank" href="/metrics/twitter/finatra/WEEKLY">finatra : 1</a><br><a target="_blank" href="/metrics/twitter/bazel-multiversion/WEEKLY">bazel-multiversion : 1</a><br><a target="_blank" href="/metrics/twitter/metrics/WEEKLY">metrics : 1</a><br><a target="_blank" href="/metrics/twitter/opensource-website/WEEKLY">opensource-website : 1</a><br><a target="_blank" href="/metrics/twitter/TwitterTextEditor/WEEKLY">TwitterTextEditor : 1</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-forkCount" class="accordion-toggle" style="cursor: pointer;">
+            <td>Forks</td>
+            <td>21,764</td>
+            <td>20,881</td>
+            <td style="color: #45c527" >883</td>
+            <td style="color: #45c527" >4.23%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-forkCount">
+            <a target="_blank" href="/metrics/twitter/twemoji/WEEKLY">twemoji : 80</a><br><a target="_blank" href="/metrics/twitter/opensource-website/WEEKLY">opensource-website : 47</a><br><a target="_blank" href="/metrics/twitter/communitynotes/WEEKLY">communitynotes : 25</a><br><a target="_blank" href="/metrics/twitter/typeahead.js/WEEKLY">typeahead.js : 23</a><br><a target="_blank" href="/metrics/twitter/twitter-text/WEEKLY">twitter-text : 21</a><br><a target="_blank" href="/metrics/twitter/GraphJet/WEEKLY">GraphJet : 21</a><br><a target="_blank" href="/metrics/twitter/finagle/WEEKLY">finagle : 20</a><br><a target="_blank" href="/metrics/twitter/rezolus/WEEKLY">rezolus : 17</a><br><a target="_blank" href="/metrics/twitter/algebird/WEEKLY">algebird : 16</a><br><a target="_blank" href="/metrics/twitter/util/WEEKLY">util : 14</a><br><a target="_blank" href="/metrics/twitter/Serial/WEEKLY">Serial : 14</a><br><a target="_blank" href="/metrics/twitter/sbf/WEEKLY">sbf : 14</a><br><a target="_blank" href="/metrics/twitter/twitter-server/WEEKLY">twitter-server : 13</a><br><a target="_blank" href="/metrics/twitter/twemproxy/WEEKLY">twemproxy : 13</a><br><a target="_blank" href="/metrics/twitter/go-bindata/WEEKLY">go-bindata : 13</a><br><a target="_blank" href="/metrics/twitter/scala_school/WEEKLY">scala_school : 12</a><br><a target="_blank" href="/metrics/twitter/bijection/WEEKLY">bijection : 11</a><br><a target="_blank" href="/metrics/twitter/compose-rules/WEEKLY">compose-rules : 11</a><br><a target="_blank" href="/metrics/twitter/metrics/WEEKLY">metrics : 11</a><br><a target="_blank" href="/metrics/twitter/scalding/WEEKLY">scalding : 11</a><br><a target="_blank" href="/metrics/twitter/TwitterTextEditor/WEEKLY">TwitterTextEditor : 11</a><br><a target="_blank" href="/metrics/twitter/elephant-bird/WEEKLY">elephant-bird : 10</a><br><a target="_blank" href="/metrics/twitter/rpc-perf/WEEKLY">rpc-perf : 10</a><br><a target="_blank" href="/metrics/twitter/scoot/WEEKLY">scoot : 9</a><br><a target="_blank" href="/metrics/twitter/twitter-cldr-npm/WEEKLY">twitter-cldr-npm : 9</a><br><a target="_blank" href="/metrics/twitter/twemoji-parser/WEEKLY">twemoji-parser : 9</a><br><a target="_blank" href="/metrics/twitter/chill/WEEKLY">chill : 8</a><br><a target="_blank" href="/metrics/twitter/gatekeeper-service/WEEKLY">gatekeeper-service : 8</a><br><a target="_blank" href="/metrics/twitter/AnomalyDetection/WEEKLY">AnomalyDetection : 8</a><br><a target="_blank" href="/metrics/twitter/cloudhopper-commons/WEEKLY">cloudhopper-commons : 8</a><br><a target="_blank" href="/metrics/twitter/pelikan/WEEKLY">pelikan : 8</a><br><a target="_blank" href="/metrics/twitter/joauth/WEEKLY">joauth : 8</a><br><a target="_blank" href="/metrics/twitter/scrooge/WEEKLY">scrooge : 8</a><br><a target="_blank" href="/metrics/twitter/hogan.js/WEEKLY">hogan.js : 8</a><br><a target="_blank" href="/metrics/twitter/iago2/WEEKLY">iago2 : 7</a><br><a target="_blank" href="/metrics/twitter/labella.js/WEEKLY">labella.js : 7</a><br><a target="_blank" href="/metrics/twitter/zktraffic/WEEKLY">zktraffic : 7</a><br><a target="_blank" href="/metrics/twitter/finatra/WEEKLY">finatra : 7</a><br><a target="_blank" href="/metrics/twitter/cache-trace/WEEKLY">cache-trace : 7</a><br><a target="_blank" href="/metrics/twitter/twitter-korean-text/WEEKLY">twitter-korean-text : 7</a><br><a target="_blank" href="/metrics/twitter/focus/WEEKLY">focus : 7</a><br><a target="_blank" href="/metrics/twitter/twitter-cldr-js/WEEKLY">twitter-cldr-js : 7</a><br><a target="_blank" href="/metrics/twitter/hadoop-lzo/WEEKLY">hadoop-lzo : 7</a><br><a target="_blank" href="/metrics/twitter/cassovary/WEEKLY">cassovary : 7</a><br><a target="_blank" href="/metrics/twitter/hpack/WEEKLY">hpack : 7</a><br><a target="_blank" href="/metrics/twitter/dict_minimize/WEEKLY">dict_minimize : 7</a><br><a target="_blank" href="/metrics/twitter/dodo/WEEKLY">dodo : 7</a><br><a target="_blank" href="/metrics/twitter/check-my-repo/WEEKLY">check-my-repo : 7</a><br><a target="_blank" href="/metrics/twitter/diffusion-rl/WEEKLY">diffusion-rl : 6</a><br><a target="_blank" href="/metrics/twitter/ios-twitter-apache-thrift/WEEKLY">ios-twitter-apache-thrift : 6</a><br><a target="_blank" href="/metrics/twitter/innovators-patent-agreement/WEEKLY">innovators-patent-agreement : 6</a><br><a target="_blank" href="/metrics/twitter/tormenta/WEEKLY">tormenta : 6</a><br><a target="_blank" href="/metrics/twitter/ccommon/WEEKLY">ccommon : 6</a><br><a target="_blank" href="/metrics/twitter/twitter-cldr-rb/WEEKLY">twitter-cldr-rb : 6</a><br><a target="_blank" href="/metrics/twitter/ios-twitter-network-layer/WEEKLY">ios-twitter-network-layer : 6</a><br><a target="_blank" href="/metrics/twitter/sqrl/WEEKLY">sqrl : 6</a><br><a target="_blank" href="/metrics/twitter/groupcache/WEEKLY">groupcache : 6</a><br><a target="_blank" href="/metrics/twitter/ios-twitter-logging-service/WEEKLY">ios-twitter-logging-service : 6</a><br><a target="_blank" href="/metrics/twitter/SentenTree/WEEKLY">SentenTree : 6</a><br><a target="_blank" href="/metrics/twitter/fatcache/WEEKLY">fatcache : 6</a><br><a target="_blank" href="/metrics/twitter/bazel-multiversion/WEEKLY">bazel-multiversion : 6</a><br><a target="_blank" href="/metrics/twitter/birdwatch/WEEKLY">birdwatch : 6</a><br><a target="_blank" href="/metrics/twitter/nodes/WEEKLY">nodes : 6</a><br><a target="_blank" href="/metrics/twitter/dodo-build/WEEKLY">dodo-build : 6</a><br><a target="_blank" href="/metrics/twitter/ios-twitter-image-pipeline/WEEKLY">ios-twitter-image-pipeline : 6</a><br><a target="_blank" href="/metrics/twitter/scala_school2/WEEKLY">scala_school2 : 6</a><br><a target="_blank" href="/metrics/twitter/rustcommon/WEEKLY">rustcommon : 6</a><br><a target="_blank" href="/metrics/twitter/effectivescala/WEEKLY">effectivescala : 6</a><br><a target="_blank" href="/metrics/twitter/interactive/WEEKLY">interactive : 5</a><br><a target="_blank" href="/metrics/twitter/activerecord-reputation-system/WEEKLY">activerecord-reputation-system : 5</a><br><a target="_blank" href="/metrics/twitter/hbc/WEEKLY">hbc : 5</a><br><a target="_blank" href="/metrics/twitter/pants/WEEKLY">pants : 5</a><br><a target="_blank" href="/metrics/twitter/analytics-infra-governance/WEEKLY">analytics-infra-governance : 5</a><br><a target="_blank" href="/metrics/twitter/netty-http2/WEEKLY">netty-http2 : 5</a><br><a target="_blank" href="/metrics/twitter/sslconfig/WEEKLY">sslconfig : 5</a><br><a target="_blank" href="/metrics/twitter/repo-scaffolding/WEEKLY">repo-scaffolding : 5</a><br><a target="_blank" href="/metrics/twitter/twitter.github.io/WEEKLY">twitter.github.io : 5</a><br><a target="_blank" href="/metrics/twitter/BreakoutDetection/WEEKLY">BreakoutDetection : 5</a><br><a target="_blank" href="/metrics/twitter/vireo/WEEKLY">vireo : 5</a><br><a target="_blank" href="/metrics/twitter/curation-style-guide/WEEKLY">curation-style-guide : 5</a><br><a target="_blank" href="/metrics/twitter/storehaus/WEEKLY">storehaus : 5</a><br><a target="_blank" href="/metrics/twitter/twurl/WEEKLY">twurl : 5</a><br><a target="_blank" href="/metrics/twitter/rsc/WEEKLY">rsc : 5</a><br><a target="_blank" href="/metrics/twitter/summingbird/WEEKLY">summingbird : 5</a><br><a target="_blank" href="/metrics/twitter/libwatchman/WEEKLY">libwatchman : 5</a><br><a target="_blank" href="/metrics/twitter/google-tag-manager-event-tag/WEEKLY">google-tag-manager-event-tag : 5</a><br><a target="_blank" href="/metrics/twitter/whiskey/WEEKLY">whiskey : 5</a><br><a target="_blank" href="/metrics/twitter/ossdecks/WEEKLY">ossdecks : 5</a><br><a target="_blank" href="/metrics/twitter/caladrius/WEEKLY">caladrius : 5</a><br><a target="_blank" href="/metrics/twitter/google-tag-manager-base-tag/WEEKLY">google-tag-manager-base-tag : 4</a><br><a target="_blank" href="/metrics/twitter/gpl-commitment/WEEKLY">gpl-commitment : 4</a><br><a target="_blank" href="/metrics/twitter/second-control-probability-distributions/WEEKLY">second-control-probability-distributions : 4</a><br><a target="_blank" href="/metrics/twitter/twemcache/WEEKLY">twemcache : 4</a><br><a target="_blank" href="/metrics/twitter/d3kit/WEEKLY">d3kit : 4</a><br><a target="_blank" href="/metrics/twitter/thrift_client/WEEKLY">thrift_client : 4</a><br><a target="_blank" href="/metrics/twitter/hraven/WEEKLY">hraven : 4</a><br><a target="_blank" href="/metrics/twitter/wordpress/WEEKLY">wordpress : 3</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-stargazers" class="accordion-toggle" style="cursor: pointer;">
+            <td>Stars</td>
+            <td>124,735</td>
+            <td>123,098</td>
+            <td style="color: #45c527" >1,637</td>
+            <td style="color: #45c527" >1.33%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-stargazers">
+            <a target="_blank" href="/metrics/twitter/twemoji/WEEKLY">twemoji : 438</a><br><a target="_blank" href="/metrics/twitter/opensource-website/WEEKLY">opensource-website : 176</a><br><a target="_blank" href="/metrics/twitter/communitynotes/WEEKLY">communitynotes : 138</a><br><a target="_blank" href="/metrics/twitter/rezolus/WEEKLY">rezolus : 132</a><br><a target="_blank" href="/metrics/twitter/GraphJet/WEEKLY">GraphJet : 88</a><br><a target="_blank" href="/metrics/twitter/finagle/WEEKLY">finagle : 76</a><br><a target="_blank" href="/metrics/twitter/sbf/WEEKLY">sbf : 62</a><br><a target="_blank" href="/metrics/twitter/twitter-text/WEEKLY">twitter-text : 41</a><br><a target="_blank" href="/metrics/twitter/compose-rules/WEEKLY">compose-rules : 41</a><br><a target="_blank" href="/metrics/twitter/twemproxy/WEEKLY">twemproxy : 41</a><br><a target="_blank" href="/metrics/twitter/TwitterTextEditor/WEEKLY">TwitterTextEditor : 35</a><br><a target="_blank" href="/metrics/twitter/util/WEEKLY">util : 23</a><br><a target="_blank" href="/metrics/twitter/Serial/WEEKLY">Serial : 22</a><br><a target="_blank" href="/metrics/twitter/typeahead.js/WEEKLY">typeahead.js : 21</a><br><a target="_blank" href="/metrics/twitter/twitter-server/WEEKLY">twitter-server : 20</a><br><a target="_blank" href="/metrics/twitter/go-bindata/WEEKLY">go-bindata : 19</a><br><a target="_blank" href="/metrics/twitter/scoot/WEEKLY">scoot : 17</a><br><a target="_blank" href="/metrics/twitter/pelikan/WEEKLY">pelikan : 17</a><br><a target="_blank" href="/metrics/twitter/scalding/WEEKLY">scalding : 15</a><br><a target="_blank" href="/metrics/twitter/metrics/WEEKLY">metrics : 14</a><br><a target="_blank" href="/metrics/twitter/algebird/WEEKLY">algebird : 13</a><br><a target="_blank" href="/metrics/twitter/AnomalyDetection/WEEKLY">AnomalyDetection : 12</a><br><a target="_blank" href="/metrics/twitter/bijection/WEEKLY">bijection : 12</a><br><a target="_blank" href="/metrics/twitter/vireo/WEEKLY">vireo : 12</a><br><a target="_blank" href="/metrics/twitter/finatra/WEEKLY">finatra : 9</a><br><a target="_blank" href="/metrics/twitter/rustcommon/WEEKLY">rustcommon : 8</a><br><a target="_blank" href="/metrics/twitter/scala_school/WEEKLY">scala_school : 8</a><br><a target="_blank" href="/metrics/twitter/cache-trace/WEEKLY">cache-trace : 7</a><br><a target="_blank" href="/metrics/twitter/rpc-perf/WEEKLY">rpc-perf : 6</a><br><a target="_blank" href="/metrics/twitter/SentenTree/WEEKLY">SentenTree : 6</a><br><a target="_blank" href="/metrics/twitter/diffusion-rl/WEEKLY">diffusion-rl : 5</a><br><a target="_blank" href="/metrics/twitter/focus/WEEKLY">focus : 5</a><br><a target="_blank" href="/metrics/twitter/hadoop-lzo/WEEKLY">hadoop-lzo : 5</a><br><a target="_blank" href="/metrics/twitter/effectivescala/WEEKLY">effectivescala : 5</a><br><a target="_blank" href="/metrics/twitter/chill/WEEKLY">chill : 4</a><br><a target="_blank" href="/metrics/twitter/gatekeeper-service/WEEKLY">gatekeeper-service : 4</a><br><a target="_blank" href="/metrics/twitter/hbc/WEEKLY">hbc : 4</a><br><a target="_blank" href="/metrics/twitter/ccommon/WEEKLY">ccommon : 4</a><br><a target="_blank" href="/metrics/twitter/BreakoutDetection/WEEKLY">BreakoutDetection : 4</a><br><a target="_blank" href="/metrics/twitter/d3kit/WEEKLY">d3kit : 4</a><br><a target="_blank" href="/metrics/twitter/twurl/WEEKLY">twurl : 4</a><br><a target="_blank" href="/metrics/twitter/dict_minimize/WEEKLY">dict_minimize : 4</a><br><a target="_blank" href="/metrics/twitter/dodo/WEEKLY">dodo : 4</a><br><a target="_blank" href="/metrics/twitter/ios-twitter-apache-thrift/WEEKLY">ios-twitter-apache-thrift : 3</a><br><a target="_blank" href="/metrics/twitter/labella.js/WEEKLY">labella.js : 3</a><br><a target="_blank" href="/metrics/twitter/twitter-cldr-npm/WEEKLY">twitter-cldr-npm : 3</a><br><a target="_blank" href="/metrics/twitter/sqrl/WEEKLY">sqrl : 3</a><br><a target="_blank" href="/metrics/twitter/groupcache/WEEKLY">groupcache : 3</a><br><a target="_blank" href="/metrics/twitter/cassovary/WEEKLY">cassovary : 3</a><br><a target="_blank" href="/metrics/twitter/hpack/WEEKLY">hpack : 3</a><br><a target="_blank" href="/metrics/twitter/netty-http2/WEEKLY">netty-http2 : 2</a><br><a target="_blank" href="/metrics/twitter/twitter-korean-text/WEEKLY">twitter-korean-text : 2</a><br><a target="_blank" href="/metrics/twitter/twemoji-parser/WEEKLY">twemoji-parser : 2</a><br><a target="_blank" href="/metrics/twitter/nodes/WEEKLY">nodes : 2</a><br><a target="_blank" href="/metrics/twitter/rsc/WEEKLY">rsc : 2</a><br><a target="_blank" href="/metrics/twitter/ios-twitter-image-pipeline/WEEKLY">ios-twitter-image-pipeline : 2</a><br><a target="_blank" href="/metrics/twitter/joauth/WEEKLY">joauth : 2</a><br><a target="_blank" href="/metrics/twitter/check-my-repo/WEEKLY">check-my-repo : 2</a><br><a target="_blank" href="/metrics/twitter/google-tag-manager-base-tag/WEEKLY">google-tag-manager-base-tag : 1</a><br><a target="_blank" href="/metrics/twitter/gpl-commitment/WEEKLY">gpl-commitment : 1</a><br><a target="_blank" href="/metrics/twitter/elephant-bird/WEEKLY">elephant-bird : 1</a><br><a target="_blank" href="/metrics/twitter/iago2/WEEKLY">iago2 : 1</a><br><a target="_blank" href="/metrics/twitter/cloudhopper-commons/WEEKLY">cloudhopper-commons : 1</a><br><a target="_blank" href="/metrics/twitter/innovators-patent-agreement/WEEKLY">innovators-patent-agreement : 1</a><br><a target="_blank" href="/metrics/twitter/zktraffic/WEEKLY">zktraffic : 1</a><br><a target="_blank" href="/metrics/twitter/ios-twitter-network-layer/WEEKLY">ios-twitter-network-layer : 1</a><br><a target="_blank" href="/metrics/twitter/twitter.github.io/WEEKLY">twitter.github.io : 1</a><br><a target="_blank" href="/metrics/twitter/ios-twitter-logging-service/WEEKLY">ios-twitter-logging-service : 1</a><br><a target="_blank" href="/metrics/twitter/twemcache/WEEKLY">twemcache : 1</a><br><a target="_blank" href="/metrics/twitter/fatcache/WEEKLY">fatcache : 1</a><br><a target="_blank" href="/metrics/twitter/bazel-multiversion/WEEKLY">bazel-multiversion : 1</a><br><a target="_blank" href="/metrics/twitter/storehaus/WEEKLY">storehaus : 1</a><br><a target="_blank" href="/metrics/twitter/dodo-build/WEEKLY">dodo-build : 1</a><br><a target="_blank" href="/metrics/twitter/scala_school2/WEEKLY">scala_school2 : 1</a><br><a target="_blank" href="/metrics/twitter/summingbird/WEEKLY">summingbird : 1</a><br><a target="_blank" href="/metrics/twitter/libwatchman/WEEKLY">libwatchman : 1</a><br><a target="_blank" href="/metrics/twitter/scrooge/WEEKLY">scrooge : 1</a><br><a target="_blank" href="/metrics/twitter/twitter-cldr-rb/WEEKLY">twitter-cldr-rb : -1</a><br><a target="_blank" href="/metrics/twitter/sslconfig/WEEKLY">sslconfig : -1</a><br><a target="_blank" href="/metrics/twitter/ossdecks/WEEKLY">ossdecks : -1</a><br><a target="_blank" href="/metrics/twitter/hogan.js/WEEKLY">hogan.js : -1</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-watchers" class="accordion-toggle" style="cursor: pointer;">
+            <td>Watchers</td>
+            <td>11,687</td>
+            <td>11,687</td>
+            <td style="color: #45c527" >0</td>
+            <td style="color: #45c527" >0.0%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-watchers">
+            <a target="_blank" href="/metrics/twitter/communitynotes/WEEKLY">communitynotes : 13</a><br><a target="_blank" href="/metrics/twitter/finagle/WEEKLY">finagle : 2</a><br><a target="_blank" href="/metrics/twitter/ios-twitter-apache-thrift/WEEKLY">ios-twitter-apache-thrift : 2</a><br><a target="_blank" href="/metrics/twitter/twemoji/WEEKLY">twemoji : 2</a><br><a target="_blank" href="/metrics/twitter/birdwatch/WEEKLY">birdwatch : 2</a><br><a target="_blank" href="/metrics/twitter/dict_minimize/WEEKLY">dict_minimize : 2</a><br><a target="_blank" href="/metrics/twitter/sbf/WEEKLY">sbf : 2</a><br><a target="_blank" href="/metrics/twitter/google-tag-manager-base-tag/WEEKLY">google-tag-manager-base-tag : 1</a><br><a target="_blank" href="/metrics/twitter/gatekeeper-service/WEEKLY">gatekeeper-service : 1</a><br><a target="_blank" href="/metrics/twitter/diffusion-rl/WEEKLY">diffusion-rl : 1</a><br><a target="_blank" href="/metrics/twitter/iago2/WEEKLY">iago2 : 1</a><br><a target="_blank" href="/metrics/twitter/twitter-cldr-npm/WEEKLY">twitter-cldr-npm : 1</a><br><a target="_blank" href="/metrics/twitter/cache-trace/WEEKLY">cache-trace : 1</a><br><a target="_blank" href="/metrics/twitter/twitter.github.io/WEEKLY">twitter.github.io : 1</a><br><a target="_blank" href="/metrics/twitter/focus/WEEKLY">focus : 1</a><br><a target="_blank" href="/metrics/twitter/GraphJet/WEEKLY">GraphJet : 1</a><br><a target="_blank" href="/metrics/twitter/compose-rules/WEEKLY">compose-rules : 1</a><br><a target="_blank" href="/metrics/twitter/bazel-multiversion/WEEKLY">bazel-multiversion : 1</a><br><a target="_blank" href="/metrics/twitter/vireo/WEEKLY">vireo : 1</a><br><a target="_blank" href="/metrics/twitter/hadoop-lzo/WEEKLY">hadoop-lzo : 1</a><br><a target="_blank" href="/metrics/twitter/rustcommon/WEEKLY">rustcommon : 1</a><br><a target="_blank" href="/metrics/twitter/effectivescala/WEEKLY">effectivescala : 1</a><br><a target="_blank" href="/metrics/twitter/google-tag-manager-event-tag/WEEKLY">google-tag-manager-event-tag : 1</a><br><a target="_blank" href="/metrics/twitter/scrooge/WEEKLY">scrooge : 1</a><br><a target="_blank" href="/metrics/twitter/check-my-repo/WEEKLY">check-my-repo : 1</a><br><a target="_blank" href="/metrics/twitter/go-bindata/WEEKLY">go-bindata : 1</a><br><a target="_blank" href="/metrics/twitter/interactive/WEEKLY">interactive : -1</a><br><a target="_blank" href="/metrics/twitter/hbc/WEEKLY">hbc : -1</a><br><a target="_blank" href="/metrics/twitter/AnomalyDetection/WEEKLY">AnomalyDetection : -1</a><br><a target="_blank" href="/metrics/twitter/bijection/WEEKLY">bijection : -1</a><br><a target="_blank" href="/metrics/twitter/zktraffic/WEEKLY">zktraffic : -1</a><br><a target="_blank" href="/metrics/twitter/pelikan/WEEKLY">pelikan : -1</a><br><a target="_blank" href="/metrics/twitter/finatra/WEEKLY">finatra : -1</a><br><a target="_blank" href="/metrics/twitter/analytics-infra-governance/WEEKLY">analytics-infra-governance : -1</a><br><a target="_blank" href="/metrics/twitter/twitter-server/WEEKLY">twitter-server : -1</a><br><a target="_blank" href="/metrics/twitter/netty-http2/WEEKLY">netty-http2 : -1</a><br><a target="_blank" href="/metrics/twitter/twitter-korean-text/WEEKLY">twitter-korean-text : -1</a><br><a target="_blank" href="/metrics/twitter/sslconfig/WEEKLY">sslconfig : -1</a><br><a target="_blank" href="/metrics/twitter/Serial/WEEKLY">Serial : -1</a><br><a target="_blank" href="/metrics/twitter/SentenTree/WEEKLY">SentenTree : -1</a><br><a target="_blank" href="/metrics/twitter/d3kit/WEEKLY">d3kit : -1</a><br><a target="_blank" href="/metrics/twitter/nodes/WEEKLY">nodes : -1</a><br><a target="_blank" href="/metrics/twitter/wordpress/WEEKLY">wordpress : -1</a><br><a target="_blank" href="/metrics/twitter/twitter-cldr-js/WEEKLY">twitter-cldr-js : -1</a><br><a target="_blank" href="/metrics/twitter/ios-twitter-image-pipeline/WEEKLY">ios-twitter-image-pipeline : -1</a><br><a target="_blank" href="/metrics/twitter/scala_school2/WEEKLY">scala_school2 : -1</a><br><a target="_blank" href="/metrics/twitter/libwatchman/WEEKLY">libwatchman : -1</a><br><a target="_blank" href="/metrics/twitter/hpack/WEEKLY">hpack : -1</a><br><a target="_blank" href="/metrics/twitter/whiskey/WEEKLY">whiskey : -1</a><br><a target="_blank" href="/metrics/twitter/hraven/WEEKLY">hraven : -1</a><br><a target="_blank" href="/metrics/twitter/cloudhopper-commons/WEEKLY">cloudhopper-commons : -2</a><br><a target="_blank" href="/metrics/twitter/labella.js/WEEKLY">labella.js : -2</a><br><a target="_blank" href="/metrics/twitter/pants/WEEKLY">pants : -2</a><br><a target="_blank" href="/metrics/twitter/hogan.js/WEEKLY">hogan.js : -2</a><br><a target="_blank" href="/metrics/twitter/typeahead.js/WEEKLY">typeahead.js : -3</a><br><a target="_blank" href="/metrics/twitter/twemproxy/WEEKLY">twemproxy : -3</a><br><a target="_blank" href="/metrics/twitter/rsc/WEEKLY">rsc : -3</a><br><a target="_blank" href="/metrics/twitter/ossdecks/WEEKLY">ossdecks : -3</a><br></div> </td>
+    </tbody>
+</table>
+<br>
+<h4>Highlights</h4>
+<ul>
+	<li><a href="/metrics/twitter/chill/WEEKLY">chill</a> crossed 600 Pull Requests</li>
+	<li><a href="/metrics/twitter/finagle/WEEKLY">finagle</a> crossed 400 Issues</li>
+	<li><a href="/metrics/twitter/finagle/WEEKLY">finagle</a> crossed 8,500 Stars</li>
+	<li><a href="/metrics/twitter/util/WEEKLY">util</a> crossed 2,600 Stars</li>
+	<li><a href="/metrics/twitter/rezolus/WEEKLY">rezolus</a> crossed 1,300 Stars</li>
+	<li><a href="/metrics/twitter/twitter-text/WEEKLY">twitter-text</a> crossed 500 Forks</li>
+	<li><a href="/metrics/twitter/twemoji/WEEKLY">twemoji</a> crossed 1,800 Forks</li>
+	<li><a href="/metrics/twitter/twemoji/WEEKLY">twemoji</a> crossed 15,700 Stars</li>
+	<li><a href="/metrics/twitter/SentenTree/WEEKLY">SentenTree</a> crossed 200 Stars</li>
+	<li><a href="/metrics/twitter/compose-rules/WEEKLY">compose-rules</a> crossed 1,200 Stars</li>
+	<li><a href="/metrics/twitter/twemproxy/WEEKLY">twemproxy</a> crossed 11,700 Stars</li>
+	<li><a href="/metrics/twitter/scalding/WEEKLY">scalding</a> crossed 700 Forks</li>
+	<li><a href="/metrics/twitter/opensource-website/WEEKLY">opensource-website</a> crossed 2,100 Stars</li>
+	<li><a href="/metrics/twitter/communitynotes/WEEKLY">communitynotes</a> crossed 500 Stars</li>
+	<li><a href="/metrics/twitter/TwitterTextEditor/WEEKLY">TwitterTextEditor</a> crossed 2,800 Stars</li>
+</ul>
+<div class="graph-container">
+<br>
+<h4>Binary Treemap graphs</h4>
+<div class="row">
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/treemap_weekly_issues.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/treemap_weekly_commits.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/treemap_weekly_pullRequests.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/treemap_weekly_watchers.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/treemap_weekly_mergedPullRequests.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/treemap_weekly_forkCount.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/treemap_weekly_closedIssues.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/treemap_weekly_openPullRequests.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/treemap_weekly_closedPullRequests.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/treemap_weekly_openIssues.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitter/treemap_weekly_stargazers.svg">
+		Your browser does not support SVG
+	</object>
+</div>
+</div>
