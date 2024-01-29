@@ -1,0 +1,194 @@
+---
+layout: org-weekly-metrics-v0.1
+title: TwiterOSS Metrics Report for twitterdev | WEEKLY-REPORT-2024-01-29
+permalink: /twitterdev/WEEKLY/
+
+org: twitterdev
+reportID: WEEKLY-REPORT-2024-01-29
+datestampThisWeek: 2024-01-29
+datestampLastWeek: 2023-08-14
+---
+
+
+<table class="table table-condensed" style="border-collapse:collapse;">
+    <thead>
+    <tr>
+        <th>Metric</th>
+        <th>Latest</th>
+        <th>Previous</th>
+        <th colspan="2" style="text-align: center;">Difference</th>
+    </tr>
+    </thead>
+    <tbody>
+
+        <tr data-toggle="collapse" data-target="#col-commits" class="accordion-toggle" style="cursor: pointer;">
+            <td>Commits</td>
+            <td>18,344</td>
+            <td>18,341</td>
+            <td style="color: #45c527" >3</td>
+            <td style="color: #45c527" >0.02%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-commits">
+            <a target="_blank" href="/metrics/twitterdev/search-tweets-python/WEEKLY">search-tweets-python : 2</a><br><a target="_blank" href="/metrics/twitterdev/Twitter-API-v2-sample-code/WEEKLY">Twitter-API-v2-sample-code : 1</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-issues" class="accordion-toggle" style="cursor: pointer;">
+            <td>Issues</td>
+            <td>652</td>
+            <td>621</td>
+            <td style="color: #45c527" >31</td>
+            <td style="color: #45c527" >4.99%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-issues">
+            <a target="_blank" href="/metrics/twitterdev/Twitter-API-v2-sample-code/WEEKLY">Twitter-API-v2-sample-code : 10</a><br><a target="_blank" href="/metrics/twitterdev/twitter-api-java-sdk/WEEKLY">twitter-api-java-sdk : 7</a><br><a target="_blank" href="/metrics/twitterdev/twitter-api-typescript-sdk/WEEKLY">twitter-api-typescript-sdk : 5</a><br><a target="_blank" href="/metrics/twitterdev/postman-twitter-ads-api/WEEKLY">postman-twitter-ads-api : 2</a><br><a target="_blank" href="/metrics/twitterdev/SnowBotDev/WEEKLY">SnowBotDev : 1</a><br><a target="_blank" href="/metrics/twitterdev/dog-facts/WEEKLY">dog-facts : 1</a><br><a target="_blank" href="/metrics/twitterdev/open-evolution/WEEKLY">open-evolution : 1</a><br><a target="_blank" href="/metrics/twitterdev/twitter-full-archive-search-ui/WEEKLY">twitter-full-archive-search-ui : 1</a><br><a target="_blank" href="/metrics/twitterdev/twauth-web/WEEKLY">twauth-web : 1</a><br><a target="_blank" href="/metrics/twitterdev/postman-twitter-api/WEEKLY">postman-twitter-api : 1</a><br><a target="_blank" href="/metrics/twitterdev/gcloud-toolkit-filtered-stream/WEEKLY">gcloud-toolkit-filtered-stream : 1</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-openIssues" class="accordion-toggle" style="cursor: pointer;">
+            <td>Open Issues</td>
+            <td>254</td>
+            <td>229</td>
+            <td style="color: #d31c08" >25</td>
+            <td style="color: #d31c08" >10.92%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-openIssues">
+            <a target="_blank" href="/metrics/twitterdev/Twitter-API-v2-sample-code/WEEKLY">Twitter-API-v2-sample-code : 9</a><br><a target="_blank" href="/metrics/twitterdev/twitter-api-java-sdk/WEEKLY">twitter-api-java-sdk : 6</a><br><a target="_blank" href="/metrics/twitterdev/twitter-api-typescript-sdk/WEEKLY">twitter-api-typescript-sdk : 3</a><br><a target="_blank" href="/metrics/twitterdev/SnowBotDev/WEEKLY">SnowBotDev : 1</a><br><a target="_blank" href="/metrics/twitterdev/postman-twitter-ads-api/WEEKLY">postman-twitter-ads-api : 1</a><br><a target="_blank" href="/metrics/twitterdev/dog-facts/WEEKLY">dog-facts : 1</a><br><a target="_blank" href="/metrics/twitterdev/open-evolution/WEEKLY">open-evolution : 1</a><br><a target="_blank" href="/metrics/twitterdev/twitter-full-archive-search-ui/WEEKLY">twitter-full-archive-search-ui : 1</a><br><a target="_blank" href="/metrics/twitterdev/twauth-web/WEEKLY">twauth-web : 1</a><br><a target="_blank" href="/metrics/twitterdev/postman-twitter-api/WEEKLY">postman-twitter-api : 1</a><br><a target="_blank" href="/metrics/twitterdev/gcloud-toolkit-filtered-stream/WEEKLY">gcloud-toolkit-filtered-stream : 1</a><br><a target="_blank" href="/metrics/twitterdev/search-tweets-python/WEEKLY">search-tweets-python : -1</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-closedIssues" class="accordion-toggle" style="cursor: pointer;">
+            <td>Closed Issues</td>
+            <td>398</td>
+            <td>392</td>
+            <td style="color: #45c527" >6</td>
+            <td style="color: #45c527" >1.53%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-closedIssues">
+            <a target="_blank" href="/metrics/twitterdev/twitter-api-typescript-sdk/WEEKLY">twitter-api-typescript-sdk : 2</a><br><a target="_blank" href="/metrics/twitterdev/postman-twitter-ads-api/WEEKLY">postman-twitter-ads-api : 1</a><br><a target="_blank" href="/metrics/twitterdev/search-tweets-python/WEEKLY">search-tweets-python : 1</a><br><a target="_blank" href="/metrics/twitterdev/twitter-api-java-sdk/WEEKLY">twitter-api-java-sdk : 1</a><br><a target="_blank" href="/metrics/twitterdev/Twitter-API-v2-sample-code/WEEKLY">Twitter-API-v2-sample-code : 1</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-pullRequests" class="accordion-toggle" style="cursor: pointer;">
+            <td>Pull Requests</td>
+            <td>927</td>
+            <td>918</td>
+            <td style="color: #45c527" >9</td>
+            <td style="color: #45c527" >0.98%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-pullRequests">
+            <a target="_blank" href="/metrics/twitterdev/Twitter-API-v2-sample-code/WEEKLY">Twitter-API-v2-sample-code : 3</a><br><a target="_blank" href="/metrics/twitterdev/twitter-api-java-sdk/WEEKLY">twitter-api-java-sdk : 2</a><br><a target="_blank" href="/metrics/twitterdev/twitter-api-typescript-sdk/WEEKLY">twitter-api-typescript-sdk : 2</a><br><a target="_blank" href="/metrics/twitterdev/twauth-web/WEEKLY">twauth-web : 1</a><br><a target="_blank" href="/metrics/twitterdev/twitter-aws-samples/WEEKLY">twitter-aws-samples : 1</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-openPullRequests" class="accordion-toggle" style="cursor: pointer;">
+            <td>Open Pull Requests</td>
+            <td>192</td>
+            <td>187</td>
+            <td style="color: #d31c08" >5</td>
+            <td style="color: #d31c08" >2.67%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-openPullRequests">
+            <a target="_blank" href="/metrics/twitterdev/twitter-api-java-sdk/WEEKLY">twitter-api-java-sdk : 2</a><br><a target="_blank" href="/metrics/twitterdev/Twitter-API-v2-sample-code/WEEKLY">Twitter-API-v2-sample-code : 2</a><br><a target="_blank" href="/metrics/twitterdev/twitter-api-typescript-sdk/WEEKLY">twitter-api-typescript-sdk : 1</a><br><a target="_blank" href="/metrics/twitterdev/twauth-web/WEEKLY">twauth-web : 1</a><br><a target="_blank" href="/metrics/twitterdev/twitter-aws-samples/WEEKLY">twitter-aws-samples : 1</a><br><a target="_blank" href="/metrics/twitterdev/search-tweets-python/WEEKLY">search-tweets-python : -1</a><br><a target="_blank" href="/metrics/twitterdev/tweet-updates/WEEKLY">tweet-updates : -1</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-mergedPullRequests" class="accordion-toggle" style="cursor: pointer;">
+            <td>Merged Pull Requests</td>
+            <td>567</td>
+            <td>566</td>
+            <td style="color: #45c527" >1</td>
+            <td style="color: #45c527" >0.18%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-mergedPullRequests">
+            <a target="_blank" href="/metrics/twitterdev/search-tweets-python/WEEKLY">search-tweets-python : 1</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-closedPullRequests" class="accordion-toggle" style="cursor: pointer;">
+            <td>Closed Pull Requests</td>
+            <td>168</td>
+            <td>165</td>
+            <td style="color: #45c527" >3</td>
+            <td style="color: #45c527" >1.82%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-closedPullRequests">
+            <a target="_blank" href="/metrics/twitterdev/twitter-api-typescript-sdk/WEEKLY">twitter-api-typescript-sdk : 1</a><br><a target="_blank" href="/metrics/twitterdev/Twitter-API-v2-sample-code/WEEKLY">Twitter-API-v2-sample-code : 1</a><br><a target="_blank" href="/metrics/twitterdev/tweet-updates/WEEKLY">tweet-updates : 1</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-forkCount" class="accordion-toggle" style="cursor: pointer;">
+            <td>Forks</td>
+            <td>3,082</td>
+            <td>2,920</td>
+            <td style="color: #45c527" >162</td>
+            <td style="color: #45c527" >5.55%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-forkCount">
+            <a target="_blank" href="/metrics/twitterdev/Twitter-API-v2-sample-code/WEEKLY">Twitter-API-v2-sample-code : 50</a><br><a target="_blank" href="/metrics/twitterdev/search-tweets-python/WEEKLY">search-tweets-python : 35</a><br><a target="_blank" href="/metrics/twitterdev/postman-twitter-api/WEEKLY">postman-twitter-api : 18</a><br><a target="_blank" href="/metrics/twitterdev/twitter-api-java-sdk/WEEKLY">twitter-api-java-sdk : 14</a><br><a target="_blank" href="/metrics/twitterdev/twitter-api-typescript-sdk/WEEKLY">twitter-api-typescript-sdk : 10</a><br><a target="_blank" href="/metrics/twitterdev/getting-started-with-the-twitter-api-v2-for-academic-research/WEEKLY">getting-started-with-the-twitter-api-v2-for-academic-research : 8</a><br><a target="_blank" href="/metrics/twitterdev/oauth2.0-bot/WEEKLY">oauth2.0-bot : 7</a><br><a target="_blank" href="/metrics/twitterdev/FactualCat-Twitter-Bot/WEEKLY">FactualCat-Twitter-Bot : 4</a><br><a target="_blank" href="/metrics/twitterdev/gcloud-toolkit-recent-search/WEEKLY">gcloud-toolkit-recent-search : 2</a><br><a target="_blank" href="/metrics/twitterdev/twauth-web/WEEKLY">twauth-web : 2</a><br><a target="_blank" href="/metrics/twitterdev/twitter-aws-samples/WEEKLY">twitter-aws-samples : 2</a><br><a target="_blank" href="/metrics/twitterdev/twitter-python-ads-sdk/WEEKLY">twitter-python-ads-sdk : 2</a><br><a target="_blank" href="/metrics/twitterdev/gcloud-toolkit-filtered-stream/WEEKLY">gcloud-toolkit-filtered-stream : 2</a><br><a target="_blank" href="/metrics/twitterdev/bookmarks-to-notion/WEEKLY">bookmarks-to-notion : 2</a><br><a target="_blank" href="/metrics/twitterdev/open-evolution/WEEKLY">open-evolution : 1</a><br><a target="_blank" href="/metrics/twitterdev/autohook/WEEKLY">autohook : 1</a><br><a target="_blank" href="/metrics/twitterdev/cards-player-samples/WEEKLY">cards-player-samples : 1</a><br><a target="_blank" href="/metrics/twitterdev/twitter-ruby-ads-sdk/WEEKLY">twitter-ruby-ads-sdk : 1</a><br><a target="_blank" href="/metrics/twitterdev/real-time-tweet-streamer/WEEKLY">real-time-tweet-streamer : 1</a><br><a target="_blank" href="/metrics/twitterdev/large-video-upload-python/WEEKLY">large-video-upload-python : 1</a><br><a target="_blank" href="/metrics/twitterdev/weekly-tweet-sentiment/WEEKLY">weekly-tweet-sentiment : 1</a><br><a target="_blank" href="/metrics/twitterdev/noun-verb/WEEKLY">noun-verb : 1</a><br><a target="_blank" href="/metrics/twitterdev/spaces-reach/WEEKLY">spaces-reach : 1</a><br><a target="_blank" href="/metrics/twitterdev/chrome-extension-collections/WEEKLY">chrome-extension-collections : -1</a><br><a target="_blank" href="/metrics/twitterdev/account-activity-dashboard/WEEKLY">account-activity-dashboard : -1</a><br><a target="_blank" href="/metrics/twitterdev/postman-twitter-ads-api/WEEKLY">postman-twitter-ads-api : -1</a><br><a target="_blank" href="/metrics/twitterdev/ruby-app-tweetmap/WEEKLY">ruby-app-tweetmap : -1</a><br><a target="_blank" href="/metrics/twitterdev/Data-Science-45min-Intros/WEEKLY">Data-Science-45min-Intros : -1</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-stargazers" class="accordion-toggle" style="cursor: pointer;">
+            <td>Stars</td>
+            <td>7,948</td>
+            <td>7,483</td>
+            <td style="color: #45c527" >465</td>
+            <td style="color: #45c527" >6.21%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-stargazers">
+            <a target="_blank" href="/metrics/twitterdev/Twitter-API-v2-sample-code/WEEKLY">Twitter-API-v2-sample-code : 223</a><br><a target="_blank" href="/metrics/twitterdev/twitter-api-typescript-sdk/WEEKLY">twitter-api-typescript-sdk : 49</a><br><a target="_blank" href="/metrics/twitterdev/postman-twitter-api/WEEKLY">postman-twitter-api : 33</a><br><a target="_blank" href="/metrics/twitterdev/search-tweets-python/WEEKLY">search-tweets-python : 31</a><br><a target="_blank" href="/metrics/twitterdev/getting-started-with-the-twitter-api-v2-for-academic-research/WEEKLY">getting-started-with-the-twitter-api-v2-for-academic-research : 30</a><br><a target="_blank" href="/metrics/twitterdev/twitter-api-java-sdk/WEEKLY">twitter-api-java-sdk : 27</a><br><a target="_blank" href="/metrics/twitterdev/FactualCat-Twitter-Bot/WEEKLY">FactualCat-Twitter-Bot : 12</a><br><a target="_blank" href="/metrics/twitterdev/twitter-python-ads-sdk/WEEKLY">twitter-python-ads-sdk : 8</a><br><a target="_blank" href="/metrics/twitterdev/twauth-web/WEEKLY">twauth-web : 7</a><br><a target="_blank" href="/metrics/twitterdev/bookmarks-to-notion/WEEKLY">bookmarks-to-notion : 7</a><br><a target="_blank" href="/metrics/twitterdev/large-video-upload-python/WEEKLY">large-video-upload-python : 5</a><br><a target="_blank" href="/metrics/twitterdev/oauth2.0-bot/WEEKLY">oauth2.0-bot : 4</a><br><a target="_blank" href="/metrics/twitterdev/bookmarks-search/WEEKLY">bookmarks-search : 4</a><br><a target="_blank" href="/metrics/twitterdev/postman-twitter-ads-api/WEEKLY">postman-twitter-ads-api : 3</a><br><a target="_blank" href="/metrics/twitterdev/cards-player-samples/WEEKLY">cards-player-samples : 3</a><br><a target="_blank" href="/metrics/twitterdev/SnowBotDev/WEEKLY">SnowBotDev : 2</a><br><a target="_blank" href="/metrics/twitterdev/account-activity-dashboard/WEEKLY">account-activity-dashboard : 2</a><br><a target="_blank" href="/metrics/twitterdev/tweet-notifier/WEEKLY">tweet-notifier : 2</a><br><a target="_blank" href="/metrics/twitterdev/open-evolution/WEEKLY">open-evolution : 2</a><br><a target="_blank" href="/metrics/twitterdev/gcloud-toolkit-recent-search/WEEKLY">gcloud-toolkit-recent-search : 2</a><br><a target="_blank" href="/metrics/twitterdev/weekly-tweet-sentiment/WEEKLY">weekly-tweet-sentiment : 2</a><br><a target="_blank" href="/metrics/twitterdev/compliant-client/WEEKLY">compliant-client : 2</a><br><a target="_blank" href="/metrics/twitterdev/spaces-reach/WEEKLY">spaces-reach : 2</a><br><a target="_blank" href="/metrics/twitterdev/Gnip-Insights-Interface/WEEKLY">Gnip-Insights-Interface : 1</a><br><a target="_blank" href="/metrics/twitterdev/remote-dev-jobs-analytics/WEEKLY">remote-dev-jobs-analytics : 1</a><br><a target="_blank" href="/metrics/twitterdev/twitter-alexa-skill-apl/WEEKLY">twitter-alexa-skill-apl : 1</a><br><a target="_blank" href="/metrics/twitterdev/autohook/WEEKLY">autohook : 1</a><br><a target="_blank" href="/metrics/twitterdev/do_more_with_twitter_data/WEEKLY">do_more_with_twitter_data : 1</a><br><a target="_blank" href="/metrics/twitterdev/Gnip-Trend-Detection/WEEKLY">Gnip-Trend-Detection : 1</a><br><a target="_blank" href="/metrics/twitterdev/gcloud-toolkit-power-track/WEEKLY">gcloud-toolkit-power-track : 1</a><br><a target="_blank" href="/metrics/twitterdev/5-ways-to-convert-json-to-csv/WEEKLY">5-ways-to-convert-json-to-csv : 1</a><br><a target="_blank" href="/metrics/twitterdev/real-time-tweet-streamer/WEEKLY">real-time-tweet-streamer : 1</a><br><a target="_blank" href="/metrics/twitterdev/gcloud-toolkit-filtered-stream/WEEKLY">gcloud-toolkit-filtered-stream : 1</a><br><a target="_blank" href="/metrics/twitterdev/tweet_parser/WEEKLY">tweet_parser : 1</a><br><a target="_blank" href="/metrics/twitterdev/search-tweets-ruby/WEEKLY">search-tweets-ruby : 1</a><br><a target="_blank" href="/metrics/twitterdev/Data-Science-45min-Intros/WEEKLY">Data-Science-45min-Intros : 1</a><br><a target="_blank" href="/metrics/twitterdev/serverless-flow-framework/WEEKLY">serverless-flow-framework : 1</a><br><a target="_blank" href="/metrics/twitterdev/cat-pics/WEEKLY">cat-pics : 1</a><br><a target="_blank" href="/metrics/twitterdev/live-leaderboard/WEEKLY">live-leaderboard : -1</a><br><a target="_blank" href="/metrics/twitterdev/bot-profile-append/WEEKLY">bot-profile-append : -1</a><br><a target="_blank" href="/metrics/twitterdev/Tweet-Annotations/WEEKLY">Tweet-Annotations : -1</a><br><a target="_blank" href="/metrics/twitterdev/engagement-api-explorer/WEEKLY">engagement-api-explorer : -1</a><br><a target="_blank" href="/metrics/twitterdev/twitter-enterprise-gcp/WEEKLY">twitter-enterprise-gcp : -1</a><br><a target="_blank" href="/metrics/twitterdev/twitter-for-bigquery/WEEKLY">twitter-for-bigquery : -1</a><br><a target="_blank" href="/metrics/twitterdev/twitter-ruby-ads-sdk/WEEKLY">twitter-ruby-ads-sdk : -1</a><br><a target="_blank" href="/metrics/twitterdev/enterprise-scripts-python/WEEKLY">enterprise-scripts-python : -1</a><br><a target="_blank" href="/metrics/twitterdev/Twitter-API-to-Google-Sheets/WEEKLY">Twitter-API-to-Google-Sheets : -1</a><br><a target="_blank" href="/metrics/twitterdev/search-tweets-python-in-r/WEEKLY">search-tweets-python-in-r : -1</a><br><a target="_blank" href="/metrics/twitterdev/noun-verb/WEEKLY">noun-verb : -1</a><br><a target="_blank" href="/metrics/twitterdev/extract-usernames-from-tweet-replies/WEEKLY">extract-usernames-from-tweet-replies : -1</a><br></div> </td>
+        <tr data-toggle="collapse" data-target="#col-watchers" class="accordion-toggle" style="cursor: pointer;">
+            <td>Watchers</td>
+            <td>1,662</td>
+            <td>1,770</td>
+            <td style="color: #d31c08" >-108</td>
+            <td style="color: #d31c08" >-6.1%</td>
+        </tr>
+        
+            <td class="hiddenRow" colspan="2"></td>
+            <td class="hiddenRow" colspan="3" style="padding: 0" ><div class="accordian-body collapse" id="col-watchers">
+            <a target="_blank" href="/metrics/twitterdev/twitter-python-ads-sdk/WEEKLY">twitter-python-ads-sdk : 3</a><br><a target="_blank" href="/metrics/twitterdev/search-tweets-python/WEEKLY">search-tweets-python : 2</a><br><a target="_blank" href="/metrics/twitterdev/postman-twitter-api/WEEKLY">postman-twitter-api : 1</a><br><a target="_blank" href="/metrics/twitterdev/SnowBotDev/WEEKLY">SnowBotDev : -1</a><br><a target="_blank" href="/metrics/twitterdev/twitter-api-java-sdk/WEEKLY">twitter-api-java-sdk : -1</a><br><a target="_blank" href="/metrics/twitterdev/labs-sample-code/WEEKLY">labs-sample-code : -1</a><br><a target="_blank" href="/metrics/twitterdev/node-timeline-visualizations/WEEKLY">node-timeline-visualizations : -1</a><br><a target="_blank" href="/metrics/twitterdev/spotatweet/WEEKLY">spotatweet : -1</a><br><a target="_blank" href="/metrics/twitterdev/tweet-updates/WEEKLY">tweet-updates : -1</a><br><a target="_blank" href="/metrics/twitterdev/compliant-client/WEEKLY">compliant-client : -1</a><br><a target="_blank" href="/metrics/twitterdev/twitter-webhook-boilerplate-node/WEEKLY">twitter-webhook-boilerplate-node : -1</a><br><a target="_blank" href="/metrics/twitterdev/live-leaderboard/WEEKLY">live-leaderboard : -2</a><br><a target="_blank" href="/metrics/twitterdev/remote-dev-jobs-analytics/WEEKLY">remote-dev-jobs-analytics : -2</a><br><a target="_blank" href="/metrics/twitterdev/hashtag-graph-viz/WEEKLY">hashtag-graph-viz : -2</a><br><a target="_blank" href="/metrics/twitterdev/TwitterDev-live-streams/WEEKLY">TwitterDev-live-streams : -2</a><br><a target="_blank" href="/metrics/twitterdev/oauth2.0-bot/WEEKLY">oauth2.0-bot : -2</a><br><a target="_blank" href="/metrics/twitterdev/bot-profile-append/WEEKLY">bot-profile-append : -2</a><br><a target="_blank" href="/metrics/twitterdev/tweet-notifier/WEEKLY">tweet-notifier : -2</a><br><a target="_blank" href="/metrics/twitterdev/getting-started-with-dash/WEEKLY">getting-started-with-dash : -2</a><br><a target="_blank" href="/metrics/twitterdev/dog-facts/WEEKLY">dog-facts : -2</a><br><a target="_blank" href="/metrics/twitterdev/open-evolution/WEEKLY">open-evolution : -2</a><br><a target="_blank" href="/metrics/twitterdev/make-music-together/WEEKLY">make-music-together : -2</a><br><a target="_blank" href="/metrics/twitterdev/Code-from-TwitterDev-Twitch-streams/WEEKLY">Code-from-TwitterDev-Twitch-streams : -2</a><br><a target="_blank" href="/metrics/twitterdev/twitter-alexa-skill-apl/WEEKLY">twitter-alexa-skill-apl : -2</a><br><a target="_blank" href="/metrics/twitterdev/twitter-context-annotations/WEEKLY">twitter-context-annotations : -2</a><br><a target="_blank" href="/metrics/twitterdev/Tweet-Annotations/WEEKLY">Tweet-Annotations : -2</a><br><a target="_blank" href="/metrics/twitterdev/getting-started-with-the-twitter-api-v2-for-academic-research/WEEKLY">getting-started-with-the-twitter-api-v2-for-academic-research : -2</a><br><a target="_blank" href="/metrics/twitterdev/engagement-api-explorer/WEEKLY">engagement-api-explorer : -2</a><br><a target="_blank" href="/metrics/twitterdev/twitter-enterprise-gcp/WEEKLY">twitter-enterprise-gcp : -2</a><br><a target="_blank" href="/metrics/twitterdev/Plot-Bookmarks/WEEKLY">Plot-Bookmarks : -2</a><br><a target="_blank" href="/metrics/twitterdev/Bookmarks-Notion-Notebook/WEEKLY">Bookmarks-Notion-Notebook : -2</a><br><a target="_blank" href="/metrics/twitterdev/gcloud-toolkit-recent-search/WEEKLY">gcloud-toolkit-recent-search : -2</a><br><a target="_blank" href="/metrics/twitterdev/twitter-full-archive-search-ui/WEEKLY">twitter-full-archive-search-ui : -2</a><br><a target="_blank" href="/metrics/twitterdev/gcloud-toolkit-power-track/WEEKLY">gcloud-toolkit-power-track : -2</a><br><a target="_blank" href="/metrics/twitterdev/5-ways-to-convert-json-to-csv/WEEKLY">5-ways-to-convert-json-to-csv : -2</a><br><a target="_blank" href="/metrics/twitterdev/twitter-api-typescript-sdk/WEEKLY">twitter-api-typescript-sdk : -2</a><br><a target="_blank" href="/metrics/twitterdev/twauth-web/WEEKLY">twauth-web : -2</a><br><a target="_blank" href="/metrics/twitterdev/getting-started-with-r/WEEKLY">getting-started-with-r : -2</a><br><a target="_blank" href="/metrics/twitterdev/twitter-aws-samples/WEEKLY">twitter-aws-samples : -2</a><br><a target="_blank" href="/metrics/twitterdev/micpic/WEEKLY">micpic : -2</a><br><a target="_blank" href="/metrics/twitterdev/Pull-Tweet-Annotations-data-for-Twitter-profiles/WEEKLY">Pull-Tweet-Annotations-data-for-Twitter-profiles : -2</a><br><a target="_blank" href="/metrics/twitterdev/gcloud-toolkit-filtered-stream/WEEKLY">gcloud-toolkit-filtered-stream : -2</a><br><a target="_blank" href="/metrics/twitterdev/weekly-tweet-sentiment/WEEKLY">weekly-tweet-sentiment : -2</a><br><a target="_blank" href="/metrics/twitterdev/ios-conversation-id-sample/WEEKLY">ios-conversation-id-sample : -2</a><br><a target="_blank" href="/metrics/twitterdev/Twitter-API-to-Google-Sheets/WEEKLY">Twitter-API-to-Google-Sheets : -2</a><br><a target="_blank" href="/metrics/twitterdev/twitter-streaming-framework/WEEKLY">twitter-streaming-framework : -2</a><br><a target="_blank" href="/metrics/twitterdev/run-your-favorite-python-package-in-r/WEEKLY">run-your-favorite-python-package-in-r : -2</a><br><a target="_blank" href="/metrics/twitterdev/parking/WEEKLY">parking : -2</a><br><a target="_blank" href="/metrics/twitterdev/export-bookmarks/WEEKLY">export-bookmarks : -2</a><br><a target="_blank" href="/metrics/twitterdev/sports-coach/WEEKLY">sports-coach : -2</a><br><a target="_blank" href="/metrics/twitterdev/search-tweets-python-in-r/WEEKLY">search-tweets-python-in-r : -2</a><br><a target="_blank" href="/metrics/twitterdev/noun-verb/WEEKLY">noun-verb : -2</a><br><a target="_blank" href="/metrics/twitterdev/serverless-flow-framework/WEEKLY">serverless-flow-framework : -2</a><br><a target="_blank" href="/metrics/twitterdev/JSON-to-CSV-livestream/WEEKLY">JSON-to-CSV-livestream : -2</a><br><a target="_blank" href="/metrics/twitterdev/covid19-helper/WEEKLY">covid19-helper : -2</a><br><a target="_blank" href="/metrics/twitterdev/bookmarks-to-notion/WEEKLY">bookmarks-to-notion : -2</a><br><a target="_blank" href="/metrics/twitterdev/spaces-reach/WEEKLY">spaces-reach : -2</a><br><a target="_blank" href="/metrics/twitterdev/bookmarks-search/WEEKLY">bookmarks-search : -2</a><br><a target="_blank" href="/metrics/twitterdev/remote-dev-jobs-streamer/WEEKLY">remote-dev-jobs-streamer : -2</a><br><a target="_blank" href="/metrics/twitterdev/cat-pics/WEEKLY">cat-pics : -2</a><br><a target="_blank" href="/metrics/twitterdev/ETL/WEEKLY">ETL : -2</a><br><a target="_blank" href="/metrics/twitterdev/cards-player-samples/WEEKLY">cards-player-samples : -3</a><br><a target="_blank" href="/metrics/twitterdev/real-time-tweet-streamer/WEEKLY">real-time-tweet-streamer : -3</a><br></div> </td>
+    </tbody>
+</table>
+<br>
+<h4>Highlights</h4>
+<ul>
+	<li><a href="/metrics/twitterdev/search-tweets-python/WEEKLY">search-tweets-python</a> crossed 800 Stars</li>
+	<li><a href="/metrics/twitterdev/twitter-api-java-sdk/WEEKLY">twitter-api-java-sdk</a> crossed 200 Stars</li>
+	<li><a href="/metrics/twitterdev/postman-twitter-api/WEEKLY">postman-twitter-api</a> crossed 200 Stars</li>
+	<li><a href="/metrics/twitterdev/Twitter-API-v2-sample-code/WEEKLY">Twitter-API-v2-sample-code</a> crossed 900 Forks</li>
+	<li><a href="/metrics/twitterdev/Twitter-API-v2-sample-code/WEEKLY">Twitter-API-v2-sample-code</a> crossed 2,400 Stars</li>
+</ul>
+<div class="graph-container">
+<br>
+<h4>Binary Treemap graphs</h4>
+<div class="row">
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitterdev/treemap_weekly_closedIssues.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitterdev/treemap_weekly_closedPullRequests.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitterdev/treemap_weekly_watchers.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitterdev/treemap_weekly_mergedPullRequests.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitterdev/treemap_weekly_pullRequests.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitterdev/treemap_weekly_stargazers.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitterdev/treemap_weekly_commits.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitterdev/treemap_weekly_openPullRequests.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitterdev/treemap_weekly_forkCount.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitterdev/treemap_weekly_issues.svg">
+		Your browser does not support SVG
+	</object>
+	<object class="cell" type="image/svg+xml" data="/metrics/graphs/twitterdev/treemap_weekly_openIssues.svg">
+		Your browser does not support SVG
+	</object>
+</div>
+</div>
