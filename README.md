@@ -78,7 +78,7 @@ If you want to track some and not all repositories of an org, add `<org_name>/<r
 - Files in `_posts` leverage `_layouts` and `_data` and generate HTML files
 - Don't change html files inside layouts. Create new layouts with new version.
 - Maintain versions of metrics layouts (See `METRICS_VERSION` inside the script to generate reports. Also create a new `_layout` for each metrics version). If you add more data, the new posts should be on a new version (which wouldn't break previous pages)
-- Use `repos-to-include.md` and `repos-to-exlude.md` files to add org/repository for respective purposes.
+- Use `repos-to-include.md` and `repos-to-exclude.md` files to add org/repository for respective purposes.
 - Prepend `{{ site.url }}{{ site.baseurl }}` and use relative URLs
   - e.g. `{{ site.url }}{{ site.baseurl }}/css/main.css`
 - Execute all the scripts from the home of the directory. e.g. `python3 scripts/fetch_all_metrics.py`
