@@ -59,7 +59,7 @@ If you want to track some and not all repositories of an org, add `<org_name>/<r
 `$ python scripts/gen_weekly_report.py`
   
   - Iterates over every project listed inside `_data`
-  - Picks the latest two Metrics which are atleast 6 days apart
+  - Picks the latest two Metrics which are at least 6 days apart
   - Generates a Report based on these two Metrics files
   - Saves the json inside `_data` directory corresponding to each project, format `WEEKLY-YYYY-MM-DD.json`
   - Creates a `_post` for this report with some specific variables and the layout version
